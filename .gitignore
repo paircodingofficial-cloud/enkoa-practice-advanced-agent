@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+output/
+.DS_Store
+.env
+.env.*
+!.env.example
+.omc/
+.claude/
+# 내작업/ 폴더 자체는 저장소에 두고, 그 안에서 만든 파일은 모두 무시합니다.
+내작업/*
+!내작업/.gitkeep
+.백업/
