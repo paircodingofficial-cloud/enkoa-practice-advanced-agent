@@ -1,0 +1,508 @@
+[
+  {
+    "question_id": "q1",
+    "question": "Which methods detect missing values?",
+    "question_type": "사실확인",
+    "reference_answer": "isna 또는 notna 메서드를 사용합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide0",
+        "start": 114,
+        "end": 175,
+        "quote": "To detect these missing value, use the isna or notna methods."
+      }
+    ]
+  },
+  {
+    "question_id": "q2",
+    "question": "서로 다른 자료형의 열에서 결측값 표시가 달라질 수 있는 이유는 무엇인가요?",
+    "question_type": "사실확인",
+    "reference_answer": "pandas가 자료형에 따라 서로 다른 특수 값으로 결측값, 즉 NA를 나타내기 때문입니다.",
+    "evidence": [
+      {
+        "doc_id": "guide0",
+        "start": 0,
+        "end": 113,
+        "quote": "pandas uses different sentinel values to represent a missing (also referred to as NA) depending on the data type."
+      }
+    ]
+  },
+  {
+    "question_id": "q3",
+    "question": "DataFrame이나 Series를 결측값과 등호로 비교한 결과를 isna 검사와 같다고 보아도 되나요?",
+    "question_type": "조건·예외",
+    "reference_answer": "아니요. 결측값과의 동등 비교는 isna 또는 notna와 같은 정보를 제공하지 않습니다.",
+    "evidence": [
+      {
+        "doc_id": "guide0",
+        "start": 176,
+        "end": 328,
+        "quote": "Therefore, an equality comparison between a DataFrame or Series with one of these missing values does not provide the same information as isna or notna."
+      }
+    ]
+  },
+  {
+    "question_id": "q4",
+    "question": "개수가 정해져 있지 않은 여러 Series나 DataFrame을 한 축을 따라 연결할 때 어떤 함수를 사용하나요?",
+    "question_type": "절차·적용",
+    "reference_answer": "pandas.concat을 사용합니다. 여러 Series 또는 DataFrame을 한 축을 따라 연결할 수 있습니다.",
+    "evidence": [
+      {
+        "doc_id": "guide1",
+        "start": 81,
+        "end": 186,
+        "quote": "The ~pandas.concat function concatenates an arbitrary amount of Series or DataFrame objects along an axis"
+      }
+    ]
+  },
+  {
+    "question_id": "q5",
+    "question": "concat으로 연결할 때 연결 축 이외의 축에 있는 인덱스에는 어떤 집합 연산을 선택할 수 있나요?",
+    "question_type": "사실확인",
+    "reference_answer": "인덱스의 합집합 또는 교집합을 선택할 수 있습니다.",
+    "evidence": [
+      {
+        "doc_id": "guide1",
+        "start": 187,
+        "end": 280,
+        "quote": "while performing optional set logic (union or intersection) of the indexes on the other axes."
+      }
+    ]
+  },
+  {
+    "question_id": "q6",
+    "question": "concat에 여러 객체를 전달할 때 어떤 컨테이너를 쓸 수 있으며 객체의 유형에는 어떤 조건이 있나요?",
+    "question_type": "조건·예외",
+    "reference_answer": "같은 유형의 객체들을 list 또는 dict에 담아 전달할 수 있습니다.",
+    "evidence": [
+      {
+        "doc_id": "guide1",
+        "start": 305,
+        "end": 394,
+        "quote": "~pandas.concat takes a list or dict of homogeneously-typed objects and concatenates them."
+      }
+    ]
+  },
+  {
+    "question_id": "q7",
+    "question": "같은 대상의 관측값이 여러 행에 나뉘어 있는 표를 검토 중입니다. wide와 long 형식은 대상별 행 수가 어떻게 다른가요?",
+    "question_type": "비교·종합",
+    "reference_answer": "record 또는 wide 형식은 일반적으로 대상마다 한 행을 사용합니다. stacked 또는 long 형식은 해당하는 경우 대상마다 여러 행을 사용합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide2",
+        "start": 219,
+        "end": 295,
+        "quote": "In a \"record\" or \"wide\" format, typically there is one row for each subject."
+      },
+      {
+        "doc_id": "guide2",
+        "start": 296,
+        "end": 388,
+        "quote": "In the \"stacked\" or \"long\" format there are multiple rows for each subject where applicable."
+      }
+    ]
+  },
+  {
+    "question_id": "q8",
+    "question": "변수별로 시계열 연산을 하려면 열과 인덱스를 어떻게 배치하는 것이 좋다고 설명하나요?",
+    "question_type": "절차·적용",
+    "reference_answer": "고유한 변수들을 열로 두고, 각 관측을 식별하는 날짜를 인덱스로 둡니다.",
+    "evidence": [
+      {
+        "doc_id": "guide2",
+        "start": 389,
+        "end": 583,
+        "quote": "To perform time series operations with each unique variable, a better representation would be where the columns are the unique variables and an index of dates identifies individual observations."
+      }
+    ]
+  },
+  {
+    "question_id": "q9",
+    "question": "변수별 열을 가진 형태로 데이터를 재구성할 때 쓸 수 있는 DataFrame 메서드와 최상위 함수는 무엇인가요?",
+    "question_type": "사실확인",
+    "reference_answer": "DataFrame.pivot 메서드와 최상위 함수 pandas.pivot을 사용할 수 있습니다.",
+    "evidence": [
+      {
+        "doc_id": "guide2",
+        "start": 584,
+        "end": 711,
+        "quote": "To reshape the data into this form, we use the DataFrame.pivot method (also implemented as a top level function ~pandas.pivot):"
+      }
+    ]
+  },
+  {
+    "question_id": "q10",
+    "question": "분석 전에 Series나 DataFrame의 표현 형태를 바꾸는 작업은 어떤 후속 작업을 위한 것인가요?",
+    "question_type": "사실확인",
+    "reference_answer": "추가적인 데이터 처리 또는 데이터 요약을 위한 것입니다.",
+    "evidence": [
+      {
+        "doc_id": "guide2",
+        "start": 0,
+        "end": 154,
+        "quote": "pandas provides methods for manipulating a Series and DataFrame to alter the representation of the data for further data processing or data summarization."
+      }
+    ]
+  },
+  {
+    "question_id": "q11",
+    "question": "발췌 가이드에서 Series와 DataFrame의 plot은 어떤 그리기 함수를 감싼 메서드인가요?",
+    "question_type": "사실확인",
+    "reference_answer": "발췌문에 따르면 plot은 plt.plot()을 감싼 간단한 래퍼입니다.",
+    "evidence": [
+      {
+        "doc_id": "guide3",
+        "start": 0,
+        "end": 82,
+        "quote": "The plot method on Series and DataFrame is just a simple wrapper around plt.plot()"
+      }
+    ]
+  },
+  {
+    "question_id": "q12",
+    "question": "수치 데이터를 히스토그램으로 보려면 DataFrame과 Series에서 각각 어떤 메서드를 사용하나요?",
+    "question_type": "절차·적용",
+    "reference_answer": "DataFrame에서는 DataFrame.plot.hist, Series에서는 Series.plot.hist를 사용합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide3",
+        "start": 112,
+        "end": 198,
+        "quote": "Histograms can be drawn by using the DataFrame.plot.hist and Series.plot.hist methods."
+      }
+    ]
+  },
+  {
+    "question_id": "q13",
+    "question": "히스토그램들을 위로 쌓아 표시하려면 어떤 옵션을 지정하나요?",
+    "question_type": "절차·적용",
+    "reference_answer": "stacked=True를 지정합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide3",
+        "start": 199,
+        "end": 245,
+        "quote": "A histogram can be stacked using stacked=True."
+      }
+    ]
+  },
+  {
+    "question_id": "q14",
+    "question": "히스토그램의 구간 크기를 조정하는 키워드는 무엇인가요?",
+    "question_type": "사실확인",
+    "reference_answer": "bins 키워드를 사용합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide3",
+        "start": 246,
+        "end": 293,
+        "quote": "Bin size can be changed using the bins keyword."
+      }
+    ]
+  },
+  {
+    "question_id": "q15",
+    "question": "이 발췌 가이드가 텍스트 저장에 권장하는 자료형과 dtype 별칭은 무엇인가요?",
+    "question_type": "사실확인",
+    "reference_answer": "StringDtype을 권장하며 dtype=\"str\" 별칭을 제시합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide4",
+        "start": 0,
+        "end": 152,
+        "quote": "We recommend using StringDtype to store text data via the alias dtype=\"str\" (the default when dtype of strings is inferred), see below for more details."
+      }
+    ]
+  },
+  {
+    "question_id": "q16",
+    "question": "문자열의 각 원소에 처리 작업을 적용할 수 있도록 문자열 메서드를 제공하는 두 객체는 무엇인가요?",
+    "question_type": "사실확인",
+    "reference_answer": "Series와 Index입니다. 각 원소를 처리하는 문자열 메서드들을 제공합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide4",
+        "start": 153,
+        "end": 281,
+        "quote": "Series and Index are equipped with a set of string processing methods that make it easy to operate on each element of the array."
+      }
+    ]
+  },
+  {
+    "question_id": "q17",
+    "question": "Series나 Index의 문자열 처리 메서드는 섞여 있는 결측값을 어떻게 다루나요?",
+    "question_type": "조건·예외",
+    "reference_answer": "문자열 처리 메서드들은 결측값을 문자열 연산 대상에서 자동으로 제외합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide4",
+        "start": 153,
+        "end": 362,
+        "quote": "Series and Index are equipped with a set of string processing methods that make it easy to operate on each element of the array. Perhaps most importantly, these methods exclude missing/NA values automatically."
+      }
+    ]
+  },
+  {
+    "question_id": "q18",
+    "question": "가용 메모리보다 큰 데이터를 pandas로 분석하기 까다로운 기본 이유는 무엇인가요?",
+    "question_type": "사실확인",
+    "reference_answer": "pandas가 메모리 안에서 분석하는 데이터 구조를 제공하기 때문입니다.",
+    "evidence": [
+      {
+        "doc_id": "guide5",
+        "start": 0,
+        "end": 146,
+        "quote": "pandas provides data structures for in-memory analytics, which makes using pandas to analyze datasets that are larger than memory somewhat tricky."
+      }
+    ]
+  },
+  {
+    "question_id": "q19",
+    "question": "데이터 자체가 메모리보다 작아도 메모리의 상당 부분을 차지하면 다루기 어려운 이유는 무엇인가요?",
+    "question_type": "조건·예외",
+    "reference_answer": "일부 pandas 연산이 중간 복사본을 만들기 때문에, 메모리의 상당 부분을 차지하는 데이터도 다루기 어려울 수 있습니다.",
+    "evidence": [
+      {
+        "doc_id": "guide5",
+        "start": 147,
+        "end": 275,
+        "quote": "Even datasets that are a sizable fraction of memory become unwieldy, as some pandas operations need to make intermediate copies."
+      }
+    ]
+  },
+  {
+    "question_id": "q20",
+    "question": "큰 CSV에서 필요한 열만 메모리에 읽으려면 어떤 함수의 어떤 옵션을 지정하나요?",
+    "question_type": "절차·적용",
+    "reference_answer": "pandas.read_csv에서 usecols를 지정해 메모리에 읽는 열을 제한합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide5",
+        "start": 276,
+        "end": 360,
+        "quote": "With pandas.read_csv, you can specify usecols to limit the columns read into memory."
+      }
+    ]
+  },
+  {
+    "question_id": "q21",
+    "question": "pandas가 읽을 수 있는 모든 파일 형식에서 일부 열만 선택해서 읽을 수 있나요?",
+    "question_type": "조건·예외",
+    "reference_answer": "아니요. pandas가 읽을 수 있는 모든 파일 형식이 일부 열만 읽는 옵션을 제공하는 것은 아닙니다.",
+    "evidence": [
+      {
+        "doc_id": "guide5",
+        "start": 361,
+        "end": 455,
+        "quote": "Not all file formats that can be read by pandas provide an option to read a subset of columns."
+      }
+    ]
+  },
+  {
+    "question_id": "q22",
+    "question": "결측값이 섞인 텍스트를 처리할 때, 결측을 찾아보는 방법과 문자열 메서드가 결측을 처리하는 방식은 각각 무엇인가요?",
+    "question_type": "비교·종합",
+    "reference_answer": "결측값을 찾을 때는 isna 또는 notna를 사용합니다. Series와 Index의 문자열 처리 메서드는 결측값을 문자열 연산 대상에서 자동으로 제외합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide0",
+        "start": 114,
+        "end": 175,
+        "quote": "To detect these missing value, use the isna or notna methods."
+      },
+      {
+        "doc_id": "guide4",
+        "start": 153,
+        "end": 362,
+        "quote": "Series and Index are equipped with a set of string processing methods that make it easy to operate on each element of the array. Perhaps most importantly, these methods exclude missing/NA values automatically."
+      }
+    ]
+  },
+  {
+    "question_id": "q23",
+    "question": "여러 CSV를 읽어 같은 유형의 객체 목록으로 연결하려고 합니다. 읽을 열을 제한하는 옵션과 목록을 연결하는 함수는 무엇인가요?",
+    "question_type": "절차·적용",
+    "reference_answer": "pandas.read_csv의 usecols로 읽을 열을 제한하고, 같은 유형의 객체를 담은 list를 pandas.concat에 전달해 연결합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide5",
+        "start": 276,
+        "end": 360,
+        "quote": "With pandas.read_csv, you can specify usecols to limit the columns read into memory."
+      },
+      {
+        "doc_id": "guide1",
+        "start": 305,
+        "end": 394,
+        "quote": "~pandas.concat takes a list or dict of homogeneously-typed objects and concatenates them."
+      }
+    ]
+  },
+  {
+    "question_id": "q24",
+    "question": "큰 CSV에서 변수별 시계열 분석용 표를 준비하려고 합니다. 열 읽기를 제한한 뒤 어떤 배치로, 어떤 메서드를 사용해 재구성하나요?",
+    "question_type": "절차·적용",
+    "reference_answer": "pandas.read_csv의 usecols로 읽을 열을 제한합니다. 고유 변수를 열로, 관측을 식별하는 날짜를 인덱스로 배치하도록 DataFrame.pivot으로 재구성합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide5",
+        "start": 276,
+        "end": 360,
+        "quote": "With pandas.read_csv, you can specify usecols to limit the columns read into memory."
+      },
+      {
+        "doc_id": "guide2",
+        "start": 389,
+        "end": 583,
+        "quote": "To perform time series operations with each unique variable, a better representation would be where the columns are the unique variables and an index of dates identifies individual observations."
+      },
+      {
+        "doc_id": "guide2",
+        "start": 584,
+        "end": 711,
+        "quote": "To reshape the data into this form, we use the DataFrame.pivot method (also implemented as a top level function ~pandas.pivot):"
+      }
+    ]
+  },
+  {
+    "question_id": "q25",
+    "question": "여러 표를 한 축으로 연결하는 작업과 변수별 시계열 표로 재구성하는 작업에는 각각 어떤 도구를 쓰나요?",
+    "question_type": "비교·종합",
+    "reference_answer": "여러 Series나 DataFrame을 한 축으로 연결할 때는 pandas.concat을 씁니다. 변수를 열로, 날짜를 인덱스로 두는 시계열 표로 재구성할 때는 DataFrame.pivot 또는 pandas.pivot을 씁니다.",
+    "evidence": [
+      {
+        "doc_id": "guide1",
+        "start": 81,
+        "end": 186,
+        "quote": "The ~pandas.concat function concatenates an arbitrary amount of Series or DataFrame objects along an axis"
+      },
+      {
+        "doc_id": "guide2",
+        "start": 389,
+        "end": 711,
+        "quote": "To perform time series operations with each unique variable, a better representation would be where the columns are the unique variables and an index of dates identifies individual observations. To reshape the data into this form, we use the DataFrame.pivot method (also implemented as a top level function ~pandas.pivot):"
+      }
+    ]
+  },
+  {
+    "question_id": "q26",
+    "question": "여러 DataFrame을 연결한 결과의 분포를 히스토그램으로 확인하려면 두 단계에서 각각 무엇을 사용하나요?",
+    "question_type": "절차·적용",
+    "reference_answer": "pandas.concat으로 여러 DataFrame을 한 축을 따라 연결한 뒤, DataFrame.plot.hist로 히스토그램을 그립니다.",
+    "evidence": [
+      {
+        "doc_id": "guide1",
+        "start": 81,
+        "end": 186,
+        "quote": "The ~pandas.concat function concatenates an arbitrary amount of Series or DataFrame objects along an axis"
+      },
+      {
+        "doc_id": "guide3",
+        "start": 112,
+        "end": 198,
+        "quote": "Histograms can be drawn by using the DataFrame.plot.hist and Series.plot.hist methods."
+      }
+    ]
+  },
+  {
+    "question_id": "q27",
+    "question": "같은 관측 데이터를 변수별 시계열 연산과 분포 확인에 쓰려 합니다. 권장 표 배치와 DataFrame의 히스토그램 메서드를 각각 알려주세요.",
+    "question_type": "비교·종합",
+    "reference_answer": "시계열 연산을 위해서는 고유 변수를 열에, 개별 관측을 식별하는 날짜를 인덱스에 둡니다. DataFrame의 분포를 히스토그램으로 볼 때는 DataFrame.plot.hist를 사용합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide2",
+        "start": 389,
+        "end": 583,
+        "quote": "To perform time series operations with each unique variable, a better representation would be where the columns are the unique variables and an index of dates identifies individual observations."
+      },
+      {
+        "doc_id": "guide3",
+        "start": 112,
+        "end": 198,
+        "quote": "Histograms can be drawn by using the DataFrame.plot.hist and Series.plot.hist methods."
+      }
+    ]
+  },
+  {
+    "question_id": "q28",
+    "question": "메모리 여유가 적어 CSV의 일부 열에서만 결측을 점검하려 합니다. 읽기 옵션과 결측 판별 메서드를 어떻게 고르나요?",
+    "question_type": "절차·적용",
+    "reference_answer": "pandas.read_csv의 usecols로 읽을 열을 제한하고, 읽은 데이터의 결측은 isna 또는 notna로 확인합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide5",
+        "start": 276,
+        "end": 360,
+        "quote": "With pandas.read_csv, you can specify usecols to limit the columns read into memory."
+      },
+      {
+        "doc_id": "guide0",
+        "start": 114,
+        "end": 175,
+        "quote": "To detect these missing value, use the isna or notna methods."
+      }
+    ]
+  },
+  {
+    "question_id": "q29",
+    "question": "대규모 CSV에서 텍스트 열만 골라 읽어 저장하려 합니다. 읽을 열을 제한하는 방법과 발췌 가이드의 문자열 자료형 권장안을 함께 알려주세요.",
+    "question_type": "절차·적용",
+    "reference_answer": "pandas.read_csv의 usecols로 읽을 열을 제한합니다. 발췌 가이드는 텍스트를 StringDtype으로 저장하며 dtype=\"str\" 별칭을 사용하는 것을 권장합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide5",
+        "start": 276,
+        "end": 360,
+        "quote": "With pandas.read_csv, you can specify usecols to limit the columns read into memory."
+      },
+      {
+        "doc_id": "guide4",
+        "start": 0,
+        "end": 152,
+        "quote": "We recommend using StringDtype to store text data via the alias dtype=\"str\" (the default when dtype of strings is inferred), see below for more details."
+      }
+    ]
+  },
+  {
+    "question_id": "q30",
+    "question": "히스토그램들을 위로 쌓아 표시하면서 구간 크기도 바꾸려면 어떤 두 설정을 사용하나요?",
+    "question_type": "절차·적용",
+    "reference_answer": "위로 쌓아 표시하려면 stacked=True를 설정하고, 구간 크기는 bins 키워드로 조정합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide3",
+        "start": 199,
+        "end": 245,
+        "quote": "A histogram can be stacked using stacked=True."
+      },
+      {
+        "doc_id": "guide3",
+        "start": 246,
+        "end": 293,
+        "quote": "Bin size can be changed using the bins keyword."
+      }
+    ]
+  },
+  {
+    "question_id": "q31",
+    "question": "같은 유형의 객체들을 연결하면서 다른 축의 인덱스는 공통 부분만 남기려 합니다. 전달 형태와 함수, 집합 연산을 어떻게 선택하나요?",
+    "question_type": "비교·종합",
+    "reference_answer": "같은 유형의 객체를 list 또는 dict에 담아 pandas.concat에 전달하고, 다른 축의 인덱스에는 교집합 연산을 선택합니다.",
+    "evidence": [
+      {
+        "doc_id": "guide1",
+        "start": 81,
+        "end": 280,
+        "quote": "The ~pandas.concat function concatenates an arbitrary amount of Series or DataFrame objects along an axis while performing optional set logic (union or intersection) of the indexes on the other axes."
+      },
+      {
+        "doc_id": "guide1",
+        "start": 305,
+        "end": 394,
+        "quote": "~pandas.concat takes a list or dict of homogeneously-typed objects and concatenates them."
+      }
+    ]
+  }
+]

@@ -1,0 +1,75 @@
+{
+  "version": "2026-09-21-continuous-pdf-v3",
+  "authoring": "원문을 읽고 질문·참고 답안·근거를 작성. 검색 결과로 정답을 선정하지 않음.",
+  "metric": "질문별 근거 구간 Recall@K의 평균. reference_answer는 읽기용이며 GPT 답변 정확도 채점값이 아님.",
+  "scope": "각 원문의 배포 판본을 근거로 하는 교육용 평가. 질문들은 같은 원문을 공유할 수 있음.",
+  "demo": "도서관 4문항은 원리 설명용이며 30문항 이상인 실제 문서 평가셋과 구분.",
+  "datasets": {
+    "practice": {
+      "question_file": "practice_questions.json",
+      "question_count": 82,
+      "evidence_count": 101,
+      "multi_evidence_questions": 18,
+      "cross_document_questions": 0,
+      "question_types": {
+        "사실확인": 20,
+        "절차·적용": 25,
+        "비교·종합": 14,
+        "조건·예외": 23
+      },
+      "covered_doc_ids": [
+        "hr_flexible_intro",
+        "hr_remote_work",
+        "hr_selective_work",
+        "hr_staggered_work"
+      ],
+      "docs_sha256": "4bf54e7db97dc9cf1c418a688001677118076f633f1c8d4657e3fdc42343a589",
+      "questions_sha256": "5cc2dda01184bfe0c48bdf331a776e9a20408eca88905279bfa32941ba0421f1"
+    },
+    "lv2": {
+      "question_file": "lv2_questions.json",
+      "question_count": 30,
+      "evidence_count": 39,
+      "multi_evidence_questions": 8,
+      "cross_document_questions": 6,
+      "question_types": {
+        "사실확인": 15,
+        "조건·예외": 5,
+        "절차·적용": 3,
+        "비교·종합": 7
+      },
+      "covered_doc_ids": [
+        "release0",
+        "release1",
+        "release2",
+        "release3",
+        "release4"
+      ],
+      "docs_sha256": "eb8e1418ccd0343b986d67c20969716d2831c7b14f99c39a2649fb57aee3cb89",
+      "questions_sha256": "70362dacc71ae131d3aef509ff6803228c4fd0ba6e735b7039712817c1d23a4a"
+    },
+    "lv3": {
+      "question_file": "lv3_questions.json",
+      "question_count": 31,
+      "evidence_count": 43,
+      "multi_evidence_questions": 11,
+      "cross_document_questions": 8,
+      "question_types": {
+        "사실확인": 10,
+        "조건·예외": 5,
+        "절차·적용": 11,
+        "비교·종합": 5
+      },
+      "covered_doc_ids": [
+        "guide0",
+        "guide1",
+        "guide2",
+        "guide3",
+        "guide4",
+        "guide5"
+      ],
+      "docs_sha256": "ad5dd18fd28fff70a4f9ea2f69c5568f8fc63590f43621b37cd35d6c0b48467a",
+      "questions_sha256": "78789b1db5e17f0ca5be688264e2cdfff3b5cb2945227d8ca6a3aa114cb00add"
+    }
+  }
+}

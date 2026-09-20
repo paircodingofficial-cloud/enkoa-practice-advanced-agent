@@ -1,0 +1,56 @@
+[
+  {
+    "question_id": "q1",
+    "question": "학생은 책을 몇 권, 얼마나 오래 빌릴 수 있나요?",
+    "evidence": [
+      {
+        "doc_id": "lib_loan",
+        "start": 26,
+        "end": 62,
+        "quote": "한 번에 다섯 권까지 빌릴 수 있으며 대출 기간은 열네 일입니다."
+      }
+    ]
+  },
+  {
+    "question_id": "q2",
+    "question": "자료실이 닫혀 있으면 책을 어디에 반납하나요?",
+    "evidence": [
+      {
+        "doc_id": "lib_return",
+        "start": 25,
+        "end": 59,
+        "quote": "자료실이 닫힌 시간에는 건물 입구의 무인 반납함을 이용합니다."
+      }
+    ]
+  },
+  {
+    "question_id": "q3",
+    "question": "그룹 학습실은 몇 명부터 이용하며 지각하면 어떻게 되나요?",
+    "evidence": [
+      {
+        "doc_id": "lib_room",
+        "start": 52,
+        "end": 80,
+        "quote": "그룹 학습실은 세 명 이상이 함께 이용해야 합니다."
+      },
+      {
+        "doc_id": "lib_room",
+        "start": 81,
+        "end": 119,
+        "quote": "예약 시각에서 십오 분이 지나도록 입실하지 않으면 예약이 취소됩니다."
+      }
+    ]
+  },
+  {
+    "question_id": "q4",
+    "question": "교외에서 전자 자료를 이용할 때 무엇을 먼저 해야 하나요?",
+    "evidence": [
+      {
+        "doc_id": "lib_digital",
+        "start": 29,
+        "end": 55,
+        "quote": "교외에서는 학교 계정으로 먼저 인증해야 합니다."
+      }
+    ]
+  }
+]

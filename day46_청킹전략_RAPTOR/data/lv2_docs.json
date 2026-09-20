@@ -1,0 +1,207 @@
+[
+  {
+    "doc_id": "release0",
+    "title": "neo4j 3.3.0-beta01",
+    "text": "*Neo4j 3.3.0-beta01 is the first beta release of the upcoming Neo4j 3.3.* * Fusion index default for new indexes * Introducing procedures for manual indexes * Driver upgrade and small improvements to Neo4j Browser",
+    "sentences": [
+      {
+        "sentence_id": "release0:s0",
+        "text": "*Neo4j 3.3.0-beta01 is the first beta release of the upcoming Neo4j 3.3.*",
+        "start": 0,
+        "end": 73
+      },
+      {
+        "sentence_id": "release0:s1",
+        "text": "* Fusion index default for new indexes",
+        "start": 74,
+        "end": 112
+      },
+      {
+        "sentence_id": "release0:s2",
+        "text": "* Introducing procedures for manual indexes",
+        "start": 113,
+        "end": 156
+      },
+      {
+        "sentence_id": "release0:s3",
+        "text": "* Driver upgrade and small improvements to Neo4j Browser",
+        "start": 157,
+        "end": 213
+      }
+    ],
+    "url": "https://github.com/neo4j/neo4j/releases/tag/3.3.0-beta01",
+    "source": "단위프로젝트2_개편/version_b_releases/outputs/corpus.jsonl: rel_7768402",
+    "kind": "과거 릴리스 노트",
+    "sha256": "b73c1157de03609d5765d6927c7818860e9767eab71369e516045a13e28d2901"
+  },
+  {
+    "doc_id": "release1",
+    "title": "neo4j 3.2.0-alpha08",
+    "text": "- Overwriting property with same value no longer generates write command \\#9056 - More scalable index logging \\#9063 - Allow skip bad entries logging during import \\#9103 - Improved cypher execution speed on variable length queries where only the distinct pairs of start and end node are of interest. One query to benefit would be `MATCH (a)-[*4..5]->(b) RETURN DISTINCT a, b`. \\#9062 - Allow more granular configuration of literals extraction \\#9093 - It is no longer possible to CREATE or DROP composite uniqueness constraints. To enforce composite uniqueness, we refer to the new NODE KEY constraint. \\#9135",
+    "sentences": [
+      {
+        "sentence_id": "release1:s0",
+        "text": "- Overwriting property with same value no longer generates write command \\#9056",
+        "start": 0,
+        "end": 79
+      },
+      {
+        "sentence_id": "release1:s1",
+        "text": "- More scalable index logging \\#9063",
+        "start": 80,
+        "end": 116
+      },
+      {
+        "sentence_id": "release1:s2",
+        "text": "- Allow skip bad entries logging during import \\#9103",
+        "start": 117,
+        "end": 170
+      },
+      {
+        "sentence_id": "release1:s3",
+        "text": "- Improved cypher execution speed on variable length queries where only the distinct pairs of start and end node are of interest. One query to benefit would be `MATCH (a)-[*4..5]->(b) RETURN DISTINCT a, b`. \\#9062",
+        "start": 171,
+        "end": 384
+      },
+      {
+        "sentence_id": "release1:s4",
+        "text": "- Allow more granular configuration of literals extraction \\#9093",
+        "start": 385,
+        "end": 450
+      },
+      {
+        "sentence_id": "release1:s5",
+        "text": "- It is no longer possible to CREATE or DROP composite uniqueness constraints. To enforce composite uniqueness, we refer to the new NODE KEY constraint. \\#9135",
+        "start": 451,
+        "end": 610
+      }
+    ],
+    "url": "https://github.com/neo4j/neo4j/releases/tag/3.2.0-alpha08",
+    "source": "단위프로젝트2_개편/version_b_releases/outputs/corpus.jsonl: rel_6042558",
+    "kind": "과거 릴리스 노트",
+    "sha256": "a3e19226a65341972a1a471c655b23aa818f3ab725d7886ac8ce857435e95258"
+  },
+  {
+    "doc_id": "release2",
+    "title": "neo4j 3.0.0-RC1",
+    "text": "Neo4j 3.0.0-RC1 is a release candidate offering early access to features which are under active development. - Mixed use of CALL within Cypher statements. - Revised namespace for some built-in Procedures. - Neo4j Browser now includes Neo4j Sync, a companion cloud service for saving scripts and graph style sheets - Significant modifications to configuration settings - All logging is more uniform in format and configuration.",
+    "sentences": [
+      {
+        "sentence_id": "release2:s0",
+        "text": "Neo4j 3.0.0-RC1 is a release candidate offering early access to features which are under active development.",
+        "start": 0,
+        "end": 108
+      },
+      {
+        "sentence_id": "release2:s1",
+        "text": "- Mixed use of CALL within Cypher statements.",
+        "start": 109,
+        "end": 154
+      },
+      {
+        "sentence_id": "release2:s2",
+        "text": "- Revised namespace for some built-in Procedures.",
+        "start": 155,
+        "end": 204
+      },
+      {
+        "sentence_id": "release2:s3",
+        "text": "- Neo4j Browser now includes Neo4j Sync, a companion cloud service for saving scripts and graph style sheets",
+        "start": 205,
+        "end": 313
+      },
+      {
+        "sentence_id": "release2:s4",
+        "text": "- Significant modifications to configuration settings",
+        "start": 314,
+        "end": 367
+      },
+      {
+        "sentence_id": "release2:s5",
+        "text": "- All logging is more uniform in format and configuration.",
+        "start": 368,
+        "end": 426
+      }
+    ],
+    "url": "https://github.com/neo4j/neo4j/releases/tag/3.0.0-RC1",
+    "source": "단위프로젝트2_개편/version_b_releases/outputs/corpus.jsonl: rel_3032528",
+    "kind": "과거 릴리스 노트",
+    "sha256": "895abdeca73f21053e24a67103b4a280cfade036a1a875cfafab66359bca2d06"
+  },
+  {
+    "doc_id": "release3",
+    "title": "neo4j 2.3.1",
+    "text": "**Neo4j 2.3.1 is a maintenance release, with critical improvements.** - exists() can accept maps, enabling IS NOT NULL to work with LOAD CSV - New PowerShell scripts for common Neo4j tasks - Faster transition from electing master to becoming master, reducing observed windows of cluster being temporarily without master. - Fixes a race condition where voting would fail if there was a concurrent role switch happening.",
+    "sentences": [
+      {
+        "sentence_id": "release3:s0",
+        "text": "**Neo4j 2.3.1 is a maintenance release, with critical improvements.**",
+        "start": 0,
+        "end": 69
+      },
+      {
+        "sentence_id": "release3:s1",
+        "text": "- exists() can accept maps, enabling IS NOT NULL to work with LOAD CSV",
+        "start": 70,
+        "end": 140
+      },
+      {
+        "sentence_id": "release3:s2",
+        "text": "- New PowerShell scripts for common Neo4j tasks",
+        "start": 141,
+        "end": 188
+      },
+      {
+        "sentence_id": "release3:s3",
+        "text": "- Faster transition from electing master to becoming master, reducing observed windows of cluster being temporarily without master.",
+        "start": 189,
+        "end": 320
+      },
+      {
+        "sentence_id": "release3:s4",
+        "text": "- Fixes a race condition where voting would fail if there was a concurrent role switch happening.",
+        "start": 321,
+        "end": 418
+      }
+    ],
+    "url": "https://github.com/neo4j/neo4j/releases/tag/2.3.1",
+    "source": "단위프로젝트2_개편/version_b_releases/outputs/corpus.jsonl: rel_2163885",
+    "kind": "과거 릴리스 노트",
+    "sha256": "0e36c553ebb47036717233a50c7ac8bf2428e486565dd6eddcff557f765a90b9"
+  },
+  {
+    "doc_id": "release4",
+    "title": "neo4j 2.2.6",
+    "text": "Neo4j 2.2.6 is a maintenance release, with critical improvements. - Improved handling of unclean shutdown and recovery, eliminating extra restart - New configuration: query log rotation using `dbms.querylog.rotation.threshold` - New option: `neo4j-import --ignore-empty-strings` to create record without that property when the string is empty",
+    "sentences": [
+      {
+        "sentence_id": "release4:s0",
+        "text": "Neo4j 2.2.6 is a maintenance release, with critical improvements.",
+        "start": 0,
+        "end": 65
+      },
+      {
+        "sentence_id": "release4:s1",
+        "text": "- Improved handling of unclean shutdown and recovery, eliminating extra restart",
+        "start": 66,
+        "end": 145
+      },
+      {
+        "sentence_id": "release4:s2",
+        "text": "- New configuration: query log rotation using `dbms.querylog.rotation.threshold`",
+        "start": 146,
+        "end": 226
+      },
+      {
+        "sentence_id": "release4:s3",
+        "text": "- New option: `neo4j-import --ignore-empty-strings` to create record without that property when the string is empty",
+        "start": 227,
+        "end": 342
+      }
+    ],
+    "url": "https://github.com/neo4j/neo4j/releases/tag/2.2.6",
+    "source": "단위프로젝트2_개편/version_b_releases/outputs/corpus.jsonl: rel_2129660",
+    "kind": "과거 릴리스 노트",
+    "sha256": "6782ae5b0dc6ca8c175ab18cf66ff6100768c712f066623e96fc3effe8c9a9e7"
+  }
+]

@@ -1,0 +1,185 @@
+{
+  "prepared_on": "2026-09-21",
+  "normalization": "PDF는 반복 머리말·줄 끝 공백만 제거하고 71개 페이지의 본문 줄바꿈·들여쓰기·순서를 보존해 4개 연속 본문으로 연결. 다른 자료는 선정 문단·항목의 연속 공백을 한 칸으로 정규화. start/end는 각 text 기준.",
+  "sentence_rule": "PDF에는 sentences를 미리 만들지 않음. 백과·가이드는 마침표·물음표·느낌표 뒤 공백으로 분리한 학습용 문장 목록이며 범용 문장 분리기가 아님. 릴리스는 내용 있는 도입·변경 항목을 선정.",
+  "datasets": {
+    "demo": [
+      {
+        "doc_id": "lib_loan",
+        "title": "도서 대출",
+        "url": "",
+        "source": "수업용 가상 도서관 안내",
+        "sha256": "8a6bc74c8d892ada761e939aac72535966c3cf34c3708fe7a3f6251360501079"
+      },
+      {
+        "doc_id": "lib_return",
+        "title": "도서 반납",
+        "url": "",
+        "source": "수업용 가상 도서관 안내",
+        "sha256": "f28352a7d1764f8cd034e7ac37d6c60c4956e10dc1801749b895612105c86084"
+      },
+      {
+        "doc_id": "lib_room",
+        "title": "학습 공간",
+        "url": "",
+        "source": "수업용 가상 도서관 안내",
+        "sha256": "3982da37195bb7c8879245ecaeeb8ab42100974fb671f8656e9b9265bb3ccf49"
+      },
+      {
+        "doc_id": "lib_digital",
+        "title": "전자 자료",
+        "url": "",
+        "source": "수업용 가상 도서관 안내",
+        "sha256": "66cdc268eefec9793262710837fbcf08fd1a73d22392ebcdcab480a68b658dd9"
+      }
+    ],
+    "practice": [
+      {
+        "doc_id": "hr_flexible_intro",
+        "title": "유연근무의 개념·유형과 도입 설계",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 9–20쪽 / 인쇄 3–14쪽",
+        "sha256": "2f05c7f27ca1029f8979050369e80e332394efca59d95cfa44dde6c69c6c181c"
+      },
+      {
+        "doc_id": "hr_staggered_work",
+        "title": "시차출퇴근의 도입·운영과 Q&A",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 25–42쪽 / 인쇄 19–36쪽",
+        "sha256": "f23433d90e1922f0e78440eb384410c29581182190dcc893aee30e3089816962"
+      },
+      {
+        "doc_id": "hr_selective_work",
+        "title": "선택근무의 도입·운영과 Q&A",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 49–66쪽 / 인쇄 43–60쪽",
+        "sha256": "7813534769bd9422730b8ab670a41dba0f7a858deb268fe29feb6651d3084614"
+      },
+      {
+        "doc_id": "hr_remote_work",
+        "title": "재택·원격근무의 도입·관리와 규정 설계",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 71–93쪽 / 인쇄 65–87쪽",
+        "sha256": "5fbcb8d395cbc05194c292d39cc50b98f706c6cc8d224d39616a7d6b0c6d5d35"
+      }
+    ],
+    "lv1": [
+      {
+        "doc_id": "wiki0",
+        "title": "파이썬",
+        "url": "https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC",
+        "source": "단위프로젝트2_개편/version_a_wikitech/outputs/corpus.jsonl: wiki_6653",
+        "sha256": "2bfe4ffd67a221d83c8c1dd8c7dc54be392358eb0afbf688506189d1e51a6947"
+      },
+      {
+        "doc_id": "wiki1",
+        "title": "관계형 데이터베이스",
+        "url": "https://ko.wikipedia.org/wiki/%EA%B4%80%EA%B3%84%ED%98%95_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4",
+        "source": "단위프로젝트2_개편/version_a_wikitech/outputs/corpus.jsonl: wiki_102055",
+        "sha256": "568df2a2678ffcc6e97cba07e1f81d51286a987d920f6bb352e565d79a362530"
+      },
+      {
+        "doc_id": "wiki2",
+        "title": "데이터베이스",
+        "url": "https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4",
+        "source": "단위프로젝트2_개편/version_a_wikitech/outputs/corpus.jsonl: wiki_38001",
+        "sha256": "89e9effc0681de0144157749e7c24be0157bc5bf313ab170fcecea3cd7c814e9"
+      },
+      {
+        "doc_id": "wiki3",
+        "title": "프로그래밍 언어",
+        "url": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4",
+        "source": "단위프로젝트2_개편/version_a_wikitech/outputs/corpus.jsonl: wiki_1841",
+        "sha256": "10a48ea1979fd3dd813f7ff3e373beb53fc503aa407a663c8069b073c2a2e41e"
+      },
+      {
+        "doc_id": "wiki4",
+        "title": "GeoJSON",
+        "url": "https://ko.wikipedia.org/wiki/GeoJSON",
+        "source": "단위프로젝트2_개편/version_a_wikitech/outputs/corpus.jsonl: wiki_2017799",
+        "sha256": "eeb33cc0c5d035e116dd9cc2d672d7222bd8ad1dcaeb261b28b43301a5183173"
+      }
+    ],
+    "lv2": [
+      {
+        "doc_id": "release0",
+        "title": "neo4j 3.3.0-beta01",
+        "url": "https://github.com/neo4j/neo4j/releases/tag/3.3.0-beta01",
+        "source": "단위프로젝트2_개편/version_b_releases/outputs/corpus.jsonl: rel_7768402",
+        "sha256": "b73c1157de03609d5765d6927c7818860e9767eab71369e516045a13e28d2901"
+      },
+      {
+        "doc_id": "release1",
+        "title": "neo4j 3.2.0-alpha08",
+        "url": "https://github.com/neo4j/neo4j/releases/tag/3.2.0-alpha08",
+        "source": "단위프로젝트2_개편/version_b_releases/outputs/corpus.jsonl: rel_6042558",
+        "sha256": "a3e19226a65341972a1a471c655b23aa818f3ab725d7886ac8ce857435e95258"
+      },
+      {
+        "doc_id": "release2",
+        "title": "neo4j 3.0.0-RC1",
+        "url": "https://github.com/neo4j/neo4j/releases/tag/3.0.0-RC1",
+        "source": "단위프로젝트2_개편/version_b_releases/outputs/corpus.jsonl: rel_3032528",
+        "sha256": "895abdeca73f21053e24a67103b4a280cfade036a1a875cfafab66359bca2d06"
+      },
+      {
+        "doc_id": "release3",
+        "title": "neo4j 2.3.1",
+        "url": "https://github.com/neo4j/neo4j/releases/tag/2.3.1",
+        "source": "단위프로젝트2_개편/version_b_releases/outputs/corpus.jsonl: rel_2163885",
+        "sha256": "0e36c553ebb47036717233a50c7ac8bf2428e486565dd6eddcff557f765a90b9"
+      },
+      {
+        "doc_id": "release4",
+        "title": "neo4j 2.2.6",
+        "url": "https://github.com/neo4j/neo4j/releases/tag/2.2.6",
+        "source": "단위프로젝트2_개편/version_b_releases/outputs/corpus.jsonl: rel_2129660",
+        "sha256": "6782ae5b0dc6ca8c175ab18cf66ff6100768c712f066623e96fc3effe8c9a9e7"
+      }
+    ],
+    "lv3": [
+      {
+        "doc_id": "guide0",
+        "title": "Working with missing data",
+        "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/missing_data.rst",
+        "source": "단위프로젝트2_개편/version_e_pylibs/outputs/corpus.jsonl: pandas_doc_source_user_guide_missing_data",
+        "sha256": "11b599d2c04f8601c50a0e9c0b54272d7a2ca7cba60bb59e253113ab7e208956"
+      },
+      {
+        "doc_id": "guide1",
+        "title": "Merge, join, concatenate and compare",
+        "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/merging.rst",
+        "source": "단위프로젝트2_개편/version_e_pylibs/outputs/corpus.jsonl: pandas_doc_source_user_guide_merging",
+        "sha256": "357bde6501c44cf77442ac771d3791a3f870d25814c37a9debfbff48bac9317c"
+      },
+      {
+        "doc_id": "guide2",
+        "title": "Reshaping and pivot tables",
+        "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/reshaping.rst",
+        "source": "단위프로젝트2_개편/version_e_pylibs/outputs/corpus.jsonl: pandas_doc_source_user_guide_reshaping",
+        "sha256": "992b1eacba4818c3ab3c76050de1689e8838def080d3c995b4fbebf49e233f92"
+      },
+      {
+        "doc_id": "guide3",
+        "title": "Chart visualization",
+        "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/visualization.rst",
+        "source": "단위프로젝트2_개편/version_e_pylibs/outputs/corpus.jsonl: pandas_doc_source_user_guide_visualization",
+        "sha256": "82efd99c8a74e24bff4be444ce0cf98e14f281a9ddc2c545a5c4d060815a71e0"
+      },
+      {
+        "doc_id": "guide4",
+        "title": "Working with text data",
+        "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/text.rst",
+        "source": "단위프로젝트2_개편/version_e_pylibs/outputs/corpus.jsonl: pandas_doc_source_user_guide_text",
+        "sha256": "c9578c2112f52757d40d8b74009a24b61c6d145d6dc2145a003b7ea00121533b"
+      },
+      {
+        "doc_id": "guide5",
+        "title": "Scaling to large datasets",
+        "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/scale.rst",
+        "source": "단위프로젝트2_개편/version_e_pylibs/outputs/corpus.jsonl: pandas_doc_source_user_guide_scale",
+        "sha256": "420de8b99d728a3e4a99e420df079e40d2ce8c73e28670a1e8020b1bcf349aa4"
+      }
+    ]
+  }
+}

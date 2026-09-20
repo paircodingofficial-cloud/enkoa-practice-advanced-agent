@@ -1,0 +1,206 @@
+[
+  {
+    "doc_id": "guide0",
+    "title": "Working with missing data",
+    "text": "pandas uses different sentinel values to represent a missing (also referred to as NA) depending on the data type. To detect these missing value, use the isna or notna methods. Therefore, an equality comparison between a DataFrame or Series with one of these missing values does not provide the same information as isna or notna.",
+    "sentences": [
+      {
+        "sentence_id": "guide0:s0",
+        "text": "pandas uses different sentinel values to represent a missing (also referred to as NA) depending on the data type.",
+        "start": 0,
+        "end": 113
+      },
+      {
+        "sentence_id": "guide0:s1",
+        "text": "To detect these missing value, use the isna or notna methods.",
+        "start": 114,
+        "end": 175
+      },
+      {
+        "sentence_id": "guide0:s2",
+        "text": "Therefore, an equality comparison between a DataFrame or Series with one of these missing values does not provide the same information as isna or notna.",
+        "start": 176,
+        "end": 328
+      }
+    ],
+    "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/missing_data.rst",
+    "source": "단위프로젝트2_개편/version_e_pylibs/outputs/corpus.jsonl: pandas_doc_source_user_guide_missing_data",
+    "kind": "사용자 가이드 산문",
+    "sha256": "11b599d2c04f8601c50a0e9c0b54272d7a2ca7cba60bb59e253113ab7e208956"
+  },
+  {
+    "doc_id": "guide1",
+    "title": "Merge, join, concatenate and compare",
+    "text": "pandas provides various methods for combining and comparing Series or DataFrame. The ~pandas.concat function concatenates an arbitrary amount of Series or DataFrame objects along an axis while performing optional set logic (union or intersection) of the indexes on the other axes. Like numpy.concatenate, ~pandas.concat takes a list or dict of homogeneously-typed objects and concatenates them.",
+    "sentences": [
+      {
+        "sentence_id": "guide1:s0",
+        "text": "pandas provides various methods for combining and comparing Series or DataFrame.",
+        "start": 0,
+        "end": 80
+      },
+      {
+        "sentence_id": "guide1:s1",
+        "text": "The ~pandas.concat function concatenates an arbitrary amount of Series or DataFrame objects along an axis while performing optional set logic (union or intersection) of the indexes on the other axes.",
+        "start": 81,
+        "end": 280
+      },
+      {
+        "sentence_id": "guide1:s2",
+        "text": "Like numpy.concatenate, ~pandas.concat takes a list or dict of homogeneously-typed objects and concatenates them.",
+        "start": 281,
+        "end": 394
+      }
+    ],
+    "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/merging.rst",
+    "source": "단위프로젝트2_개편/version_e_pylibs/outputs/corpus.jsonl: pandas_doc_source_user_guide_merging",
+    "kind": "사용자 가이드 산문",
+    "sha256": "357bde6501c44cf77442ac771d3791a3f870d25814c37a9debfbff48bac9317c"
+  },
+  {
+    "doc_id": "guide2",
+    "title": "Reshaping and pivot tables",
+    "text": "pandas provides methods for manipulating a Series and DataFrame to alter the representation of the data for further data processing or data summarization. Data is often stored in so-called \"stacked\" or \"record\" format. In a \"record\" or \"wide\" format, typically there is one row for each subject. In the \"stacked\" or \"long\" format there are multiple rows for each subject where applicable. To perform time series operations with each unique variable, a better representation would be where the columns are the unique variables and an index of dates identifies individual observations. To reshape the data into this form, we use the DataFrame.pivot method (also implemented as a top level function ~pandas.pivot):",
+    "sentences": [
+      {
+        "sentence_id": "guide2:s0",
+        "text": "pandas provides methods for manipulating a Series and DataFrame to alter the representation of the data for further data processing or data summarization.",
+        "start": 0,
+        "end": 154
+      },
+      {
+        "sentence_id": "guide2:s1",
+        "text": "Data is often stored in so-called \"stacked\" or \"record\" format.",
+        "start": 155,
+        "end": 218
+      },
+      {
+        "sentence_id": "guide2:s2",
+        "text": "In a \"record\" or \"wide\" format, typically there is one row for each subject.",
+        "start": 219,
+        "end": 295
+      },
+      {
+        "sentence_id": "guide2:s3",
+        "text": "In the \"stacked\" or \"long\" format there are multiple rows for each subject where applicable.",
+        "start": 296,
+        "end": 388
+      },
+      {
+        "sentence_id": "guide2:s4",
+        "text": "To perform time series operations with each unique variable, a better representation would be where the columns are the unique variables and an index of dates identifies individual observations.",
+        "start": 389,
+        "end": 583
+      },
+      {
+        "sentence_id": "guide2:s5",
+        "text": "To reshape the data into this form, we use the DataFrame.pivot method (also implemented as a top level function ~pandas.pivot):",
+        "start": 584,
+        "end": 711
+      }
+    ],
+    "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/reshaping.rst",
+    "source": "단위프로젝트2_개편/version_e_pylibs/outputs/corpus.jsonl: pandas_doc_source_user_guide_reshaping",
+    "kind": "사용자 가이드 산문",
+    "sha256": "992b1eacba4818c3ab3c76050de1689e8838def080d3c995b4fbebf49e233f92"
+  },
+  {
+    "doc_id": "guide3",
+    "title": "Chart visualization",
+    "text": "The plot method on Series and DataFrame is just a simple wrapper around plt.plot() <matplotlib.axes.Axes.plot>: Histograms can be drawn by using the DataFrame.plot.hist and Series.plot.hist methods. A histogram can be stacked using stacked=True. Bin size can be changed using the bins keyword.",
+    "sentences": [
+      {
+        "sentence_id": "guide3:s0",
+        "text": "The plot method on Series and DataFrame is just a simple wrapper around plt.plot() <matplotlib.axes.Axes.plot>:",
+        "start": 0,
+        "end": 111
+      },
+      {
+        "sentence_id": "guide3:s1",
+        "text": "Histograms can be drawn by using the DataFrame.plot.hist and Series.plot.hist methods.",
+        "start": 112,
+        "end": 198
+      },
+      {
+        "sentence_id": "guide3:s2",
+        "text": "A histogram can be stacked using stacked=True.",
+        "start": 199,
+        "end": 245
+      },
+      {
+        "sentence_id": "guide3:s3",
+        "text": "Bin size can be changed using the bins keyword.",
+        "start": 246,
+        "end": 293
+      }
+    ],
+    "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/visualization.rst",
+    "source": "단위프로젝트2_개편/version_e_pylibs/outputs/corpus.jsonl: pandas_doc_source_user_guide_visualization",
+    "kind": "사용자 가이드 산문",
+    "sha256": "82efd99c8a74e24bff4be444ce0cf98e14f281a9ddc2c545a5c4d060815a71e0"
+  },
+  {
+    "doc_id": "guide4",
+    "title": "Working with text data",
+    "text": "We recommend using StringDtype to store text data via the alias dtype=\"str\" (the default when dtype of strings is inferred), see below for more details. Series and Index are equipped with a set of string processing methods that make it easy to operate on each element of the array. Perhaps most importantly, these methods exclude missing/NA values automatically.",
+    "sentences": [
+      {
+        "sentence_id": "guide4:s0",
+        "text": "We recommend using StringDtype to store text data via the alias dtype=\"str\" (the default when dtype of strings is inferred), see below for more details.",
+        "start": 0,
+        "end": 152
+      },
+      {
+        "sentence_id": "guide4:s1",
+        "text": "Series and Index are equipped with a set of string processing methods that make it easy to operate on each element of the array.",
+        "start": 153,
+        "end": 281
+      },
+      {
+        "sentence_id": "guide4:s2",
+        "text": "Perhaps most importantly, these methods exclude missing/NA values automatically.",
+        "start": 282,
+        "end": 362
+      }
+    ],
+    "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/text.rst",
+    "source": "단위프로젝트2_개편/version_e_pylibs/outputs/corpus.jsonl: pandas_doc_source_user_guide_text",
+    "kind": "사용자 가이드 산문",
+    "sha256": "c9578c2112f52757d40d8b74009a24b61c6d145d6dc2145a003b7ea00121533b"
+  },
+  {
+    "doc_id": "guide5",
+    "title": "Scaling to large datasets",
+    "text": "pandas provides data structures for in-memory analytics, which makes using pandas to analyze datasets that are larger than memory somewhat tricky. Even datasets that are a sizable fraction of memory become unwieldy, as some pandas operations need to make intermediate copies. With pandas.read_csv, you can specify usecols to limit the columns read into memory. Not all file formats that can be read by pandas provide an option to read a subset of columns.",
+    "sentences": [
+      {
+        "sentence_id": "guide5:s0",
+        "text": "pandas provides data structures for in-memory analytics, which makes using pandas to analyze datasets that are larger than memory somewhat tricky.",
+        "start": 0,
+        "end": 146
+      },
+      {
+        "sentence_id": "guide5:s1",
+        "text": "Even datasets that are a sizable fraction of memory become unwieldy, as some pandas operations need to make intermediate copies.",
+        "start": 147,
+        "end": 275
+      },
+      {
+        "sentence_id": "guide5:s2",
+        "text": "With pandas.read_csv, you can specify usecols to limit the columns read into memory.",
+        "start": 276,
+        "end": 360
+      },
+      {
+        "sentence_id": "guide5:s3",
+        "text": "Not all file formats that can be read by pandas provide an option to read a subset of columns.",
+        "start": 361,
+        "end": 455
+      }
+    ],
+    "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/scale.rst",
+    "source": "단위프로젝트2_개편/version_e_pylibs/outputs/corpus.jsonl: pandas_doc_source_user_guide_scale",
+    "kind": "사용자 가이드 산문",
+    "sha256": "420de8b99d728a3e4a99e420df079e40d2ce8c73e28670a1e8020b1bcf349aa4"
+  }
+]

@@ -1,0 +1,574 @@
+{
+  "publisher": "고용노동부",
+  "title": "일·생활 균형을 위한 유연근무 활용 매뉴얼",
+  "edition": "2024년 10월",
+  "downloaded_on": "2026-09-18",
+  "prepared_on": "2026-09-21",
+  "landing_url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+  "download_url": "https://www.worklife.kr/library/server/common.attach.download.asp?GUID=DC573FB9-EB3D-45F5-AC37-EC7F9EF77F2B",
+  "pdf_file": "originals/MOEL_flexible_work_manual_2024.pdf",
+  "pdf_pages": 167,
+  "sha256": "9819b98f1f6ac3afc20eb9e921344198725107572c9c48e67506231b45333b24",
+  "selection": [
+    {
+      "doc_id": "hr_flexible_intro",
+      "title": "유연근무의 개념·유형과 도입 설계",
+      "pdf_start_page": 9,
+      "pdf_end_page": 20,
+      "scope": "제1부 본문 전체. 개념·유형·설계·설문·적용·승인·교육·효과 측정.",
+      "page_count": 12,
+      "text_chars": 8235,
+      "page_spans": [
+        {
+          "pdf_page": 9,
+          "printed_page": 3,
+          "start": 0,
+          "end": 545
+        },
+        {
+          "pdf_page": 10,
+          "printed_page": 4,
+          "start": 547,
+          "end": 1238
+        },
+        {
+          "pdf_page": 11,
+          "printed_page": 5,
+          "start": 1240,
+          "end": 1710
+        },
+        {
+          "pdf_page": 12,
+          "printed_page": 6,
+          "start": 1712,
+          "end": 2323
+        },
+        {
+          "pdf_page": 13,
+          "printed_page": 7,
+          "start": 2325,
+          "end": 2872
+        },
+        {
+          "pdf_page": 14,
+          "printed_page": 8,
+          "start": 2874,
+          "end": 3783
+        },
+        {
+          "pdf_page": 15,
+          "printed_page": 9,
+          "start": 3785,
+          "end": 4540
+        },
+        {
+          "pdf_page": 16,
+          "printed_page": 10,
+          "start": 4542,
+          "end": 5445
+        },
+        {
+          "pdf_page": 17,
+          "printed_page": 11,
+          "start": 5447,
+          "end": 6142
+        },
+        {
+          "pdf_page": 18,
+          "printed_page": 12,
+          "start": 6144,
+          "end": 7012
+        },
+        {
+          "pdf_page": 19,
+          "printed_page": 13,
+          "start": 7014,
+          "end": 7844
+        },
+        {
+          "pdf_page": 20,
+          "printed_page": 14,
+          "start": 7846,
+          "end": 8235
+        }
+      ]
+    },
+    {
+      "doc_id": "hr_staggered_work",
+      "title": "시차출퇴근의 도입·운영과 Q&A",
+      "pdf_start_page": 25,
+      "pdf_end_page": 42,
+      "scope": "제2부의 개념부터 Q&A까지 연속 본문. 도입 절차·규정 예시·신청 양식을 포함하고 뒤의 기업 활용 사례는 포함하지 않음.",
+      "page_count": 18,
+      "text_chars": 13954,
+      "page_spans": [
+        {
+          "pdf_page": 25,
+          "printed_page": 19,
+          "start": 0,
+          "end": 349
+        },
+        {
+          "pdf_page": 26,
+          "printed_page": 20,
+          "start": 351,
+          "end": 659
+        },
+        {
+          "pdf_page": 27,
+          "printed_page": 21,
+          "start": 661,
+          "end": 1333
+        },
+        {
+          "pdf_page": 28,
+          "printed_page": 22,
+          "start": 1335,
+          "end": 2096
+        },
+        {
+          "pdf_page": 29,
+          "printed_page": 23,
+          "start": 2098,
+          "end": 3303
+        },
+        {
+          "pdf_page": 30,
+          "printed_page": 24,
+          "start": 3305,
+          "end": 4345
+        },
+        {
+          "pdf_page": 31,
+          "printed_page": 25,
+          "start": 4347,
+          "end": 5225
+        },
+        {
+          "pdf_page": 32,
+          "printed_page": 26,
+          "start": 5227,
+          "end": 6741
+        },
+        {
+          "pdf_page": 33,
+          "printed_page": 27,
+          "start": 6743,
+          "end": 7590
+        },
+        {
+          "pdf_page": 34,
+          "printed_page": 28,
+          "start": 7592,
+          "end": 8792
+        },
+        {
+          "pdf_page": 35,
+          "printed_page": 29,
+          "start": 8794,
+          "end": 9726
+        },
+        {
+          "pdf_page": 36,
+          "printed_page": 30,
+          "start": 9728,
+          "end": 10884
+        },
+        {
+          "pdf_page": 37,
+          "printed_page": 31,
+          "start": 10886,
+          "end": 11794
+        },
+        {
+          "pdf_page": 38,
+          "printed_page": 32,
+          "start": 11796,
+          "end": 12115
+        },
+        {
+          "pdf_page": 39,
+          "printed_page": 33,
+          "start": 12117,
+          "end": 12442
+        },
+        {
+          "pdf_page": 40,
+          "printed_page": 34,
+          "start": 12444,
+          "end": 13031
+        },
+        {
+          "pdf_page": 41,
+          "printed_page": 35,
+          "start": 13033,
+          "end": 13691
+        },
+        {
+          "pdf_page": 42,
+          "printed_page": 36,
+          "start": 13693,
+          "end": 13954
+        }
+      ]
+    },
+    {
+      "doc_id": "hr_selective_work",
+      "title": "선택근무의 도입·운영과 Q&A",
+      "pdf_start_page": 49,
+      "pdf_end_page": 66,
+      "scope": "제3부의 개념부터 Q&A까지 연속 본문. 규정·서면 합의 예시를 포함하고 뒤의 기업 활용 사례는 포함하지 않음.",
+      "page_count": 18,
+      "text_chars": 13731,
+      "page_spans": [
+        {
+          "pdf_page": 49,
+          "printed_page": 43,
+          "start": 0,
+          "end": 528
+        },
+        {
+          "pdf_page": 50,
+          "printed_page": 44,
+          "start": 530,
+          "end": 629
+        },
+        {
+          "pdf_page": 51,
+          "printed_page": 45,
+          "start": 631,
+          "end": 631
+        },
+        {
+          "pdf_page": 52,
+          "printed_page": 46,
+          "start": 633,
+          "end": 1742
+        },
+        {
+          "pdf_page": 53,
+          "printed_page": 47,
+          "start": 1744,
+          "end": 3006
+        },
+        {
+          "pdf_page": 54,
+          "printed_page": 48,
+          "start": 3008,
+          "end": 4173
+        },
+        {
+          "pdf_page": 55,
+          "printed_page": 49,
+          "start": 4175,
+          "end": 5094
+        },
+        {
+          "pdf_page": 56,
+          "printed_page": 50,
+          "start": 5096,
+          "end": 5957
+        },
+        {
+          "pdf_page": 57,
+          "printed_page": 51,
+          "start": 5959,
+          "end": 6871
+        },
+        {
+          "pdf_page": 58,
+          "printed_page": 52,
+          "start": 6873,
+          "end": 7865
+        },
+        {
+          "pdf_page": 59,
+          "printed_page": 53,
+          "start": 7867,
+          "end": 8794
+        },
+        {
+          "pdf_page": 60,
+          "printed_page": 54,
+          "start": 8796,
+          "end": 9378
+        },
+        {
+          "pdf_page": 61,
+          "printed_page": 55,
+          "start": 9380,
+          "end": 10136
+        },
+        {
+          "pdf_page": 62,
+          "printed_page": 56,
+          "start": 10138,
+          "end": 11060
+        },
+        {
+          "pdf_page": 63,
+          "printed_page": 57,
+          "start": 11062,
+          "end": 11775
+        },
+        {
+          "pdf_page": 64,
+          "printed_page": 58,
+          "start": 11777,
+          "end": 12695
+        },
+        {
+          "pdf_page": 65,
+          "printed_page": 59,
+          "start": 12697,
+          "end": 13568
+        },
+        {
+          "pdf_page": 66,
+          "printed_page": 60,
+          "start": 13570,
+          "end": 13731
+        }
+      ]
+    },
+    {
+      "doc_id": "hr_remote_work",
+      "title": "재택·원격근무의 도입·관리와 규정 설계",
+      "pdf_start_page": 71,
+      "pdf_end_page": 93,
+      "scope": "제4부의 개념부터 규정 설계의 비상상황 대응지침까지 연속 본문. 94쪽부터 나오는 전체 규정 서식·건강 보호 가이드·Q&A·기업 활용 사례는 포함하지 않음.",
+      "page_count": 23,
+      "text_chars": 20125,
+      "page_spans": [
+        {
+          "pdf_page": 71,
+          "printed_page": 65,
+          "start": 0,
+          "end": 489
+        },
+        {
+          "pdf_page": 72,
+          "printed_page": 66,
+          "start": 491,
+          "end": 623
+        },
+        {
+          "pdf_page": 73,
+          "printed_page": 67,
+          "start": 625,
+          "end": 1346
+        },
+        {
+          "pdf_page": 74,
+          "printed_page": 68,
+          "start": 1348,
+          "end": 2199
+        },
+        {
+          "pdf_page": 75,
+          "printed_page": 69,
+          "start": 2201,
+          "end": 3293
+        },
+        {
+          "pdf_page": 76,
+          "printed_page": 70,
+          "start": 3295,
+          "end": 4184
+        },
+        {
+          "pdf_page": 77,
+          "printed_page": 71,
+          "start": 4186,
+          "end": 5006
+        },
+        {
+          "pdf_page": 78,
+          "printed_page": 72,
+          "start": 5008,
+          "end": 6042
+        },
+        {
+          "pdf_page": 79,
+          "printed_page": 73,
+          "start": 6044,
+          "end": 7112
+        },
+        {
+          "pdf_page": 80,
+          "printed_page": 74,
+          "start": 7114,
+          "end": 8017
+        },
+        {
+          "pdf_page": 81,
+          "printed_page": 75,
+          "start": 8019,
+          "end": 8849
+        },
+        {
+          "pdf_page": 82,
+          "printed_page": 76,
+          "start": 8851,
+          "end": 9824
+        },
+        {
+          "pdf_page": 83,
+          "printed_page": 77,
+          "start": 9826,
+          "end": 10954
+        },
+        {
+          "pdf_page": 84,
+          "printed_page": 78,
+          "start": 10956,
+          "end": 11830
+        },
+        {
+          "pdf_page": 85,
+          "printed_page": 79,
+          "start": 11832,
+          "end": 12598
+        },
+        {
+          "pdf_page": 86,
+          "printed_page": 80,
+          "start": 12600,
+          "end": 13401
+        },
+        {
+          "pdf_page": 87,
+          "printed_page": 81,
+          "start": 13403,
+          "end": 14314
+        },
+        {
+          "pdf_page": 88,
+          "printed_page": 82,
+          "start": 14316,
+          "end": 15509
+        },
+        {
+          "pdf_page": 89,
+          "printed_page": 83,
+          "start": 15511,
+          "end": 16471
+        },
+        {
+          "pdf_page": 90,
+          "printed_page": 84,
+          "start": 16473,
+          "end": 17345
+        },
+        {
+          "pdf_page": 91,
+          "printed_page": 85,
+          "start": 17347,
+          "end": 18293
+        },
+        {
+          "pdf_page": 92,
+          "printed_page": 86,
+          "start": 18295,
+          "end": 19264
+        },
+        {
+          "pdf_page": 93,
+          "printed_page": 87,
+          "start": 19266,
+          "end": 20125
+        }
+      ]
+    }
+  ],
+  "selected_pages": [
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93
+  ],
+  "selected_page_count": 71,
+  "selected_document_count": 4,
+  "no_extractable_body_pages": [
+    51
+  ],
+  "text_char_count": 56045,
+  "topics": [
+    "개념과 도입 설계",
+    "시차출퇴근",
+    "선택근무",
+    "재택·원격근무 운영과 규정"
+  ],
+  "scope": "2024년 판본의 연속 본문. 현행 법률 해석·지원금 안내가 아니라 해당 판본을 근거로 답을 찾는 실습.",
+  "transform": "pypdf 기본 페이지 추출 → 판본별 반복 머리말 제거 → 각 줄의 오른쪽 공백 제거 → 페이지 사이 빈 줄 두 글자로 연결. 본문의 줄바꿈·들여쓰기·제목·문단 흐름·목록·조건·예외는 유지하며 문장 목록을 미리 만들지 않음.",
+  "included": "각 구간 안의 모든 페이지와 본문을 순서대로 포함. 설문·규정 예시·표·양식도 중간에서 골라 삭제하지 않음.",
+  "limitations": "PDF 텍스트 추출 순서를 그대로 사용하므로 표의 열·삽화의 배치까지 재현하지 않음. 시각적 줄바꿈, 불규칙한 자간, 본문과 예시의 중복, 원문의 표기·오탈자가 남아 있음. OCR이나 문장 교정은 수행하지 않음.",
+  "offset_rule": "page_spans.start/end는 연결된 text의 문자 위치이며 end는 포함하지 않음. 페이지 사이의 두 줄바꿈은 페이지 구간 밖. PDF 페이지는 1부터, 인쇄 쪽수는 PDF 페이지에서 6을 뺀 값."
+}

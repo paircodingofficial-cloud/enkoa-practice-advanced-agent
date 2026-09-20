@@ -1,0 +1,476 @@
+[
+  {
+    "question_id": "q1",
+    "question": "Which early release introduced Fusion indexes by default?",
+    "question_type": "사실확인",
+    "reference_answer": "Neo4j 3.3.0-beta01이며, 새로 만드는 인덱스의 기본값으로 Fusion 인덱스를 도입했다.",
+    "evidence": [
+      {
+        "doc_id": "release0",
+        "start": 76,
+        "end": 112,
+        "quote": "Fusion index default for new indexes"
+      },
+      {
+        "doc_id": "release0",
+        "start": 1,
+        "end": 72,
+        "quote": "Neo4j 3.3.0-beta01 is the first beta release of the upcoming Neo4j 3.3."
+      }
+    ]
+  },
+  {
+    "question_id": "q2",
+    "question": "3.3.0-beta01은 Neo4j 3.3의 어떤 배포 단계인가요?",
+    "question_type": "사실확인",
+    "reference_answer": "출시 예정인 Neo4j 3.3의 첫 번째 베타 릴리스다.",
+    "evidence": [
+      {
+        "doc_id": "release0",
+        "start": 1,
+        "end": 72,
+        "quote": "Neo4j 3.3.0-beta01 is the first beta release of the upcoming Neo4j 3.3."
+      }
+    ]
+  },
+  {
+    "question_id": "q3",
+    "question": "3.3.0-beta01에서는 수동 인덱스를 위해 무엇을 도입했나요?",
+    "question_type": "사실확인",
+    "reference_answer": "수동 인덱스를 위한 프로시저를 도입했다.",
+    "evidence": [
+      {
+        "doc_id": "release0",
+        "start": 115,
+        "end": 156,
+        "quote": "Introducing procedures for manual indexes"
+      }
+    ]
+  },
+  {
+    "question_id": "q4",
+    "question": "3.3.0-beta01의 드라이버와 Browser 관련 변경은 무엇인가요?",
+    "question_type": "사실확인",
+    "reference_answer": "드라이버를 업그레이드하고 Neo4j Browser에 소규모 개선을 적용했다.",
+    "evidence": [
+      {
+        "doc_id": "release0",
+        "start": 159,
+        "end": 213,
+        "quote": "Driver upgrade and small improvements to Neo4j Browser"
+      }
+    ]
+  },
+  {
+    "question_id": "q5",
+    "question": "3.2.0-alpha08에서 속성을 기존과 같은 값으로 덮어쓰면 쓰기 명령이 생성되나요?",
+    "question_type": "조건·예외",
+    "reference_answer": "같은 값으로 속성을 덮어쓸 때는 더 이상 쓰기 명령이 생성되지 않는다.",
+    "evidence": [
+      {
+        "doc_id": "release1",
+        "start": 2,
+        "end": 72,
+        "quote": "Overwriting property with same value no longer generates write command"
+      }
+    ]
+  },
+  {
+    "question_id": "q6",
+    "question": "3.2.0-alpha08에서는 인덱스 로깅의 어떤 특성을 개선했나요?",
+    "question_type": "사실확인",
+    "reference_answer": "인덱스 로깅의 확장성을 개선했다.",
+    "evidence": [
+      {
+        "doc_id": "release1",
+        "start": 82,
+        "end": 109,
+        "quote": "More scalable index logging"
+      }
+    ]
+  },
+  {
+    "question_id": "q7",
+    "question": "3.2.0-alpha08에서 import 중 잘못된 항목의 로그를 남기고 싶지 않으면 어떤 지원을 이용할 수 있나요?",
+    "question_type": "절차·적용",
+    "reference_answer": "import 중 잘못된 항목에 대한 로깅을 건너뛰는 기능을 이용할 수 있다.",
+    "evidence": [
+      {
+        "doc_id": "release1",
+        "start": 119,
+        "end": 163,
+        "quote": "Allow skip bad entries logging during import"
+      }
+    ]
+  },
+  {
+    "question_id": "q8",
+    "question": "3.2.0-alpha08에서 실행 속도를 개선한 가변 길이 Cypher 쿼리는 어떤 조건의 쿼리인가요?",
+    "question_type": "조건·예외",
+    "reference_answer": "중복을 제거한 (시작 노드, 끝 노드) 쌍에만 관심이 있는 가변 길이 쿼리입니다. 예시는 MATCH (a)-[*4..5]->(b) RETURN DISTINCT a, b입니다.",
+    "evidence": [
+      {
+        "doc_id": "release1",
+        "start": 173,
+        "end": 377,
+        "quote": "Improved cypher execution speed on variable length queries where only the distinct pairs of start and end node are of interest. One query to benefit would be `MATCH (a)-[*4..5]->(b) RETURN DISTINCT a, b`."
+      }
+    ]
+  },
+  {
+    "question_id": "q9",
+    "question": "3.2.0-alpha08의 리터럴 추출 설정은 어떻게 달라졌나요?",
+    "question_type": "사실확인",
+    "reference_answer": "리터럴 추출을 더 세밀하게 설정할 수 있게 됐다.",
+    "evidence": [
+      {
+        "doc_id": "release1",
+        "start": 387,
+        "end": 443,
+        "quote": "Allow more granular configuration of literals extraction"
+      }
+    ]
+  },
+  {
+    "question_id": "q10",
+    "question": "3.2.0-alpha08에서 복합 고유성 제약을 CREATE·DROP할 수 있나요? 복합 고유성을 적용할 대안도 알려주세요.",
+    "question_type": "절차·적용",
+    "reference_answer": "복합 고유성 제약을 CREATE하거나 DROP하는 것은 더 이상 가능하지 않다. 복합 고유성을 적용하려면 새 NODE KEY 제약을 사용하도록 안내한다.",
+    "evidence": [
+      {
+        "doc_id": "release1",
+        "start": 453,
+        "end": 603,
+        "quote": "It is no longer possible to CREATE or DROP composite uniqueness constraints. To enforce composite uniqueness, we refer to the new NODE KEY constraint."
+      }
+    ]
+  },
+  {
+    "question_id": "q11",
+    "question": "3.0.0-RC1은 어떤 상태의 기능을 미리 제공하는 릴리스인가요?",
+    "question_type": "사실확인",
+    "reference_answer": "활발히 개발 중인 기능을 미리 사용할 수 있도록 제공하는 릴리스 후보 버전이다.",
+    "evidence": [
+      {
+        "doc_id": "release2",
+        "start": 0,
+        "end": 108,
+        "quote": "Neo4j 3.0.0-RC1 is a release candidate offering early access to features which are under active development."
+      }
+    ]
+  },
+  {
+    "question_id": "q12",
+    "question": "3.0.0-RC1에서 CALL 사용과 관련해 어떤 변경이 공지됐나요?",
+    "question_type": "사실확인",
+    "reference_answer": "Cypher 문 안에서 CALL을 혼합해 사용할 수 있다.",
+    "evidence": [
+      {
+        "doc_id": "release2",
+        "start": 111,
+        "end": 154,
+        "quote": "Mixed use of CALL within Cypher statements."
+      }
+    ]
+  },
+  {
+    "question_id": "q13",
+    "question": "3.0.0-RC1에서는 일부 내장 프로시저의 무엇이 바뀌었나요?",
+    "question_type": "사실확인",
+    "reference_answer": "일부 내장 프로시저의 네임스페이스가 개정됐다.",
+    "evidence": [
+      {
+        "doc_id": "release2",
+        "start": 157,
+        "end": 204,
+        "quote": "Revised namespace for some built-in Procedures."
+      }
+    ]
+  },
+  {
+    "question_id": "q14",
+    "question": "3.0.0-RC1의 Neo4j Sync에는 어떤 작업물을 저장할 수 있나요?",
+    "question_type": "사실확인",
+    "reference_answer": "스크립트와 그래프 스타일시트를 저장할 수 있다.",
+    "evidence": [
+      {
+        "doc_id": "release2",
+        "start": 207,
+        "end": 313,
+        "quote": "Neo4j Browser now includes Neo4j Sync, a companion cloud service for saving scripts and graph style sheets"
+      }
+    ]
+  },
+  {
+    "question_id": "q15",
+    "question": "3.0.0-RC1의 구성 설정 변경 규모를 릴리스 노트는 어떻게 설명하나요?",
+    "question_type": "사실확인",
+    "reference_answer": "구성 설정에 상당한 변경이 있었다고 설명한다.",
+    "evidence": [
+      {
+        "doc_id": "release2",
+        "start": 316,
+        "end": 367,
+        "quote": "Significant modifications to configuration settings"
+      }
+    ]
+  },
+  {
+    "question_id": "q16",
+    "question": "3.0.0-RC1에서는 로깅의 어떤 두 측면을 더 일관되게 만들었나요?",
+    "question_type": "사실확인",
+    "reference_answer": "모든 로깅의 형식과 설정을 더 일관되게 만들었다.",
+    "evidence": [
+      {
+        "doc_id": "release2",
+        "start": 370,
+        "end": 426,
+        "quote": "All logging is more uniform in format and configuration."
+      }
+    ]
+  },
+  {
+    "question_id": "q17",
+    "question": "2.3.1과 2.2.6은 릴리스 유형과 개선의 중요도를 어떻게 공통으로 설명하나요?",
+    "question_type": "비교·종합",
+    "reference_answer": "두 버전 모두 중요한 개선을 포함한 유지보수 릴리스라고 설명한다.",
+    "evidence": [
+      {
+        "doc_id": "release3",
+        "start": 2,
+        "end": 67,
+        "quote": "Neo4j 2.3.1 is a maintenance release, with critical improvements."
+      },
+      {
+        "doc_id": "release4",
+        "start": 0,
+        "end": 65,
+        "quote": "Neo4j 2.2.6 is a maintenance release, with critical improvements."
+      }
+    ]
+  },
+  {
+    "question_id": "q18",
+    "question": "2.3.1에서 LOAD CSV와 IS NOT NULL을 함께 사용할 수 있게 한 exists()의 변경은 무엇인가요?",
+    "question_type": "조건·예외",
+    "reference_answer": "exists()가 맵을 받을 수 있게 되어 LOAD CSV에서 IS NOT NULL이 작동할 수 있게 됐다.",
+    "evidence": [
+      {
+        "doc_id": "release3",
+        "start": 72,
+        "end": 140,
+        "quote": "exists() can accept maps, enabling IS NOT NULL to work with LOAD CSV"
+      }
+    ]
+  },
+  {
+    "question_id": "q19",
+    "question": "2.3.1에서는 일반적인 Neo4j 작업을 위한 어떤 스크립트를 새로 제공하나요?",
+    "question_type": "사실확인",
+    "reference_answer": "일반적인 Neo4j 작업을 위한 새 PowerShell 스크립트를 제공한다.",
+    "evidence": [
+      {
+        "doc_id": "release3",
+        "start": 143,
+        "end": 188,
+        "quote": "New PowerShell scripts for common Neo4j tasks"
+      }
+    ]
+  },
+  {
+    "question_id": "q20",
+    "question": "2.3.1은 마스터 선출에서 실제 마스터가 되기까지의 전환을 어떻게 개선했나요?",
+    "question_type": "사실확인",
+    "reference_answer": "전환을 더 빠르게 해 클러스터에 마스터가 일시적으로 없는 시간을 줄였다.",
+    "evidence": [
+      {
+        "doc_id": "release3",
+        "start": 191,
+        "end": 320,
+        "quote": "Faster transition from electing master to becoming master, reducing observed windows of cluster being temporarily without master."
+      }
+    ]
+  },
+  {
+    "question_id": "q21",
+    "question": "2.3.1에서 수정한 투표 실패 경쟁 조건은 어떤 상황에서 발생했나요?",
+    "question_type": "조건·예외",
+    "reference_answer": "역할 전환이 동시에 발생하는 경우 투표가 실패하던 경쟁 조건을 수정했다.",
+    "evidence": [
+      {
+        "doc_id": "release3",
+        "start": 323,
+        "end": 418,
+        "quote": "Fixes a race condition where voting would fail if there was a concurrent role switch happening."
+      }
+    ]
+  },
+  {
+    "question_id": "q22",
+    "question": "2.2.6의 비정상 종료·복구 개선으로 어떤 추가 작업이 없어졌나요?",
+    "question_type": "사실확인",
+    "reference_answer": "비정상 종료와 복구 처리를 개선해 추가 재시작이 없어졌다.",
+    "evidence": [
+      {
+        "doc_id": "release4",
+        "start": 68,
+        "end": 145,
+        "quote": "Improved handling of unclean shutdown and recovery, eliminating extra restart"
+      }
+    ]
+  },
+  {
+    "question_id": "q23",
+    "question": "2.2.6에서 쿼리 로그 로테이션을 위해 새로 추가한 설정 키는 무엇인가요?",
+    "question_type": "절차·적용",
+    "reference_answer": "dbms.querylog.rotation.threshold 설정 키다.",
+    "evidence": [
+      {
+        "doc_id": "release4",
+        "start": 148,
+        "end": 226,
+        "quote": "New configuration: query log rotation using `dbms.querylog.rotation.threshold`"
+      }
+    ]
+  },
+  {
+    "question_id": "q24",
+    "question": "2.2.6에서 neo4j-import --ignore-empty-strings를 사용하면 빈 문자열인 속성을 어떻게 처리하나요?",
+    "question_type": "조건·예외",
+    "reference_answer": "문자열이 비어 있으면 해당 속성이 없는 레코드를 생성한다.",
+    "evidence": [
+      {
+        "doc_id": "release4",
+        "start": 229,
+        "end": 342,
+        "quote": "New option: `neo4j-import --ignore-empty-strings` to create record without that property when the string is empty"
+      }
+    ]
+  },
+  {
+    "question_id": "q25",
+    "question": "3.3.0-beta01과 3.0.0-RC1의 사전 배포 성격을 각각 설명해 주세요.",
+    "question_type": "비교·종합",
+    "reference_answer": "3.3.0-beta01은 출시 예정인 3.3의 첫 베타 릴리스다. 3.0.0-RC1은 개발 중인 기능에 대한 조기 접근을 제공하는 릴리스 후보 버전이다.",
+    "evidence": [
+      {
+        "doc_id": "release0",
+        "start": 1,
+        "end": 72,
+        "quote": "Neo4j 3.3.0-beta01 is the first beta release of the upcoming Neo4j 3.3."
+      },
+      {
+        "doc_id": "release2",
+        "start": 0,
+        "end": 108,
+        "quote": "Neo4j 3.0.0-RC1 is a release candidate offering early access to features which are under active development."
+      }
+    ]
+  },
+  {
+    "question_id": "q26",
+    "question": "3.2.0-alpha08의 인덱스 로깅, 3.0.0-RC1의 로깅 형식·설정, 2.2.6의 쿼리 로그 로테이션은 각각 무엇이 바뀌었나요?",
+    "question_type": "비교·종합",
+    "reference_answer": "3.2.0-alpha08은 인덱스 로깅의 확장성을 높였다. 3.0.0-RC1은 모든 로깅의 형식과 설정을 더 일관되게 했다. 2.2.6은 dbms.querylog.rotation.threshold를 사용하는 쿼리 로그 로테이션 설정을 추가했다.",
+    "evidence": [
+      {
+        "doc_id": "release1",
+        "start": 82,
+        "end": 109,
+        "quote": "More scalable index logging"
+      },
+      {
+        "doc_id": "release2",
+        "start": 370,
+        "end": 426,
+        "quote": "All logging is more uniform in format and configuration."
+      },
+      {
+        "doc_id": "release4",
+        "start": 148,
+        "end": 226,
+        "quote": "New configuration: query log rotation using `dbms.querylog.rotation.threshold`"
+      }
+    ]
+  },
+  {
+    "question_id": "q27",
+    "question": "3.2.0-alpha08의 import 로그 생략과 2.2.6의 빈 문자열 import 옵션은 처리 대상을 어떻게 구분해야 하나요?",
+    "question_type": "비교·종합",
+    "reference_answer": "3.2.0-alpha08은 import 중 잘못된 항목의 로깅을 건너뛰는 기능이다. 2.2.6의 --ignore-empty-strings는 빈 문자열일 때 해당 속성 없이 레코드를 생성하는 기능이다.",
+    "evidence": [
+      {
+        "doc_id": "release1",
+        "start": 119,
+        "end": 163,
+        "quote": "Allow skip bad entries logging during import"
+      },
+      {
+        "doc_id": "release4",
+        "start": 229,
+        "end": 342,
+        "quote": "New option: `neo4j-import --ignore-empty-strings` to create record without that property when the string is empty"
+      }
+    ]
+  },
+  {
+    "question_id": "q28",
+    "question": "2.3.1의 마스터 전환 개선과 투표 경쟁 조건 수정은 각각 어떤 문제에 대응하나요?",
+    "question_type": "비교·종합",
+    "reference_answer": "마스터 전환 개선은 마스터가 일시적으로 없는 시간을 줄인다. 투표 경쟁 조건 수정은 동시 역할 전환 중 투표가 실패하던 문제에 대응한다.",
+    "evidence": [
+      {
+        "doc_id": "release3",
+        "start": 191,
+        "end": 320,
+        "quote": "Faster transition from electing master to becoming master, reducing observed windows of cluster being temporarily without master."
+      },
+      {
+        "doc_id": "release3",
+        "start": 323,
+        "end": 418,
+        "quote": "Fixes a race condition where voting would fail if there was a concurrent role switch happening."
+      }
+    ]
+  },
+  {
+    "question_id": "q29",
+    "question": "3.3.0-beta01의 드라이버·Browser 개선과 3.0.0-RC1의 Neo4j Sync 추가를 변경 내용별로 구분해 주세요.",
+    "question_type": "비교·종합",
+    "reference_answer": "3.3.0-beta01은 드라이버 업그레이드와 Browser의 소규모 개선을 포함한다. 3.0.0-RC1은 Browser에 스크립트와 그래프 스타일시트 저장용 클라우드 서비스인 Neo4j Sync를 추가했다.",
+    "evidence": [
+      {
+        "doc_id": "release0",
+        "start": 159,
+        "end": 213,
+        "quote": "Driver upgrade and small improvements to Neo4j Browser"
+      },
+      {
+        "doc_id": "release2",
+        "start": 207,
+        "end": 313,
+        "quote": "Neo4j Browser now includes Neo4j Sync, a companion cloud service for saving scripts and graph style sheets"
+      }
+    ]
+  },
+  {
+    "question_id": "q30",
+    "question": "2.3.1의 마스터 전환 개선과 2.2.6의 비정상 종료·복구 개선은 각각 어떤 운영 불편을 줄였나요?",
+    "question_type": "비교·종합",
+    "reference_answer": "2.3.1은 마스터 선출에서 마스터가 되기까지의 전환을 빠르게 해 마스터가 없는 시간을 줄였다. 2.2.6은 비정상 종료와 복구 처리를 개선해 추가 재시작을 없앴다.",
+    "evidence": [
+      {
+        "doc_id": "release3",
+        "start": 191,
+        "end": 320,
+        "quote": "Faster transition from electing master to becoming master, reducing observed windows of cluster being temporarily without master."
+      },
+      {
+        "doc_id": "release4",
+        "start": 68,
+        "end": 145,
+        "quote": "Improved handling of unclean shutdown and recovery, eliminating extra restart"
+      }
+    ]
+  }
+]
