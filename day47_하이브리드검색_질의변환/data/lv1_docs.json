@@ -1,0 +1,52 @@
+[
+  {
+    "doc_id": "wiki4",
+    "title": "GeoJSON",
+    "text": "GeoJSON(지오제이슨)은 위치정보를 갖는 점을 기반으로 체계적으로 지형을 표현하기 위해 설계된 개방형 공개 표준 형식이다. 이것은 JSON인 자바스크립트 오브젝트 노테이션(Object Notation)을 사용하는 파일 포맷이다. 지리좌표계의 점을 기반으로 Geocoding된 지형지물(주소 및 위치), 라인스트링(LineString - 거리, 고속도로 및 경계등 정보를 담고있는 문자열) 또는 폴리라인, 다각형 (국가,도시, 토지) 및 이러한 유형의 여러 부분으로 구성된 모음을 특징으로 한다. GeoJSON 기능은 물리적 세계의 엔티티만을 나타낼 필요는 없다. 예를 들어, 모바일 라우팅 및 네비게이션 애플리케이션은 GeoJSON을 사용하여 서비스 범위를 확장 기술할 수 있다.",
+    "url": "https://ko.wikipedia.org/wiki/GeoJSON",
+    "source": "단위프로젝트2_개편/version_a_wikitech/outputs/corpus.jsonl: wiki_2017799",
+    "metadata": {
+      "category": "데이터"
+    }
+  },
+  {
+    "doc_id": "wiki3",
+    "title": "프로그래밍 언어",
+    "text": "프로그래밍 언어(programming language)는 컴퓨터 프로그램을 표현하기 위한 인공 언어이다. 프로그래밍 언어는 일반적으로 소프트웨어를 작성할 때 인간이 읽을 수 있는 방식으로 작성할 수 있도록 한다. 프로그램의 실행에는 구현체가 필요하다. 프로그래밍 언어를 구현하는 주요 접근 방식은 두 가지이다. 하나는 프로그램이 미리 기계어로 컴파일되는 컴파일 방식이고, 다른 하나는 프로그램이 직접 실행되는 인터프리터 방식이다.",
+    "url": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4",
+    "source": "단위프로젝트2_개편/version_a_wikitech/outputs/corpus.jsonl: wiki_1841",
+    "metadata": {
+      "category": "언어"
+    }
+  },
+  {
+    "doc_id": "wiki2",
+    "title": "데이터베이스",
+    "text": "데이터베이스(영어: database, DB)는 컴퓨팅에서 데이터의 체계적인 집합이며, 데이터의 수집 및 분석을 위해 최종 사용자, 응용 소프트웨어, 그리고 데이터베이스 자체와 상호작용하는 소프트웨어인 데이터베이스 관리 시스템(DBMS)의 사용을 기반으로 하는 데이터 스토어의 일종이다. DBMS는 추가적으로 데이터베이스를 관리하기 위해 제공되는 핵심 기능들을 포함한다. 데이터베이스, DBMS 및 관련 애플리케이션의 총합을 데이터베이스 시스템이라고 부를 수 있다. 종종 \"데이터베이스\"라는 용어는 DBMS, 데이터베이스 시스템 또는 데이터베이스와 관련된 애플리케이션 중 어느 하나를 느슨하게 지칭하는 데 사용되기도 한다. 데이터의 디지털 저장 및 검색이 보편화되기 전에는 다양한 애플리케이션과 환경의 데이터 스토리지를 위해 색인 카드가 사용되었다.",
+    "url": "https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4",
+    "source": "단위프로젝트2_개편/version_a_wikitech/outputs/corpus.jsonl: wiki_38001",
+    "metadata": {
+      "category": "데이터"
+    }
+  },
+  {
+    "doc_id": "wiki1",
+    "title": "관계형 데이터베이스",
+    "text": "관계형 데이터베이스(關係形 Database, Relational Database, 문화어: 관계자료기지, 관계형자료기지, RDB)는 1970년 에드거 F. 코드가 제안한 데이터의 관계형 모델에 기초한 데이터베이스이다. 관계형 데이터베이스 관리 시스템(RDBMS)은 행과 열을 사용하는 구조화된 형식으로 데이터를 저장하는 데이터베이스 관리 시스템의 한 유형이다. 많은 관계형 데이터베이스 시스템은 데이터베이스를 쿼리하고 업데이트하기 위해 SQL(구조화 질의 언어)을 사용하는 옵션을 갖추고 있다.",
+    "url": "https://ko.wikipedia.org/wiki/%EA%B4%80%EA%B3%84%ED%98%95_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4",
+    "source": "단위프로젝트2_개편/version_a_wikitech/outputs/corpus.jsonl: wiki_102055",
+    "metadata": {
+      "category": "데이터"
+    }
+  },
+  {
+    "doc_id": "wiki0",
+    "title": "파이썬",
+    "text": "파이썬(영어: Python)은 1991년 네덜란드계 소프트웨어 엔지니어인 귀도 반 로섬이 발표한 고급 프로그래밍 언어로, '인터프리터를 사용하는 객체지향 언어'이자 플랫폼에 독립적인, 동적 타이핑(dynamically typed) 대화형 언어다. 파이썬이라는 이름은 귀도가 좋아하는 코미디인〈Monty Python's Flying Circus〉에서 따온 것이다. 이름에서 고대신화에 나오는 커다란 뱀을 연상하겠지만 이와는 무관하다. 다만 로고에는 뱀 두마리가 형상화되어 있다. 간결하고 읽기 쉬운 문법이 특징인 프로그래밍 언어로 데이터 분석, 웹 개발, 인공지능 등 다양한 분야에서 활용된다.",
+    "url": "https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC",
+    "source": "단위프로젝트2_개편/version_a_wikitech/outputs/corpus.jsonl: wiki_6653",
+    "metadata": {
+      "category": "언어"
+    }
+  }
+]

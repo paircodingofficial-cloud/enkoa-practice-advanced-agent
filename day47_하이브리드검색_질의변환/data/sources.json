@@ -1,0 +1,331 @@
+{
+  "demo_docs.json": {
+    "kind": "수업용 가상 장서",
+    "count": 10,
+    "note": "제목·소개문·분류·연도 모두 수업용으로 지어낸 값입니다."
+  },
+  "practice_docs.json": {
+    "count": 44,
+    "metadata_note": "본문은 앞 단원의 원문 그대로. category는 수업용 분류, series/stage는 제목의 버전에서 추출.",
+    "documents": [
+      {
+        "doc_id": "hr_purpose",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "b5ede2166ef1d4c2387ad9f13c79f9d1f34b6fe699a1d778df4c8ce7b1a1430c"
+      },
+      {
+        "doc_id": "hr_eligibility",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "34c4234fd6855845d8ebe1a8960041b9e0cabc39379610b00bbc240f54ea46de"
+      },
+      {
+        "doc_id": "hr_approval",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "13474bb404a204fbb2f9fc0b82984ddd50681b4417bac0ee5f84518bc7606c23"
+      },
+      {
+        "doc_id": "hr_management",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "c8dd74e5bb269c023d0749cbf1505e511384c3a61e5f3e6d38f92c28cdcfaed0"
+      },
+      {
+        "doc_id": "hr_effect",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "dfa7e9db714fccc67df055ba198249540806e6113c38a1089abe4f3f5f405cb8"
+      },
+      {
+        "doc_id": "hr_remote",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "0f9e3e29f8736957c5b5534c1ba6b786a7de448827a5265cbc38024c94b97d23"
+      },
+      {
+        "doc_id": "hr_environment",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "dfbcb859165ff727261c78e48b2d6d33048da8ec0c81d2f34312b8558e1e5c18"
+      },
+      {
+        "doc_id": "hr_security",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "7b5a5c05243bc12aa6f9dd7211e7c39cc5e160602737f7bd834bc9dc1c5532b8"
+      },
+      {
+        "doc_id": "hr_service",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "79349efb4a8ae9941b7b8551e8ce2027a6f6a56a854b577576892688f3b8fd6c"
+      },
+      {
+        "doc_id": "hr_feedback",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "822904707129c20454b46f1a38eaa47eb9cc6c0591fd33d77c3f12abdc082997"
+      },
+      {
+        "doc_id": "hr_general_types",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "02add87c28119e2f666aa1dd768c3d6d78491e0bd0280630ecc82a402d49fe77"
+      },
+      {
+        "doc_id": "hr_design_principles",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "2e27a4c54850598969dc931f7298237097ee5f4624bc67e1dd0bd35228cba18a"
+      },
+      {
+        "doc_id": "hr_readiness_survey",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "1db1cc32471e766b09fbb8ae7c6109959eac62c8394b128fd7ccdee64e7d032b"
+      },
+      {
+        "doc_id": "hr_job_review",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "2061f6754c2d4a283421f3c1481dd38182cf00a8e058de32922c319e04f48027"
+      },
+      {
+        "doc_id": "hr_training",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "d1507d01925d033246cca85bc4aa8098924435a393cd8550d2f256eebf5e15c4"
+      },
+      {
+        "doc_id": "hr_staff_workshop",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "9aa92682092dc219b290605cda927395ac30b79773e1fefa36fd1c84acf67d4b"
+      },
+      {
+        "doc_id": "hr_stagger_definition",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "ce4ffe290436c17d2c594fb63c6f1348b241e766be9db72b2dbe224a983c17b7"
+      },
+      {
+        "doc_id": "hr_stagger_models",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "6c116e450c9d0cf532f0739835ba6a6160df35f28a35b4259e5e6d1af614fd5a"
+      },
+      {
+        "doc_id": "hr_stagger_type_mix",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "e2f75a439cf59fbce78d1fe25aac9517b00928a994f2fb815f78e8e9e31213ca"
+      },
+      {
+        "doc_id": "hr_stagger_admission_contract",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "8878cae3233e73e149ebed9711582f5ba8f25008dfe9c89c9262bb1f0b895092"
+      },
+      {
+        "doc_id": "hr_stagger_rules",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "cc2b3018c7ed067a449956e5c55b2a1ec46ea69936292c2ab4ea90f36a9704e8"
+      },
+      {
+        "doc_id": "hr_stagger_attendance",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "6c85b378182a6e12528860e8475dac552053535c66a26b5ac47f7b7eeab9a0f7"
+      },
+      {
+        "doc_id": "hr_stagger_consent",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "c1b385f1b41fc1b399c25a61f5d4dc9fdc993d32fd81a938579b984750dba57b"
+      },
+      {
+        "doc_id": "hr_stagger_hours",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "5bc14f1e64d2b6487c50d4b7dabb8602e25acd00cbc4d05caf602d2ed4b83ff6"
+      },
+      {
+        "doc_id": "hr_stagger_remote_combination",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "fecc72e8d295e2ea49bdcb427194510f7cfb71b665ed5c030f8adecf2398fea9"
+      },
+      {
+        "doc_id": "hr_select_definition",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "76d365654b34d35e725702d63da3ee207fe8639123879a3fd6d4da4fdce2cf1c"
+      },
+      {
+        "doc_id": "hr_select_adoption_rules",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "d4533940167d6df891205f0c522ce440376cd830bbade78531016d54223d8856"
+      },
+      {
+        "doc_id": "hr_select_scope_period",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "bc8654698012c237d8acf70be2316ab3df4dcb491b7b35cc863137212ea4ff5f"
+      },
+      {
+        "doc_id": "hr_select_time_agreement",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "3b1eefcdd370059e93747b4652528f51ecc3d2ba8539ca0e71c6c9b4b3ba6844"
+      },
+      {
+        "doc_id": "hr_select_attendance_night",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "297767bba0dcaf7bc8ed34edf34d4d391ddcb5252511ae09818752d3346b1f50"
+      },
+      {
+        "doc_id": "hr_select_core_standard",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "3553903aa89dfb0f6c5435f0837a4c810b474dd0153e9c4e9d21749aed537304"
+      },
+      {
+        "doc_id": "hr_select_workdays_leave",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "196985152775f699dc72517abf7799a451985697383217e67e0f142762c75c5a"
+      },
+      {
+        "doc_id": "hr_select_settlement_balance",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "5b7a3cda2c8db7d25b37b11a5fb40bf32305fbaf113fb8f7e9e58570662b2f70"
+      },
+      {
+        "doc_id": "hr_select_health_protection",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "9ae0eca6279b51a8b7013c28b0ae50bece860b88fa3b37aaec18a374541eb4df"
+      },
+      {
+        "doc_id": "hr_remote_rule_change",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "26d6616d3deaf5ef34f950cde0cccd89a7f2d958eff1b089bedce5af5c1ceb34"
+      },
+      {
+        "doc_id": "hr_remote_rule_structure",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "e7037b0130058f0c46c567f9cd8e1b96ef0a9080f51e3ab20ee6576bb2193be0"
+      },
+      {
+        "doc_id": "hr_collaboration_team_trust",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "1f1a03494ca44d937eccfa682bbde46442a6a17c91dc7d5d94ead40f512e4464"
+      },
+      {
+        "doc_id": "hr_remote_daily_routine",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "3072bea87f0ed75cf149b94064e4ec6726714cc34970f02ed029694f6f9e87da"
+      },
+      {
+        "doc_id": "hr_remote_application_design",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "6cd5242db0fd6b522ca6df234ffafd17e52ac484681020e652bc4ba9e4b0a514"
+      },
+      {
+        "doc_id": "hr_remote_operation_conditions",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "ebb5db03f2632bfd643826756b4229e3f3e0e1caf76ba2894482bf7a077d5f65"
+      },
+      {
+        "doc_id": "hr_remote_eligibility_rules",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "2bd1f29568233eb20a89d519997c3c406acb55912d9653dec41d91a392d81978"
+      },
+      {
+        "doc_id": "hr_remote_service_rule_design",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "3bbd8291da8c6f96974f9bed0c6f6364d4dfca0bccb717f3d5a2bb019d939ec6"
+      },
+      {
+        "doc_id": "hr_remote_support_policy",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "83fac82601def4c1b7cea38e0b87de3e86964ad91359b3b7a82c96a6cbde7383"
+      },
+      {
+        "doc_id": "hr_remote_emergency_rules",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "776222a7be932dfeceffbbdd58fbff4dcc143ff50bf0e028e00a922b0acc88da"
+      }
+    ]
+  },
+  "lv1_docs.json": {
+    "count": 5,
+    "metadata_note": "본문은 앞 단원의 원문 그대로. category는 수업용 분류, series/stage는 제목의 버전에서 추출.",
+    "documents": [
+      {
+        "doc_id": "wiki4",
+        "url": "https://ko.wikipedia.org/wiki/GeoJSON",
+        "sha256": "eeb33cc0c5d035e116dd9cc2d672d7222bd8ad1dcaeb261b28b43301a5183173"
+      },
+      {
+        "doc_id": "wiki3",
+        "url": "https://ko.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4",
+        "sha256": "10a48ea1979fd3dd813f7ff3e373beb53fc503aa407a663c8069b073c2a2e41e"
+      },
+      {
+        "doc_id": "wiki2",
+        "url": "https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4",
+        "sha256": "89e9effc0681de0144157749e7c24be0157bc5bf313ab170fcecea3cd7c814e9"
+      },
+      {
+        "doc_id": "wiki1",
+        "url": "https://ko.wikipedia.org/wiki/%EA%B4%80%EA%B3%84%ED%98%95_%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4",
+        "sha256": "568df2a2678ffcc6e97cba07e1f81d51286a987d920f6bb352e565d79a362530"
+      },
+      {
+        "doc_id": "wiki0",
+        "url": "https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%B4%EC%8D%AC",
+        "sha256": "2bfe4ffd67a221d83c8c1dd8c7dc54be392358eb0afbf688506189d1e51a6947"
+      }
+    ]
+  },
+  "lv2_docs.json": {
+    "count": 5,
+    "metadata_note": "본문은 앞 단원의 원문 그대로. category는 수업용 분류, series/stage는 제목의 버전에서 추출.",
+    "documents": [
+      {
+        "doc_id": "release0",
+        "url": "https://github.com/neo4j/neo4j/releases/tag/3.3.0-beta01",
+        "sha256": "b73c1157de03609d5765d6927c7818860e9767eab71369e516045a13e28d2901"
+      },
+      {
+        "doc_id": "release1",
+        "url": "https://github.com/neo4j/neo4j/releases/tag/3.2.0-alpha08",
+        "sha256": "a3e19226a65341972a1a471c655b23aa818f3ab725d7886ac8ce857435e95258"
+      },
+      {
+        "doc_id": "release2",
+        "url": "https://github.com/neo4j/neo4j/releases/tag/3.0.0-RC1",
+        "sha256": "895abdeca73f21053e24a67103b4a280cfade036a1a875cfafab66359bca2d06"
+      },
+      {
+        "doc_id": "release3",
+        "url": "https://github.com/neo4j/neo4j/releases/tag/2.3.1",
+        "sha256": "0e36c553ebb47036717233a50c7ac8bf2428e486565dd6eddcff557f765a90b9"
+      },
+      {
+        "doc_id": "release4",
+        "url": "https://github.com/neo4j/neo4j/releases/tag/2.2.6",
+        "sha256": "6782ae5b0dc6ca8c175ab18cf66ff6100768c712f066623e96fc3effe8c9a9e7"
+      }
+    ]
+  },
+  "lv3_docs.json": {
+    "count": 6,
+    "metadata_note": "본문은 앞 단원의 원문 그대로. category는 수업용 분류, series/stage는 제목의 버전에서 추출.",
+    "documents": [
+      {
+        "doc_id": "guide0",
+        "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/missing_data.rst",
+        "sha256": "11b599d2c04f8601c50a0e9c0b54272d7a2ca7cba60bb59e253113ab7e208956"
+      },
+      {
+        "doc_id": "guide1",
+        "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/merging.rst",
+        "sha256": "357bde6501c44cf77442ac771d3791a3f870d25814c37a9debfbff48bac9317c"
+      },
+      {
+        "doc_id": "guide2",
+        "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/reshaping.rst",
+        "sha256": "992b1eacba4818c3ab3c76050de1689e8838def080d3c995b4fbebf49e233f92"
+      },
+      {
+        "doc_id": "guide3",
+        "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/visualization.rst",
+        "sha256": "82efd99c8a74e24bff4be444ce0cf98e14f281a9ddc2c545a5c4d060815a71e0"
+      },
+      {
+        "doc_id": "guide4",
+        "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/text.rst",
+        "sha256": "c9578c2112f52757d40d8b74009a24b61c6d145d6dc2145a003b7ea00121533b"
+      },
+      {
+        "doc_id": "guide5",
+        "url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/scale.rst",
+        "sha256": "420de8b99d728a3e4a99e420df079e40d2ce8c73e28670a1e8020b1bcf349aa4"
+      }
+    ]
+  }
+}

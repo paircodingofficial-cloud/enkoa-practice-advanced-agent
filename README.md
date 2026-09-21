@@ -7,6 +7,7 @@
 | 일차 | 주제 | 배우는 것 |
 |---|---|---|
 | **day46** | 청킹 전략·RAPTOR | 기본 RAG가 근거를 놓치는 두 자리를 확인하고, **Fixed·Semantic·Parent-Child·Sentence Window·Auto-merging** 다섯 전략으로 무엇으로 찾고 무엇을 돌려줄지 나눕니다. 같은 질문·근거·K로 **근거 구간 Recall과 반환 글자 수**를 함께 비교하고, 이어서 **RAPTOR**로 문장을 군집화해 GPT 요약 계층(L0 → L1 → L2)을 쌓은 뒤 모든 계층을 한 인덱스에서 검색하고 출처 문장으로 되돌아옵니다 |
+| **day47** | 하이브리드 검색·질의 변환 | **BM25**(Kiwi 형태소)와 **Dense** 검색 순위를 **가중 RRF**·`EnsembleRetriever`로 합치고 Recall을 비교합니다. 이어서 **Self-Query·HyDE·Multi-Query·Step-back·Decomposition** 다섯 질의 변환으로 검색 입력을 바꿔 원문 근거로 답하고, 교안 03에서는 **Jev**(Noul·Choice·Score)가 질문마다 어떤 질의 변환을 쓸지 골라 실제 하이브리드 RAG로 이어 갑니다 |
 
 ---
 
@@ -38,7 +39,7 @@ uv sync                      # pyproject.toml·uv.lock 그대로 설치
 
 VS Code에서 노트북을 열고 커널로 **Python 3 (ipykernel)** 즉 위에서 만든 `.venv` 를 선택하세요.
 
-OpenAI API를 쓰는 일차는 폴더의 `.env.example` 을 `.env` 로 복사하고 `OPENAI_API_KEY` 를 넣습니다. 키는 노트북에 붙여넣지 않습니다.
+OpenAI API를 쓰는 일차는 폴더의 `.env.example` 을 `.env` 로 복사하고 `OPENAI_API_KEY` 를 넣습니다. day47 교안 03은 `TYPESAFE_API_KEY` 도 넣습니다. 키는 노트북에 붙여넣지 않습니다.
 
 ## 폴더 구성
 
