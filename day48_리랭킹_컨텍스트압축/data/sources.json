@@ -1,0 +1,776 @@
+{
+  "demo_docs.json": {
+    "origin": "수업용 창작 자료",
+    "kind": "수업용 가상 도서 소개. 실제 출판물 정보가 아닙니다.",
+    "count": 51,
+    "documents": [
+      {
+        "doc_id": "book01",
+        "url": "",
+        "sha256": "8253fbec9ae78b49af703a75468ba7696212e9a4eab631c226f14049d1cefe6a"
+      },
+      {
+        "doc_id": "book02",
+        "url": "",
+        "sha256": "7ec5ff164018e4a0b974f59db6680d58987d3865c92fafafa44076611949d3ff"
+      },
+      {
+        "doc_id": "book03",
+        "url": "",
+        "sha256": "8736193cde2ef6981214c59a86b1ff9ea9a2d3c0ac42472be3324da485d00848"
+      },
+      {
+        "doc_id": "book04",
+        "url": "",
+        "sha256": "9bd733b4f220de846d8c58e1acab869729091dc085d654c15311f52861cb8f00"
+      },
+      {
+        "doc_id": "book05",
+        "url": "",
+        "sha256": "f6afc6e243857e83cd2f0adcb40d9e6716ef395bc5148f4ff127df045d63f505"
+      },
+      {
+        "doc_id": "book06",
+        "url": "",
+        "sha256": "063923028b38d06b23a8e810aa033c7de4db5750be708749ebf420188775b20e"
+      },
+      {
+        "doc_id": "book07",
+        "url": "",
+        "sha256": "b37825c4c909becc6be662e54b45fee972f79f6147a0b21ae4e8a4090a45a06d"
+      },
+      {
+        "doc_id": "book08",
+        "url": "",
+        "sha256": "a23f0eeecb443c62dab87deddeb7cdf1543fb2cd03c5573b015d228bec467510"
+      },
+      {
+        "doc_id": "book09",
+        "url": "",
+        "sha256": "679c654e38c6e2b2c05665f983df3058fa1a539fad86d3a3a0e966105989c6db"
+      },
+      {
+        "doc_id": "book10",
+        "url": "",
+        "sha256": "6694a7ef69c4312208da6d703608c8942e4ec491c6602febbdf30ec5aafd9a26"
+      },
+      {
+        "doc_id": "book11",
+        "url": "",
+        "sha256": "ae2cd6422ac809dd4a3b4ab8356a86dea5fc63965d9092516464fd900b3f89e0"
+      },
+      {
+        "doc_id": "book12",
+        "url": "",
+        "sha256": "a444c17ecd7a9c8b46067cb644b9f754ebcbc5334bdd1f381a26453140ab207e"
+      },
+      {
+        "doc_id": "book13",
+        "url": "",
+        "sha256": "cea7009ec1a7c287730b9a4b3f89fcea973a15c21f66ace04acc8d4c2503f016"
+      },
+      {
+        "doc_id": "book14",
+        "url": "",
+        "sha256": "8b5a7c7e54a4eb5a1f07d784da0a945fc3b958e0614c492105e3ead894a0ff2f"
+      },
+      {
+        "doc_id": "book15",
+        "url": "",
+        "sha256": "35a3dee355957622991938630e88af9c6f6e4a7298f5d1929f07176145a4320b"
+      },
+      {
+        "doc_id": "book16",
+        "url": "",
+        "sha256": "670fe7de33a562b96e3513e3bf9e1d7dd49ea1eb0edd045c83445c13801958c0"
+      },
+      {
+        "doc_id": "book17",
+        "url": "",
+        "sha256": "bb8d9814b5da11024515245b4d2d16b0a69b43ff08124f7468bd773f5a4d3d33"
+      },
+      {
+        "doc_id": "book18",
+        "url": "",
+        "sha256": "8b88d52eeb8753c06a89da15b216bb9d4f20e5f3c0a6100d830373075213f664"
+      },
+      {
+        "doc_id": "book19",
+        "url": "",
+        "sha256": "b340fcaf209cc8a10cbdf784a9e70b299ba824aaf56d91a086cf698584ecbfa7"
+      },
+      {
+        "doc_id": "book20",
+        "url": "",
+        "sha256": "4ccd79a65214ef4e9c538c81060b8a520fbd75ad1e98b4111df47583b6753902"
+      },
+      {
+        "doc_id": "book21",
+        "url": "",
+        "sha256": "f2001b7abe5318dd3d48d17af4fcac4a667567790a03b17e0f3ece83663ec2aa"
+      },
+      {
+        "doc_id": "book22",
+        "url": "",
+        "sha256": "e6374d7d74d74682708235e27bb50972adf28585b8ddbcdbe481a28c252444c0"
+      },
+      {
+        "doc_id": "book23",
+        "url": "",
+        "sha256": "cf7e35687811acc993dd513610092c9e43f3cbcb23fbaab45a1c14b9ff29fb60"
+      },
+      {
+        "doc_id": "book24",
+        "url": "",
+        "sha256": "0ccc53fb1f88b75f986ce6112c5b8d09a1c5a34d90f0f6e025f9f870aea2a742"
+      },
+      {
+        "doc_id": "book25",
+        "url": "",
+        "sha256": "c1681cbe40856f9a90d69ff0a824a7b9fe020386306aa16d563e3fd3014d88a7"
+      },
+      {
+        "doc_id": "book26",
+        "url": "",
+        "sha256": "ac148376fa26020f90cc423f77b22dd10b531d184ab70bf7b1838d076a5e1255"
+      },
+      {
+        "doc_id": "book27",
+        "url": "",
+        "sha256": "7e458386a106dc2c0a6e76a5d1ac1738ec4c15f2c1092d0e0c6ab8a205ce3057"
+      },
+      {
+        "doc_id": "book28",
+        "url": "",
+        "sha256": "1824bd30cd4fbfbdbff27b8f597814a143886a75a454306afb2f7a1e01852d38"
+      },
+      {
+        "doc_id": "book29",
+        "url": "",
+        "sha256": "6adb080446b1d7ab80fb1bde5d4a232dedfb648aa28ffddd3a3dba1b367b877b"
+      },
+      {
+        "doc_id": "book30",
+        "url": "",
+        "sha256": "5359b0626086c4cfa393e42dccd8862923cec53110fd3409ca552cf6f8ff5ca6"
+      },
+      {
+        "doc_id": "book31",
+        "url": "",
+        "sha256": "7407254fa8490c1ad39a5d44b16ff0e47e56f7b98371acc07fdae5f3310e35b4"
+      },
+      {
+        "doc_id": "book32",
+        "url": "",
+        "sha256": "1c9fd0f9b0aa3be370abdc38f21506bf58c029de35bb38c9345324dadb834a71"
+      },
+      {
+        "doc_id": "book33",
+        "url": "",
+        "sha256": "912beeef21597c5d78cc6b11998a94e43a68de85c8487f5ee43107e36841fd86"
+      },
+      {
+        "doc_id": "book34",
+        "url": "",
+        "sha256": "aff16cc7e22cc27741b064ea469cd4aa3efe739da92fbd14a8627829c327b7e1"
+      },
+      {
+        "doc_id": "book35",
+        "url": "",
+        "sha256": "e145d97d036a920b3e2a70229ef776082b31f902e9d92248ff02151799dae170"
+      },
+      {
+        "doc_id": "book36",
+        "url": "",
+        "sha256": "3f6821a4d4295360a16f8370a197a69f5bea603d22e60d21b43b221cd3bd2ca6"
+      },
+      {
+        "doc_id": "book37",
+        "url": "",
+        "sha256": "37bf42f5946aca59912832f5191542933177b6fdbd0fbc73a39d3c974dbfd308"
+      },
+      {
+        "doc_id": "book38",
+        "url": "",
+        "sha256": "b0d14061a8c82c582cee484585f822227721f87abf892c678b8e8bb9b9b66b8c"
+      },
+      {
+        "doc_id": "book39",
+        "url": "",
+        "sha256": "c6838b029288e5b2a46bc0970b83b21875b925c350d8f1e74bd4e271a5c1811a"
+      },
+      {
+        "doc_id": "book40",
+        "url": "",
+        "sha256": "783a1f0b09030e59547960a4884c5ef337618ed4a557306032ebca22a9951c46"
+      },
+      {
+        "doc_id": "book41",
+        "url": "",
+        "sha256": "7fff7dc2d5512e8c90a7b6779cba827b5bb820cf6db9c45a4c84d9bde9e9ce07"
+      },
+      {
+        "doc_id": "book42",
+        "url": "",
+        "sha256": "146177fb56a0cb0554c721530ea30c9cdfbed30f8bcec477f7ca766a9c0ba260"
+      },
+      {
+        "doc_id": "book43",
+        "url": "",
+        "sha256": "6021e8366ad5a877d58fb066b87d73c20b5792b8ec02143c4e5af30d06f87899"
+      },
+      {
+        "doc_id": "book44",
+        "url": "",
+        "sha256": "2da054ebbaaad5ff9bf168b9b3c00001d96aee937b0d3dd30fb188d59d80a321"
+      },
+      {
+        "doc_id": "book45",
+        "url": "",
+        "sha256": "96643017f21b67f3b5a208ba6ff1e8b2ece56ebfa5af5e5f6182c56a56a87b4f"
+      },
+      {
+        "doc_id": "book46",
+        "url": "",
+        "sha256": "b893db1e920a1c75e1910c994563898e6601ec1a7bc4761903cb4ad2bb48c6d7"
+      },
+      {
+        "doc_id": "book47",
+        "url": "",
+        "sha256": "0cbc0acc87d558ee9142e48fec303f8e11e36d8e2b50fceed8935268232064da"
+      },
+      {
+        "doc_id": "book48",
+        "url": "",
+        "sha256": "ce37a568d395776159ad9e4842b14fac0d6b25cd214eaa4292e1b364ca03de71"
+      },
+      {
+        "doc_id": "book49",
+        "url": "",
+        "sha256": "f3894bb5301e84daec0d53f3a2bf61768d995efb3b718dc6ba29de5fe46ae8d8"
+      },
+      {
+        "doc_id": "book50",
+        "url": "",
+        "sha256": "f12070fbd3f8ba7a62144f88ab7155d99d11aa110a7de8baf71eaafd2b340e4f"
+      },
+      {
+        "doc_id": "book51",
+        "url": "",
+        "sha256": "06f13bf8fd1258d4d7569737604fc9a1f428815bad8206c40011524850fdfead"
+      }
+    ]
+  },
+  "practice_docs.json": {
+    "origin": "day46_청킹전략_RAPTOR/data/practice_docs.json",
+    "count": 44,
+    "metadata_note": "본문은 그대로 보존. category는 수업용 분류, series/stage는 제목의 버전에서 추출.",
+    "documents": [
+      {
+        "doc_id": "hr_purpose",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "b5ede2166ef1d4c2387ad9f13c79f9d1f34b6fe699a1d778df4c8ce7b1a1430c"
+      },
+      {
+        "doc_id": "hr_eligibility",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "34c4234fd6855845d8ebe1a8960041b9e0cabc39379610b00bbc240f54ea46de"
+      },
+      {
+        "doc_id": "hr_approval",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "13474bb404a204fbb2f9fc0b82984ddd50681b4417bac0ee5f84518bc7606c23"
+      },
+      {
+        "doc_id": "hr_management",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "c8dd74e5bb269c023d0749cbf1505e511384c3a61e5f3e6d38f92c28cdcfaed0"
+      },
+      {
+        "doc_id": "hr_effect",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "dfa7e9db714fccc67df055ba198249540806e6113c38a1089abe4f3f5f405cb8"
+      },
+      {
+        "doc_id": "hr_remote",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "0f9e3e29f8736957c5b5534c1ba6b786a7de448827a5265cbc38024c94b97d23"
+      },
+      {
+        "doc_id": "hr_environment",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "dfbcb859165ff727261c78e48b2d6d33048da8ec0c81d2f34312b8558e1e5c18"
+      },
+      {
+        "doc_id": "hr_security",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "7b5a5c05243bc12aa6f9dd7211e7c39cc5e160602737f7bd834bc9dc1c5532b8"
+      },
+      {
+        "doc_id": "hr_service",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "79349efb4a8ae9941b7b8551e8ce2027a6f6a56a854b577576892688f3b8fd6c"
+      },
+      {
+        "doc_id": "hr_feedback",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "822904707129c20454b46f1a38eaa47eb9cc6c0591fd33d77c3f12abdc082997"
+      },
+      {
+        "doc_id": "hr_general_types",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "02add87c28119e2f666aa1dd768c3d6d78491e0bd0280630ecc82a402d49fe77"
+      },
+      {
+        "doc_id": "hr_design_principles",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "2e27a4c54850598969dc931f7298237097ee5f4624bc67e1dd0bd35228cba18a"
+      },
+      {
+        "doc_id": "hr_readiness_survey",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "1db1cc32471e766b09fbb8ae7c6109959eac62c8394b128fd7ccdee64e7d032b"
+      },
+      {
+        "doc_id": "hr_job_review",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "2061f6754c2d4a283421f3c1481dd38182cf00a8e058de32922c319e04f48027"
+      },
+      {
+        "doc_id": "hr_training",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "d1507d01925d033246cca85bc4aa8098924435a393cd8550d2f256eebf5e15c4"
+      },
+      {
+        "doc_id": "hr_staff_workshop",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "9aa92682092dc219b290605cda927395ac30b79773e1fefa36fd1c84acf67d4b"
+      },
+      {
+        "doc_id": "hr_stagger_definition",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "ce4ffe290436c17d2c594fb63c6f1348b241e766be9db72b2dbe224a983c17b7"
+      },
+      {
+        "doc_id": "hr_stagger_models",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "6c116e450c9d0cf532f0739835ba6a6160df35f28a35b4259e5e6d1af614fd5a"
+      },
+      {
+        "doc_id": "hr_stagger_type_mix",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "e2f75a439cf59fbce78d1fe25aac9517b00928a994f2fb815f78e8e9e31213ca"
+      },
+      {
+        "doc_id": "hr_stagger_admission_contract",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "8878cae3233e73e149ebed9711582f5ba8f25008dfe9c89c9262bb1f0b895092"
+      },
+      {
+        "doc_id": "hr_stagger_rules",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "cc2b3018c7ed067a449956e5c55b2a1ec46ea69936292c2ab4ea90f36a9704e8"
+      },
+      {
+        "doc_id": "hr_stagger_attendance",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "6c85b378182a6e12528860e8475dac552053535c66a26b5ac47f7b7eeab9a0f7"
+      },
+      {
+        "doc_id": "hr_stagger_consent",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "c1b385f1b41fc1b399c25a61f5d4dc9fdc993d32fd81a938579b984750dba57b"
+      },
+      {
+        "doc_id": "hr_stagger_hours",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "5bc14f1e64d2b6487c50d4b7dabb8602e25acd00cbc4d05caf602d2ed4b83ff6"
+      },
+      {
+        "doc_id": "hr_stagger_remote_combination",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "fecc72e8d295e2ea49bdcb427194510f7cfb71b665ed5c030f8adecf2398fea9"
+      },
+      {
+        "doc_id": "hr_select_definition",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "76d365654b34d35e725702d63da3ee207fe8639123879a3fd6d4da4fdce2cf1c"
+      },
+      {
+        "doc_id": "hr_select_adoption_rules",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "d4533940167d6df891205f0c522ce440376cd830bbade78531016d54223d8856"
+      },
+      {
+        "doc_id": "hr_select_scope_period",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "bc8654698012c237d8acf70be2316ab3df4dcb491b7b35cc863137212ea4ff5f"
+      },
+      {
+        "doc_id": "hr_select_time_agreement",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "3b1eefcdd370059e93747b4652528f51ecc3d2ba8539ca0e71c6c9b4b3ba6844"
+      },
+      {
+        "doc_id": "hr_select_attendance_night",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "297767bba0dcaf7bc8ed34edf34d4d391ddcb5252511ae09818752d3346b1f50"
+      },
+      {
+        "doc_id": "hr_select_core_standard",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "3553903aa89dfb0f6c5435f0837a4c810b474dd0153e9c4e9d21749aed537304"
+      },
+      {
+        "doc_id": "hr_select_workdays_leave",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "196985152775f699dc72517abf7799a451985697383217e67e0f142762c75c5a"
+      },
+      {
+        "doc_id": "hr_select_settlement_balance",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "5b7a3cda2c8db7d25b37b11a5fb40bf32305fbaf113fb8f7e9e58570662b2f70"
+      },
+      {
+        "doc_id": "hr_select_health_protection",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "9ae0eca6279b51a8b7013c28b0ae50bece860b88fa3b37aaec18a374541eb4df"
+      },
+      {
+        "doc_id": "hr_remote_rule_change",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "26d6616d3deaf5ef34f950cde0cccd89a7f2d958eff1b089bedce5af5c1ceb34"
+      },
+      {
+        "doc_id": "hr_remote_rule_structure",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "e7037b0130058f0c46c567f9cd8e1b96ef0a9080f51e3ab20ee6576bb2193be0"
+      },
+      {
+        "doc_id": "hr_collaboration_team_trust",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "1f1a03494ca44d937eccfa682bbde46442a6a17c91dc7d5d94ead40f512e4464"
+      },
+      {
+        "doc_id": "hr_remote_daily_routine",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "3072bea87f0ed75cf149b94064e4ec6726714cc34970f02ed029694f6f9e87da"
+      },
+      {
+        "doc_id": "hr_remote_application_design",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "6cd5242db0fd6b522ca6df234ffafd17e52ac484681020e652bc4ba9e4b0a514"
+      },
+      {
+        "doc_id": "hr_remote_operation_conditions",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "ebb5db03f2632bfd643826756b4229e3f3e0e1caf76ba2894482bf7a077d5f65"
+      },
+      {
+        "doc_id": "hr_remote_eligibility_rules",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "2bd1f29568233eb20a89d519997c3c406acb55912d9653dec41d91a392d81978"
+      },
+      {
+        "doc_id": "hr_remote_service_rule_design",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "3bbd8291da8c6f96974f9bed0c6f6364d4dfca0bccb717f3d5a2bb019d939ec6"
+      },
+      {
+        "doc_id": "hr_remote_support_policy",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "83fac82601def4c1b7cea38e0b87de3e86964ad91359b3b7a82c96a6cbde7383"
+      },
+      {
+        "doc_id": "hr_remote_emergency_rules",
+        "url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+        "sha256": "776222a7be932dfeceffbbdd58fbff4dcc143ff50bf0e028e00a922b0acc88da"
+      }
+    ]
+  },
+  "lv1_docs.json": {
+    "origin": "수업용 창작 자료",
+    "kind": "수업용 가상 IT 헬프데스크 도움말. 실제 회사 정보가 아닙니다.",
+    "count": 41,
+    "documents": [
+      {
+        "doc_id": "help01",
+        "url": "",
+        "sha256": "956b7400dc8f9d418c7cb58c466892ca92e1e975fb82028c614d731d1197bff6"
+      },
+      {
+        "doc_id": "help02",
+        "url": "",
+        "sha256": "9e4836908013fbdc84b2114d01ec93943490c3f0e5b2458a80507ec177ae935a"
+      },
+      {
+        "doc_id": "help03",
+        "url": "",
+        "sha256": "9cad05e33f049729dcfa423d28dd8bbd12d3c284bd3343f3c28a85b45e472ed4"
+      },
+      {
+        "doc_id": "help04",
+        "url": "",
+        "sha256": "77ce2536f81f8ab256c6271c62a214d8119a3a13183ac648c1fce85b6022d626"
+      },
+      {
+        "doc_id": "help05",
+        "url": "",
+        "sha256": "bea0e486ce35345c7f935f6c2c55cda4d04334c9aaf349b1d845f8c9c3d08daa"
+      },
+      {
+        "doc_id": "help06",
+        "url": "",
+        "sha256": "9509807f617e4c7a9f68f7ab483dd1a874473f0e6366e0afbe93ae6e84934b5e"
+      },
+      {
+        "doc_id": "help07",
+        "url": "",
+        "sha256": "2154a852b7ae007c0c2483ccb1d256a896e1d22ee4ac7fa3285156d56af19f91"
+      },
+      {
+        "doc_id": "help08",
+        "url": "",
+        "sha256": "6703c2fef112bdae21463d517efb9bfb1ea3691bfdade77db61644c5f5adc943"
+      },
+      {
+        "doc_id": "help09",
+        "url": "",
+        "sha256": "8adf727d6b268b9053b23fae3d40d947437ad752f9fa0c61af8726615b92693d"
+      },
+      {
+        "doc_id": "help10",
+        "url": "",
+        "sha256": "5598f6d6eb0c47c70945f348e113275f8416b5a3e017cbe0b7306341145405f9"
+      },
+      {
+        "doc_id": "help11",
+        "url": "",
+        "sha256": "3088e03162c0bbc619b4faca0c529ff7690eac9bc4114cb12cc28585eb7b47a9"
+      },
+      {
+        "doc_id": "help12",
+        "url": "",
+        "sha256": "4f282f796eb0e5f235e1ffe4299ceed16c419288bb1b43d90dcdaa0512c3628b"
+      },
+      {
+        "doc_id": "help13",
+        "url": "",
+        "sha256": "fa02d5d85b771395b4efa780194560f9582936d0fcbab5213cc32f04847782bd"
+      },
+      {
+        "doc_id": "help14",
+        "url": "",
+        "sha256": "75661488feaf89aabcee90dda628ef4440f82ca2c7a4135b53251388a71a3d2c"
+      },
+      {
+        "doc_id": "help15",
+        "url": "",
+        "sha256": "5e670588636e65ab97c3bd91bfd3b5052812be358f58751898588300dacaca7b"
+      },
+      {
+        "doc_id": "help16",
+        "url": "",
+        "sha256": "8348b97f0c900b6e086d67e63f54bc0cbf97171b8f6273fd4551974ca2e9cc2d"
+      },
+      {
+        "doc_id": "help17",
+        "url": "",
+        "sha256": "90dc6fba20183fc19bc6bbb0ac9ed374a9902a38cc78a3138b1d6d438d0bc263"
+      },
+      {
+        "doc_id": "help18",
+        "url": "",
+        "sha256": "a003e8cb664daf2cb45c9ccd8671d89c010a6fe054c47c38bb6a82e21d80fe75"
+      },
+      {
+        "doc_id": "help19",
+        "url": "",
+        "sha256": "5741f0111c48b0f20af490a36ffe0cb0e095e3b126bd76001e584d4ad57240be"
+      },
+      {
+        "doc_id": "help20",
+        "url": "",
+        "sha256": "83e2b3da2db843b2b4a1e3374f52528040aefaf979c6637a2e72924bb2cd8570"
+      },
+      {
+        "doc_id": "help21",
+        "url": "",
+        "sha256": "43d9e0026d9f7c02a001bcbe3d03aced9a01d158b367db5e5f0824dfd8502aca"
+      },
+      {
+        "doc_id": "help22",
+        "url": "",
+        "sha256": "73f8c51aa1c632e85427ffef590d40060edb72e80c7835c65b3f1182c6bd0c02"
+      },
+      {
+        "doc_id": "help23",
+        "url": "",
+        "sha256": "3af7201b691d06db64a52a2974c52c953a4f55556bd103f07c4086930d56e2a9"
+      },
+      {
+        "doc_id": "help24",
+        "url": "",
+        "sha256": "bb6230429bbb15715f9ee2bec7e53bab0595830fe00ce07e9c38e686876b3ea6"
+      },
+      {
+        "doc_id": "help25",
+        "url": "",
+        "sha256": "a5bdf063a5b8a98e786235d8eab22320995b7d9a306b7952bb1b116d9433ebae"
+      },
+      {
+        "doc_id": "help26",
+        "url": "",
+        "sha256": "d3a49943df1691dc26a0e290be178dc56ca43b2b797eb40fa3386922cd24e0bf"
+      },
+      {
+        "doc_id": "help27",
+        "url": "",
+        "sha256": "fe66e73d6dfb8e541e34a42bd440afca2be85266f68d42be66cca40c703fd51a"
+      },
+      {
+        "doc_id": "help28",
+        "url": "",
+        "sha256": "a3499e13a072ac3600bcaca19ca5ab557ca62d0b6cd56bfea36d2aa67daa90e5"
+      },
+      {
+        "doc_id": "help29",
+        "url": "",
+        "sha256": "240cc664f0ed02a43c8e92efb494e0614b664e98c2a5e79b4cab6bf6202afa2c"
+      },
+      {
+        "doc_id": "help30",
+        "url": "",
+        "sha256": "5b408944c8a03ebcd313ae8711d5afb650ff473c15b9724eb6cb0e5320263a37"
+      },
+      {
+        "doc_id": "help31",
+        "url": "",
+        "sha256": "5fc6cbf97a30b0cd6ffe83b4cfedb9fd3f43d76f5952c12e7785ee16a837d5b8"
+      },
+      {
+        "doc_id": "help32",
+        "url": "",
+        "sha256": "55ce5f2668243415764519575db83a5dedc8ad2cf28afdd43e44fb2741485123"
+      },
+      {
+        "doc_id": "help33",
+        "url": "",
+        "sha256": "0a196b472e4f114ce47fb34269819277ba4af1b0f7a59b0b7ec4aeac295eed2e"
+      },
+      {
+        "doc_id": "help34",
+        "url": "",
+        "sha256": "4461f934f8aed3a75763a6d85a2ff9e8e409a70feb51a06a5958512abe3fcc89"
+      },
+      {
+        "doc_id": "help35",
+        "url": "",
+        "sha256": "c7dd3badad4f3e07bd8d45b1b41c91d75f70ef0880ad824a4dcd6e3c9d13f289"
+      },
+      {
+        "doc_id": "help36",
+        "url": "",
+        "sha256": "d78872ca396b782204a92fc962ed3467e2c8586f3f3a2ea04dfae5a9c852c9e6"
+      },
+      {
+        "doc_id": "help37",
+        "url": "",
+        "sha256": "8a33cf0305a8c73c040c2dc353c2a515e1603dbd287532ead96063aa35d991d4"
+      },
+      {
+        "doc_id": "help38",
+        "url": "",
+        "sha256": "6856b541cf3a98c2cb6869107da6eef2253c0f737791350277d50c1c5f18eb35"
+      },
+      {
+        "doc_id": "help39",
+        "url": "",
+        "sha256": "58b522cd653491876f1a2710e284d50520eb57fed8de17b878172188cce30494"
+      },
+      {
+        "doc_id": "help40",
+        "url": "",
+        "sha256": "59b66d3994b0d542f510c16b550be88d1ace8e231c5e954102bf60243205197e"
+      },
+      {
+        "doc_id": "help41",
+        "url": "",
+        "sha256": "d7a8acf314e4e55f1c57c89386a582d1d694b313c0719ff3aab71c706076f6b4"
+      }
+    ]
+  },
+  "lv2_docs.json": {
+    "origin": "수업용 창작 자료",
+    "kind": "수업용 가상 사내 규정. 실제 회사 정보가 아닙니다.",
+    "count": 10,
+    "documents": [
+      {
+        "doc_id": "reg01",
+        "url": "",
+        "sha256": "977528db6f1b09177aa1fd327d96adc9165526eb3e0821554132cde3a803905f"
+      },
+      {
+        "doc_id": "reg02",
+        "url": "",
+        "sha256": "b20f709bf0fd35400ff0ff84f5c4b576f60e7b659a018e81e97068ac7d2c989f"
+      },
+      {
+        "doc_id": "reg03",
+        "url": "",
+        "sha256": "61c2e8617aeffbe012506ddb000fcc1eb97998d3d63d23ac7ea3fbe423d7e8e1"
+      },
+      {
+        "doc_id": "reg04",
+        "url": "",
+        "sha256": "482af9844bc387f545f7321924c7e014ffcd2aea088fdf3aa1483bfa28fb6972"
+      },
+      {
+        "doc_id": "reg05",
+        "url": "",
+        "sha256": "66d997e9da212cb7336158b970ca83bd792c53b7134fa7f214f5978178bb415b"
+      },
+      {
+        "doc_id": "reg06",
+        "url": "",
+        "sha256": "ebd9f1d541dae7fe085862c199d6091cb3173933bc3ebbdde2aab7d68bfe8974"
+      },
+      {
+        "doc_id": "reg07",
+        "url": "",
+        "sha256": "1c633f1cdea9d0f6fbd92dc4dc152f328644f86c1d28090039b3509c8200cac4"
+      },
+      {
+        "doc_id": "reg08",
+        "url": "",
+        "sha256": "7f3ddcc56456efd8a6953ce0f0bcce917d4b32e28a9cb4525ad6735a932ddbff"
+      },
+      {
+        "doc_id": "reg09",
+        "url": "",
+        "sha256": "9d62ccb56dc9031db31ce5f5263cda24045349218ef8cce2b9726adbd459ff92"
+      },
+      {
+        "doc_id": "reg10",
+        "url": "",
+        "sha256": "9e2f50010b00efee7e191a9d552e30c71b1733b0c71c95b5e0d077fe82e7fe23"
+      }
+    ]
+  },
+  "lv1_questions.json": {
+    "origin": "수업용 창작 자료",
+    "kind": "헬프데스크 도움말에 대해 사람이 작성한 질문·참고 답안·근거 문서 ID",
+    "count": 7
+  },
+  "lv2_questions.json": {
+    "origin": "수업용 창작 자료",
+    "kind": "사내 규정에 대해 사람이 작성한 질문·참고 답안·근거 문서 ID",
+    "count": 2
+  },
+  "copied_from": "day47_하이브리드검색_질의변환/data/sources.json",
+  "demo_questions.json": {
+    "origin": "수업용 창작 자료",
+    "kind": "가상 도서에 대해 사람이 작성한 질문·참고 답안·근거 문서 ID",
+    "count": 4
+  }
+}

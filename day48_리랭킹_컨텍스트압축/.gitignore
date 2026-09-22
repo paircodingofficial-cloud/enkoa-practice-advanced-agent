@@ -1,0 +1,9 @@
+.env
+.env.*
+!.env.example
+output/
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+.omc/
+.DS_Store
