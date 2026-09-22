@@ -262,33 +262,69 @@
     ]
   },
   "lv2_docs.json": {
-    "count": 5,
-    "metadata_note": "본문은 앞 단원의 원문 그대로. category는 수업용 분류, series/stage는 제목의 버전에서 추출.",
+    "kind": "수업용 창작 쇼핑몰 도움말",
+    "count": 12,
+    "metadata_note": "category는 안내 분야, channel은 온라인·매장 구매 경로입니다. 모든 본문과 운영 규칙은 가상입니다.",
     "documents": [
       {
-        "doc_id": "release0",
-        "url": "https://github.com/neo4j/neo4j/releases/tag/3.3.0-beta01",
-        "sha256": "b73c1157de03609d5765d6927c7818860e9767eab71369e516045a13e28d2901"
+        "doc_id": "shop01",
+        "url": "",
+        "sha256": "50ddf9aa284a277bac5411f66ec2449fe717c41172c02c22bdc43eada9a1b1f0"
       },
       {
-        "doc_id": "release1",
-        "url": "https://github.com/neo4j/neo4j/releases/tag/3.2.0-alpha08",
-        "sha256": "a3e19226a65341972a1a471c655b23aa818f3ab725d7886ac8ce857435e95258"
+        "doc_id": "shop02",
+        "url": "",
+        "sha256": "1029cd6cb9b6f7937f77a067209910d1e8804857640f698bdd4f15fd16b8ea93"
       },
       {
-        "doc_id": "release2",
-        "url": "https://github.com/neo4j/neo4j/releases/tag/3.0.0-RC1",
-        "sha256": "895abdeca73f21053e24a67103b4a280cfade036a1a875cfafab66359bca2d06"
+        "doc_id": "shop03",
+        "url": "",
+        "sha256": "394666a5b37f42099b7534ca4feaa79b3faef9c616f8417608dc277cfb513b5c"
       },
       {
-        "doc_id": "release3",
-        "url": "https://github.com/neo4j/neo4j/releases/tag/2.3.1",
-        "sha256": "0e36c553ebb47036717233a50c7ac8bf2428e486565dd6eddcff557f765a90b9"
+        "doc_id": "shop04",
+        "url": "",
+        "sha256": "ea44e33c9015eff0d03dccad0c9073f6fcb789d88bf457ba562a0cb6e4e2b2c5"
       },
       {
-        "doc_id": "release4",
-        "url": "https://github.com/neo4j/neo4j/releases/tag/2.2.6",
-        "sha256": "6782ae5b0dc6ca8c175ab18cf66ff6100768c712f066623e96fc3effe8c9a9e7"
+        "doc_id": "shop05",
+        "url": "",
+        "sha256": "9f645a4f2a28e82308e86099230597ff10558255f78f82c84fc51b6c62df62a7"
+      },
+      {
+        "doc_id": "shop06",
+        "url": "",
+        "sha256": "c762fb47d5a2d593398dec093859bc94430f9aecce37bfd31f9a1ab4542be201"
+      },
+      {
+        "doc_id": "shop07",
+        "url": "",
+        "sha256": "5f8ad3608d5b52f948a55c585d25502af482ed619b51a6335634b90946beced9"
+      },
+      {
+        "doc_id": "shop08",
+        "url": "",
+        "sha256": "eb0ebf944bd5d7237d151c30e4e03d6b5f677b36b4ca04abc62f249b9fb4acb4"
+      },
+      {
+        "doc_id": "shop09",
+        "url": "",
+        "sha256": "5f46064d187674c256421f8fe9cec7420e584ae06c53c72cb9ca71f0da72a19d"
+      },
+      {
+        "doc_id": "shop10",
+        "url": "",
+        "sha256": "cc88319aebe7ea2cbc338a8c861e745e4e086f3eb2861bac0772dbd20d94fc28"
+      },
+      {
+        "doc_id": "shop11",
+        "url": "",
+        "sha256": "45d355cfa31a373c80f0c4f709a4e7e2684693d2e1907e1a6aebf7c515080e18"
+      },
+      {
+        "doc_id": "shop12",
+        "url": "",
+        "sha256": "42735e6bd70a95e5d3ca5da779ba0b10840aeaf9f67bb350b6ec43c2a3e6dbd0"
       }
     ]
   },
