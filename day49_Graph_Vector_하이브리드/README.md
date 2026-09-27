@@ -7,7 +7,7 @@
 | 자료 | 내용 |
 |---|---|
 | [교안 01](교안_01_벡터진입_관계확장.ipynb) | VectorCypherRetriever로 출연 관계 확장, Jev 언어 판단과 전문 검색 |
-| [교안 02](교안_02_통합검색_멀티홉답변.ipynb) | GraphCypherQAChain, EnsembleRetriever의 RRF, PageRank 재정렬, 멀티홉 근거 답변 |
+| [교안 02](교안_02_통합검색_멀티홉답변.ipynb) | GraphCypherQAChain, EnsembleRetriever의 RRF, PageRank 포화 점수 재정렬, 멀티홉 근거 답변 |
 | [과제 LV1](과제_LV1_기초.ipynb) | 교안 01의 검색·관계 확장·Jev 전문 검색 의료 데이터로 핵심 코드 완성(8문항) |
 | [과제 LV2](과제_LV2_응용.ipynb) | 교안 02의 통합 검색·재정렬·인용 답변 의료 데이터로 핵심 코드 완성(10문항) |
 
