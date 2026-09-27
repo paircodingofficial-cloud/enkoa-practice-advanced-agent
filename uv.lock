@@ -941,12 +941,16 @@ dependencies = [
     { name = "langchain-classic" },
     { name = "langchain-community" },
     { name = "langchain-core" },
+    { name = "langchain-neo4j" },
     { name = "langchain-openai" },
     { name = "langchain-text-splitters" },
+    { name = "langchain-typesafe" },
     { name = "lark" },
     { name = "llama-index-core" },
     { name = "llama-index-embeddings-langchain" },
     { name = "llama-index-vector-stores-chroma" },
+    { name = "neo4j" },
+    { name = "neo4j-graphrag" },
     { name = "numpy" },
     { name = "pandas" },
     { name = "pydantic" },
@@ -972,13 +976,17 @@ requires-dist = [
     { name = "langchain-chroma", specifier = ">=1.1" },
     { name = "langchain-classic", specifier = ">=1.0" },
     { name = "langchain-community", specifier = ">=0.4" },
-    { name = "langchain-core", specifier = ">=1.4" },
+    { name = "langchain-core", specifier = ">=1.6.2,<2" },
+    { name = "langchain-neo4j", specifier = "==0.10.0" },
     { name = "langchain-openai", specifier = ">=1.3" },
     { name = "langchain-text-splitters", specifier = ">=1.1" },
+    { name = "langchain-typesafe", specifier = "==0.0.1a3" },
     { name = "lark", specifier = ">=1.3" },
     { name = "llama-index-core", specifier = "==0.14.24" },
     { name = "llama-index-embeddings-langchain", specifier = "==0.6.0" },
     { name = "llama-index-vector-stores-chroma", specifier = "==0.6.0" },
+    { name = "neo4j", specifier = "==6.2.0" },
+    { name = "neo4j-graphrag", specifier = "==1.18.0" },
     { name = "numpy", specifier = ">=2.3,<2.5" },
     { name = "pandas", specifier = ">=2.3,<3" },
     { name = "pydantic", specifier = ">=2.13" },
@@ -1734,6 +1742,15 @@ wheels = [
 ]
 
 [[package]]
+name = "json-repair"
+version = "0.63.5"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/72/29/653c36e0de80f7048f01298a9098f1c66bb9da162e92ad6a6e2c3202cc52/json_repair-0.63.5.tar.gz", hash = "sha256:75a6a1a4ea954935dd3fb69b6e49ac0e3e3d69b4290127a0c8d37af93b709f3a", size = 52945, upload-time = "2026-09-22T18:36:08.745Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6b/a4/222e2581667c326183a87df229e772140fbf3e5dc03ec73e2a0e74804114/json_repair-0.63.5-py3-none-any.whl", hash = "sha256:0e39b3066f7829b4bd7fc614e463cfd4ff7a4c46f82f5b65431fc11e29a74c81", size = 51334, upload-time = "2026-09-22T18:36:07.05Z" },
+]
+
+[[package]]
 name = "json5"
 version = "0.15.0"
 source = { registry = "https://pypi.org/simple" }
@@ -2110,6 +2127,22 @@ wheels = [
 ]
 
 [[package]]
+name = "langchain-neo4j"
+version = "0.10.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "langchain-classic" },
+    { name = "langchain-core" },
+    { name = "langgraph" },
+    { name = "neo4j" },
+    { name = "neo4j-graphrag" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e9/e1/906702d9265e0097f6a42f749e636ca52151d9befa57249d7889bd5c684c/langchain_neo4j-0.10.0.tar.gz", hash = "sha256:95329b94c8d316ea483c1e531c4e777ad010cbe9508f499a36ab10d9c5e77b91", size = 217007, upload-time = "2026-06-10T09:56:38.013Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/98/ac/01315db211480df660998b894baf99c53fa9217779034bb183eb1b24f88d/langchain_neo4j-0.10.0-py3-none-any.whl", hash = "sha256:3a3f0c7427583926ecae09d55253b89e03629bf7cd3fc5672d8b05fcfcaa6243", size = 58237, upload-time = "2026-06-10T09:56:36.923Z" },
+]
+
+[[package]]
 name = "langchain-openai"
 version = "1.6.2"
 source = { registry = "https://pypi.org/simple" }
@@ -2146,6 +2179,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/26/9f/6c545900fefb7b00ddfa3f16b80d61338a0ec68c31c5451eeeab99082760/langchain_text_splitters-1.1.2.tar.gz", hash = "sha256:782a723db0a4746ac91e251c7c1d57fd23636e4f38ed733074e28d7a86f41627", size = 293580, upload-time = "2026-04-16T14:20:39.162Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/d3/26/1ef06f56198d631296d646a6223de35bcc6cf9795ceb2442816bc963b84c/langchain_text_splitters-1.1.2-py3-none-any.whl", hash = "sha256:a2de0d799ff31886429fd6e2e0032df275b60ec817c19059a7b46181cc1c2f10", size = 35903, upload-time = "2026-04-16T14:20:38.243Z" },
+]
+
+[[package]]
+name = "langchain-typesafe"
+version = "0.0.1a3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpx2" },
+    { name = "langchain-core" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c9/54/460d126cb5db7b031e5b3b94c63fe36d58bce020f2692fd7661f8f84c7d3/langchain_typesafe-0.0.1a3.tar.gz", hash = "sha256:d77647a7a5bafaa82db8212a682b223a9bbcd52fb015e49464f211552f1f3272", size = 200970, upload-time = "2026-09-20T18:54:40.777Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ca/5b/a14f30242eb36363ee757024a01727fef5efffbb542d2382468f457a7e2b/langchain_typesafe-0.0.1a3-py3-none-any.whl", hash = "sha256:f06f74ebdcb10cbc836dd89a275bbf4e2e13646cb919dcc02d4219e602cfe36e", size = 24962, upload-time = "2026-09-20T18:54:39.797Z" },
 ]
 
 [[package]]
@@ -2953,6 +2999,39 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/31/72/b3446efab8756e7df4b8ec587f8e611cb5a7249e4323db480802f1d3be04/nbformat-5.11.1.tar.gz", hash = "sha256:32d4521c68c6e7d5b29c76defaeed9f42ea733142b9b19f88277ce10390b9c4d", size = 147775, upload-time = "2026-08-17T08:10:51.942Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/1a/69/ee613f74085ca7103f79cd08d579c4f3177d1d26e5d3d9528d2d6536a707/nbformat-5.11.1-py3-none-any.whl", hash = "sha256:cc6698fa75f4fab8755ead786317815f13a6fee3b53311c0abb1a8b51d52f7ec", size = 79849, upload-time = "2026-08-17T08:10:50.18Z" },
+]
+
+[[package]]
+name = "neo4j"
+version = "6.2.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "pytz" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ce/f4/aaa4ac19adae4b01bc742b63afd2672a77e7351566f02721e713e4b863ee/neo4j-6.2.0.tar.gz", hash = "sha256:e1e246b65b572bd8ea97f9e0e721b7d40a5ce53e53d0007c29aef63e4f9124d9", size = 241459, upload-time = "2026-05-04T07:35:41.428Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e6/cf/1c3795866cefaac6e648d4e98c373cafd97810f6e317c307371007ab4abb/neo4j-6.2.0-py3-none-any.whl", hash = "sha256:b87abdd13a5cc2e3bd51026926c2f20ac38fa3febe98c340520dce19e97388d0", size = 327824, upload-time = "2026-05-04T07:35:39.604Z" },
+]
+
+[[package]]
+name = "neo4j-graphrag"
+version = "1.18.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "fsspec" },
+    { name = "json-repair" },
+    { name = "neo4j" },
+    { name = "numpy", marker = "python_full_version < '3.15'" },
+    { name = "pydantic" },
+    { name = "pypdf" },
+    { name = "pyyaml" },
+    { name = "scipy", marker = "python_full_version < '3.15'" },
+    { name = "tenacity" },
+    { name = "types-pyyaml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/58/50/31f8332b01673c53241026921fae1ac7795ef4f2ebc7224c2d14cc521345/neo4j_graphrag-1.18.0.tar.gz", hash = "sha256:c5accf78b8c0a5cdf6ca70ec2fdad69812631e4a2b5430af0ff4752e6c446298", size = 1349614, upload-time = "2026-06-24T09:12:05.074Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ab/9f/627401aa9b021af8b314015fecd5b07b85870ac098c7613eadea0a90b584/neo4j_graphrag-1.18.0-py3-none-any.whl", hash = "sha256:5cbd35146940ff821bbe0a914264c60d8a72b10fb730c8f8bb1173eb4e5d6b5a", size = 263691, upload-time = "2026-06-24T09:12:03.525Z" },
 ]
 
 [[package]]
@@ -5238,6 +5317,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/16/f7/57713ba479fd405eb76de31404b2c744c289e336b2d999511ebf51e496f7/typer-0.27.2.tar.gz", hash = "sha256:269b7eb9d3c202ca84b4bc9618cb04ebb43d3d4d1e567e4c768607232c05f945", size = 204045, upload-time = "2026-08-28T10:26:55.046Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/dc/bf/205d0004930ede8f542fb58f601526fccf4ae7626075ca1e6c4de5d3d652/typer-0.27.2-py3-none-any.whl", hash = "sha256:b3a5fc4342d5fc8fda8fc3010b1cf117e9249aab7fae800c2eff62fd3842d97d", size = 123130, upload-time = "2026-08-28T10:26:53.752Z" },
+]
+
+[[package]]
+name = "types-pyyaml"
+version = "6.0.12.20260906"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/90/6e/abec85b9013db5b934b0280a6dd104904d84f7bcbaab2e2f3def87ac7463/types_pyyaml-6.0.12.20260906.tar.gz", hash = "sha256:f59c1cc05010b833d2d72287bbaa72610106b28d42d89a907313117faba85212", size = 18649, upload-time = "2026-09-06T06:35:35.362Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/15/c0/fc0644b7ddcfb969e95845837143cb5173ddd6e06ee4ba5fc493cd9329b7/types_pyyaml-6.0.12.20260906-py3-none-any.whl", hash = "sha256:bca893ff0d51df5c9053137d5d0e6ccd36e939a196356f1d5c16372422f5137b", size = 21282, upload-time = "2026-09-06T06:35:34.372Z" },
 ]
 
 [[package]]

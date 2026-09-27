@@ -1,0 +1,11 @@
+jupyter
+numpy
+pandas
+python-dotenv
+neo4j
+neo4j-graphrag==1.18.0
+langchain-core>=1.6.2,<2
+langchain-typesafe==0.0.1a3
+langchain-openai
+langchain-neo4j
+pydantic
