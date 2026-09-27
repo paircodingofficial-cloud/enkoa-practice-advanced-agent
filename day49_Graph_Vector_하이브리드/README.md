@@ -27,9 +27,8 @@
 | `TYPESAFE_API_KEY` | Jev 언어 판단에 사용할 키 |
 | `TYPESAFE_MODEL` | `jev-1.13.0` |
 | `NEO4J_URI`, `NEO4J_USER`, `NEO4J_PASSWORD` | 실습 DB의 Bolt 주소·계정 |
-| `NEO4J_READONLY_USERNAME`, `NEO4J_READONLY_PASSWORD` | 교안 02의 관계 조회 계정 |
 
-공유 DB는 실제 조회 전용 계정을 사용하세요. Community에서는 학습 데이터만 있는 별도 DB의 계정을 사용합니다. 변수명만으로 권한이 제한되지는 않습니다.
+교안·과제는 모두 `NEO4J_USER`·`NEO4J_PASSWORD`로 같은 실습 DB에 연결합니다. 학습 데이터만 있는 독립 DB에서 진행합니다.
 
 새 서버의 `neo4j.conf`에서 `db.query.default_language=CYPHER_25`를 설정합니다. 기존 DB는 관리 계정으로 system DB에서 다음을 실행합니다.
 
