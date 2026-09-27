@@ -15,7 +15,7 @@ dependencies = [
     #   ParentDocumentRetriever 는 현재 langchain_classic 에 있다.
     "langchain>=1.0",
     "langchain-core>=1.6.2,<2",
-    "langchain-classic>=1.0",
+    "langchain-classic>=1.0.8",
     "langchain-community>=0.4",
     "langchain-openai>=1.3",
     "langchain-chroma>=1.1",

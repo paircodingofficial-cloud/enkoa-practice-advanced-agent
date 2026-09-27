@@ -1,10 +1,10 @@
-"""기존 영화 패킷 읽기와 배포 벡터 대응 검사. 검색 로직은 교안에 있습니다."""
+"""기존 영화·의약품 패킷 읽기와 배포 벡터 대응 검사. 검색 로직은 교안에 있습니다."""
 import json
 import hashlib
 from pathlib import Path
 
 def load_graph(path):
-    """영화 배포 패킷에서 그래프·문서·청크를 읽습니다."""
+    """배포 패킷에서 그래프·문서·청크를 읽습니다."""
     from langchain_core.documents import Document
 
     path = Path(path)
