@@ -1,0 +1,27 @@
+영화 검색 결과의 source_id=None 오류 수정
+
+원인: 전체 Chunk를 대상으로 한 인덱스에 다른 실습 청크가 섞일 수 있습니다.
+아래 코드는 현재 교안의 chunk_ids로 영화 청크만 표시하고 두 영화 인덱스를 다시 만듭니다.
+노드·원문·저장된 벡터는 삭제하지 않습니다. 데이터 읽기와 DB 연결 셀을 먼저 실행하세요.
+
+run_cypher("""
+    MATCH (c:Chunk)
+    WHERE c.id IN $chunk_ids
+    SET c:Day49MovieChunk
+""", chunk_ids=list(chunk_ids))
+
+run_cypher("DROP INDEX movie_chunks IF EXISTS")
+run_cypher("DROP INDEX movie_fulltext IF EXISTS")
+run_cypher("""
+    CREATE VECTOR INDEX movie_chunks FOR (c:Day49MovieChunk) ON c.embedding
+    OPTIONS {indexConfig: {`vector.dimensions`: 768, `vector.similarity_function`: 'cosine'}}
+""")
+run_cypher("""
+    CREATE FULLTEXT INDEX movie_fulltext FOR (c:Day49MovieChunk) ON EACH [c.text]
+    OPTIONS {indexConfig: {`fulltext.analyzer`: 'english', `fulltext.eventually_consistent`: false}}
+""")
+run_cypher("CALL db.awaitIndex('movie_chunks', 300)")
+run_cypher("CALL db.awaitIndex('movie_fulltext', 300)")
+
+그다음 검색기 생성 셀부터 벡터 검색·관계 확장·전문 검색을 순서대로 다시 실행하세요.
+seed_documents와 expanded_documents에는 이전 결과가 남아 있으므로 표 출력 셀만 다시 실행하면 안 됩니다.

@@ -40,6 +40,8 @@ ALTER DATABASE neo4j SET DEFAULT LANGUAGE CYPHER 25;
 벡터 검색 라이브러리가 사용하는 `SEARCH ... VECTOR INDEX`를 위해 Cypher 25를 설정합니다. 전문 검색은 이전 서버에서도 지원하는 `db.index.fulltext.queryNodes`를 사용합니다. GDS·APOC는 Python 패키지와 별도로 Neo4j 서버에 설치합니다.
 [전문 검색 공식 문서](https://neo4j.com/docs/cypher-manual/25/indexes/semantic-indexes/full-text-indexes/) · [GDS 설치](https://neo4j.com/docs/graph-data-science/current/installation/) · [APOC 설치](https://neo4j.com/docs/apoc/current/installation/)
 
+영화 검색은 `Day49MovieChunk` 전용 레이블을 사용합니다. 이전 버전에서 업데이트했다면 커널을 재시작하고 적재 셀부터 실행해 인덱스와 검색 결과를 새로 만드세요.
+
 노트북 파일이 있는 폴더에서 실행하세요. 교안 01의 적재를 완료한 뒤 교안 02를 진행합니다. 과제는 각 노트북의 준비 셀에서 의료 자료를 적재하므로 독립적으로 시작할 수 있습니다.
 
 ## 데이터와 모델 호출
