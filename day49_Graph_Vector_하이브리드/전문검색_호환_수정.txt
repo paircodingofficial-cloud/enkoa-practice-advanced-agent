@@ -1,0 +1,14 @@
+전문 검색 문법 오류 수정
+
+fulltext_documents 함수의 hits = run_cypher(...) 블록을 아래 코드로 교체하세요.
+함수 정의 셀을 실행한 뒤 오류가 난 호출 셀을 다시 실행합니다.
+교안 01·02는 movie_fulltext, 의료 과제는 drug_fulltext를 사용합니다.
+
+hits = run_cypher("""
+    CALL db.index.fulltext.queryNodes(
+        'movie_fulltext', $search_text, {limit: $top_k}
+    )
+    YIELD node, score
+    RETURN node.source_id AS source_id, node.id AS chunk_id, score
+    ORDER BY score DESC, chunk_id
+""", search_text=search_text, top_k=top_k)

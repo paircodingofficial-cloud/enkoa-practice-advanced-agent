@@ -18,7 +18,7 @@
 
 1. 저장소 루트에서 `uv sync --frozen`을 실행합니다.
 2. VS Code 커널로 저장소의 `.venv`를 선택합니다.
-3. **Neo4j 2026.09 이상·Cypher 25**인 실습 DB에 해당 버전과 호환되는 **GDS·APOC**를 설치합니다.
+3. **Neo4j 2026.01 이상·Cypher 25**인 실습 DB에 해당 버전과 호환되는 **GDS·APOC**를 설치합니다.
 4. 이 폴더의 `.env.example`을 `.env`로 복사하고 아래 연결 정보를 입력합니다.
 
 | 환경변수 | 설정 |
@@ -37,8 +37,8 @@
 ALTER DATABASE neo4j SET DEFAULT LANGUAGE CYPHER 25;
 ```
 
-Neo4j 버전은 전문 검색의 `SEARCH ... FULLTEXT INDEX` 문법에 필요합니다. GDS·APOC는 Python 패키지와 별도로 Neo4j 서버에 설치합니다.
-[SEARCH 공식 문법](https://neo4j.com/docs/cypher-manual/25/clauses/search/) · [GDS 설치](https://neo4j.com/docs/graph-data-science/current/installation/) · [APOC 설치](https://neo4j.com/docs/apoc/current/installation/)
+벡터 검색 라이브러리가 사용하는 `SEARCH ... VECTOR INDEX`를 위해 Cypher 25를 설정합니다. 전문 검색은 이전 서버에서도 지원하는 `db.index.fulltext.queryNodes`를 사용합니다. GDS·APOC는 Python 패키지와 별도로 Neo4j 서버에 설치합니다.
+[전문 검색 공식 문서](https://neo4j.com/docs/cypher-manual/25/indexes/semantic-indexes/full-text-indexes/) · [GDS 설치](https://neo4j.com/docs/graph-data-science/current/installation/) · [APOC 설치](https://neo4j.com/docs/apoc/current/installation/)
 
 노트북 파일이 있는 폴더에서 실행하세요. 교안 01의 적재를 완료한 뒤 교안 02를 진행합니다. 과제는 각 노트북의 준비 셀에서 의료 자료를 적재하므로 독립적으로 시작할 수 있습니다.
 

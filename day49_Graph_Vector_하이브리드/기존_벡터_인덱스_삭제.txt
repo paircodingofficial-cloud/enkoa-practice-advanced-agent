@@ -1,0 +1,19 @@
+기존 벡터 인덱스 삭제
+
+교안의 DB 연결 셀을 실행한 뒤, 아래 코드를 새 코드 셀에서 실행하세요.
+Chunk.embedding의 기존 벡터 인덱스만 삭제합니다.
+노드와 저장된 임베딩은 유지됩니다.
+
+indexes = run_cypher("""
+    SHOW VECTOR INDEXES
+    YIELD name, labelsOrTypes, properties
+    WHERE labelsOrTypes = ['Chunk'] AND properties = ['embedding']
+    RETURN name
+""")
+
+for index in indexes:
+    name = index["name"].replace("`", "``")
+    run_cypher(f"DROP INDEX `{name}` IF EXISTS")
+    print("삭제:", index["name"])
+
+삭제 후 오류가 났던 인덱스 생성 셀을 다시 실행하세요.
