@@ -10,6 +10,7 @@
 | **day47** | 하이브리드 검색·질의 변환 | **BM25**(Kiwi 형태소)와 **Dense** 검색 순위를 **가중 RRF**·`EnsembleRetriever`로 합치고 Recall을 비교합니다. 이어서 **Self-Query·HyDE·Multi-Query·Step-back·Decomposition** 다섯 질의 변환으로 검색 입력을 바꿔 원문 근거로 답하고, 교안 03에서는 **Jev**(Noul·Choice·Score)가 질문마다 어떤 질의 변환을 쓸지 골라 실제 하이브리드 RAG로 이어 갑니다 |
 | **day48** | 리랭킹·컨텍스트 압축 | 검색 후보를 **Cross-Encoder**(Qwen3-Reranker-0.6B)로 다시 점수 매겨 순서를 고치고, 같은 후보를 **ColBERT**(BGE-M3) 토큰 매칭으로도 재정렬해 비교한 뒤 `CrossEncoderReranker` 로 검색기와 리랭커를 연결합니다. 교안 02에서는 질문에 필요한 구간만 GPT로 **추출**해 답하고, 원문 답변과 추출 답변의 내용·**토큰 사용량**을 대조한 다음 검색 → 리랭킹 → 추출을 하나의 파이프라인으로 잇습니다 |
 | **day49** | Graph·Vector 하이브리드 검색 | VectorCypherRetriever의 출연 관계 확장, Jev 언어 판단과 Neo4j 전문 검색, GraphCypherQAChain·가중 RRF·PageRank·멀티홉 근거 답변 |
+| **day50** | LangGraph 기초 | State·노드·고정/조건부 엣지·메시지 리듀서, Jev와 하이브리드 RAG, 질문별 검색 도구 라우팅 |
 
 ---
 
@@ -46,6 +47,8 @@ OpenAI API를 쓰는 일차는 폴더의 `.env.example` 을 `.env` 로 복사하
 day48은 Hugging Face 리랭커 모델을 내려받아 CPU에서 실행합니다. 교안 01 첫 셀이 Qwen3-Reranker-0.6B(약 1.19GB)와 BGE-M3(약 2.3GB)를 한 번 받아 두면 이후 교안·과제는 캐시를 재사용합니다. 디스크 여유 공간 5GB 이상을 확보하고 수업 전에 미리 받아 두세요.
 
 day49는 **Neo4j 2026.09 이상·Cypher 25·GDS·APOC**가 필요합니다. Python 패키지는 `uv sync --frozen`으로 설치하고, DB 연결은 [day49 환경 안내](day49_Graph_Vector_하이브리드/README.md)에 따라 설정하세요.
+
+day50은 `langgraph`로 노드를 연결합니다. 교안 03은 Neo4j·APOC를 사용하며, 설정과 실행 순서는 [day50 README](day50_LangGraph_기초/README.md)를 따릅니다.
 
 ## 폴더 구성
 

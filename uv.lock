@@ -945,6 +945,7 @@ dependencies = [
     { name = "langchain-openai" },
     { name = "langchain-text-splitters" },
     { name = "langchain-typesafe" },
+    { name = "langgraph" },
     { name = "lark" },
     { name = "llama-index-core" },
     { name = "llama-index-embeddings-langchain" },
@@ -962,6 +963,7 @@ dependencies = [
     { name = "torch" },
     { name = "transformers" },
     { name = "typesafe-sdk" },
+    { name = "typing-extensions" },
 ]
 
 [package.metadata]
@@ -981,6 +983,7 @@ requires-dist = [
     { name = "langchain-openai", specifier = ">=1.3" },
     { name = "langchain-text-splitters", specifier = ">=1.1" },
     { name = "langchain-typesafe", specifier = "==0.0.1a3" },
+    { name = "langgraph", specifier = ">=1,<2" },
     { name = "lark", specifier = ">=1.3" },
     { name = "llama-index-core", specifier = "==0.14.24" },
     { name = "llama-index-embeddings-langchain", specifier = "==0.6.0" },
@@ -998,6 +1001,7 @@ requires-dist = [
     { name = "torch", specifier = "==2.14.0" },
     { name = "transformers", specifier = "==5.17.0" },
     { name = "typesafe-sdk", specifier = "==0.7.1" },
+    { name = "typing-extensions", specifier = ">=4.15" },
 ]
 
 [[package]]

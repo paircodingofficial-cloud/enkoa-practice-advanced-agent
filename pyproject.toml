@@ -56,4 +56,7 @@ dependencies = [
     "neo4j-graphrag==1.18.0",
     "langchain-neo4j==0.10.0",
     "langchain-typesafe==0.0.1a3",
+    # day50: State·노드·조건부 엣지와 메시지 리듀서
+    "langgraph>=1,<2",
+    "typing-extensions>=4.15",
 ]

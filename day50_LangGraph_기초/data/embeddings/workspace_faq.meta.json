@@ -1,0 +1,23 @@
+{
+  "dataset": "workspace_faq.json",
+  "data_kind": "학습용 가상 공유 작업실 규정",
+  "created_date": "2026-09-28",
+  "model": "text-embedding-3-large",
+  "dimensions": 768,
+  "document_count": 8,
+  "doc_ids": [
+    "space-01",
+    "space-02",
+    "space-03",
+    "space-04",
+    "space-05",
+    "space-06",
+    "space-07",
+    "space-08"
+  ],
+  "fingerprint": "02632318ac911dbab25c9ab9fc1bcefc82ed7d0c26ef28c6f3684548e070b0fe",
+  "vector_file_sha256": "05891f3d16ae2430d8acf1a07eb219404c32ec3f222bf91f9f0b17b6a9e8b814",
+  "generation": "강사용 1회 embed_documents API batch 호출, 학생은 배포 벡터 재사용",
+  "text_format": "title + newline + text",
+  "new_document_embedding_batches": 1
+}
