@@ -6,3 +6,9 @@ __pycache__/
 .ipynb_checkpoints/
 output/
 .omc/
+
+# 로컬 복구 메모와 제작 자료는 배포하지 않습니다.
+build/
+/*.txt
+!/requirements.txt
+/실습_가이드.md
