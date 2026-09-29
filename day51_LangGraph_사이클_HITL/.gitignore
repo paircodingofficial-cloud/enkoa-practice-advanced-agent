@@ -1,0 +1,7 @@
+.env
+output/
+__pycache__/
+.ipynb_checkpoints/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
