@@ -62,4 +62,9 @@ dependencies = [
     # day51: SQLite 체크포인터와 여행 정보 HTTP 조회
     "langgraph-checkpoint-sqlite==3.1.1",
     "requests>=2.32,<3",
+    # day52: Mem0 기억 관리·Qdrant 저장소·노트북 위젯
+    "mem0ai==2.2.1",
+    "qdrant-client==1.18.0",
+    "sqlite-vec==0.1.9",
+    "ipywidgets>=8,<9",
 ]
