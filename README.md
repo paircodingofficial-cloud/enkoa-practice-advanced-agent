@@ -11,6 +11,9 @@
 | **day48** | 리랭킹·컨텍스트 압축 | 검색 후보를 **Cross-Encoder**(Qwen3-Reranker-0.6B)로 다시 점수 매겨 순서를 고치고, 같은 후보를 **ColBERT**(BGE-M3) 토큰 매칭으로도 재정렬해 비교한 뒤 `CrossEncoderReranker` 로 검색기와 리랭커를 연결합니다. 교안 02에서는 질문에 필요한 구간만 GPT로 **추출**해 답하고, 원문 답변과 추출 답변의 내용·**토큰 사용량**을 대조한 다음 검색 → 리랭킹 → 추출을 하나의 파이프라인으로 잇습니다 |
 | **day49** | Graph·Vector 하이브리드 검색 | VectorCypherRetriever의 출연 관계 확장, Jev 언어 판단과 Neo4j 전문 검색, GraphCypherQAChain·가중 RRF·PageRank·멀티홉 근거 답변 |
 | **day50** | LangGraph 기초 | State·노드·고정/조건부 엣지·메시지 리듀서, Jev와 하이브리드 RAG, 질문별 검색 도구 라우팅 |
+| **day51** | LangGraph 사이클·HITL | 반복과 종료 조건, 체크포인터, 사람의 검토와 실행 재개 |
+| **day52** | 메모리·컨텍스트 | Store·Mem0 기억 관리, 토큰 기반 요약과 입력 조절, 기억 갱신을 연결한 실습 |
+| **day53** | CRAG·Self-RAG 스타일 | 검색 근거 평가·재검색, 답변 검토·수정, 부분 답변과 검색 실패 안내 |
 
 ---
 
@@ -50,11 +53,13 @@ day49는 **Neo4j 2026.09 이상·Cypher 25·GDS·APOC**가 필요합니다. Pyth
 
 day50은 `langgraph`로 노드를 연결합니다. 교안 03은 Neo4j·APOC를 사용하며, 설정과 실행 순서는 [day50 README](day50_LangGraph_기초/README.md)를 따릅니다.
 
+day52는 Mem0·Qdrant·SQLite를 사용합니다. day53은 공개 영화 검색 보완에 `TAVILY_API_KEY`를 사용하며, 자세한 설정은 [day53 README](day53_CRAG_SelfRAG/README.md)를 참고하세요.
+
 ## 폴더 구성
 
 | 경로 | 내용 |
 |---|---|
 | `dayNN_*/교안_*.ipynb` | 수업에서 함께 실행하는 교안. 「함께 따라하기」 칸은 직접 작성합니다 |
-| `dayNN_*/과제_LV1~LV3.ipynb` | 기초·응용·통합 과제. 문항마다 자가채점 셀이 있습니다 |
+| `dayNN_*/과제_*.ipynb` | 단원별 실습 과제. 제공 코드·작성 칸·확인 기준에 따라 진행합니다 |
 | `dayNN_*/data`, `images` | 실습 입력 원문과 교안 그림 |
 | `내작업/` | 여러분의 실습 공간. 깃이 추적하지 않습니다 |
