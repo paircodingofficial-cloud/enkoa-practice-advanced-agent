@@ -1,0 +1,310 @@
+[
+  {
+    "doc_id": "oc2-gameplay",
+    "title": "Overcooked! 2: 움직이는 주방에서 요리하기",
+    "text": "2026-10-01 수집. 적용 범위: Overcooked! 2 본편, Steam PC판 소개. 오버쿡드2는 Onion Kingdom에서 요리사들이 협력해 음식을 만드는 게임이다. 초밥·케이크·버거·피자 같은 요리가 등장한다. 움직이는 발판과 순간이동 장치가 있는 주방에서 재료를 던져 전달할 수 있다. 장소가 바뀌는 주방에 맞춰 역할을 나누는 장면을 소개할 수 있다.",
+    "source": "Team17 · Steam 공식 스토어",
+    "url": "https://store.steampowered.com/app/728880/Overcooked_2/",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "overcooked2",
+      "kind": "gameplay",
+      "source_id_ref": "oc2-steam",
+      "scope": "Overcooked! 2 본편, Steam PC판 소개"
+    }
+  },
+  {
+    "doc_id": "oc2-multiplayer",
+    "title": "Overcooked! 2: 인원과 로컬·온라인 방식",
+    "text": "2026-10-01 수집. 적용 범위: Overcooked! 2 본편 및 해당 페이지의 Gourmet Edition 소개. 함께 플레이하는 최대 인원은 4명이다. 같은 장소에서 즐기는 로컬 협동과 온라인 협동을 지원하며, 협력하거나 경쟁해 점수를 높이는 방식이 소개되어 있다. Gourmet Edition도 로컬·온라인 협동은 최대 4명이다. 온라인 지원과 다른 기종 사이의 접속 지원은 별개의 항목이다.",
+    "source": "Team17",
+    "url": "https://www.team17.com/games/overcooked-2",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "overcooked2",
+      "kind": "multiplayer",
+      "source_id_ref": "oc2-team17",
+      "scope": "Overcooked! 2 본편 및 해당 페이지의 Gourmet Edition 소개"
+    }
+  },
+  {
+    "doc_id": "oc2-crossplay",
+    "title": "Overcooked! 2: PC 크로스플레이 공지의 적용 범위",
+    "text": "2026-10-01 수집. 적용 범위: 2021-06-17 발표 당시 Overcooked! 2 PC Steam·Epic Games Store 버전. Team17은 Steam과 Epic Games Store 이용자가 함께 플레이하도록 패치를 발표하고, 게임 안의 Team17 친구 초대 기능을 사용하도록 안내했다. 이 공지는 당시 PC를 대상으로 하며 Mac·Linux 지원은 추후 계획으로 구분했다. 이 과거 공지만으로 2026년의 모든 운영체제·콘솔 조합이나 현재 설치 절차를 확정할 수 없다.",
+    "source": "Team17",
+    "url": "https://www.team17.com/news/overcooked-2-free-on-epic-games-and-pc-crossplay-patch",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "overcooked2",
+      "kind": "compatibility",
+      "source_id_ref": "oc2-pc-news",
+      "scope": "2021-06-17 발표 당시 Overcooked! 2 PC Steam·Epic Games Store 버전"
+    }
+  },
+  {
+    "doc_id": "oc2-editions",
+    "title": "Overcooked! 2와 All You Can Eat의 온라인 호환 구분",
+    "text": "2026-10-01 수집. 적용 범위: Overcooked! All You Can Eat FAQ의 제품 구분, Steam·Switch·PlayStation·Xbox. All You Can Eat은 Overcooked와 Overcooked 2 및 추가 콘텐츠를 리마스터한 별도 게임이다. FAQ는 Steam·Switch·PS4·PS5·Xbox One·Xbox Series X/S 사이 크로스플레이를 안내한다. 함께 접속하려면 참가자 모두 All You Can Eat을 소유해야 하며, Overcooked! 2 소유자와 이 제품의 소유자가 서로 접속할 수는 없다. 원작 두 게임의 저장 파일도 자동으로 이어지지 않는다.",
+    "source": "Team17",
+    "url": "https://www.team17.com/news/overcooked-all-you-can-eat-faq",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "overcooked2",
+      "kind": "edition",
+      "source_id_ref": "oc2-ayce",
+      "scope": "Overcooked! All You Can Eat FAQ의 제품 구분, Steam·Switch·PlayStation·Xbox"
+    }
+  },
+  {
+    "doc_id": "oc2-promotion",
+    "title": "Overcooked! 2: 과거 Epic 무료 배포의 기간",
+    "text": "2026-10-01 수집. 적용 범위: Epic Games Store의 2021년 한시 배포 공지. 2021년 6월 17일 공식 공지는 Overcooked! 2를 Epic Games Store에서 6월 24일까지 무료로 받을 수 있다고 안내했다. 이 혜택은 해당 기간과 스토어에 한정된 과거 배포 안내다. 공지에는 2026년 10월의 상시 무료 배포나 다른 스토어 전체의 무료 이용을 보장하는 내용이 없다.",
+    "source": "Team17",
+    "url": "https://www.team17.com/news/overcooked-2-free-on-epic-games-and-pc-crossplay-patch",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "overcooked2",
+      "kind": "availability",
+      "source_id_ref": "oc2-pc-news",
+      "scope": "Epic Games Store의 2021년 한시 배포 공지"
+    }
+  },
+  {
+    "doc_id": "oc2-switch2",
+    "title": "Overcooked! 2: Nintendo Switch 2 Edition의 범위",
+    "text": "2026-10-01 수집. 적용 범위: 2025-09-12 Nintendo Switch 2 Edition 공식 FAQ. FAQ는 Switch 2 전용 요소로 개선된 그래픽, Camera Play, Game Share와 새 요리사를 소개한다. Switch와 Switch 2 이용자 사이의 온라인 세대 간 플레이를 지원하며, 기존 Switch용 DLC를 유지하고 저장 진행을 두 기기 사이에 이전할 수 있다고 안내한다. 이 설명의 대상은 Nintendo 기기 계열이며 PC·다른 콘솔 전체의 호환성을 뜻하지 않는다.",
+    "source": "Team17",
+    "url": "https://www.team17.com/news/overcooked-2-nintendo-switch-2-faq",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "overcooked2",
+      "kind": "edition",
+      "source_id_ref": "oc2-switch2",
+      "scope": "2025-09-12 Nintendo Switch 2 Edition 공식 FAQ"
+    }
+  },
+  {
+    "doc_id": "itt-gameplay",
+    "title": "It Takes Two: 코디와 메이의 협동 모험",
+    "text": "2026-10-01 수집. 적용 범위: It Takes Two 본편, Steam PC판 소개. 잇 테이크 투는 인형으로 변한 코디와 메이가 함께 장애물을 넘어가는 협동 플랫폼 어드벤처다. 레벨마다 서로 연결되는 캐릭터 능력을 활용한다. 다람쥐와 맞서거나 마법의 스노볼 속에서 봅슬레이를 타는 등 장면과 조작이 달라진다. 관계를 회복하는 이야기와 두 사람의 협력이 플레이에 결합되어 있다.",
+    "source": "Electronic Arts · Steam 공식 스토어",
+    "url": "https://store.steampowered.com/app/1426210/It_Takes_Two/",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "ittakestwo",
+      "kind": "gameplay",
+      "source_id_ref": "itt-steam",
+      "scope": "It Takes Two 본편, Steam PC판 소개"
+    }
+  },
+  {
+    "doc_id": "itt-multiplayer",
+    "title": "It Takes Two: 두 사람의 로컬·온라인 플레이",
+    "text": "2026-10-01 수집. 적용 범위: It Takes Two 본편, Steam PC판. 처음부터 두 사람의 협동을 위해 설계된 게임이며 화면을 나누는 로컬 협동 또는 온라인 협동을 선택한다. Steam 상품 안내는 온라인 플레이에 EA 계정이 필요하다고 명시한다. Steam의 Remote Play Together도 지원한다. 로컬 협동, 게임 자체 온라인 협동, Steam의 원격 화면 공유는 이용 방식을 구분해서 설명해야 한다.",
+    "source": "Electronic Arts · Steam 공식 스토어",
+    "url": "https://store.steampowered.com/app/1426210/It_Takes_Two/",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "ittakestwo",
+      "kind": "multiplayer",
+      "source_id_ref": "itt-steam",
+      "scope": "It Takes Two 본편, Steam PC판"
+    }
+  },
+  {
+    "doc_id": "itt-friends-pass",
+    "title": "It Takes Two: 친구 패스의 소유·플랫폼 조건",
+    "text": "2026-10-01 수집. 적용 범위: It Takes Two Friend's Pass 공식 FAQ, PC·PlayStation·Xbox·Nintendo Switch. 친구 패스로 전체 게임을 함께 하려면 한 명이 정식 게임을 소유해야 한다. 초대받는 친구는 친구 패스를 설치하고 해당 플랫폼 계정을 준비한다. 둘 다 소유하지 않으면 첫 챕터를 체험할 수 있다. 같은 플랫폼 계열의 세대 간 플레이는 지원하지만 다른 플랫폼 간 플레이는 지원하지 않는다. 예를 들어 PS5와 PS4는 함께 할 수 있지만 PS5와 PC는 불가능하다. 온라인에서는 두 사람이 동시에 접속해야 한다. 콘솔 온라인은 양쪽의 해당 플랫폼 온라인 구독도 필요하다. 로컬 협동은 인터넷 없이 가능하다.",
+    "source": "Electronic Arts",
+    "url": "https://www.ea.com/games/it-takes-two/it-takes-two/features/itt-friends-pass",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "ittakestwo",
+      "kind": "ownership",
+      "source_id_ref": "itt-pass",
+      "scope": "It Takes Two Friend's Pass 공식 FAQ, PC·PlayStation·Xbox·Nintendo Switch"
+    }
+  },
+  {
+    "doc_id": "sdv-gameplay",
+    "title": "Stardew Valley: 농장을 만드는 생활 RPG",
+    "text": "2026-10-01 수집. 적용 범위: Stardew Valley 본편, Steam PC판 소개. 스타듀 밸리는 물려받은 농장에서 새 생활을 시작하는 시골 생활 RPG다. 작물을 심고 동물을 기르며 과수원과 생산 기계를 만들 수 있다. 농사·채광·전투·낚시·채집의 능력을 키우고 새로운 제작법을 익힌다. 캐릭터와 집의 모습을 꾸미는 활동도 소개되어 있다.",
+    "source": "ConcernedApe · Steam 공식 스토어",
+    "url": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "stardewvalley",
+      "kind": "gameplay",
+      "source_id_ref": "sdv-steam",
+      "scope": "Stardew Valley 본편, Steam PC판 소개"
+    }
+  },
+  {
+    "doc_id": "sdv-activities",
+    "title": "Stardew Valley: 농장 밖에서 즐기는 활동",
+    "text": "2026-10-01 수집. 적용 범위: Stardew Valley 본편, Steam PC판 소개. 마을 주민과 친해지고 계절 축제에 참여할 수 있다. 동굴에서는 광물과 제작 재료를 찾고 몬스터와 싸운다. 낚시와 박물관 기증도 가능하다. 마을 회관을 복구하는 길과 Joja와 협력하는 길이 소개되어 있어, 농장 재배 이외의 선택과 마을 생활도 게임 소개에 포함할 수 있다.",
+    "source": "ConcernedApe · Steam 공식 스토어",
+    "url": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "stardewvalley",
+      "kind": "gameplay",
+      "source_id_ref": "sdv-steam",
+      "scope": "Stardew Valley 본편, Steam PC판 소개"
+    }
+  },
+  {
+    "doc_id": "sdv-multiplayer",
+    "title": "Stardew Valley: Steam판의 온라인 농장 인원",
+    "text": "2026-10-01 수집. 적용 범위: 2026-10-01 확인한 Stardew Valley Steam PC판 상품 안내. 호스트가 온라인으로 1~7명을 초대해 총 8명이 농장을 함께 운영할 수 있다. 자원을 나누고 마을을 개선하며 판매 수익률을 조절하는 선택지도 있다. Steam 지원 기능에는 1인 플레이, 온라인·LAN 협동, 화면 분할 협동이 표시되어 있다. 온라인 최대 8명이라는 수치를 콘솔이나 로컬 화면 분할의 최대 인원으로 확대해서는 안 된다.",
+    "source": "ConcernedApe · Steam 공식 스토어",
+    "url": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "stardewvalley",
+      "kind": "multiplayer",
+      "source_id_ref": "sdv-steam",
+      "scope": "2026-10-01 확인한 Stardew Valley Steam PC판 상품 안내"
+    }
+  },
+  {
+    "doc_id": "sdv-platforms",
+    "title": "Stardew Valley: 플랫폼과 언어 안내",
+    "text": "2026-10-01 수집. 적용 범위: Stardew Valley 공식 FAQ의 플랫폼·언어 항목. 공식 FAQ는 PC·Mac·Linux, Xbox One, PlayStation 4, Nintendo Switch, iOS·Android 등을 안내한다. 한국어도 지원 언어에 포함되어 있다. 제작자 ConcernedApe가 전 플랫폼에서 직접 배급한다고 설명한다. 여러 플랫폼에 출시되었다는 사실만으로 플랫폼 사이의 멀티플레이 호환이나 같은 기능 지원이 성립하지는 않는다.",
+    "source": "ConcernedApe",
+    "url": "https://www.stardewvalley.net/faq/",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "stardewvalley",
+      "kind": "platform",
+      "source_id_ref": "sdv-faq",
+      "scope": "Stardew Valley 공식 FAQ의 플랫폼·언어 항목"
+    }
+  },
+  {
+    "doc_id": "sf-gameplay",
+    "title": "Split Fiction: SF와 판타지를 오가는 두 작가",
+    "text": "2026-10-01 수집. 적용 범위: Split Fiction 본편, Steam PC판 소개. 스플릿 픽션의 미오와 조이는 서로 다른 장르를 쓰는 작가다. 창작 아이디어를 훔치는 기계 때문에 자신의 이야기 속에 갇히며, SF와 판타지 세계를 오가면서 협력해 탈출한다. 용을 길들이거나 사이버 닌자로 싸우는 등 상황에 따라 능력과 도전이 바뀌는 협동 액션 어드벤처다.",
+    "source": "Electronic Arts · Steam 공식 스토어",
+    "url": "https://store.steampowered.com/app/2001120/Split_Fiction/",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "splitfiction",
+      "kind": "gameplay",
+      "source_id_ref": "sf-steam",
+      "scope": "Split Fiction 본편, Steam PC판 소개"
+    }
+  },
+  {
+    "doc_id": "sf-side-stories",
+    "title": "Split Fiction: 선택해서 들어가는 사이드 스토리",
+    "text": "2026-10-01 수집. 적용 범위: 2025-01-27 공식 소개의 본편 출시 콘텐츠. 본편 중 포털로 들어가는 사이드 스토리는 선택적으로 즐기는 별도 상황이다. 미오와 조이가 과거에 남긴 미완성 이야기와 아이디어가 시뮬레이션 안에서 구현된다. 사막의 Sandfish를 타거나 돼지로 변하는 장면 등이 소개된다. 완료하면 들어왔던 본편 위치로 돌아온다. 이 소개는 출시 때 포함되는 콘텐츠를 다루며 미래의 별도 DLC 발표가 아니다.",
+    "source": "Electronic Arts",
+    "url": "https://www.ea.com/games/split-fiction/split-fiction/news/an-introduction-to-side-stories",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "splitfiction",
+      "kind": "gameplay",
+      "source_id_ref": "sf-side",
+      "scope": "2025-01-27 공식 소개의 본편 출시 콘텐츠"
+    }
+  },
+  {
+    "doc_id": "sf-friends-pass",
+    "title": "Split Fiction: 친구 패스로 전체 게임을 함께 하는 조건",
+    "text": "2026-10-01 수집. 적용 범위: Split Fiction 정식 게임과 Friend's Pass, 공식 PC FAQ. 전체 게임을 온라인으로 함께 하려면 한 명이 정식 게임을 소유하고 다른 한 명이 친구 패스를 설치한 뒤 초대를 받아야 한다. 친구 패스 이용자는 정식 게임 소유자와 온라인 세션에 참여할 때 전체 게임을 플레이할 수 있다. 지속적인 인터넷 연결과 플랫폼 계정, 연결된 EA 계정이 필요하다. 둘 다 친구 패스만 있으면 처음 몇 레벨의 데모를 로컬 또는 온라인으로 체험한다. 한 번에 초대하는 친구는 한 명이다.",
+    "source": "Electronic Arts",
+    "url": "https://www.ea.com/games/split-fiction/split-fiction/features/friends-pass-pc",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "splitfiction",
+      "kind": "ownership",
+      "source_id_ref": "sf-pass",
+      "scope": "Split Fiction 정식 게임과 Friend's Pass, 공식 PC FAQ"
+    }
+  },
+  {
+    "doc_id": "sf-platforms",
+    "title": "Split Fiction: 크로스플레이와 오프라인 로컬",
+    "text": "2026-10-01 수집. 적용 범위: Split Fiction PC·PS5·Xbox Series X/S·Nintendo Switch 2. 정식 게임과 친구 패스 모두 위 플랫폼 사이 크로스플레이를 지원한다. 게임 안 EA 친구 목록으로 초대하며 크로스플레이가 켜져 있어야 한다. 초대를 받는 쪽도 게임을 실행하고 EA 계정에 로그인한다. 로컬 협동은 인터넷이나 EA 계정 없이 가능하다. 입력 장치는 컨트롤러 두 개를 쓰며 PC에서는 컨트롤러 하나와 키보드·마우스 조합도 가능하다.",
+    "source": "Electronic Arts",
+    "url": "https://www.ea.com/games/split-fiction/split-fiction/features/friends-pass-pc",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "splitfiction",
+      "kind": "multiplayer",
+      "source_id_ref": "sf-pass",
+      "scope": "Split Fiction PC·PS5·Xbox Series X/S·Nintendo Switch 2"
+    }
+  },
+  {
+    "doc_id": "ut-gameplay",
+    "title": "Unravel Two: 실로 연결된 야니의 모험",
+    "text": "2026-10-01 수집. 적용 범위: Unravel Two 본편, Steam PC판 소개. 언래블 투에서는 두 야니가 연결되어 장애물을 해결한다. 점프하고 미끄러지거나 매달려 이동하면서 퍼즐을 풀고 빛을 따라간다. 실제 스칸디나비아 지역에서 영감을 얻은 자연과 도시를 작은 야니의 시점으로 탐험한다. 캐릭터를 직접 만들고, 혼자 두 야니를 조작하거나 친구와 함께 협력할 수 있다.",
+    "source": "Electronic Arts · Steam 공식 스토어",
+    "url": "https://store.steampowered.com/app/1225570/Unravel_Two/",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "unraveltwo",
+      "kind": "gameplay",
+      "source_id_ref": "ut-steam",
+      "scope": "Unravel Two 본편, Steam PC판 소개"
+    }
+  },
+  {
+    "doc_id": "ut-multiplayer",
+    "title": "Unravel Two: 로컬 협동과 Steam 원격 플레이",
+    "text": "2026-10-01 수집. 적용 범위: Unravel Two Steam PC판의 공식 소개·지원 기능. 공식 본문은 1인 플레이와 두 야니를 나누어 조작하는 로컬 협동을 설명한다. Steam 페이지는 Remote Play Together 지원도 명시한다. 원격 플레이 기능을 게임 자체의 모든 기종 간 온라인 매칭으로 표현하면 범위를 벗어난다. Steam판은 EA 계정 및 Steam 계정 연결 조건이 표시되어 있다. 친구 패스 제공은 이 자료에 안내되어 있지 않다.",
+    "source": "Electronic Arts · Steam 공식 스토어",
+    "url": "https://store.steampowered.com/app/1225570/Unravel_Two/",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "unraveltwo",
+      "kind": "multiplayer",
+      "source_id_ref": "ut-steam",
+      "scope": "Unravel Two Steam PC판의 공식 소개·지원 기능"
+    }
+  },
+  {
+    "doc_id": "mo2-gameplay",
+    "title": "Moving Out 2: 가구를 옮기는 물리 기반 협동",
+    "text": "2026-10-01 수집. 적용 범위: Moving Out 2 본편, Steam PC판 소개. 무빙 아웃2는 물리 기반 이사 시뮬레이션이다. Smooth Moves의 이사 직원이 되어 Packmore 주민들의 짐을 꾸리고 옮긴다. 차원 포털을 통해 새로운 세계의 과제에 도전하며 기존 인물과 새 캐릭터가 등장한다. 혼자 또는 친구 최대 세 명과 함께할 수 있어 전체 인원은 최대 4명이다. 보조 모드와 접근성 선택지도 소개한다.",
+    "source": "Team17 · Steam 공식 스토어",
+    "url": "https://store.steampowered.com/app/1641700/Moving_Out_2/",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "movingout2",
+      "kind": "gameplay",
+      "source_id_ref": "mo2-steam",
+      "scope": "Moving Out 2 본편, Steam PC판 소개"
+    }
+  },
+  {
+    "doc_id": "mo2-multiplayer",
+    "title": "Moving Out 2: 출시 플랫폼과 협동 방식",
+    "text": "2026-10-01 수집. 적용 범위: Moving Out 2 본편, Team17 공식 제품 안내. 공식 페이지는 Steam, PS4·PS5, Xbox One·Xbox Series X/S, Nintendo Switch를 출시 플랫폼으로 안내한다. 로컬 협동과 크로스플레이 온라인 멀티플레이를 지원한다. 가구를 잡고 던지거나 부수는 물리 동작을 이용하며 서로 다른 차원의 장소에서 이사 과제를 수행한다. 플랫폼별 구독·소유권의 세부 조건은 이 제품 소개에 제시되어 있지 않다.",
+    "source": "Team17",
+    "url": "https://www.team17.com/games/moving-out-2",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "movingout2",
+      "kind": "multiplayer",
+      "source_id_ref": "mo2-team17",
+      "scope": "Moving Out 2 본편, Team17 공식 제품 안내"
+    }
+  },
+  {
+    "doc_id": "mo2-editions",
+    "title": "Moving Out 2: Steam Deluxe Edition의 구성",
+    "text": "2026-10-01 수집. 적용 범위: 2026-10-01 Steam 상점의 Moving Out 2 Deluxe Edition 구매 구성. 상점의 Deluxe Edition 구매 묶음에는 본편, Digital Artbook, F.A.R.Tastic Four DLC, Soundtrack의 네 상품이 표시된다. 디지털 디럭스 설명에는 아트북·활동책·제작진 해설·3D 출력 모델·음악 같은 부가 자료를 안내한다. 이 자료는 Steam PC 상품 구성에 관한 것으로, 기본판이나 다른 플랫폼판에 같은 부가 자료가 모두 포함된다고 일반화하지 않는다.",
+    "source": "Team17 · Steam 공식 스토어",
+    "url": "https://store.steampowered.com/app/1641700/Moving_Out_2/",
+    "metadata": {
+      "updated": "2026-10-01 수집",
+      "game_id": "movingout2",
+      "kind": "edition",
+      "source_id_ref": "mo2-steam",
+      "scope": "2026-10-01 Steam 상점의 Moving Out 2 Deluxe Edition 구매 구성"
+    }
+  }
+]

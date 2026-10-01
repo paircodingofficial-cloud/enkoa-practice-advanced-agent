@@ -1,0 +1,540 @@
+{
+  "dataset_revision": "assignment01-20261001-v1",
+  "snapshot_date": "2026-10-01",
+  "collected_at": "2026-10-01T18:12:52+09:00",
+  "method": "공식 공개 HTML 실제 GET + 제목·날짜 등 표식 대조 + 사람의 짧은 한국어 사실 요약",
+  "copyright": "원문 전문·이미지 미배포. 출처별 본문 요약 200단어 이하. 요약은 공식 라이선스의 포괄 허가를 주장하지 않는다.",
+  "official_domains": [
+    "museum.go.kr",
+    "sema.seoul.go.kr"
+  ],
+  "scope": {
+    "exhibitions": 16,
+    "visit_documents": 7,
+    "local_documents": 23,
+    "local_source_urls": 23,
+    "web_extension_urls": 1
+  },
+  "caveat": "GET 성공과 표식 확인은 전체 사실 자동 검증이 아니다. 고정 요약은 수집 당시 수동 대조 결과이며, 나중의 웹 변경은 별도 근거로 취급한다.",
+  "sources": [
+    {
+      "source_id": "src-nmk-2026-table",
+      "title": "우리들의 밥상",
+      "source": "국립중앙박물관",
+      "url": "https://www.museum.go.kr/MUSEUM/contents/M0202010000.do?exhiSpThemId=3529713&listType=list&menuId=current&schM=view",
+      "markers": [
+        "우리들의 밥상",
+        "2026-07-01~2026-10-25",
+        "5,000"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E01"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:48+09:00",
+      "http_status": 200,
+      "final_url": "https://www.museum.go.kr/MUSEUM/contents/M0202010000.do?exhiSpThemId=3529713&listType=list&menuId=current&schM=view",
+      "response_sha256": "bc0a77ee61da74ea67bbd925df8a3a64121761f8c6c575a15d4c3df099e485a6",
+      "response_bytes": 101630,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-nmk-2026-chusa",
+      "title": "추사 김정희와 그의 동반자",
+      "source": "국립중앙박물관",
+      "url": "https://www.museum.go.kr/MUSEUM/contents/M0202010000.do?exhiSpThemId=3672087&listType=list&menuId=current&schM=view",
+      "markers": [
+        "추사 김정희와 그의 동반자",
+        "2026-08-11~2026-11-22",
+        "무료입장"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E02"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:48+09:00",
+      "http_status": 200,
+      "final_url": "https://www.museum.go.kr/MUSEUM/contents/M0202010000.do?exhiSpThemId=3672087&listType=list&menuId=current&schM=view",
+      "response_sha256": "e4ece085e5fe6d70e6f06fdfb085fe6fbaea4874f1cb24e32415614ef469c650",
+      "response_bytes": 61106,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-nmk-2026-donation2",
+      "title": "아름다움을 나누는 마음 - 새로 맞이한 기증유물전 2",
+      "source": "국립중앙박물관",
+      "url": "https://www.museum.go.kr/MUSEUM/contents/M0202010000.do?exhiSpThemId=3692100&listType=list&menuId=current&schM=view",
+      "markers": [
+        "새로 맞이한 기증유물전",
+        "2026-07-27~2026-11-15",
+        "205"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E03"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:48+09:00",
+      "http_status": 200,
+      "final_url": "https://www.museum.go.kr/MUSEUM/contents/M0202010000.do?exhiSpThemId=3692100&listType=list&menuId=current&schM=view",
+      "response_sha256": "dc6cfc2aeda81b58998a530b5eeed0a2ffb0d6fa1e2ae984cf75abe8600dcd98",
+      "response_bytes": 61406,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-nmk-2026-bamboo",
+      "title": "사계절 푸른 대나무, 도자기에 담다",
+      "source": "국립중앙박물관",
+      "url": "https://www.museum.go.kr/MUSEUM/contents/M0202010000.do?exhiSpThemId=3588283&listType=list&menuId=current&schM=view",
+      "markers": [
+        "사계절 푸른 대나무",
+        "2026-06-23~2027-01-31",
+        "별도의 예약없이 무료"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E04"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:48+09:00",
+      "http_status": 200,
+      "final_url": "https://www.museum.go.kr/MUSEUM/contents/M0202010000.do?exhiSpThemId=3588283&listType=list&menuId=current&schM=view",
+      "response_sha256": "5fdfe54aef57f0ee9031b349926792f8a8a272fb9a5d3cf981f1fe6da48cc9c6",
+      "response_bytes": 76334,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-nmk-2026-modern",
+      "title": "모던 아트의 탄생 - 스위스 쿤스트하우스 취리히 소장품 특별전",
+      "source": "국립중앙박물관",
+      "url": "https://www.museum.go.kr/MUSEUM/contents/M0202020000.do?exhiSpThemId=3763678&listType=list&menuId=upcomming&schM=view",
+      "markers": [
+        "모던 아트의 탄생",
+        "2026-11-27~2027-04-18"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E05"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:48+09:00",
+      "http_status": 200,
+      "final_url": "https://www.museum.go.kr/MUSEUM/contents/M0202020000.do?exhiSpThemId=3763678&listType=list&menuId=upcomming&schM=view",
+      "response_sha256": "cb828db5c6e84d4815fbc4487ffe66db39b1bb7083426bafa85423b0bd6e78fc",
+      "response_bytes": 56518,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-nmk-2026-antoinette",
+      "title": "마리 앙투아네트 스타일",
+      "source": "국립중앙박물관",
+      "url": "https://www.museum.go.kr/MUSEUM/contents/M0202020000.do?exhiSpThemId=3763677&listType=list&menuId=upcomming&schM=view",
+      "markers": [
+        "마리 앙투아네트 스타일",
+        "2026-12-18~2027-03-31"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E06"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:48+09:00",
+      "http_status": 200,
+      "final_url": "https://www.museum.go.kr/MUSEUM/contents/M0202020000.do?exhiSpThemId=3763677&listType=list&menuId=upcomming&schM=view",
+      "response_sha256": "98abfada1c1c46b52f82905920acd19853114191bef721eaac671d272e49a306",
+      "response_bytes": 57142,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-nmk-2026-thailand",
+      "title": "어메이징 타일랜드: 태국미술명품전",
+      "source": "국립중앙박물관",
+      "url": "https://www.museum.go.kr/MUSEUM/contents/M0202030000.do?exhiSpThemId=3529711&listType=list&menuId=past&schM=view",
+      "markers": [
+        "태국미술명품전",
+        "2026-06-23~2026-09-06",
+        "8,000"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E07"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:48+09:00",
+      "http_status": 200,
+      "final_url": "https://www.museum.go.kr/MUSEUM/contents/M0202030000.do?exhiSpThemId=3529711&listType=list&menuId=past&schM=view",
+      "response_sha256": "dba6f055226afaaabdcb73e19d7a1793cc641aae54c023ea739724e8b1bf86d3",
+      "response_bytes": 95674,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-nmk-2026-danwon",
+      "title": "단원 김홍도, 시대를 그리다",
+      "source": "국립중앙박물관",
+      "url": "https://www.museum.go.kr/MUSEUM/contents/M0202030000.do?exhiSpThemId=3515965&listType=list&menuId=past&schM=view",
+      "markers": [
+        "단원 김홍도",
+        "2026-05-04~2026-08-10",
+        "무료"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E08"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:49+09:00",
+      "http_status": 200,
+      "final_url": "https://www.museum.go.kr/MUSEUM/contents/M0202030000.do?exhiSpThemId=3515965&listType=list&menuId=past&schM=view",
+      "response_sha256": "8a59de96e99e1afd05134e814ba6dafbb3f4f47dc13af812b850b94cbbb13f47",
+      "response_bytes": 107247,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-sema-2026-play-lounge",
+      "title": "플레이 라운지: 어쩌면 우리에게 더 멋진 일이 있을지도 몰라",
+      "source": "서울시립미술관",
+      "url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1576627",
+      "markers": [
+        "어쩌면 우리에게 더 멋진 일이",
+        "2026.09.01~2026.10.11",
+        "무료"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E09"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:49+09:00",
+      "http_status": 200,
+      "final_url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1576627",
+      "response_sha256": "a51af0d7da77a3bda8721779b52a3654a4b5cdb9038a596cb3d090592ff9b105",
+      "response_bytes": 125738,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-sema-2026-oyoon",
+      "title": "오윤",
+      "source": "서울시립미술관",
+      "url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1576838",
+      "markers": [
+        "오윤",
+        "2026.08.27~2027.02.14",
+        "무료"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E10"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:49+09:00",
+      "http_status": 200,
+      "final_url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1576838",
+      "response_sha256": "c2f6239de95f74051b07ae87e6c01f194c230475c3daec2a37aeac1ee9dd3952",
+      "response_bytes": 117253,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-sema-2026-moles",
+      "title": "김희천: 두더지들",
+      "source": "서울시립미술관",
+      "url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1565012",
+      "markers": [
+        "김희천: 두더지들",
+        "2026.08.20~2026.11.08",
+        "무료"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E11"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:49+09:00",
+      "http_status": 200,
+      "final_url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1565012",
+      "response_sha256": "88b06ab0b81a9085a510acc3d83a7620abbf2b51ba985c58fee13858023d596c",
+      "response_bytes": 134700,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-sema-2026-human-error",
+      "title": "2026 타이틀 매치 오인환 vs. 장서영: 휴먼 에러",
+      "source": "서울시립미술관",
+      "url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1563285",
+      "markers": [
+        "휴먼 에러",
+        "2026.08.13~2026.10.25",
+        "무료"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E12"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:50+09:00",
+      "http_status": 200,
+      "final_url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1563285",
+      "response_sha256": "8e9d0ae04970ac2086bf43fbc9f69b4da6a231b1862c21a7d8670dd5ce69f470",
+      "response_bytes": 143035,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-sema-2026-chosookjin",
+      "title": "조숙진: 지나가는 자리",
+      "source": "서울시립미술관",
+      "url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1556711",
+      "markers": [
+        "지나가는 자리",
+        "2026.07.29~2026.11.15",
+        "무료"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E13"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:50+09:00",
+      "http_status": 200,
+      "final_url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1556711",
+      "response_sha256": "237138a35c44a423f6f28f8d017fd2010282d31da36e541627ad6a14b1203fbb",
+      "response_bytes": 153189,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-sema-2026-martin-parr",
+      "title": "마틴 파: We Are Martin Parr",
+      "source": "서울시립미술관",
+      "url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1553791",
+      "markers": [
+        "We Are Martin Parr",
+        "2026.07.16~2026.10.18",
+        "무료"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E14"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:50+09:00",
+      "http_status": 200,
+      "final_url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1553791",
+      "response_sha256": "0c9f306625001d5be42dfb76a998f4f5520bd328cdbe44104fa24cda2300017b",
+      "response_bytes": 170496,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-sema-2026-yooyoungkuk",
+      "title": "유영국: 산은 내 안에 있다",
+      "source": "서울시립미술관",
+      "url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1529410",
+      "markers": [
+        "산은 내 안에 있다",
+        "2026.05.19~2026.10.25",
+        "무료"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E15"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:50+09:00",
+      "http_status": 200,
+      "final_url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1529410",
+      "response_sha256": "32f0b1e11d3d0b26872eb50f7def00e3aa29d81325bd6aa19c71dc2f77849b95",
+      "response_bytes": 148049,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-sema-2026-gana",
+      "title": "가나아트컬렉션: 기술의 저변, 경계에 선 장면들",
+      "source": "서울시립미술관",
+      "url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1509709",
+      "markers": [
+        "기술의 저변",
+        "2026.04.16~2026.11.22",
+        "무료"
+      ],
+      "role": "local_exhibition",
+      "used_by_doc_ids": [
+        "A01-E16"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:51+09:00",
+      "http_status": 200,
+      "final_url": "https://sema.seoul.go.kr/kr/whatson/exhibition/detail?exNo=1509709",
+      "response_sha256": "05d70076ac620610c038125ad9343e7e389bf14adb79921f2cf97866bf3076ca",
+      "response_bytes": 129590,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-visit-nmk",
+      "title": "국립중앙박물관 관람 안내",
+      "source": "국립중앙박물관",
+      "url": "https://www.museum.go.kr/MUSEUM/contents/M0101000000.do?menuId=tour-guidance",
+      "markers": [
+        "17:30",
+        "20:30",
+        "30명 이상"
+      ],
+      "role": "local_visit",
+      "used_by_doc_ids": [
+        "A01-V-nmk",
+        "A01-E03"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:50+09:00",
+      "http_status": 200,
+      "final_url": "https://www.museum.go.kr/MUSEUM/contents/M0101000000.do?menuId=tour-guidance",
+      "response_sha256": "7132bf6e7b656433b361965a6d2cbba061f181889ff29bb16f7e5e0cc1413ec4",
+      "response_bytes": 53734,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-visit-seoseoul",
+      "title": "서울시립 서서울미술관 관람 안내",
+      "source": "서울시립미술관",
+      "url": "https://sema.seoul.go.kr/kr/visit/seoseoul",
+      "markers": [
+        "시흥대로79길",
+        "30분 전"
+      ],
+      "role": "local_visit",
+      "used_by_doc_ids": [
+        "A01-V-seoseoul"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:51+09:00",
+      "http_status": 200,
+      "final_url": "https://sema.seoul.go.kr/kr/visit/seoseoul",
+      "response_sha256": "0aa1ea94537c065d538a1eb592aeb6b33092a843e5d34ed3cb8edcecb927b539",
+      "response_bytes": 144192,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-visit-art_archive",
+      "title": "서울시립 미술아카이브 관람 안내",
+      "source": "서울시립미술관",
+      "url": "https://sema.seoul.go.kr/kr/visit/art_archive",
+      "markers": [
+        "평창문화로 101",
+        "1시간 전"
+      ],
+      "role": "local_visit",
+      "used_by_doc_ids": [
+        "A01-V-art_archive"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:51+09:00",
+      "http_status": 200,
+      "final_url": "https://sema.seoul.go.kr/kr/visit/art_archive",
+      "response_sha256": "e46e7143f53b24ec5b5e23ec8ac7fae5339d6d94fd619fee19bf84f725c4fa11",
+      "response_bytes": 136238,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-visit-bukseoul",
+      "title": "서울시립 북서울미술관 관람 안내",
+      "source": "서울시립미술관",
+      "url": "https://sema.seoul.go.kr/kr/visit/bukseoul",
+      "markers": [
+        "동일로 1238",
+        "1시간 전"
+      ],
+      "role": "local_visit",
+      "used_by_doc_ids": [
+        "A01-V-bukseoul"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:51+09:00",
+      "http_status": 200,
+      "final_url": "https://sema.seoul.go.kr/kr/visit/bukseoul",
+      "response_sha256": "6784d544cba7e62a352fcca7e92a6de5dc8a4324bf5d13f1965043fc4a4ebacf",
+      "response_bytes": 154565,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-visit-namseoul",
+      "title": "서울시립 남서울미술관 관람 안내",
+      "source": "서울시립미술관",
+      "url": "https://sema.seoul.go.kr/kr/visit/namseoul",
+      "markers": [
+        "남부순환로 2076",
+        "주차 시설이 없으므로"
+      ],
+      "role": "local_visit",
+      "used_by_doc_ids": [
+        "A01-V-namseoul"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:51+09:00",
+      "http_status": 200,
+      "final_url": "https://sema.seoul.go.kr/kr/visit/namseoul",
+      "response_sha256": "322cdc825a6bdb8112088fb8191323b8bcb0caafb8fe030a8de24c9816620786",
+      "response_bytes": 136252,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-visit-photosema",
+      "title": "서울시립 사진미술관 관람 안내",
+      "source": "서울시립미술관",
+      "url": "https://sema.seoul.go.kr/kr/visit/photosema",
+      "markers": [
+        "마들로13길 68",
+        "포토라이브러리",
+        "1시간 전"
+      ],
+      "role": "local_visit",
+      "used_by_doc_ids": [
+        "A01-V-photosema"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:52+09:00",
+      "http_status": 200,
+      "final_url": "https://sema.seoul.go.kr/kr/visit/photosema",
+      "response_sha256": "0594349ce2a7cbe99ecb43805eac1e9a90c9b75406b88250c499b69911c4e89a",
+      "response_bytes": 153116,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-visit-seosomun",
+      "title": "서울시립미술관 서소문본관 관람 안내",
+      "source": "서울시립미술관",
+      "url": "https://sema.seoul.go.kr/kr/visit/seosomun",
+      "markers": [
+        "덕수궁길 61",
+        "1시간 전"
+      ],
+      "role": "local_visit",
+      "used_by_doc_ids": [
+        "A01-V-seosomun"
+      ],
+      "source_updated_at": null,
+      "retrieved_at": "2026-10-01T18:12:52+09:00",
+      "http_status": 200,
+      "final_url": "https://sema.seoul.go.kr/kr/visit/seosomun",
+      "response_sha256": "4e5d7e3027bf68ca9657ce6b84cc97570b89702f719c85b61e3029c73b2f3e1a",
+      "response_bytes": 169684,
+      "marker_check": "all_present"
+    },
+    {
+      "source_id": "src-web-nmk-accessibility",
+      "title": "국립중앙박물관 접근성 안내",
+      "source": "국립중앙박물관",
+      "url": "https://www.museum.go.kr/MUSEUM/contents/M0105000000.do?menuId=accessibility",
+      "markers": [
+        "상설 전시실 1층에 휠체어 대여소",
+        "2024년 02월 29일"
+      ],
+      "role": "web_extension_reference_not_in_local_docs",
+      "source_updated_at": "2024-02-29",
+      "used_by_doc_ids": [],
+      "retrieved_at": "2026-10-01T18:12:51+09:00",
+      "http_status": 200,
+      "final_url": "https://www.museum.go.kr/MUSEUM/contents/M0105000000.do?menuId=accessibility",
+      "response_sha256": "45e82543e9ddfd63ffb80f9fc7b44118a2a0ee01f05334d50cc2a409cf8d9c12",
+      "response_bytes": 105770,
+      "marker_check": "all_present"
+    }
+  ]
+}

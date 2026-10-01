@@ -13,6 +13,7 @@
 | **day50** | LangGraph 기초 | State·노드·고정/조건부 엣지·메시지 리듀서, Jev와 하이브리드 RAG, 질문별 검색 도구 라우팅 |
 | **day51** | LangGraph 사이클·HITL | 반복과 종료 조건, 체크포인터, 사람의 검토와 실행 재개 |
 | **day52** | 메모리·컨텍스트 | Store·Mem0 기억 관리, 토큰 기반 요약과 입력 조절, 기억 갱신을 연결한 실습 |
+| **day53** | CRAG·Self-RAG 응용 | 근거 평가·재검색·웹 보완, 답변 검토·수정과 종료 조건. 팝업·전시 플래너와 게임 소개 대본 검수 과제 |
 
 ---
 
@@ -53,6 +54,8 @@ day49는 **Neo4j 2026.09 이상·Cypher 25·GDS·APOC**가 필요합니다. Pyth
 day50은 `langgraph`로 노드를 연결합니다. 교안 03은 Neo4j·APOC를 사용하며, 설정과 실행 순서는 [day50 README](day50_LangGraph_기초/README.md)를 따릅니다.
 
 day52는 Mem0·Qdrant·SQLite를 사용합니다.
+
+day53은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`와 `TAVILY_API_KEY`를 설정합니다. Tavily 키는 [대시보드](https://app.tavily.com/)에서 발급받습니다. 과제02는 웹 검색을 사용하지 않습니다.
 
 ## 폴더 구성
 

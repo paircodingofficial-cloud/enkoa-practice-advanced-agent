@@ -1,0 +1,232 @@
+{
+  "collected_at": "2026-10-01",
+  "dataset": "assignment02",
+  "sources": [
+    {
+      "source_id": "oc2-steam",
+      "source": "Team17 · Steam 공식 스토어",
+      "title": "Overcooked! 2",
+      "url": "https://store.steampowered.com/app/728880/Overcooked_2/",
+      "collected_at": "2026-10-01",
+      "verification": "공식 페이지 본문을 웹으로 열어 확인",
+      "sections_used": "About This Game; Online/Local Multiplayer",
+      "doc_ids": [
+        "oc2-gameplay"
+      ],
+      "paraphrase_words": 43,
+      "page_word_limit": 200
+    },
+    {
+      "source_id": "oc2-team17",
+      "source": "Team17",
+      "title": "Overcooked! 2 제품 소개",
+      "url": "https://www.team17.com/games/overcooked-2",
+      "collected_at": "2026-10-01",
+      "verification": "공식 페이지 본문을 웹으로 열어 확인",
+      "sections_used": "About the game; Gourmet Edition; Nintendo Switch 2 Edition",
+      "doc_ids": [
+        "oc2-multiplayer"
+      ],
+      "paraphrase_words": 48,
+      "page_word_limit": 200
+    },
+    {
+      "source_id": "oc2-pc-news",
+      "source": "Team17",
+      "title": "Overcooked! 2 Free on Epic Games and PC Crossplay Patch",
+      "url": "https://www.team17.com/news/overcooked-2-free-on-epic-games-and-pc-crossplay-patch",
+      "collected_at": "2026-10-01",
+      "verification": "공식 페이지 본문을 웹으로 열어 확인",
+      "sections_used": "2021-06-17 공지: 배포 종료일과 당시 PC 크로스플레이 범위",
+      "doc_ids": [
+        "oc2-crossplay",
+        "oc2-promotion"
+      ],
+      "paraphrase_words": 107,
+      "page_word_limit": 200
+    },
+    {
+      "source_id": "oc2-ayce",
+      "source": "Team17",
+      "title": "Overcooked! All You Can Eat FAQ",
+      "url": "https://www.team17.com/news/overcooked-all-you-can-eat-faq",
+      "collected_at": "2026-10-01",
+      "verification": "공식 페이지 본문을 웹으로 열어 확인",
+      "sections_used": "What is AYCE; Can I play with my friend who has Overcooked 2; Is cross-play in the game",
+      "doc_ids": [
+        "oc2-editions"
+      ],
+      "paraphrase_words": 62,
+      "page_word_limit": 200
+    },
+    {
+      "source_id": "oc2-switch2",
+      "source": "Team17",
+      "title": "Overcooked! 2 Nintendo Switch 2 FAQ",
+      "url": "https://www.team17.com/news/overcooked-2-nintendo-switch-2-faq",
+      "collected_at": "2026-10-01",
+      "verification": "공식 페이지 본문을 웹으로 열어 확인",
+      "sections_used": "2025-09-12 공지: 에디션 기능, Switch 세대 간 온라인, DLC와 저장 이전",
+      "doc_ids": [
+        "oc2-switch2"
+      ],
+      "paraphrase_words": 60,
+      "page_word_limit": 200
+    },
+    {
+      "source_id": "itt-steam",
+      "source": "Electronic Arts · Steam 공식 스토어",
+      "title": "It Takes Two",
+      "url": "https://store.steampowered.com/app/1426210/It_Takes_Two/",
+      "collected_at": "2026-10-01",
+      "verification": "공식 페이지 본문을 웹으로 열어 확인",
+      "sections_used": "About This Game; Key Features; EA Account for online play",
+      "doc_ids": [
+        "itt-gameplay",
+        "itt-multiplayer"
+      ],
+      "paraphrase_words": 104,
+      "page_word_limit": 200
+    },
+    {
+      "source_id": "itt-pass",
+      "source": "Electronic Arts",
+      "title": "It Takes Two Friend's Pass",
+      "url": "https://www.ea.com/games/it-takes-two/it-takes-two/features/itt-friends-pass",
+      "collected_at": "2026-10-01",
+      "verification": "공식 페이지 본문을 웹으로 열어 확인",
+      "sections_used": "Friend's Pass FAQ와 페이지 하단 전체 게임 소유 조건",
+      "doc_ids": [
+        "itt-friends-pass"
+      ],
+      "paraphrase_words": 86,
+      "page_word_limit": 200
+    },
+    {
+      "source_id": "sdv-steam",
+      "source": "ConcernedApe · Steam 공식 스토어",
+      "title": "Stardew Valley",
+      "url": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+      "collected_at": "2026-10-01",
+      "verification": "공식 페이지 본문을 웹으로 열어 확인",
+      "sections_used": "About This Game; Features; 8 Player Farming; 지원 기능",
+      "doc_ids": [
+        "sdv-gameplay",
+        "sdv-activities",
+        "sdv-multiplayer"
+      ],
+      "paraphrase_words": 149,
+      "page_word_limit": 200
+    },
+    {
+      "source_id": "sdv-faq",
+      "source": "ConcernedApe",
+      "title": "Stardew Valley FAQ",
+      "url": "https://www.stardewvalley.net/faq/",
+      "collected_at": "2026-10-01",
+      "verification": "공식 페이지 본문을 웹으로 열어 확인",
+      "sections_used": "What is Stardew Valley; publisher; supported languages",
+      "doc_ids": [
+        "sdv-platforms"
+      ],
+      "paraphrase_words": 47,
+      "page_word_limit": 200
+    },
+    {
+      "source_id": "sf-steam",
+      "source": "Electronic Arts · Steam 공식 스토어",
+      "title": "Split Fiction",
+      "url": "https://store.steampowered.com/app/2001120/Split_Fiction/",
+      "collected_at": "2026-10-01",
+      "verification": "공식 페이지 본문을 웹으로 열어 확인",
+      "sections_used": "About This Game; Friend's Pass와 EA 계정 조건",
+      "doc_ids": [
+        "sf-gameplay"
+      ],
+      "paraphrase_words": 48,
+      "page_word_limit": 200
+    },
+    {
+      "source_id": "sf-pass",
+      "source": "Electronic Arts",
+      "title": "Split Fiction Friend's Pass PC",
+      "url": "https://www.ea.com/games/split-fiction/split-fiction/features/friends-pass-pc",
+      "collected_at": "2026-10-01",
+      "verification": "공식 페이지 본문을 웹으로 열어 확인",
+      "sections_used": "전체 플레이 소유 조건, 데모, 플랫폼, 크로스플레이, 로컬 FAQ",
+      "doc_ids": [
+        "sf-friends-pass",
+        "sf-platforms"
+      ],
+      "paraphrase_words": 134,
+      "page_word_limit": 200
+    },
+    {
+      "source_id": "sf-side",
+      "source": "Electronic Arts",
+      "title": "Split Fiction An Introduction to Side Stories",
+      "url": "https://www.ea.com/games/split-fiction/split-fiction/news/an-introduction-to-side-stories",
+      "collected_at": "2026-10-01",
+      "verification": "공식 페이지 본문을 웹으로 열어 확인",
+      "sections_used": "2025-01-27 공지: What Are Side Stories",
+      "doc_ids": [
+        "sf-side-stories"
+      ],
+      "paraphrase_words": 55,
+      "page_word_limit": 200
+    },
+    {
+      "source_id": "ut-steam",
+      "source": "Electronic Arts · Steam 공식 스토어",
+      "title": "Unravel Two",
+      "url": "https://store.steampowered.com/app/1225570/Unravel_Two/",
+      "collected_at": "2026-10-01",
+      "verification": "공식 페이지 본문을 웹으로 열어 확인",
+      "sections_used": "About This Game; Key Features; Remote Play Together; EA 계정",
+      "doc_ids": [
+        "ut-gameplay",
+        "ut-multiplayer"
+      ],
+      "paraphrase_words": 108,
+      "page_word_limit": 200
+    },
+    {
+      "source_id": "mo2-steam",
+      "source": "Team17 · Steam 공식 스토어",
+      "title": "Moving Out 2",
+      "url": "https://store.steampowered.com/app/1641700/Moving_Out_2/",
+      "collected_at": "2026-10-01",
+      "verification": "공식 페이지 본문을 웹으로 열어 확인",
+      "sections_used": "About This Game; Multiplayer; Deluxe Edition 상품 구성",
+      "doc_ids": [
+        "mo2-gameplay",
+        "mo2-editions"
+      ],
+      "paraphrase_words": 115,
+      "page_word_limit": 200
+    },
+    {
+      "source_id": "mo2-team17",
+      "source": "Team17",
+      "title": "Moving Out 2 제품 소개",
+      "url": "https://www.team17.com/games/moving-out-2",
+      "collected_at": "2026-10-01",
+      "verification": "공식 페이지 본문을 웹으로 열어 확인",
+      "sections_used": "출시 플랫폼; Local & Online Multiplayer; Same Old, Brand New",
+      "doc_ids": [
+        "mo2-multiplayer"
+      ],
+      "paraphrase_words": 55,
+      "page_word_limit": 200
+    }
+  ],
+  "method": "공식 페이지를 직접 읽고 한국어로 짧게 재서술. 페이지별 전체 문서 합계 200어절 이하. 원문 전문과 사용자 리뷰·평점·가격은 미수록.",
+  "scope": "6개 게임의 소개·협동·소유·에디션 조건. 과제 실행 중에는 로컬 JSON 전체만 검색하며 별도 웹 검색을 하지 않음.",
+  "limitations": [
+    "수집일과 공식 발표일은 다르다. 날짜가 있는 공지는 본문에 그 시점을 명시했다.",
+    "Overcooked2의 구 Helpshift 크로스플레이 FAQ는 직접 열기 실패로 배포 근거에서 제외했다. 2021 PC 공지는 역사 범위로만 사용한다.",
+    "It Takes Two FAQ의 과거 Xbox 구독 상품명은 그대로 현재 상품명으로 쓰지 않고 해당 플랫폼 온라인 구독 조건으로 요약했다.",
+    "공식 FAQ에 적힌 옛 Stadia 안내와 미래 계획 문구는 현재 지원으로 수록하지 않았다.",
+    "다음 할인 날짜와 신규 스토리 DLC 발표는 수집 자료에서 확인할 수 없다. 전 세계 공식 발표의 부재를 단정하지 않는다."
+  ]
+}
