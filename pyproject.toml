@@ -3,7 +3,7 @@ name = "enkoa-practice-advanced-agent"
 version = "0.1.0"
 description = "엔코아 AI캠퍼스 고급 RAG·에이전트 실습자료"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<3.13"
 dependencies = [
     "ipykernel>=7.3.0",
     "jupyterlab>=4.6.2",
@@ -64,7 +64,15 @@ dependencies = [
     "requests>=2.32,<3",
     # day52: Mem0 기억 관리·Qdrant 저장소·노트북 위젯
     "mem0ai[nlp]==2.2.1",
+    # Mem0의 extras는 langchain-core<1을 요구한다. BM25 의존성만 개별 설치한다.
+    "fastembed==0.8.0",
+    # spaCy 모델도 uv로 설치해 첫 실행 시 pip를 통한 자동 다운로드를 피한다.
+    "en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
     "qdrant-client==1.18.0",
     "sqlite-vec==0.1.9",
     "ipywidgets>=8,<9",
 ]
+
+[tool.uv]
+# Windows 수업 PC에서 wheel 전용 패키지도 설치할 수 있도록 해석한다.
+required-environments = ["sys_platform == 'win32' and platform_machine == 'AMD64'"]
