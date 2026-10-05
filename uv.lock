@@ -728,6 +728,7 @@ dependencies = [
     { name = "flagembedding" },
     { name = "huggingface-hub" },
     { name = "ipykernel" },
+    { name = "ipython" },
     { name = "ipywidgets" },
     { name = "jupyterlab" },
     { name = "kiwipiepy" },
@@ -768,12 +769,13 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "chromadb", specifier = ">=1.5" },
+    { name = "chromadb", specifier = "==1.5.9" },
     { name = "en-core-web-sm", url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl" },
     { name = "fastembed", specifier = "==0.8.0" },
     { name = "flagembedding", specifier = "==1.4.2" },
     { name = "huggingface-hub", specifier = ">=1.0" },
     { name = "ipykernel", specifier = ">=7.3.0" },
+    { name = "ipython", specifier = ">=9.17.1,<10" },
     { name = "ipywidgets", specifier = ">=8,<9" },
     { name = "jupyterlab", specifier = ">=4.6.2" },
     { name = "kiwipiepy", specifier = "==0.23.2" },

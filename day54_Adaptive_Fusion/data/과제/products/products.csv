@@ -1,0 +1,121 @@
+﻿product_id,name,category,price,stock,connection,compatible_os,bluetooth,multi_device,warranty_months,specification,active
+KB-101,모아 베이직87 블랙,키보드,29000,8,USB 유선,"Windows,macOS",0,0,12,87키 텐키리스. USB-A 연결만 지원하며 무선 페어링 기능은 없습니다.,1
+KB-102,모아 스위치75 블랙,키보드,59000,15,Bluetooth,"Windows,macOS,iPadOS,Android",1,3,12,"75키. Bluetooth 기기 3대 등록, Fn+1/2/3으로 한 대씩 전환. 동시 입력 불가. USB-C는 충전 전용.",1
+KB-103,모아 컴팩트68 블랙,키보드,49000,22,"Bluetooth,2.4GHz 수신기","Windows,macOS,iPadOS,Android",1,2,12,68키. Bluetooth 2대와 동봉 수신기 채널을 선택. USB-C는 충전 전용.,1
+KB-104,모아 타이프104 블랙,키보드,79000,29,USB 유선,"Windows,macOS",0,0,12,104키 기계식. USB-C 유선 입력. 전용 매크로 프로그램은 Windows만 지원.,1
+KB-105,모아 멀티98 블랙,키보드,89000,12,"Bluetooth,2.4GHz 수신기,USB 유선","Windows,macOS,iPadOS,Android",1,3,12,98키. Bluetooth 3대 등록. BT/수신기/유선 모드 스위치. 전용 설정 프로그램은 Windows만 지원.,1
+KB-106,모아 베이직87 화이트,키보드,31000,43,USB 유선,"Windows,macOS",0,0,12,87키 텐키리스. USB-A 연결만 지원하며 무선 페어링 기능은 없습니다.,1
+KB-107,모아 스위치75 화이트,키보드,61000,50,Bluetooth,"Windows,macOS,iPadOS,Android",1,3,12,"75키. Bluetooth 기기 3대 등록, Fn+1/2/3으로 한 대씩 전환. 동시 입력 불가. USB-C는 충전 전용.",1
+KB-108,모아 컴팩트68 화이트,키보드,51000,14,"Bluetooth,2.4GHz 수신기","Windows,macOS,iPadOS,Android",1,2,12,68키. Bluetooth 2대와 동봉 수신기 채널을 선택. USB-C는 충전 전용.,1
+KB-109,모아 타이프104 화이트,키보드,81000,21,USB 유선,"Windows,macOS",0,0,12,104키 기계식. USB-C 유선 입력. 전용 매크로 프로그램은 Windows만 지원.,1
+KB-110,모아 멀티98 화이트,키보드,91000,28,"Bluetooth,2.4GHz 수신기,USB 유선","Windows,macOS,iPadOS,Android",1,3,12,98키. Bluetooth 3대 등록. BT/수신기/유선 모드 스위치. 전용 설정 프로그램은 Windows만 지원.,1
+KB-111,모아 베이직87 네이비,키보드,33000,35,USB 유선,"Windows,macOS",0,0,12,87키 텐키리스. USB-A 연결만 지원하며 무선 페어링 기능은 없습니다.,1
+KB-112,모아 스위치75 네이비,키보드,63000,0,Bluetooth,"Windows,macOS,iPadOS,Android",1,3,12,"75키. Bluetooth 기기 3대 등록, Fn+1/2/3으로 한 대씩 전환. 동시 입력 불가. USB-C는 충전 전용.",1
+KB-113,모아 컴팩트68 네이비,키보드,53000,49,"Bluetooth,2.4GHz 수신기","Windows,macOS,iPadOS,Android",1,2,12,68키. Bluetooth 2대와 동봉 수신기 채널을 선택. USB-C는 충전 전용.,1
+KB-114,모아 타이프104 네이비,키보드,83000,13,USB 유선,"Windows,macOS",0,0,12,104키 기계식. USB-C 유선 입력. 전용 매크로 프로그램은 Windows만 지원.,1
+KB-115,모아 멀티98 네이비,키보드,93000,20,"Bluetooth,2.4GHz 수신기,USB 유선","Windows,macOS,iPadOS,Android",1,3,12,98키. Bluetooth 3대 등록. BT/수신기/유선 모드 스위치. 전용 설정 프로그램은 Windows만 지원.,1
+KB-116,모아 베이직87 그레이,키보드,35000,27,USB 유선,"Windows,macOS",0,0,12,87키 텐키리스. USB-A 연결만 지원하며 무선 페어링 기능은 없습니다.,1
+KB-117,모아 스위치75 그레이,키보드,65000,34,Bluetooth,"Windows,macOS,iPadOS,Android",1,3,12,"75키. Bluetooth 기기 3대 등록, Fn+1/2/3으로 한 대씩 전환. 동시 입력 불가. USB-C는 충전 전용.",1
+KB-118,모아 컴팩트68 그레이,키보드,55000,0,"Bluetooth,2.4GHz 수신기","Windows,macOS,iPadOS,Android",1,2,12,68키. Bluetooth 2대와 동봉 수신기 채널을 선택. USB-C는 충전 전용.,1
+KB-119,모아 타이프104 그레이,키보드,85000,48,USB 유선,"Windows,macOS",0,0,12,104키 기계식. USB-C 유선 입력. 전용 매크로 프로그램은 Windows만 지원.,1
+KB-120,모아 멀티98 그레이,키보드,95000,12,"Bluetooth,2.4GHz 수신기,USB 유선","Windows,macOS,iPadOS,Android",1,3,12,98키. Bluetooth 3대 등록. BT/수신기/유선 모드 스위치. 전용 설정 프로그램은 Windows만 지원.,1
+MS-201,모아 베이직M 블랙,마우스,19000,8,USB 유선,"Windows,macOS",0,0,12,유선 광학 마우스. DPI 버튼 800/1200/1600. Bluetooth 없음.,1
+MS-202,모아 사일런트M 블랙,마우스,29000,15,2.4GHz 수신기,"Windows,macOS",0,0,12,저소음 버튼. 동봉 USB-A 수신기 필수. Bluetooth 없음.,1
+MS-203,모아 스위치M 블랙,마우스,39000,22,Bluetooth,"Windows,macOS,iPadOS,Android",1,2,12,Bluetooth 2대 등록. 하단 채널 버튼으로 한 대씩 전환. 충전식.,1
+MS-204,모아 프로M 블랙,마우스,49000,29,"Bluetooth,2.4GHz 수신기","Windows,macOS,iPadOS,Android",1,3,12,Bluetooth 3대 등록. 수신기 별도 채널. 전용 버튼 매핑은 Windows만 지원.,1
+MS-205,모아 트랙M 블랙,마우스,69000,0,"Bluetooth,USB 유선","Windows,macOS",1,2,12,트랙볼 방식. Bluetooth 2대 등록. USB 유선 입력 지원. 좌우 버튼은 OS 설정으로 변경.,1
+MS-206,모아 베이직M 화이트,마우스,21000,43,USB 유선,"Windows,macOS",0,0,12,유선 광학 마우스. DPI 버튼 800/1200/1600. Bluetooth 없음.,1
+MS-207,모아 사일런트M 화이트,마우스,31000,50,2.4GHz 수신기,"Windows,macOS",0,0,12,저소음 버튼. 동봉 USB-A 수신기 필수. Bluetooth 없음.,1
+MS-208,모아 스위치M 화이트,마우스,41000,14,Bluetooth,"Windows,macOS,iPadOS,Android",1,2,12,Bluetooth 2대 등록. 하단 채널 버튼으로 한 대씩 전환. 충전식.,1
+MS-209,모아 프로M 화이트,마우스,51000,21,"Bluetooth,2.4GHz 수신기","Windows,macOS,iPadOS,Android",1,3,12,Bluetooth 3대 등록. 수신기 별도 채널. 전용 버튼 매핑은 Windows만 지원.,1
+MS-210,모아 트랙M 화이트,마우스,71000,28,"Bluetooth,USB 유선","Windows,macOS",1,2,12,트랙볼 방식. Bluetooth 2대 등록. USB 유선 입력 지원. 좌우 버튼은 OS 설정으로 변경.,1
+MS-211,모아 베이직M 네이비,마우스,23000,35,USB 유선,"Windows,macOS",0,0,12,유선 광학 마우스. DPI 버튼 800/1200/1600. Bluetooth 없음.,1
+MS-212,모아 사일런트M 네이비,마우스,33000,0,2.4GHz 수신기,"Windows,macOS",0,0,12,저소음 버튼. 동봉 USB-A 수신기 필수. Bluetooth 없음.,1
+MS-213,모아 스위치M 네이비,마우스,43000,49,Bluetooth,"Windows,macOS,iPadOS,Android",1,2,12,Bluetooth 2대 등록. 하단 채널 버튼으로 한 대씩 전환. 충전식.,1
+MS-214,모아 프로M 네이비,마우스,53000,13,"Bluetooth,2.4GHz 수신기","Windows,macOS,iPadOS,Android",1,3,12,Bluetooth 3대 등록. 수신기 별도 채널. 전용 버튼 매핑은 Windows만 지원.,1
+MS-215,모아 트랙M 네이비,마우스,73000,20,"Bluetooth,USB 유선","Windows,macOS",1,2,12,트랙볼 방식. Bluetooth 2대 등록. USB 유선 입력 지원. 좌우 버튼은 OS 설정으로 변경.,1
+MS-216,모아 베이직M 그레이,마우스,25000,27,USB 유선,"Windows,macOS",0,0,12,유선 광학 마우스. DPI 버튼 800/1200/1600. Bluetooth 없음.,1
+MS-217,모아 사일런트M 그레이,마우스,35000,34,2.4GHz 수신기,"Windows,macOS",0,0,12,저소음 버튼. 동봉 USB-A 수신기 필수. Bluetooth 없음.,1
+MS-218,모아 스위치M 그레이,마우스,45000,0,Bluetooth,"Windows,macOS,iPadOS,Android",1,2,12,Bluetooth 2대 등록. 하단 채널 버튼으로 한 대씩 전환. 충전식.,1
+MS-219,모아 프로M 그레이,마우스,55000,48,"Bluetooth,2.4GHz 수신기","Windows,macOS,iPadOS,Android",1,3,12,Bluetooth 3대 등록. 수신기 별도 채널. 전용 버튼 매핑은 Windows만 지원.,1
+MS-220,모아 트랙M 그레이,마우스,75000,12,"Bluetooth,USB 유선","Windows,macOS",1,2,12,트랙볼 방식. Bluetooth 2대 등록. USB 유선 입력 지원. 좌우 버튼은 OS 설정으로 변경.,1
+HB-301,모아 데이터4 블랙,USB허브,25000,8,USB-C,"Windows,macOS",0,0,12,USB-A 데이터 4포트. 영상 출력과 PD 충전 입력 없음. 호스트 USB-C 데이터 포트 필요.,1
+HB-302,모아 워크6 블랙,USB허브,59000,15,USB-C,"Windows,macOS",0,0,12,"HDMI 4K 30Hz 1개, USB-A 2개, SD/microSD, PD 입력65W. 영상은 호스트 DP Alt Mode 필요. 허브 소비전력 최대10W, 호스트 공급 정격 최대55W.",1
+HB-303,모아 듀얼8 블랙,USB허브,99000,22,USB-C,"Windows,macOS",0,0,12,"HDMI 2개, USB-A 3개, LAN, SD, PD 입력100W. 두 확장화면은 Windows의 MST 지원 호스트 필요. macOS에서 두 출력은 같은 화면. 허브 소비전력 최대15W.",1
+HB-304,모아 네트6 블랙,USB허브,69000,29,USB-C,"Windows,macOS",0,0,12,"기가비트 LAN, USB-A 3개, SD/microSD. 영상과 PD 충전 없음. 유선 네트워크용.",1
+HB-305,모아 도크10 블랙,USB허브,149000,0,USB4,"Windows,macOS",0,0,12,"USB4 호스트용 도크. DP 1개, HDMI 1개, USB-A 3개, LAN, 오디오, PD 입력100W. 영상 조합은 호스트 사양 확인. 소비전력 최대15W.",1
+HB-306,모아 데이터4 화이트,USB허브,27000,43,USB-C,"Windows,macOS",0,0,12,USB-A 데이터 4포트. 영상 출력과 PD 충전 입력 없음. 호스트 USB-C 데이터 포트 필요.,1
+HB-307,모아 워크6 화이트,USB허브,61000,50,USB-C,"Windows,macOS",0,0,12,"HDMI 4K 30Hz 1개, USB-A 2개, SD/microSD, PD 입력65W. 영상은 호스트 DP Alt Mode 필요. 허브 소비전력 최대10W, 호스트 공급 정격 최대55W.",1
+HB-308,모아 듀얼8 화이트,USB허브,101000,14,USB-C,"Windows,macOS",0,0,12,"HDMI 2개, USB-A 3개, LAN, SD, PD 입력100W. 두 확장화면은 Windows의 MST 지원 호스트 필요. macOS에서 두 출력은 같은 화면. 허브 소비전력 최대15W.",1
+HB-309,모아 네트6 화이트,USB허브,71000,21,USB-C,"Windows,macOS",0,0,12,"기가비트 LAN, USB-A 3개, SD/microSD. 영상과 PD 충전 없음. 유선 네트워크용.",1
+HB-310,모아 도크10 화이트,USB허브,151000,28,USB4,"Windows,macOS",0,0,12,"USB4 호스트용 도크. DP 1개, HDMI 1개, USB-A 3개, LAN, 오디오, PD 입력100W. 영상 조합은 호스트 사양 확인. 소비전력 최대15W.",1
+HB-311,모아 데이터4 네이비,USB허브,29000,35,USB-C,"Windows,macOS",0,0,12,USB-A 데이터 4포트. 영상 출력과 PD 충전 입력 없음. 호스트 USB-C 데이터 포트 필요.,1
+HB-312,모아 워크6 네이비,USB허브,63000,0,USB-C,"Windows,macOS",0,0,12,"HDMI 4K 30Hz 1개, USB-A 2개, SD/microSD, PD 입력65W. 영상은 호스트 DP Alt Mode 필요. 허브 소비전력 최대10W, 호스트 공급 정격 최대55W.",1
+HB-313,모아 듀얼8 네이비,USB허브,103000,49,USB-C,"Windows,macOS",0,0,12,"HDMI 2개, USB-A 3개, LAN, SD, PD 입력100W. 두 확장화면은 Windows의 MST 지원 호스트 필요. macOS에서 두 출력은 같은 화면. 허브 소비전력 최대15W.",1
+HB-314,모아 네트6 네이비,USB허브,73000,13,USB-C,"Windows,macOS",0,0,12,"기가비트 LAN, USB-A 3개, SD/microSD. 영상과 PD 충전 없음. 유선 네트워크용.",1
+HB-315,모아 도크10 네이비,USB허브,153000,20,USB4,"Windows,macOS",0,0,12,"USB4 호스트용 도크. DP 1개, HDMI 1개, USB-A 3개, LAN, 오디오, PD 입력100W. 영상 조합은 호스트 사양 확인. 소비전력 최대15W.",1
+HB-316,모아 데이터4 그레이,USB허브,31000,27,USB-C,"Windows,macOS",0,0,12,USB-A 데이터 4포트. 영상 출력과 PD 충전 입력 없음. 호스트 USB-C 데이터 포트 필요.,1
+HB-317,모아 워크6 그레이,USB허브,65000,34,USB-C,"Windows,macOS",0,0,12,"HDMI 4K 30Hz 1개, USB-A 2개, SD/microSD, PD 입력65W. 영상은 호스트 DP Alt Mode 필요. 허브 소비전력 최대10W, 호스트 공급 정격 최대55W.",1
+HB-318,모아 듀얼8 그레이,USB허브,105000,0,USB-C,"Windows,macOS",0,0,12,"HDMI 2개, USB-A 3개, LAN, SD, PD 입력100W. 두 확장화면은 Windows의 MST 지원 호스트 필요. macOS에서 두 출력은 같은 화면. 허브 소비전력 최대15W.",1
+HB-319,모아 네트6 그레이,USB허브,75000,48,USB-C,"Windows,macOS",0,0,12,"기가비트 LAN, USB-A 3개, SD/microSD. 영상과 PD 충전 없음. 유선 네트워크용.",1
+HB-320,모아 도크10 그레이,USB허브,155000,12,USB4,"Windows,macOS",0,0,12,"USB4 호스트용 도크. DP 1개, HDMI 1개, USB-A 3개, LAN, 오디오, PD 입력100W. 영상 조합은 호스트 사양 확인. 소비전력 최대15W.",1
+MN-401,모아 뷰24 블랙,모니터,149000,8,"HDMI,DisplayPort","Windows,macOS",0,0,24,24인치 FHD 75Hz IPS. 스피커·USB-C 충전 없음. VESA 100x100mm.,1
+MN-402,모아 워크27 블랙,모니터,249000,15,"HDMI,DisplayPort","Windows,macOS",0,0,24,"27인치 QHD 100Hz IPS. 높이 조절, VESA100x100. USB-C 없음.",1
+MN-403,모아 플레이27 블랙,모니터,329000,22,"HDMI,DisplayPort","Windows,macOS",0,0,24,27인치 QHD 144Hz. 최대 주사율은 DP 연결 권장. 노트북 출력 사양 확인.,1
+MN-404,모아 디테일32 블랙,모니터,449000,29,"HDMI,DisplayPort","Windows,macOS",0,0,24,32인치 UHD 60Hz IPS. 색상 모드 sRGB. USB-C 충전 없음.,1
+MN-405,모아 원케이블24 블랙,모니터,279000,0,"USB-C,HDMI","Windows,macOS",0,0,24,24인치 FHD 100Hz. USB-C 영상 입력과 최대 65W 전원 공급. 호스트 DP Alt Mode 필요.,1
+MN-406,모아 뷰24 화이트,모니터,151000,43,"HDMI,DisplayPort","Windows,macOS",0,0,24,24인치 FHD 75Hz IPS. 스피커·USB-C 충전 없음. VESA 100x100mm.,1
+MN-407,모아 워크27 화이트,모니터,251000,50,"HDMI,DisplayPort","Windows,macOS",0,0,24,"27인치 QHD 100Hz IPS. 높이 조절, VESA100x100. USB-C 없음.",1
+MN-408,모아 플레이27 화이트,모니터,331000,14,"HDMI,DisplayPort","Windows,macOS",0,0,24,27인치 QHD 144Hz. 최대 주사율은 DP 연결 권장. 노트북 출력 사양 확인.,1
+MN-409,모아 디테일32 화이트,모니터,451000,21,"HDMI,DisplayPort","Windows,macOS",0,0,24,32인치 UHD 60Hz IPS. 색상 모드 sRGB. USB-C 충전 없음.,1
+MN-410,모아 원케이블24 화이트,모니터,281000,28,"USB-C,HDMI","Windows,macOS",0,0,24,24인치 FHD 100Hz. USB-C 영상 입력과 최대 65W 전원 공급. 호스트 DP Alt Mode 필요.,1
+MN-411,모아 뷰24 네이비,모니터,153000,35,"HDMI,DisplayPort","Windows,macOS",0,0,24,24인치 FHD 75Hz IPS. 스피커·USB-C 충전 없음. VESA 100x100mm.,1
+MN-412,모아 워크27 네이비,모니터,253000,0,"HDMI,DisplayPort","Windows,macOS",0,0,24,"27인치 QHD 100Hz IPS. 높이 조절, VESA100x100. USB-C 없음.",1
+MN-413,모아 플레이27 네이비,모니터,333000,49,"HDMI,DisplayPort","Windows,macOS",0,0,24,27인치 QHD 144Hz. 최대 주사율은 DP 연결 권장. 노트북 출력 사양 확인.,1
+MN-414,모아 디테일32 네이비,모니터,453000,13,"HDMI,DisplayPort","Windows,macOS",0,0,24,32인치 UHD 60Hz IPS. 색상 모드 sRGB. USB-C 충전 없음.,1
+MN-415,모아 원케이블24 네이비,모니터,283000,20,"USB-C,HDMI","Windows,macOS",0,0,24,24인치 FHD 100Hz. USB-C 영상 입력과 최대 65W 전원 공급. 호스트 DP Alt Mode 필요.,1
+MN-416,모아 뷰24 그레이,모니터,155000,27,"HDMI,DisplayPort","Windows,macOS",0,0,24,24인치 FHD 75Hz IPS. 스피커·USB-C 충전 없음. VESA 100x100mm.,1
+MN-417,모아 워크27 그레이,모니터,255000,34,"HDMI,DisplayPort","Windows,macOS",0,0,24,"27인치 QHD 100Hz IPS. 높이 조절, VESA100x100. USB-C 없음.",1
+MN-418,모아 플레이27 그레이,모니터,335000,0,"HDMI,DisplayPort","Windows,macOS",0,0,24,27인치 QHD 144Hz. 최대 주사율은 DP 연결 권장. 노트북 출력 사양 확인.,1
+MN-419,모아 디테일32 그레이,모니터,455000,48,"HDMI,DisplayPort","Windows,macOS",0,0,24,32인치 UHD 60Hz IPS. 색상 모드 sRGB. USB-C 충전 없음.,1
+MN-420,모아 원케이블24 그레이,모니터,285000,12,"USB-C,HDMI","Windows,macOS",0,0,24,24인치 FHD 100Hz. USB-C 영상 입력과 최대 65W 전원 공급. 호스트 DP Alt Mode 필요.,1
+WC-501,모아 미트FHD 블랙,웹캠,39000,8,USB-A,"Windows,macOS",0,0,12,"1080p 30fps 고정 초점. 마이크 내장, 물리 프라이버시 덮개.",1
+WC-502,모아 포커스FHD 블랙,웹캠,59000,15,USB-A,"Windows,macOS",0,0,12,1080p 60fps 자동 초점. 앱에서 해상도와 프레임 수 선택 필요.,1
+WC-503,모아 클리어QHD 블랙,웹캠,79000,22,USB-C,"Windows,macOS",0,0,12,1440p 30fps 자동 초점. USB-C 데이터 연결. 마이크 내장.,1
+WC-504,모아 디테일4K 블랙,웹캠,129000,29,USB-C,"Windows,macOS",0,0,12,4K 30fps 또는1080p60fps. USB3 데이터 연결. 앱·대역폭 제한에 따라 조절.,1
+WC-505,모아 와이드FHD 블랙,웹캠,69000,0,USB-A,"Windows,macOS",0,0,12,1080p30fps 광각110도. 회의실용. 앱 배경효과 성능은 호스트에 좌우.,1
+WC-506,모아 미트FHD 화이트,웹캠,41000,43,USB-A,"Windows,macOS",0,0,12,"1080p 30fps 고정 초점. 마이크 내장, 물리 프라이버시 덮개.",1
+WC-507,모아 포커스FHD 화이트,웹캠,61000,50,USB-A,"Windows,macOS",0,0,12,1080p 60fps 자동 초점. 앱에서 해상도와 프레임 수 선택 필요.,1
+WC-508,모아 클리어QHD 화이트,웹캠,81000,14,USB-C,"Windows,macOS",0,0,12,1440p 30fps 자동 초점. USB-C 데이터 연결. 마이크 내장.,1
+WC-509,모아 디테일4K 화이트,웹캠,131000,21,USB-C,"Windows,macOS",0,0,12,4K 30fps 또는1080p60fps. USB3 데이터 연결. 앱·대역폭 제한에 따라 조절.,1
+WC-510,모아 와이드FHD 화이트,웹캠,71000,28,USB-A,"Windows,macOS",0,0,12,1080p30fps 광각110도. 회의실용. 앱 배경효과 성능은 호스트에 좌우.,1
+WC-511,모아 미트FHD 네이비,웹캠,43000,35,USB-A,"Windows,macOS",0,0,12,"1080p 30fps 고정 초점. 마이크 내장, 물리 프라이버시 덮개.",1
+WC-512,모아 포커스FHD 네이비,웹캠,63000,0,USB-A,"Windows,macOS",0,0,12,1080p 60fps 자동 초점. 앱에서 해상도와 프레임 수 선택 필요.,1
+WC-513,모아 클리어QHD 네이비,웹캠,83000,49,USB-C,"Windows,macOS",0,0,12,1440p 30fps 자동 초점. USB-C 데이터 연결. 마이크 내장.,1
+WC-514,모아 디테일4K 네이비,웹캠,133000,13,USB-C,"Windows,macOS",0,0,12,4K 30fps 또는1080p60fps. USB3 데이터 연결. 앱·대역폭 제한에 따라 조절.,1
+WC-515,모아 와이드FHD 네이비,웹캠,73000,20,USB-A,"Windows,macOS",0,0,12,1080p30fps 광각110도. 회의실용. 앱 배경효과 성능은 호스트에 좌우.,1
+WC-516,모아 미트FHD 그레이,웹캠,45000,27,USB-A,"Windows,macOS",0,0,12,"1080p 30fps 고정 초점. 마이크 내장, 물리 프라이버시 덮개.",1
+WC-517,모아 포커스FHD 그레이,웹캠,65000,34,USB-A,"Windows,macOS",0,0,12,1080p 60fps 자동 초점. 앱에서 해상도와 프레임 수 선택 필요.,1
+WC-518,모아 클리어QHD 그레이,웹캠,85000,0,USB-C,"Windows,macOS",0,0,12,1440p 30fps 자동 초점. USB-C 데이터 연결. 마이크 내장.,1
+WC-519,모아 디테일4K 그레이,웹캠,135000,48,USB-C,"Windows,macOS",0,0,12,4K 30fps 또는1080p60fps. USB3 데이터 연결. 앱·대역폭 제한에 따라 조절.,1
+WC-520,모아 와이드FHD 그레이,웹캠,75000,12,USB-A,"Windows,macOS",0,0,12,1080p30fps 광각110도. 회의실용. 앱 배경효과 성능은 호스트에 좌우.,1
+HS-601,모아 콜USB 블랙,헤드셋,39000,8,USB-A,"Windows,macOS",0,0,12,유선 스테레오 헤드셋. 붐마이크·케이블 음소거 버튼.,1
+HS-602,모아 콜잭 블랙,헤드셋,25000,15,3.5mm,"Windows,macOS,Android",0,0,12,3.5mm TRRS 4극. 분리형 입출력 PC는 별도 변환 케이블 필요.,1
+HS-603,모아 미트C 블랙,헤드셋,59000,22,USB-C,"Windows,macOS,Android",0,0,12,USB-C 디지털 오디오. 마이크 잡음 저감. 수동 주변소음 차단.,1
+HS-604,모아 스위치콜 블랙,헤드셋,89000,29,Bluetooth,"Windows,macOS,iPadOS,Android",1,2,12,Bluetooth 멀티포인트2대. 동시 음원 믹싱 없음. 통화 중 음악 음질은 프로파일 전환 영향.,1
+HS-605,모아 플레이RF 블랙,헤드셋,99000,0,"2.4GHz 수신기,USB 유선","Windows,macOS",0,0,12,동봉 USB-A 수신기 또는 USB 유선. Bluetooth 없음. Windows 전용 EQ 앱.,1
+HS-606,모아 콜USB 화이트,헤드셋,41000,43,USB-A,"Windows,macOS",0,0,12,유선 스테레오 헤드셋. 붐마이크·케이블 음소거 버튼.,1
+HS-607,모아 콜잭 화이트,헤드셋,27000,50,3.5mm,"Windows,macOS,Android",0,0,12,3.5mm TRRS 4극. 분리형 입출력 PC는 별도 변환 케이블 필요.,1
+HS-608,모아 미트C 화이트,헤드셋,61000,14,USB-C,"Windows,macOS,Android",0,0,12,USB-C 디지털 오디오. 마이크 잡음 저감. 수동 주변소음 차단.,1
+HS-609,모아 스위치콜 화이트,헤드셋,91000,21,Bluetooth,"Windows,macOS,iPadOS,Android",1,2,12,Bluetooth 멀티포인트2대. 동시 음원 믹싱 없음. 통화 중 음악 음질은 프로파일 전환 영향.,1
+HS-610,모아 플레이RF 화이트,헤드셋,101000,28,"2.4GHz 수신기,USB 유선","Windows,macOS",0,0,12,동봉 USB-A 수신기 또는 USB 유선. Bluetooth 없음. Windows 전용 EQ 앱.,1
+HS-611,모아 콜USB 네이비,헤드셋,43000,35,USB-A,"Windows,macOS",0,0,12,유선 스테레오 헤드셋. 붐마이크·케이블 음소거 버튼.,1
+HS-612,모아 콜잭 네이비,헤드셋,29000,0,3.5mm,"Windows,macOS,Android",0,0,12,3.5mm TRRS 4극. 분리형 입출력 PC는 별도 변환 케이블 필요.,1
+HS-613,모아 미트C 네이비,헤드셋,63000,49,USB-C,"Windows,macOS,Android",0,0,12,USB-C 디지털 오디오. 마이크 잡음 저감. 수동 주변소음 차단.,1
+HS-614,모아 스위치콜 네이비,헤드셋,93000,13,Bluetooth,"Windows,macOS,iPadOS,Android",1,2,12,Bluetooth 멀티포인트2대. 동시 음원 믹싱 없음. 통화 중 음악 음질은 프로파일 전환 영향.,1
+HS-615,모아 플레이RF 네이비,헤드셋,103000,20,"2.4GHz 수신기,USB 유선","Windows,macOS",0,0,12,동봉 USB-A 수신기 또는 USB 유선. Bluetooth 없음. Windows 전용 EQ 앱.,1
+HS-616,모아 콜USB 그레이,헤드셋,45000,27,USB-A,"Windows,macOS",0,0,12,유선 스테레오 헤드셋. 붐마이크·케이블 음소거 버튼.,1
+HS-617,모아 콜잭 그레이,헤드셋,31000,34,3.5mm,"Windows,macOS,Android",0,0,12,3.5mm TRRS 4극. 분리형 입출력 PC는 별도 변환 케이블 필요.,1
+HS-618,모아 미트C 그레이,헤드셋,65000,0,USB-C,"Windows,macOS,Android",0,0,12,USB-C 디지털 오디오. 마이크 잡음 저감. 수동 주변소음 차단.,1
+HS-619,모아 스위치콜 그레이,헤드셋,95000,48,Bluetooth,"Windows,macOS,iPadOS,Android",1,2,12,Bluetooth 멀티포인트2대. 동시 음원 믹싱 없음. 통화 중 음악 음질은 프로파일 전환 영향.,1
+HS-620,모아 플레이RF 그레이,헤드셋,105000,12,"2.4GHz 수신기,USB 유선","Windows,macOS",0,0,12,동봉 USB-A 수신기 또는 USB 유선. Bluetooth 없음. Windows 전용 EQ 앱.,1
