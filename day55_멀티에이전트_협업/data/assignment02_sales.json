@@ -1,0 +1,304 @@
+{
+ "source_id": "SALES-FY26",
+ "title": "누리웍스 분기별 매출 집계",
+ "unit": "백만 원",
+ "compare": {
+  "2026Q3": {
+   "전분기": "2026Q2",
+   "전년 동기": "2025Q3"
+  },
+  "2026Q2": {
+   "전년 동기": null
+  }
+ },
+ "rows": [
+  {
+   "quarter": "2026Q3",
+   "region": "수도권",
+   "segment": "대기업",
+   "revenue": 1420,
+   "contracts": 58,
+   "churned": 1
+  },
+  {
+   "quarter": "2026Q3",
+   "region": "수도권",
+   "segment": "중견기업",
+   "revenue": 760,
+   "contracts": 140,
+   "churned": 4
+  },
+  {
+   "quarter": "2026Q3",
+   "region": "수도권",
+   "segment": "중소기업",
+   "revenue": 310,
+   "contracts": 410,
+   "churned": 31
+  },
+  {
+   "quarter": "2026Q3",
+   "region": "영남",
+   "segment": "대기업",
+   "revenue": 540,
+   "contracts": 22,
+   "churned": 0
+  },
+  {
+   "quarter": "2026Q3",
+   "region": "영남",
+   "segment": "중견기업",
+   "revenue": 410,
+   "contracts": 96,
+   "churned": 3
+  },
+  {
+   "quarter": "2026Q3",
+   "region": "영남",
+   "segment": "중소기업",
+   "revenue": 150,
+   "contracts": 205,
+   "churned": 15
+  },
+  {
+   "quarter": "2026Q3",
+   "region": "호남",
+   "segment": "대기업",
+   "revenue": 180,
+   "contracts": 8,
+   "churned": 0
+  },
+  {
+   "quarter": "2026Q3",
+   "region": "호남",
+   "segment": "중견기업",
+   "revenue": 190,
+   "contracts": 44,
+   "churned": 1
+  },
+  {
+   "quarter": "2026Q3",
+   "region": "호남",
+   "segment": "중소기업",
+   "revenue": 70,
+   "contracts": 98,
+   "churned": 8
+  },
+  {
+   "quarter": "2026Q3",
+   "region": "충청",
+   "segment": "대기업",
+   "revenue": 260,
+   "contracts": 12,
+   "churned": 0
+  },
+  {
+   "quarter": "2026Q3",
+   "region": "충청",
+   "segment": "중견기업",
+   "revenue": 240,
+   "contracts": 58,
+   "churned": 2
+  },
+  {
+   "quarter": "2026Q3",
+   "region": "충청",
+   "segment": "중소기업",
+   "revenue": 95,
+   "contracts": 130,
+   "churned": 10
+  },
+  {
+   "quarter": "2026Q2",
+   "region": "수도권",
+   "segment": "대기업",
+   "revenue": 1380,
+   "contracts": 57,
+   "churned": 1
+  },
+  {
+   "quarter": "2026Q2",
+   "region": "수도권",
+   "segment": "중견기업",
+   "revenue": 725,
+   "contracts": 137,
+   "churned": 5
+  },
+  {
+   "quarter": "2026Q2",
+   "region": "수도권",
+   "segment": "중소기업",
+   "revenue": 280,
+   "contracts": 395,
+   "churned": 26
+  },
+  {
+   "quarter": "2026Q2",
+   "region": "영남",
+   "segment": "대기업",
+   "revenue": 520,
+   "contracts": 22,
+   "churned": 1
+  },
+  {
+   "quarter": "2026Q2",
+   "region": "영남",
+   "segment": "중견기업",
+   "revenue": 395,
+   "contracts": 94,
+   "churned": 3
+  },
+  {
+   "quarter": "2026Q2",
+   "region": "영남",
+   "segment": "중소기업",
+   "revenue": 135,
+   "contracts": 196,
+   "churned": 13
+  },
+  {
+   "quarter": "2026Q2",
+   "region": "호남",
+   "segment": "대기업",
+   "revenue": 185,
+   "contracts": 8,
+   "churned": 0
+  },
+  {
+   "quarter": "2026Q2",
+   "region": "호남",
+   "segment": "중견기업",
+   "revenue": 180,
+   "contracts": 43,
+   "churned": 2
+  },
+  {
+   "quarter": "2026Q2",
+   "region": "호남",
+   "segment": "중소기업",
+   "revenue": 61,
+   "contracts": 92,
+   "churned": 6
+  },
+  {
+   "quarter": "2026Q2",
+   "region": "충청",
+   "segment": "대기업",
+   "revenue": 250,
+   "contracts": 12,
+   "churned": 0
+  },
+  {
+   "quarter": "2026Q2",
+   "region": "충청",
+   "segment": "중견기업",
+   "revenue": 228,
+   "contracts": 57,
+   "churned": 2
+  },
+  {
+   "quarter": "2026Q2",
+   "region": "충청",
+   "segment": "중소기업",
+   "revenue": 86,
+   "contracts": 124,
+   "churned": 9
+  },
+  {
+   "quarter": "2025Q3",
+   "region": "수도권",
+   "segment": "대기업",
+   "revenue": 1290,
+   "contracts": 54,
+   "churned": 2
+  },
+  {
+   "quarter": "2025Q3",
+   "region": "수도권",
+   "segment": "중견기업",
+   "revenue": 650,
+   "contracts": 128,
+   "churned": 4
+  },
+  {
+   "quarter": "2025Q3",
+   "region": "수도권",
+   "segment": "중소기업",
+   "revenue": 205,
+   "contracts": 320,
+   "churned": 22
+  },
+  {
+   "quarter": "2025Q3",
+   "region": "영남",
+   "segment": "대기업",
+   "revenue": 480,
+   "contracts": 20,
+   "churned": 1
+  },
+  {
+   "quarter": "2025Q3",
+   "region": "영남",
+   "segment": "중견기업",
+   "revenue": 350,
+   "contracts": 85,
+   "churned": 3
+  },
+  {
+   "quarter": "2025Q3",
+   "region": "영남",
+   "segment": "중소기업",
+   "revenue": 98,
+   "contracts": 150,
+   "churned": 11
+  },
+  {
+   "quarter": "2025Q3",
+   "region": "호남",
+   "segment": "대기업",
+   "revenue": 170,
+   "contracts": 7,
+   "churned": 0
+  },
+  {
+   "quarter": "2025Q3",
+   "region": "호남",
+   "segment": "중견기업",
+   "revenue": 160,
+   "contracts": 38,
+   "churned": 2
+  },
+  {
+   "quarter": "2025Q3",
+   "region": "호남",
+   "segment": "중소기업",
+   "revenue": 40,
+   "contracts": 70,
+   "churned": 5
+  },
+  {
+   "quarter": "2025Q3",
+   "region": "충청",
+   "segment": "대기업",
+   "revenue": 225,
+   "contracts": 11,
+   "churned": 0
+  },
+  {
+   "quarter": "2025Q3",
+   "region": "충청",
+   "segment": "중견기업",
+   "revenue": 200,
+   "contracts": 50,
+   "churned": 2
+  },
+  {
+   "quarter": "2025Q3",
+   "region": "충청",
+   "segment": "중소기업",
+   "revenue": 55,
+   "contracts": 90,
+   "churned": 7
+  }
+ ]
+}

@@ -74,6 +74,13 @@ dependencies = [
     "ipywidgets>=8,<9",
     # day54: 노트북에서 Image·Markdown·display를 직접 사용한다.
     "ipython>=9.17.1,<10",
+    # day55: 멀티에이전트 협업. 종합실습은 MCP 서버의 도구를 에이전트에 붙이고,
+    #   정답 폴더의 테스트는 pytest 와 pytest-asyncio 로 노드를 확인한다.
+    #   MCP 서버 자체는 npx·uvx 로 따로 띄우므로 여기에는 클라이언트 쪽만 둔다.
+    "langchain-mcp-adapters==0.3.2",
+    "mcp>=1.30,<2",
+    "pytest>=9.1",
+    "pytest-asyncio>=1.4",
 ]
 
 [tool.uv]
