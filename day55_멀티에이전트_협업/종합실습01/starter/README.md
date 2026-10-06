@@ -116,6 +116,11 @@ app/
 └── main.py    요청을 받아 그래프를 실행하고 output/ 에 결과 저장
 ```
 
+**층 구조(레이어드 아키텍처):** `core -> tools -> agents -> graph -> main` 순서로 쌓고, 위 층은 아래 층만 import 합니다. 아래 층은 위 층을 모릅니다.
+
+- 바꿀 곳이 한 층에 모입니다. 모델 이름과 상한은 `core`, MCP 서버 교체는 `tools`, 흐름 변경은 `graph` 만 고칩니다.
+- 아래 층은 위 층 없이 불러올 수 있어서 모듈마다 따로 실행하고 테스트할 수 있습니다.
+
 ## 슈퍼바이저와 검수가 다음 단계를 정하는 규칙
 
 <img src="images/rules.png" width="900" alt="supervisor는 반려 횟수 상한, 반려 처리, 일을 맡긴 횟수 상한, Jev 근거 판정, GPT 선택 순서로 다음 단계를 정하고, reviewer는 두 점수와 어긋날 확률로 통과면 END, 아니면 supervisor로 돌려보낸다">
