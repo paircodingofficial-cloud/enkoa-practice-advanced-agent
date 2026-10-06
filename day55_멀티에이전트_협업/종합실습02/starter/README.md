@@ -65,6 +65,14 @@ cd day55_멀티에이전트_협업/종합실습02/starter
 uv run python -m app.main "보고서 기준으로 다음 달 블로그 글 1편과 쇼츠 대본 1편 만들어 줘"
 ```
 
+다른 요청 예시 (요청에 적은 주제로 조사하고 씁니다)
+
+```bash
+uv run python -m app.main "무선 이어폰 고르는 법을 비교표와 실패 사례 중심으로 블로그 글과 쇼츠 대본으로 만들어 줘"
+uv run python -m app.main "직장인이 AI 코딩 도구를 고르는 기준으로 블로그 글과 쇼츠 대본 만들어 줘"
+uv run python -m app.main "K-POP 팬 앱(위버스, 버블) 고르는 기준으로 블로그 글과 쇼츠 대본 만들어 줘"
+```
+
 한 번 실행에 3~5분이 걸립니다. 화면에 계획한 조사 작업, supervisor 가 고른 다음 담당, 검수 판정이 차례로 찍힙니다.
 MCP 서버는 도구를 부를 때마다 새로 뜨고, 뜰 때마다 기동 메시지(`Tavily MCP server running on stdio` 등)를 화면에 섞어 냅니다. 서버 프로그램이 직접 찍는 메시지라 파이썬 쪽에서 끄지 못합니다. `planner:`, `researcher:`, `supervisor:`, `writer:`, `reviewer:`, `publisher:` 로 시작하는 줄만 보면 흐름을 따라갈 수 있습니다.
 

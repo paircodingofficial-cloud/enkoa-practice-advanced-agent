@@ -67,6 +67,14 @@ cd day55_멀티에이전트_협업/종합실습01/starter
 uv run python -m app.main "9월 콘텐츠 유입이 8월보다 30% 가까이 빠졌어. 원인과 대응안 보고서 써 줘"
 ```
 
+다른 요청 예시 (데이터는 7~9월 사내 자료라 그 안에서 묻습니다)
+
+```bash
+uv run python -m app.main "유튜브만 봐 줘. 9월 노출 클릭률 하락이 썸네일 정책 변경 때문인지 확인하고 개선안을 써 줘"
+uv run python -m app.main "9월 중순 인스타그램 유입이 급증했어. 다음 달 예산을 인스타그램에 더 넣어도 되는지 판단해 줘"
+uv run python -m app.main "블로그 발행을 주 4편에서 주 2편으로 줄인 영향과 다시 늘리면 회복될지 분석해 줘"
+```
+
 한 번에 3~6분 걸립니다(반려 라운드가 있으면 더 걸립니다). `supervisor:`로 시작하는 줄에 몇 번째로 일을 맡기는지, 누구를 골랐는지, Jev 의 근거 충분 확률이, `analysis_planner:`와 `reviewer:` 줄에 분석 작업 목록과 검수 판정이 찍힙니다.
 MCP 서버가 뜰 때 서버 프로그램이 직접 찍는 기동 메시지가 섞여 나옵니다. `supervisor:`, `analysis_planner:`, `data_analyst:`, `doc_reader:`, `web_researcher:`, `report_writer:`, `reviewer:`로 시작하는 줄만 보면 흐름을 따라갈 수 있습니다.
 
