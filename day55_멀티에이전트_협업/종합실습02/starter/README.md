@@ -88,23 +88,23 @@ MCP 서버는 도구를 부를 때마다 새로 뜨고, 뜰 때마다 기동 메
 
 ```
 app/
-├── core/      공통 설정과 기준
-│   ├── config.py     경로, 모델, 상한 값
-│   ├── prompts.py    역할별 프롬프트
-│   ├── judge.py      Jev 판정
-│   └── schemas.py    GPT 구조화 출력 형식
-├── tools/     에이전트가 쓰는 도구
-│   ├── mcp_servers.py  MCP 서버 연결과 자료원별 허용 도구
-│   ├── handoff.py      작성자의 핸드오프 도구
-│   └── cover_image.py  커버 이미지 생성
-├── agents/    미리 만들어 두는 에이전트
-│   └── workers.py      작성자 에이전트 생성
+├── core/      모든 층이 함께 쓰는 설정과 판단 기준
+│   ├── config.py     파일 경로, 모델 이름, 작업 수·반려 횟수 상한
+│   ├── prompts.py    계획, 조사원, 종합, 작성자, 검수자의 프롬프트
+│   ├── schemas.py    GPT 구조화 출력 모양 ResearchPlan, Brief, ReworkStep
+│   └── judge.py      Jev 판정: 보충 조사 필요 확률, 초안 점수
+├── tools/     에이전트와 노드가 쓰는 도구
+│   ├── mcp_servers.py  MCP 서버 다섯 개 연결과 자료원별 허용 도구 ALLOWED_TOOLS
+│   ├── handoff.py      작성자가 검수자·슈퍼바이저로 넘기는 request_review, request_research
+│   └── cover_image.py  발행 노드가 부르는 커버 이미지 생성 함수
+├── agents/    그래프 실행 전에 한 번 만들어 두는 에이전트
+│   └── workers.py      파일 쓰기와 핸드오프 도구만 붙인 작성자 create_writer
 ├── graph/     LangGraph 워크플로
-│   ├── state.py        공유 State 와 리듀서
-│   ├── nodes.py        노드 함수
-│   ├── edges.py        Send 분배 함수
-│   └── builder.py      그래프 조립
-└── main.py    실행 진입점
+│   ├── state.py        팀 공유 State 와 조사 결과 리듀서 merge_findings
+│   ├── nodes.py        planner, researcher, synthesizer, supervisor, writer, reviewer, publisher 노드
+│   ├── edges.py        조사 작업 수만큼 researcher 로 보내는 Send 함수 dispatch
+│   └── builder.py      노드와 엣지를 연결해 compile 하는 build_graph
+└── main.py    보고서와 요청으로 그래프를 실행하고 output/ 에 결과 저장
 ```
 
 ## 슈퍼바이저가 다음 단계를 정하는 규칙
