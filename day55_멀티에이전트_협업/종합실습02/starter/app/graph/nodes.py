@@ -1,5 +1,6 @@
 """그래프 층: 계획, 병렬 조사, 종합, 감독, 작성, 검수, 발행 노드 함수를 모은다."""
 import json
+from pathlib import Path
 from typing import Literal
 
 from langchain.agents import create_agent
@@ -149,8 +150,8 @@ async def supervisor(state: State) -> Command[Literal["planner", "writer", "publ
 async def writer(state: State, runtime: Runtime[Context]) -> Command:
     """작성자 에이전트를 실행하고, 검수 요청 없이 끝났으면 reviewer 로 가는 Command 를 돌려준다."""
     run_dir = runtime.context["run_dir"]
-    # 초안 파일 경로는 이번 실행 폴더 안으로 고정한다.
-    draft = {"blog": str(run_dir / "blog.md"), "shorts": str(run_dir / "shorts_script.md")}
+    # 초안은 파일 이름만 넘긴다. 파일 서버가 이번 실행 폴더에 저장하고, 모델이 긴 경로를 옮겨 적다 틀리는 일을 막는다.
+    draft = {"blog": "blog.md", "shorts": "shorts_script.md"}
     # 검수 피드백이 있으면 다시 쓰기, 없으면 첫 초안이다.
     if state["feedback"]:
         feedback = state["feedback"]
@@ -190,9 +191,9 @@ async def writer(state: State, runtime: Runtime[Context]) -> Command:
 async def reviewer(state: State, runtime: Runtime[Context]) -> Command[Literal["publisher", "supervisor"]]:
     """초안 판정 결과를 싣고 publisher(통과) 또는 supervisor(반려)로 가는 Command 를 돌려준다."""
     run_dir = runtime.context["run_dir"]
-    # 작성자가 "blog.md" 처럼 상대 경로를 넘겨도 이번 실행 폴더 기준으로 읽는다. 절대 경로는 그대로 쓰인다.
-    blog = (run_dir / state["draft"]["blog"]).read_text(encoding="utf-8")
-    shorts = (run_dir / state["draft"]["shorts"]).read_text(encoding="utf-8")
+    # 작성자가 넘긴 경로에서 파일 이름만 꺼내 이번 실행 폴더에서 읽는다. 모델이 경로를 잘못 옮겨 적어도 맞는 파일을 연다.
+    blog = (run_dir / Path(state["draft"]["blog"]).name).read_text(encoding="utf-8")
+    shorts = (run_dir / Path(state["draft"]["shorts"]).name).read_text(encoding="utf-8")
     # TODO: Jev 판정으로 통과를 정하고, 반려면 GPT 피드백을 붙여 supervisor 로 보내기
     # 1) 블로그와 쇼츠를 이어 붙인 글, findings, report 를 judge_draft 에 넘겨
     #    점수 두 개(source_fidelity, reader_value)와 자료와 어긋날 확률(contradiction)을 받는다
@@ -211,7 +212,7 @@ async def publisher(state: State, runtime: Runtime[Context]) -> dict:
     # 추가 조사 요청 뒤 상한에 닿으면 초안 파일이 없을 수 있어 통과했을 때만 읽는다.
     if state["review"]["passed"]:
         status = "발행"
-        blog = (run_dir / state["draft"]["blog"]).read_text(encoding="utf-8")
+        blog = (run_dir / Path(state["draft"]["blog"]).name).read_text(encoding="utf-8")
         first_line = blog.splitlines()[0]
         title = first_line.lstrip("# ")   # 첫 줄 "# 제목" 에서 제목만 쓴다
         await generate_cover_image(COVER_PROMPT.format(title=title), str(run_dir / "cover.png"))

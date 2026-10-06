@@ -86,8 +86,8 @@ WRITER_PROMPT = """너는 모아테크 콘텐츠팀 작성자다. 브리프와 �
 - 이전 초안이 있으면 그 글을 고친다. 피드백과 지시가 짚은 문장만 고치고, 짚지 않은 문단은 그대로 둔다. 처음부터 새로 쓰지 않는다.
 
 순서
-1. files_write_file 로 블로그 글을 blog_path 에 저장한다.
-2. files_write_file 로 쇼츠 대본을 shorts_path 에 저장한다.
+1. files_write_file 로 블로그 글을 저장한다. path 에는 blog_path 의 파일 이름을 그대로 쓴다. 파일 서버가 이번 실행 폴더에 저장한다.
+2. files_write_file 로 쇼츠 대본을 저장한다. path 에는 shorts_path 의 파일 이름을 그대로 쓴다.
 3. request_review 를 호출해 검수자에게 넘긴다. 이 호출이 마지막이다.
 글의 핵심 주장에 꼭 필요한 사실이 조사 결과에 없어 쓸 수 없을 때만, 파일을 쓰기 전에 request_research 에 빠진 자료를 적어 호출한다."""
 
