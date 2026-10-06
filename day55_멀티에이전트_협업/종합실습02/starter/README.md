@@ -76,6 +76,14 @@ uv run python -m app.main "K-POP 팬 앱(위버스, 버블) 고르는 기준으�
 한 번 실행에 3~5분이 걸립니다. 화면에 계획한 조사 작업, supervisor 가 고른 다음 담당, 검수 판정이 차례로 찍힙니다.
 MCP 서버는 도구를 부를 때마다 새로 뜨고, 뜰 때마다 기동 메시지(`Tavily MCP server running on stdio` 등)를 화면에 섞어 냅니다. 서버 프로그램이 직접 찍는 메시지라 파이썬 쪽에서 끄지 못합니다. `planner:`, `researcher:`, `supervisor:`, `writer:`, `reviewer:`, `publisher:` 로 시작하는 줄만 보면 흐름을 따라갈 수 있습니다.
 
+## 데이터 (`data/`)
+
+| 파일 | 내용 | 읽는 담당 |
+|---|---|---|
+| `analysis_report.md` | 종합실습01 팀이 쓴 9월 유입 하락 보고서. 원인 세 가지(정보형 검색어 클릭률 하락, 블로그 발행 축소, 유튜브 노출 클릭률 하락)와 대응안, 10월 콘텐츠 제안 | planner, synthesizer, reviewer |
+
+경쟁 콘텐츠, 후기, 공식 자료처럼 글에 쓸 사실은 파일로 주지 않습니다. 조사원이 실행할 때마다 네이버, 유튜브, Tavily MCP로 새로 찾습니다.
+
 ## 폴더 구조와 역할
 
 ```
