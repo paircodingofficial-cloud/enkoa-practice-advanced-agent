@@ -62,18 +62,18 @@ MCP 서버 다섯 개를 `npx` 로 띄워 도구를 받고, 핸드오프 도구 
 
 ```bash
 cd day55_멀티에이전트_협업/종합실습02/starter
-uv run python -m app.main "보고서 기준으로 다음 달 블로그 글 1편과 쇼츠 대본 1편 만들어 줘"
+uv run -m app.main "보고서 기준으로 다음 달 블로그 글 1편과 쇼츠 대본 1편 만들어 줘"
 ```
 
 다른 요청 예시 (요청에 적은 주제로 조사하고 씁니다)
 
 ```bash
-uv run python -m app.main "무선 이어폰 고르는 법을 비교표와 실패 사례 중심으로 블로그 글과 쇼츠 대본으로 만들어 줘"
-uv run python -m app.main "직장인이 AI 코딩 도구를 고르는 기준으로 블로그 글과 쇼츠 대본 만들어 줘"
-uv run python -m app.main "K-POP 팬 앱(위버스, 버블) 고르는 기준으로 블로그 글과 쇼츠 대본 만들어 줘"
+uv run -m app.main "무선 이어폰 고르는 법을 비교표와 실패 사례 중심으로 블로그 글과 쇼츠 대본으로 만들어 줘"
+uv run -m app.main "직장인이 AI 코딩 도구를 고르는 기준으로 블로그 글과 쇼츠 대본 만들어 줘"
+uv run -m app.main "K-POP 팬 앱(위버스, 버블) 고르는 기준으로 블로그 글과 쇼츠 대본 만들어 줘"
 ```
 
-**왜 `python app/main.py` 가 아니라 `python -m app.main` 인가요?**
+**왜 `uv run app/main.py` 가 아니라 `uv run -m app.main` 인가요?**
 
 - 이 프로젝트의 코드는 `from app.core.config import ...` 처럼 `app` 패키지 이름으로 서로를 불러옵니다.
 - `-m app.main` 은 지금 위치(프로젝트 폴더)를 기준으로 모듈을 찾으므로 `app` 을 찾을 수 있습니다.
@@ -143,6 +143,6 @@ app/
     - [ ] reviewer : Jev 점수로 통과·반려를 정해 Command(goto) 로 보내기 `[교안 02 6-3 검수 노드]`
 - [ ] graph/builder.py 구현 : 그래프 조립
     - [ ] build_graph : 노드 등록, 고정 엣지와 Send 분배 엣지 연결, compile `[교안 02 3-5 Send 연결, 6-7 팀 그래프 연결]`
-- [ ] 실행 확인 : `uv run python -m app.main "요청"` 으로 blog.md, shorts_script.md, sources.json 이 생기는지 확인
+- [ ] 실행 확인 : `uv run -m app.main "요청"` 으로 blog.md, shorts_script.md, sources.json 이 생기는지 확인
 
 **미리 제공된 것** (읽기만 하면 됩니다): `core/` 전체(설정, 프롬프트, Jev 판정, 출력 형식), `tools/mcp_servers.py`, `tools/cover_image.py`, `tools/handoff.py`의 request_research, `graph/nodes.py`의 planner·synthesizer·writer·publisher, `main.py`

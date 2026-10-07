@@ -1,4 +1,4 @@
-"""실행 층: CLI 진입점. 실행: uv run python -m app.main "보고서 기준으로 다음 달 블로그 글 1편과 쇼츠 대본 1편 만들어 줘" """
+"""실행 층: CLI 진입점. 실행: uv run -m app.main "보고서 기준으로 다음 달 블로그 글 1편과 쇼츠 대본 1편 만들어 줘" """
 import asyncio
 import sys
 from datetime import datetime

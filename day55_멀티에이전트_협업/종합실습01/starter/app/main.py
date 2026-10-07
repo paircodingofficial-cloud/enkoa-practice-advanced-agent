@@ -1,4 +1,4 @@
-"""실행 층: uv run python -m app.main "요청" 으로 팀을 실행하는 CLI."""
+"""실행 층: uv run -m app.main "요청" 으로 팀을 실행하는 CLI."""
 import argparse
 import asyncio
 import json

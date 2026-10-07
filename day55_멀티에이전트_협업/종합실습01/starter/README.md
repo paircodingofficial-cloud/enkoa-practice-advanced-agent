@@ -64,18 +64,18 @@ MCP 서버 다섯 개를 `npx`·`uvx` 로 띄워 도구를 받고, 핸드오프 
 
 ```bash
 cd day55_멀티에이전트_협업/종합실습01/starter
-uv run python -m app.main "9월 콘텐츠 유입이 8월보다 30% 가까이 빠졌어. 원인과 대응안 보고서 써 줘"
+uv run -m app.main "9월 콘텐츠 유입이 8월보다 30% 가까이 빠졌어. 원인과 대응안 보고서 써 줘"
 ```
 
 다른 요청 예시 (데이터는 7~9월 사내 자료라 그 안에서 묻습니다)
 
 ```bash
-uv run python -m app.main "유튜브만 봐 줘. 9월 노출 클릭률 하락이 썸네일 정책 변경 때문인지 확인하고 개선안을 써 줘"
-uv run python -m app.main "9월 중순 인스타그램 유입이 급증했어. 다음 달 예산을 인스타그램에 더 넣어도 되는지 판단해 줘"
-uv run python -m app.main "블로그 발행을 주 4편에서 주 2편으로 줄인 영향과 다시 늘리면 회복될지 분석해 줘"
+uv run -m app.main "유튜브만 봐 줘. 9월 노출 클릭률 하락이 썸네일 정책 변경 때문인지 확인하고 개선안을 써 줘"
+uv run -m app.main "9월 중순 인스타그램 유입이 급증했어. 다음 달 예산을 인스타그램에 더 넣어도 되는지 판단해 줘"
+uv run -m app.main "블로그 발행을 주 4편에서 주 2편으로 줄인 영향과 다시 늘리면 회복될지 분석해 줘"
 ```
 
-**왜 `python app/main.py` 가 아니라 `python -m app.main` 인가요?**
+**왜 `uv run app/main.py` 가 아니라 `uv run -m app.main` 인가요?**
 
 - 이 프로젝트의 코드는 `from app.core.config import ...` 처럼 `app` 패키지 이름으로 서로를 불러옵니다.
 - `-m app.main` 은 지금 위치(프로젝트 폴더)를 기준으로 모듈을 찾으므로 `app` 을 찾을 수 있습니다.
@@ -155,6 +155,6 @@ app/
     - [ ] reviewer : Jev 판정으로 통과면 상태를 남기고 END, 반려면 피드백을 붙여 supervisor 로 `[교안 02 6-3 검수 노드]`
 - [ ] graph/builder.py 구현 : 그래프 조립
     - [ ] build_graph : 노드를 destinations 와 함께 등록하고 START, Send 분배, 분석가 복귀 엣지를 이어 컴파일 `[교안 01 5-6 그래프 조립 / 교안 02 3-5 Send 연결, 6-7 팀 그래프 연결]`
-- [ ] 실행 확인 : `uv run python -m app.main "요청"` 으로 report.md 와 status.json 이 생기는지 확인
+- [ ] 실행 확인 : `uv run -m app.main "요청"` 으로 report.md 와 status.json 이 생기는지 확인
 
 **미리 제공된 것** (읽기만 하면 됩니다): `core/` 전체(설정, 프롬프트, 구조화 출력 스키마, Jev 판정), `tools/mcp_servers.py`, `request_review`, `graph/state.py`(State, `merge_analyses` 리듀서), `graph/nodes.py`의 분석 계획·분석가·보고서 작성 노드와 보조 함수, `main.py`
