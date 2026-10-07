@@ -81,6 +81,9 @@ dependencies = [
     "mcp>=1.30,<2",
     "pytest>=9.1",
     "pytest-asyncio>=1.4",
+    # day56: Langfuse 로 에이전트 실행을 기록한다. CallbackHandler 와 trace 조회 방식이
+    #   이 버전 API 로 쓰였으므로 고정한다.
+    "langfuse==4.14.0",
 ]
 
 [tool.uv]

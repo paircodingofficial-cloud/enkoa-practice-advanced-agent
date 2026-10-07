@@ -15,6 +15,7 @@
 | **day52** | 메모리·컨텍스트 | Store·Mem0 기억 관리, 토큰 기반 요약과 입력 조절, 기억 갱신을 연결한 실습 |
 | **day53** | CRAG·Self-RAG 응용 | 근거 평가·재검색·웹 보완, 답변 검토·수정과 종료 조건. 팝업·전시 플래너와 게임 소개 대본 검수 과제 |
 | **day55** | 멀티에이전트 협업 | 슈퍼바이저가 `Command(goto, update)`로 워커에게 일을 나누고, 계획에 따라 `Send`로 병렬 실행한 결과를 리듀서로 합칩니다. `Command.PARENT` 핸드오프와 검수 루프, 라운드 상한을 익히고, MCP 도구를 쓰는 콘텐츠 분석 팀과 콘텐츠 생성 팀을 `.py` 종합실습으로 완성합니다 |
+| **day56** | 멀티에이전트 관측·실패 처리 | **Langfuse**로 멀티에이전트 실행을 trace 로 남겨 궤적에서 원인을 찾고, 핑퐁 반복·재시도(`RetryPolicy`)·노드 타임아웃을 막습니다. 병렬 작업의 부분 실패와 폴백, 체크포인트에서 이어 하기와 분기 실행(fork)을 다루고, 병원 예약 상담 팀 관측과 택배 지연 대응 팀 실패 처리 과제로 적용합니다 |
 
 ---
 
@@ -59,6 +60,8 @@ day52는 Mem0·Qdrant·SQLite를 사용합니다.
 day53은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`와 `TAVILY_API_KEY`를 설정합니다. Tavily 키는 [대시보드](https://app.tavily.com/)에서 발급받습니다. 과제02는 웹 검색을 사용하지 않습니다.
 
 day55 교안·과제는 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`를 넣습니다. 종합실습01·02는 MCP 서버를 `npx`로 띄우므로 **Node.js 22 이상**이 필요하고, 프로젝트 폴더마다 있는 `.env.example`을 따로 `.env`로 복사해 키를 채웁니다. 설치와 실행 방법은 [종합실습01 README](day55_멀티에이전트_협업/종합실습01/starter/README.md)에 있습니다.
+
+day56은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`와 Langfuse 키(`LANGFUSE_PUBLIC_KEY`, `LANGFUSE_SECRET_KEY`, `LANGFUSE_BASE_URL`)를 넣습니다. Langfuse 키는 [cloud.langfuse.com](https://cloud.langfuse.com)에서 프로젝트를 만든 뒤 Settings > API Keys 에서 발급합니다. 화면 사용법은 `부록_Langfuse_화면_안내.ipynb`에 있습니다.
 
 ## 폴더 구성
 
