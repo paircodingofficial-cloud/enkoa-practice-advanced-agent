@@ -52,7 +52,9 @@ MCP 서버 다섯 개를 `npx`·`uvx` 로 띄워 도구를 받고, 핸드오프 
    - **Windows:** [공식 설치 파일(.msi)](https://nodejs.org/ko/download)에서 LTS 버전을 받아 설치하거나, PowerShell 에서 `winget install OpenJS.NodeJS.LTS` 를 실행합니다.
    - 설치 후 터미널을 새로 열고 `node -v` 가 `v22` 이상인지 확인합니다.
 2. 저장소 최상위 폴더에서 `uv sync`로 공용 환경을 맞춥니다.
-3. 이 프로젝트 폴더(starter) 안에서 `.env.example`을 `.env`로 복사하고 키를 채웁니다. 저장소 최상위 폴더에 두면 읽지 않습니다. **`.env`가 없으면 import 단계에서 멈춥니다.**
+3. 이 프로젝트 폴더(`app/` 폴더가 보이는 곳)에서 `.env.example`을 `.env`로 복사하고 키를 채웁니다. **`.env`가 없으면 import 단계에서 멈춥니다.**
+   - **macOS / Linux 터미널:** `cp .env.example .env`
+   - **Windows PowerShell:** `Copy-Item .env.example .env`
 
 | 키 | 용도 | 발급 |
 |---|---|---|
@@ -62,8 +64,9 @@ MCP 서버 다섯 개를 `npx`·`uvx` 로 띄워 도구를 받고, 핸드오프 
 
 ## 실행
 
+터미널에서 이 프로젝트 폴더(`app/` 폴더가 보이는 곳)로 이동한 뒤 실행합니다. 실행 명령은 macOS 터미널과 Windows PowerShell 에서 똑같습니다.
+
 ```bash
-cd day55_멀티에이전트_협업/종합실습01/starter
 uv run -m app.main "9월 콘텐츠 유입이 8월보다 30% 가까이 빠졌어. 원인과 대응안 보고서 써 줘"
 ```
 
