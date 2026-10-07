@@ -75,6 +75,13 @@ uv run python -m app.main "9월 중순 인스타그램 유입이 급증했어. �
 uv run python -m app.main "블로그 발행을 주 4편에서 주 2편으로 줄인 영향과 다시 늘리면 회복될지 분석해 줘"
 ```
 
+**왜 `python app/main.py` 가 아니라 `python -m app.main` 인가요?**
+
+- 이 프로젝트의 코드는 `from app.core.config import ...` 처럼 `app` 패키지 이름으로 서로를 불러옵니다.
+- `-m app.main` 은 지금 위치(프로젝트 폴더)를 기준으로 모듈을 찾으므로 `app` 을 찾을 수 있습니다.
+- `uv run app/main.py` 처럼 파일 경로로 실행하면 파이썬이 그 파일이 있는 `app/` 폴더를 기준으로 찾습니다. 그 안에는 `app` 이 없으므로 `ModuleNotFoundError: No module named 'app'` 이 납니다.
+- 그래서 실행은 항상 프로젝트 폴더에서 `-m` 으로 합니다. 파일 경로의 `/` 를 `.` 으로 바꾸고 `.py` 는 뺍니다.
+
 한 번에 3~6분 걸립니다(반려 라운드가 있으면 더 걸립니다). `supervisor:`로 시작하는 줄에 몇 번째로 일을 맡기는지, 누구를 골랐는지, Jev 의 근거 충분 확률이, `analysis_planner:`와 `reviewer:` 줄에 분석 작업 목록과 검수 판정이 찍힙니다.
 MCP 서버가 뜰 때 서버 프로그램이 직접 찍는 기동 메시지가 섞여 나옵니다. `supervisor:`, `analysis_planner:`, `data_analyst:`, `doc_reader:`, `web_researcher:`, `report_writer:`, `reviewer:`로 시작하는 줄만 보면 흐름을 따라갈 수 있습니다.
 

@@ -73,6 +73,13 @@ uv run python -m app.main "직장인이 AI 코딩 도구를 고르는 기준으�
 uv run python -m app.main "K-POP 팬 앱(위버스, 버블) 고르는 기준으로 블로그 글과 쇼츠 대본 만들어 줘"
 ```
 
+**왜 `python app/main.py` 가 아니라 `python -m app.main` 인가요?**
+
+- 이 프로젝트의 코드는 `from app.core.config import ...` 처럼 `app` 패키지 이름으로 서로를 불러옵니다.
+- `-m app.main` 은 지금 위치(프로젝트 폴더)를 기준으로 모듈을 찾으므로 `app` 을 찾을 수 있습니다.
+- `uv run app/main.py` 처럼 파일 경로로 실행하면 파이썬이 그 파일이 있는 `app/` 폴더를 기준으로 찾습니다. 그 안에는 `app` 이 없으므로 `ModuleNotFoundError: No module named 'app'` 이 납니다.
+- 그래서 실행은 항상 프로젝트 폴더에서 `-m` 으로 합니다. 파일 경로의 `/` 를 `.` 으로 바꾸고 `.py` 는 뺍니다.
+
 한 번 실행에 3~5분이 걸립니다. 화면에 계획한 조사 작업, supervisor 가 고른 다음 담당, 검수 판정이 차례로 찍힙니다.
 MCP 서버는 도구를 부를 때마다 새로 뜨고, 뜰 때마다 기동 메시지(`Tavily MCP server running on stdio` 등)를 화면에 섞어 냅니다. 서버 프로그램이 직접 찍는 메시지라 파이썬 쪽에서 끄지 못합니다. `planner:`, `researcher:`, `supervisor:`, `writer:`, `reviewer:`, `publisher:` 로 시작하는 줄만 보면 흐름을 따라갈 수 있습니다.
 
