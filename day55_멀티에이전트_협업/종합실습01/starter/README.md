@@ -77,10 +77,11 @@ uv run -m app.main "블로그 발행을 주 4편에서 주 2편으로 줄인 영
 
 **왜 `uv run app/main.py` 가 아니라 `uv run -m app.main` 인가요?**
 
-- 이 프로젝트의 코드는 `from app.core.config import ...` 처럼 `app` 패키지 이름으로 서로를 불러옵니다.
-- `-m app.main` 은 지금 위치(프로젝트 폴더)를 기준으로 모듈을 찾으므로 `app` 을 찾을 수 있습니다.
-- `uv run app/main.py` 처럼 파일 경로로 실행하면 파이썬이 그 파일이 있는 `app/` 폴더를 기준으로 찾습니다. 그 안에는 `app` 이 없으므로 `ModuleNotFoundError: No module named 'app'` 이 납니다.
-- 그래서 실행은 항상 프로젝트 폴더에서 `-m` 으로 합니다. 파일 경로의 `/` 를 `.` 으로 바꾸고 `.py` 는 뺍니다.
+- `-m` 은 module(모듈)의 약자입니다(`--module` 과 같음). 파일 경로가 아니라 모듈 이름으로 찾아 실행하므로 `/` 대신 `.` 을 쓰고 `.py` 는 뺍니다. 예: `app/graph/builder.py` -> `uv run -m app.graph.builder`
+- 이 프로젝트의 코드는 `from app.core.config import ...` 처럼 `app` 이라는 이름으로 서로를 불러옵니다.
+- `-m` 으로 실행하면 지금 터미널이 있는 폴더가 import 기준이 됩니다. 그래서 반드시 `app/` 폴더가 바로 보이는 프로젝트 폴더(`starter` 또는 `정답`)에서 실행합니다. 저장소 맨 위나 `day55_...` 폴더에서 실행하면 그 아래에 `app` 이 없어 실패합니다.
+- 파일 경로로 실행하면 그 파일이 있는 `app/` 폴더가 기준이 됩니다. `app/` 안에는 `app` 폴더가 없으므로 `ModuleNotFoundError: No module named 'app'` 이 납니다. 터미널을 `app/` 으로 옮겨 `uv run main.py` 를 실행해도 같은 오류가 납니다.
+- `PYTHONPATH` 환경변수로 기준 폴더를 따로 지정하는 방법도 있지만 윈도우와 맥의 쓰는 법이 달라 번거롭습니다. 프로젝트 폴더에서 `uv run -m` 으로 실행하는 것이 운영체제와 상관없이 가장 단순합니다.
 
 한 번에 3~6분 걸립니다(반려 라운드가 있으면 더 걸립니다). `supervisor:`로 시작하는 줄에 몇 번째로 일을 맡기는지, 누구를 골랐는지, Jev 의 근거 충분 확률이, `analysis_planner:`와 `reviewer:` 줄에 분석 작업 목록과 검수 판정이 찍힙니다.
 MCP 서버가 뜰 때 서버 프로그램이 직접 찍는 기동 메시지가 섞여 나옵니다. `supervisor:`, `analysis_planner:`, `data_analyst:`, `doc_reader:`, `web_researcher:`, `report_writer:`, `reviewer:`로 시작하는 줄만 보면 흐름을 따라갈 수 있습니다.
