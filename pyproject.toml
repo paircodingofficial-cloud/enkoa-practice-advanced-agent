@@ -84,6 +84,13 @@ dependencies = [
     # day56: Langfuse 로 에이전트 실행을 기록한다. CallbackHandler 와 trace 조회 방식이
     #   이 버전 API 로 쓰였으므로 고정한다.
     "langfuse==4.14.0",
+    # day57: GraphRAG 변형 비교(Microsoft GraphRAG·LightRAG 공식 패키지)
+    #   graphrag 3.1.1 부터는 pandas 3 을 요구해 이 저장소(pandas<3)와 충돌하므로 3.1.0 에 고정한다.
+    #   graphrag 3.1.0 이 litellm 을 고정해 openai 는 2.x 로 잠긴다.
+    "graphrag==3.1.0",
+    "lightrag-hku==1.5.7",
+    #   교안 01·02 색인 그래프 시각화(HTML). 리랭커·Jev 는 day48·day47 의존성을 그대로 쓴다.
+    "pyvis>=0.3.2",
 ]
 
 [tool.uv]

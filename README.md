@@ -16,6 +16,7 @@
 | **day53** | CRAG·Self-RAG 응용 | 근거 평가·재검색·웹 보완, 답변 검토·수정과 종료 조건. 팝업·전시 플래너와 게임 소개 대본 검수 과제 |
 | **day55** | 멀티에이전트 협업 | 슈퍼바이저가 `Command(goto, update)`로 워커에게 일을 나누고, 계획에 따라 `Send`로 병렬 실행한 결과를 리듀서로 합칩니다. `Command.PARENT` 핸드오프와 검수 루프, 라운드 상한을 익히고, MCP 도구를 쓰는 콘텐츠 분석 팀과 콘텐츠 생성 팀을 `.py` 종합실습으로 완성합니다 |
 | **day56** | 멀티에이전트 관측·실패 처리 | **Langfuse**로 멀티에이전트 실행을 trace 로 남겨 궤적에서 원인을 찾고, 핑퐁 반복·재시도(`RetryPolicy`)·노드 타임아웃을 막습니다. 병렬 작업의 부분 실패와 폴백, 체크포인트에서 이어 하기와 분기 실행(fork)을 다루고, 병원 예약 상담 팀 관측과 택배 지연 대응 팀 실패 처리 과제로 적용합니다 |
+| **day57** | GraphRAG 변형 비교 | **Microsoft GraphRAG**(`graphrag` 3.1.0)로 관광지 안내문을 색인해 개체·관계·계층 커뮤니티·커뮤니티 보고서를 만들고 **Basic·Local·Global·DRIFT** 네 검색이 답변 모델에 넘긴 근거를 비교합니다. 이어서 **LightRAG**(`lightrag-hku` 1.5.7)로 구체·주제 키워드 검색과 문서 추가·삭제를 다루고, 부록에서 LazyGraphRAG·HippoRAG 2 와 네 방식의 비용·근거를 질문 유형(단일 사실·멀티홉·전역)별로 비교합니다. 과제는 의약품 안내문에 두 방식을 적용합니다 |
 
 ---
 
@@ -62,6 +63,8 @@ day53은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_K
 day55 교안·과제는 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`를 넣습니다. 종합실습01·02는 MCP 서버를 `npx`로 띄우므로 **Node.js 22 이상**이 필요하고, 프로젝트 폴더마다 있는 `.env.example`을 따로 `.env`로 복사해 키를 채웁니다. 설치와 실행 방법은 [종합실습01 README](day55_멀티에이전트_협업/종합실습01/starter/README.md)에 있습니다.
 
 day56은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`와 Langfuse 키(`LANGFUSE_PUBLIC_KEY`, `LANGFUSE_SECRET_KEY`, `LANGFUSE_BASE_URL`)를 넣습니다. Langfuse 키는 [cloud.langfuse.com](https://cloud.langfuse.com)에서 프로젝트를 만든 뒤 Settings > API Keys 에서 발급합니다. 화면 사용법은 `부록_Langfuse_화면_안내.ipynb`에 있습니다.
+
+day57은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`와 `TYPESAFE_API_KEY`를 넣습니다. 색인이 오래 걸리면 교안의 색인 셀 대신 미리 만든 색인을 복사하는 셀을 실행합니다(`data/*/prebuilt/`). `output/`에는 강사가 실행해 둔 교안 01·02 본실습 색인이 들어 있습니다. 교안 02 함께 따라하기는 day48과 같은 Qwen3-Reranker-0.6B를 씁니다.
 
 ## 폴더 구성
 
