@@ -8,6 +8,8 @@ dependencies = [
     "ipykernel>=7.3.0",
     "jupyterlab>=4.6.2",
     "pandas>=2.3,<3",
+    # parquet 읽기 엔진. fastparquet는 커뮤니티 보고서의 findings 같은 중첩 열을 None으로 읽으므로 pyarrow를 씁니다.
+    "pyarrow>=22",
     "numpy>=2.3,<2.5",
     "python-dotenv>=1.0",
     # day46: 청킹 전략·RAPTOR
