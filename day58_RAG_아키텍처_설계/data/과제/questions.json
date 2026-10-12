@@ -1,0 +1,997 @@
+[
+ {
+  "question_id": "d01",
+  "question_type": "묘사",
+  "question": "오래 서 있으면 종아리가 묵직하게 붓는 혈관 문제나 항문 쪽 불편에 먹는 약은?",
+  "relevant_doc_ids": [
+   "drug_198400182"
+  ],
+  "section": "앞",
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "d02",
+  "question_type": "묘사",
+  "question": "손바닥과 팔 밑이 늘 축축하게 젖어 고민인 사람이 밤에 바르는 약은?",
+  "relevant_doc_ids": [
+   "drug_199806484"
+  ],
+  "section": "앞",
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "d03",
+  "question_type": "묘사",
+  "question": "잇몸 치료를 받은 뒤 붓고 피가 나는 잇몸 관리를 돕는 먹는 약은?",
+  "relevant_doc_ids": [
+   "drug_199702621"
+  ],
+  "section": "앞",
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "d04",
+  "question_type": "묘사",
+  "question": "수술한 뒤나 젖이 고여 가슴이 붓고 아플 때 붓기를 빼 주는 약은?",
+  "relevant_doc_ids": [
+   "drug_197100081"
+  ],
+  "section": "앞",
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "d05",
+  "question_type": "묘사",
+  "question": "귓속 평형 기관 탓에 빙빙 돌거나 방사선 치료 뒤 메스꺼울 때 먹는 약은?",
+  "relevant_doc_ids": [
+   "drug_197000076",
+   "drug_199602310"
+  ],
+  "section": "앞",
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "d06",
+  "question_type": "묘사",
+  "question": "얼굴의 거뭇한 얼룩을 서서히 하얗게 만들어 주는 바르는 약은?",
+  "relevant_doc_ids": [
+   "drug_199101003"
+  ],
+  "section": "앞",
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "d07",
+  "question_type": "묘사",
+  "question": "몸속 호르몬 수치 검사를 앞두고 사흘 전부터 끊으라고 적힌 진통제는?",
+  "relevant_doc_ids": [
+   "drug_198901589"
+  ],
+  "section": "뒤",
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "d08",
+  "question_type": "묘사",
+  "question": "들이마시고 나서 코와 입 가리개가 살갗에 붙어 버리면 씻어 내면 된다고 안내하는 가래약은?",
+  "relevant_doc_ids": [
+   "drug_198600267",
+   "drug_198700683"
+  ],
+  "section": "뒤",
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "d09",
+  "question_type": "묘사",
+  "question": "바르던 것을 끊은 뒤 피부가 심하게 붉어지고 화끈거릴 수 있다고 경고하는 약은?",
+  "relevant_doc_ids": [
+   "drug_197100059"
+  ],
+  "section": "뒤",
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "d10",
+  "question_type": "묘사",
+  "question": "상처 난 살갗에 바르면 한동안 따갑고 저린 느낌이 들 수 있다고 적힌 삔 데 바르는 약은?",
+  "relevant_doc_ids": [
+   "drug_199900298"
+  ],
+  "section": "뒤",
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "d11",
+  "question_type": "묘사",
+  "question": "패치를 떼고 나서 어지럽고 몸이 휘청거릴 수 있다고 경고하는 제품은?",
+  "relevant_doc_ids": [
+   "drug_198501415"
+  ],
+  "section": "뒤",
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "d12",
+  "question_type": "묘사",
+  "question": "부작용으로 젖이 저절로 나오고 가슴을 누르면 아플 수 있다는 구토 진정 물약은?",
+  "relevant_doc_ids": [
+   "drug_199300273",
+   "drug_199600830"
+  ],
+  "section": "뒤",
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "n01",
+  "question_type": "이름",
+  "question": "베르니케 뇌병증에 쓰는 비타민 알약은?",
+  "relevant_doc_ids": [
+   "drug_199501953"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "n02",
+  "question_type": "이름",
+  "question": "모공성태선에 바르는 크림은?",
+  "relevant_doc_ids": [
+   "drug_198501225"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "n03",
+  "question_type": "이름",
+  "question": "트리코모나스성 질염에 쓰는 세정제는?",
+  "relevant_doc_ids": [
+   "drug_199700636"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "n04",
+  "question_type": "이름",
+  "question": "홍색음선에도 바를 수 있는 곰팡이 치료 크림은?",
+  "relevant_doc_ids": [
+   "drug_198400401"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "n05",
+  "question_type": "이름",
+  "question": "아구창이 생겼을 때 입안을 헹구는 약은?",
+  "relevant_doc_ids": [
+   "drug_198300389"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "n06",
+  "question_type": "이름",
+  "question": "이유식에 타서 먹여도 되는 아기 장 건강 가루약은?",
+  "relevant_doc_ids": [
+   "drug_199202075"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "n07",
+  "question_type": "이름",
+  "question": "대장 내시경 검사 전에 장을 비울 때 쓰는 약은?",
+  "relevant_doc_ids": [
+   "drug_199702005"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "n08",
+  "question_type": "이름",
+  "question": "길버트증후군이 있으면 먹기 전에 상의하라고 적힌 진통제는?",
+  "relevant_doc_ids": [
+   "drug_199602668"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "n09",
+  "question_type": "이름",
+  "question": "이소니아지드 때문에 부족해진 비타민 B6를 채우는 약은?",
+  "relevant_doc_ids": [
+   "drug_199702527"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "n10",
+  "question_type": "이름",
+  "question": "스코폴리아엑스가 든 약과 함께 먹으면 안 되는 위장약은?",
+  "relevant_doc_ids": [
+   "drug_198901887"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "n11",
+  "question_type": "이름",
+  "question": "고수산뇨증이 있으면 먹기 전에 상의하라는 비타민 알약은?",
+  "relevant_doc_ids": [
+   "drug_199900351"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "n12",
+  "question_type": "이름",
+  "question": "카르니틴결핍증에 먹는 알약은?",
+  "relevant_doc_ids": [
+   "drug_199000361"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "c01",
+  "question_type": "조건",
+  "question": "붙이는 제품 가운데 배를 타기 몇 시간 전에 귀 뒤에 붙여 두는 것은?",
+  "relevant_doc_ids": [
+   "drug_198501415"
+  ],
+  "section": null,
+  "filter": {
+   "form": "붙이는 제형"
+  },
+  "anchor_text": null
+ },
+ {
+  "question_id": "c02",
+  "question_type": "조건",
+  "question": "붙이는 제품 중에 붙이기 전에 그 자리의 땀부터 닦아 내라고 하는 것은?",
+  "relevant_doc_ids": [
+   "drug_199102741"
+  ],
+  "section": null,
+  "filter": {
+   "form": "붙이는 제형"
+  },
+  "anchor_text": null
+ },
+ {
+  "question_id": "c03",
+  "question_type": "조건",
+  "question": "붙이는 제품 가운데 가족 중에 알레르기 체질이 있어도 먼저 상의하라고 한 것은?",
+  "relevant_doc_ids": [
+   "drug_199301383"
+  ],
+  "section": null,
+  "filter": {
+   "form": "붙이는 제형"
+  },
+  "anchor_text": null
+ },
+ {
+  "question_id": "c04",
+  "question_type": "조건",
+  "question": "붙이는 제품 중에 붙인 자리를 전기장판으로 데우지 말라고 하는 것은?",
+  "relevant_doc_ids": [
+   "drug_198400249",
+   "drug_198700387",
+   "drug_199301383"
+  ],
+  "section": null,
+  "filter": {
+   "form": "붙이는 제형"
+  },
+  "anchor_text": null
+ },
+ {
+  "question_id": "c05",
+  "question_type": "조건",
+  "question": "붙이는 제품 가운데 여러 장을 한꺼번에 붙이지 말라고 한 것은?",
+  "relevant_doc_ids": [
+   "drug_199703583"
+  ],
+  "section": null,
+  "filter": {
+   "form": "붙이는 제형"
+  },
+  "anchor_text": null
+ },
+ {
+  "question_id": "c06",
+  "question_type": "조건",
+  "question": "붙이는 제품 가운데 무릎 연골이 닳아 아플 때 하루 두 번 붙이는 것은?",
+  "relevant_doc_ids": [
+   "drug_199102741",
+   "drug_199300356",
+   "drug_199600561"
+  ],
+  "section": null,
+  "filter": {
+   "form": "붙이는 제형"
+  },
+  "anchor_text": null
+ },
+ {
+  "question_id": "c07",
+  "question_type": "조건",
+  "question": "알약 가운데 배나 차를 타기 전에 먹어 두는 멀미약은?",
+  "relevant_doc_ids": [
+   "drug_197000076",
+   "drug_199100996",
+   "drug_199602310"
+  ],
+  "section": null,
+  "filter": {
+   "form": "정"
+  },
+  "anchor_text": null
+ },
+ {
+  "question_id": "c08",
+  "question_type": "조건",
+  "question": "마시는 약 가운데 차멀미로 어지럽고 토할 것 같을 때 먹는 것은?",
+  "relevant_doc_ids": [
+   "drug_199300981",
+   "drug_199800924"
+  ],
+  "section": null,
+  "filter": {
+   "form": "시럽·액"
+  },
+  "anchor_text": null
+ },
+ {
+  "question_id": "c09",
+  "question_type": "조건",
+  "question": "마시는 약 가운데 소화 문제 말고 메스꺼움과 구토만 가라앉히는 것은?",
+  "relevant_doc_ids": [
+   "drug_199300273",
+   "drug_199600830"
+  ],
+  "section": null,
+  "filter": {
+   "form": "시럽·액"
+  },
+  "anchor_text": null
+ },
+ {
+  "question_id": "c10",
+  "question_type": "조건",
+  "question": "알약 가운데 속쓰림을 달래면서 칼슘도 채워 주는 것은?",
+  "relevant_doc_ids": [
+   "drug_199701242",
+   "drug_199801435"
+  ],
+  "section": null,
+  "filter": {
+   "form": "정"
+  },
+  "anchor_text": null
+ },
+ {
+  "question_id": "c11",
+  "question_type": "조건",
+  "question": "알약 가운데 임신 중에 모자라기 쉬운 엽산을 채워 주는 것은?",
+  "relevant_doc_ids": [
+   "drug_199501944",
+   "drug_199802670"
+  ],
+  "section": null,
+  "filter": {
+   "form": "정"
+  },
+  "anchor_text": null
+ },
+ {
+  "question_id": "c12",
+  "question_type": "조건",
+  "question": "마시는 약 가운데 숨 쉴 때 쌕쌕거리는 기관지염의 끈적한 가래에 쓰는 것은?",
+  "relevant_doc_ids": [
+   "drug_199102030",
+   "drug_199802171"
+  ],
+  "section": null,
+  "filter": {
+   "form": "시럽·액"
+  },
+  "anchor_text": null
+ },
+ {
+  "question_id": "r01",
+  "question_type": "관계",
+  "question": "판토-에이내복액 먹는 중인데, 이 약 안내문이 함께 먹지 말라고 한 성분이 든 캡슐 제품은?",
+  "relevant_doc_ids": [
+   "drug_199301093"
+  ],
+  "section": null,
+  "filter": {
+   "form": "캡슐"
+  },
+  "anchor_text": "판토-에이내복액"
+ },
+ {
+  "question_id": "r02",
+  "question_type": "관계",
+  "question": "판피린티정 먹는 중인데, 이 약 안내문이 함께 먹지 말라고 한 성분이 든 캡슐 제품은?",
+  "relevant_doc_ids": [
+   "drug_199301093"
+  ],
+  "section": null,
+  "filter": {
+   "form": "캡슐"
+  },
+  "anchor_text": "판피린티정"
+ },
+ {
+  "question_id": "r03",
+  "question_type": "관계",
+  "question": "삼남아세트아미노펜정 먹는 중인데, 이 약 안내문이 함께 먹지 말라고 한 성분이 든 캡슐 제품은?",
+  "relevant_doc_ids": [
+   "drug_199301093"
+  ],
+  "section": null,
+  "filter": {
+   "form": "캡슐"
+  },
+  "anchor_text": "삼남아세트아미노펜정"
+ },
+ {
+  "question_id": "r04",
+  "question_type": "관계",
+  "question": "콜핀정 먹는 중인데, 이 약 안내문이 함께 먹지 말라고 한 성분이 든 캡슐 제품은?",
+  "relevant_doc_ids": [
+   "drug_199301093"
+  ],
+  "section": null,
+  "filter": {
+   "form": "캡슐"
+  },
+  "anchor_text": "콜핀정"
+ },
+ {
+  "question_id": "r05",
+  "question_type": "관계",
+  "question": "제텐씨정 먹는 중인데, 이 약 안내문이 함께 먹지 말라고 한 성분이 든 정 제품은?",
+  "relevant_doc_ids": [
+   "drug_199701242",
+   "drug_199801435"
+  ],
+  "section": null,
+  "filter": {
+   "form": "정"
+  },
+  "anchor_text": "제텐씨정"
+ },
+ {
+  "question_id": "r06",
+  "question_type": "관계",
+  "question": "애드칼정 먹는 중인데, 이 약 안내문이 함께 먹지 말라고 한 성분이 든 정 제품은?",
+  "relevant_doc_ids": [
+   "drug_199701242",
+   "drug_199801435"
+  ],
+  "section": null,
+  "filter": {
+   "form": "정"
+  },
+  "anchor_text": "애드칼정"
+ },
+ {
+  "question_id": "r07",
+  "question_type": "관계",
+  "question": "톨시렌연질캡슐 먹는 중인데, 이 약 안내문이 함께 먹지 말라고 한 성분이 든 정 제품은?",
+  "relevant_doc_ids": [
+   "drug_199701242",
+   "drug_199801435"
+  ],
+  "section": null,
+  "filter": {
+   "form": "정"
+  },
+  "anchor_text": "톨시렌연질캡슐"
+ },
+ {
+  "question_id": "r08",
+  "question_type": "관계",
+  "question": "쎄레톱씨연질캡슐 먹는 중인데, 이 약 안내문이 함께 먹지 말라고 한 성분이 든 정 제품은?",
+  "relevant_doc_ids": [
+   "drug_199701242",
+   "drug_199801435"
+  ],
+  "section": null,
+  "filter": {
+   "form": "정"
+  },
+  "anchor_text": "쎄레톱씨연질캡슐"
+ },
+ {
+  "question_id": "r09",
+  "question_type": "관계",
+  "question": "모아칼연질캡슐 먹는 중인데, 이 약 안내문이 함께 먹지 말라고 한 성분이 든 정 제품은?",
+  "relevant_doc_ids": [
+   "drug_199701242",
+   "drug_199801435"
+  ],
+  "section": null,
+  "filter": {
+   "form": "정"
+  },
+  "anchor_text": "모아칼연질캡슐"
+ },
+ {
+  "question_id": "r10",
+  "question_type": "관계",
+  "question": "지노칼정 먹는 중인데, 이 약 안내문이 함께 먹지 말라고 한 성분이 든 정 제품은?",
+  "relevant_doc_ids": [
+   "drug_199701242",
+   "drug_199801435"
+  ],
+  "section": null,
+  "filter": {
+   "form": "정"
+  },
+  "anchor_text": "지노칼정"
+ },
+ {
+  "question_id": "r11",
+  "question_type": "관계",
+  "question": "대웅우루사연질캡슐 먹는 중인데, 이 약 안내문이 함께 먹지 말라고 한 성분이 든 정 제품은?",
+  "relevant_doc_ids": [
+   "drug_197400246",
+   "drug_197500088",
+   "drug_198700641",
+   "drug_198802327"
+  ],
+  "section": null,
+  "filter": {
+   "form": "정"
+  },
+  "anchor_text": "대웅우루사연질캡슐"
+ },
+ {
+  "question_id": "r12",
+  "question_type": "관계",
+  "question": "쓸기담50밀리그램연질캡슐 먹는 중인데, 이 약 안내문이 함께 먹지 말라고 한 성분이 든 정 제품은?",
+  "relevant_doc_ids": [
+   "drug_197400246",
+   "drug_197500088",
+   "drug_198700641",
+   "drug_198802327"
+  ],
+  "section": null,
+  "filter": {
+   "form": "정"
+  },
+  "anchor_text": "쓸기담50밀리그램연질캡슐"
+ },
+ {
+  "question_id": "a01",
+  "question_type": "집계",
+  "question": "바르는 제형 가운데 효능군이 피부인 제품은 몇 개야?",
+  "relevant_doc_ids": [
+   "drug_197400416",
+   "drug_197600172",
+   "drug_197900171",
+   "drug_197900176",
+   "drug_198000168",
+   "drug_198100234",
+   "drug_198200011",
+   "drug_198200102",
+   "drug_198400096",
+   "drug_198400401",
+   "drug_198501225",
+   "drug_198600429",
+   "drug_198600458",
+   "drug_198700152",
+   "drug_198701196",
+   "drug_198701492",
+   "drug_198701670",
+   "drug_198800330",
+   "drug_198900345",
+   "drug_198900700",
+   "drug_199100156",
+   "drug_199100976",
+   "drug_199101003",
+   "drug_199101996",
+   "drug_199200308",
+   "drug_199201236",
+   "drug_199201633",
+   "drug_199201802",
+   "drug_199202073",
+   "drug_199300117",
+   "drug_199300583",
+   "drug_199301081",
+   "drug_199304286",
+   "drug_199400709",
+   "drug_199400779",
+   "drug_199500818",
+   "drug_199501118",
+   "drug_199501960",
+   "drug_199601069",
+   "drug_199601101",
+   "drug_199601519",
+   "drug_199601837",
+   "drug_199604632",
+   "drug_199700124",
+   "drug_199700479",
+   "drug_199700635",
+   "drug_199701407",
+   "drug_199701565",
+   "drug_199701870",
+   "drug_199701885",
+   "drug_199702589",
+   "drug_199702966",
+   "drug_199800355",
+   "drug_199802142",
+   "drug_199802633",
+   "drug_199803081",
+   "drug_199803082",
+   "drug_199806429",
+   "drug_199806461",
+   "drug_199806465",
+   "drug_199806484",
+   "drug_199900248",
+   "drug_199900420"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "a02",
+  "question_type": "집계",
+  "question": "바르는 제형 중에서 효능군이 해열진통인 제품은 모두 몇 개야?",
+  "relevant_doc_ids": [
+   "drug_196700061",
+   "drug_198601419",
+   "drug_198800043",
+   "drug_198800774",
+   "drug_198800991",
+   "drug_198801106",
+   "drug_199301708",
+   "drug_199501025",
+   "drug_199702967",
+   "drug_199800728",
+   "drug_199802190",
+   "drug_199806775",
+   "drug_199900298"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "a03",
+  "question_type": "집계",
+  "question": "정 가운데 효능군이 소화기인 제품은 몇 개야?",
+  "relevant_doc_ids": [
+   "drug_195900043",
+   "drug_196400046",
+   "drug_196600011",
+   "drug_196600012",
+   "drug_197000076",
+   "drug_197400246",
+   "drug_197500088",
+   "drug_197600483",
+   "drug_198100428",
+   "drug_198200120",
+   "drug_198300605",
+   "drug_198601285",
+   "drug_198700405",
+   "drug_198700430",
+   "drug_198700641",
+   "drug_198701352",
+   "drug_198800190",
+   "drug_198800622",
+   "drug_198800902",
+   "drug_198802327",
+   "drug_198901887",
+   "drug_198901918",
+   "drug_199001559",
+   "drug_199100996",
+   "drug_199200354",
+   "drug_199201154",
+   "drug_199201508",
+   "drug_199301091",
+   "drug_199302061",
+   "drug_199302106",
+   "drug_199302512",
+   "drug_199400500",
+   "drug_199500630",
+   "drug_199501564",
+   "drug_199502365",
+   "drug_199600246",
+   "drug_199600367",
+   "drug_199600597",
+   "drug_199601068",
+   "drug_199601520",
+   "drug_199602310",
+   "drug_199602312",
+   "drug_199602733",
+   "drug_199701224",
+   "drug_199701242",
+   "drug_199801026",
+   "drug_199801435",
+   "drug_199806985"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "a04",
+  "question_type": "집계",
+  "question": "효능군이 해열진통인 정 제품은 모두 몇 개야?",
+  "relevant_doc_ids": [
+   "drug_197500016",
+   "drug_197700120",
+   "drug_197900277",
+   "drug_198300064",
+   "drug_198300343",
+   "drug_198400131",
+   "drug_198400830",
+   "drug_198601395",
+   "drug_198700731",
+   "drug_198701124",
+   "drug_198701721",
+   "drug_198800776",
+   "drug_198800901",
+   "drug_198802481",
+   "drug_198900920",
+   "drug_198901589",
+   "drug_199000568",
+   "drug_199101135",
+   "drug_199101970",
+   "drug_199102092",
+   "drug_199102384",
+   "drug_199300758",
+   "drug_199300892",
+   "drug_199302514",
+   "drug_199302515",
+   "drug_199401030",
+   "drug_199401316",
+   "drug_199401319",
+   "drug_199500466",
+   "drug_199501694",
+   "drug_199501735",
+   "drug_199501736",
+   "drug_199502575",
+   "drug_199600625",
+   "drug_199601312",
+   "drug_199601338",
+   "drug_199602438",
+   "drug_199602668",
+   "drug_199800767",
+   "drug_199801877",
+   "drug_199802387",
+   "drug_199802621",
+   "drug_199804309"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "a05",
+  "question_type": "집계",
+  "question": "정 가운데 효능군이 알레르기로 분류된 제품은 몇 개야?",
+  "relevant_doc_ids": [
+   "drug_196000011",
+   "drug_197000053",
+   "drug_197600345",
+   "drug_197700322",
+   "drug_197900219",
+   "drug_198601398",
+   "drug_199700120",
+   "drug_199700265",
+   "drug_199700873",
+   "drug_199701033",
+   "drug_199701099",
+   "drug_199701227",
+   "drug_199701398",
+   "drug_199701908",
+   "drug_199701967",
+   "drug_199702105",
+   "drug_199702520",
+   "drug_199702846",
+   "drug_199703384",
+   "drug_199800308",
+   "drug_199801016",
+   "drug_199801495",
+   "drug_199802009",
+   "drug_199802228",
+   "drug_199802497",
+   "drug_199802620",
+   "drug_199803095",
+   "drug_199803133"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "a06",
+  "question_type": "집계",
+  "question": "효능군이 비타민·영양인 정 제품은 몇 개야?",
+  "relevant_doc_ids": [
+   "drug_196200034",
+   "drug_197000037",
+   "drug_198501220",
+   "drug_198900129",
+   "drug_199000005",
+   "drug_199001232",
+   "drug_199301198",
+   "drug_199401025",
+   "drug_199501767",
+   "drug_199501944",
+   "drug_199501953",
+   "drug_199600581",
+   "drug_199700756",
+   "drug_199702527",
+   "drug_199802000",
+   "drug_199802435",
+   "drug_199802670",
+   "drug_199802671",
+   "drug_199900351"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "a07",
+  "question_type": "집계",
+  "question": "시럽·액 가운데 효능군이 소화기인 제품은 몇 개야?",
+  "relevant_doc_ids": [
+   "drug_195700020",
+   "drug_198400278",
+   "drug_198900667",
+   "drug_199300273",
+   "drug_199300981",
+   "drug_199400883",
+   "drug_199500807",
+   "drug_199504365",
+   "drug_199600830",
+   "drug_199800924",
+   "drug_199801515",
+   "drug_199900216"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "a08",
+  "question_type": "집계",
+  "question": "시럽·액 중에서 효능군이 기침·가래인 제품은 모두 몇 개야?",
+  "relevant_doc_ids": [
+   "drug_196900058",
+   "drug_197600722",
+   "drug_198200689",
+   "drug_198901706",
+   "drug_199102030",
+   "drug_199103295",
+   "drug_199802171"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "a09",
+  "question_type": "집계",
+  "question": "시럽·액 가운데 효능군이 해열진통인 제품은 몇 개야?",
+  "relevant_doc_ids": [
+   "drug_198601920",
+   "drug_198700315",
+   "drug_198901310",
+   "drug_199100705",
+   "drug_199300224",
+   "drug_199800888"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "a10",
+  "question_type": "집계",
+  "question": "효능군이 비타민·영양인 시럽·액 제품은 몇 개야?",
+  "relevant_doc_ids": [
+   "drug_196600063",
+   "drug_198902513",
+   "drug_199100565",
+   "drug_199601099",
+   "drug_199700386",
+   "drug_199701904"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "a11",
+  "question_type": "집계",
+  "question": "캡슐 가운데 효능군이 비타민·영양인 제품은 몇 개야?",
+  "relevant_doc_ids": [
+   "drug_198000440",
+   "drug_198500049",
+   "drug_198500050",
+   "drug_198700431",
+   "drug_198800193",
+   "drug_198800444",
+   "drug_198901917",
+   "drug_199000383",
+   "drug_199000708",
+   "drug_199001505",
+   "drug_199201049",
+   "drug_199401734",
+   "drug_199701488",
+   "drug_199702618",
+   "drug_199703423",
+   "drug_199804594"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ },
+ {
+  "question_id": "a12",
+  "question_type": "집계",
+  "question": "효능군이 기침·가래인 캡슐 제품은 모두 몇 개야?",
+  "relevant_doc_ids": [
+   "drug_197800466",
+   "drug_198301005",
+   "drug_198701672",
+   "drug_198800911",
+   "drug_198801525",
+   "drug_198801531",
+   "drug_199001080",
+   "drug_199201048",
+   "drug_199602374",
+   "drug_199602408",
+   "drug_199800785",
+   "drug_199801389"
+  ],
+  "section": null,
+  "filter": null,
+  "anchor_text": null
+ }
+]

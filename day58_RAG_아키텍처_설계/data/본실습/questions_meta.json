@@ -1,0 +1,2550 @@
+{
+ "questions": [
+  {
+   "question_id": "q001",
+   "generated_by": "gpt-5.6-luna 초안(바꿔 말하기 v2)",
+   "seed_doc_id": "spot_127806",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 5 + e5-small 상위 5 + 같은 분류 RRF 상위 5, 후보 8개 중 정답 확인",
+   "candidates": [
+    "spot_125513",
+    "spot_125617",
+    "spot_127531",
+    "spot_127806",
+    "spot_128795",
+    "spot_129395",
+    "spot_2614727",
+    "spot_598187"
+   ],
+   "bm25_top5": [
+    "spot_127806",
+    "spot_2614727",
+    "spot_129395",
+    "spot_127531",
+    "spot_125617"
+   ],
+   "e5_top5": [
+    "spot_125513",
+    "spot_127806",
+    "spot_129395",
+    "spot_598187",
+    "spot_128795"
+   ],
+   "validator_answer": [
+    "spot_127806"
+   ],
+   "validator_reason": "명지산군립공원은 희귀식물·야생화 학습과 곤충체험이 가능하고 제1·2 하늘 구름다리를 갖추고 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 5,
+   "noun_overlap": 0.333,
+   "redrafts": 0,
+   "attempts": [
+    {
+     "question": "드문 풀꽃과 작은 벌레를 살펴보고 허공 다리까지 건너는 산길 명소는 어디야?",
+     "ratio": 0.0,
+     "shared": [],
+     "rare": [],
+     "lcs": 2,
+     "reasons": [],
+     "ok": true
+    }
+   ],
+   "human_override": true,
+   "model_question": "드문 풀꽃과 작은 벌레를 살펴보고 허공 다리까지 건너는 산길 명소는 어디야?"
+  },
+  {
+   "question_id": "q002",
+   "generated_by": "gpt-5.6-luna 초안(바꿔 말하기 v2)",
+   "seed_doc_id": "spot_231923",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 5 + e5-small 상위 5 + 같은 분류 RRF 상위 5, 후보 14개 중 정답 확인",
+   "candidates": [
+    "spot_125768",
+    "spot_126386",
+    "spot_126747",
+    "spot_127642",
+    "spot_147656",
+    "spot_1606001",
+    "spot_1626645",
+    "spot_231923",
+    "spot_2606603",
+    "spot_2783317",
+    "spot_297989",
+    "spot_301276",
+    "spot_479924",
+    "spot_631066"
+   ],
+   "bm25_top5": [
+    "spot_2606603",
+    "spot_631066",
+    "spot_125768",
+    "spot_297989",
+    "spot_301276"
+   ],
+   "e5_top5": [
+    "spot_479924",
+    "spot_126747",
+    "spot_126386",
+    "spot_2783317",
+    "spot_1606001"
+   ],
+   "validator_answer": [
+    "spot_231923"
+   ],
+   "validator_reason": "통영 삼도수군통제영은 옛 수군 본영으로 세병관이 남아 있으며 통제영터 일부가 정비·복원되었다.",
+   "extras_added": [],
+   "longest_copy_chars": 2,
+   "noun_overlap": 0.0,
+   "redrafts": 1,
+   "attempts": [
+    {
+     "question": "옛 수군 지휘 본부 터에서 유일하게 남은 큰 전각과 되살린 건물을 둘러보는 곳은 어디야?",
+     "ratio": 0.429,
+     "shared": [
+      "건물",
+      "수군",
+      "터"
+     ],
+     "rare": [],
+     "lcs": 2,
+     "reasons": [
+      "명사 겹침 0.43"
+     ],
+     "ok": false
+    },
+    {
+     "question": "옛 군영의 큰 전각 하나와 되살린 옛 모습을 살펴보는 곳은 어디야?",
+     "ratio": 0.0,
+     "shared": [],
+     "rare": [],
+     "lcs": 2,
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  {
+   "question_id": "q003",
+   "generated_by": "gpt-5.6-luna 초안(바꿔 말하기 v2)",
+   "seed_doc_id": "spot_126995",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 5 + e5-small 상위 5 + 같은 분류 RRF 상위 5, 후보 12개 중 정답 확인",
+   "candidates": [
+    "spot_125795",
+    "spot_126208",
+    "spot_126638",
+    "spot_126995",
+    "spot_127339",
+    "spot_128651",
+    "spot_129471",
+    "spot_129610",
+    "spot_1626649",
+    "spot_2514658",
+    "spot_482093",
+    "spot_809190"
+   ],
+   "bm25_top5": [
+    "spot_809190",
+    "spot_1626649",
+    "spot_129471",
+    "spot_126995",
+    "spot_482093"
+   ],
+   "e5_top5": [
+    "spot_126638",
+    "spot_2514658",
+    "spot_128651",
+    "spot_127339",
+    "spot_126995"
+   ],
+   "validator_answer": [
+    "spot_126995"
+   ],
+   "validator_reason": "낙암정은 조선시대 문신 배환을 기리기 위해 지은 정자로 낙동강 옆 절벽에서 강과 건너편 넓은 계평 들판을 내려다볼 수 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 3,
+   "noun_overlap": 0.286,
+   "redrafts": 0,
+   "attempts": [
+    {
+     "question": "옛 문관을 기리는 쉼터에서 높은 바위턱 아래 물줄기와 너른 들을 굽어보는 곳은 어디야?",
+     "ratio": 0.286,
+     "shared": [
+      "바위",
+      "아래"
+     ],
+     "rare": [],
+     "lcs": 3,
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  {
+   "question_id": "q004",
+   "generated_by": "gpt-5.6-luna 초안(바꿔 말하기 v2)",
+   "seed_doc_id": "spot_1131275",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 5 + e5-small 상위 5 + 같은 분류 RRF 상위 5, 후보 10개 중 정답 확인",
+   "candidates": [
+    "spot_1131275",
+    "spot_125513",
+    "spot_127959",
+    "spot_1605927",
+    "spot_2500201",
+    "spot_2752525",
+    "spot_2758809",
+    "spot_2762874",
+    "spot_598187",
+    "spot_971122"
+   ],
+   "bm25_top5": [
+    "spot_2752525",
+    "spot_1605927",
+    "spot_127959",
+    "spot_2762874",
+    "spot_2758809"
+   ],
+   "e5_top5": [
+    "spot_598187",
+    "spot_1131275",
+    "spot_125513",
+    "spot_971122",
+    "spot_2500201"
+   ],
+   "validator_answer": [
+    "spot_1131275"
+   ],
+   "validator_reason": "도심의 울창한 숲과 어린이놀이터, 놀이마당 및 야외공연장이 모두 문서에 명시되어 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 4,
+   "noun_overlap": 0.286,
+   "redrafts": 0,
+   "attempts": [
+    {
+     "question": "도심의 나무 그늘길과 어린이 놀 거리, 바깥 무대를 함께 즐기는 곳은 어디야?",
+     "ratio": 0.286,
+     "shared": [
+      "도심",
+      "어린이"
+     ],
+     "rare": [],
+     "lcs": 4,
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  {
+   "question_id": "q005",
+   "generated_by": "gpt-5.6-luna 초안(바꿔 말하기 v2)",
+   "seed_doc_id": "spot_2758652",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 5 + e5-small 상위 5 + 같은 분류 RRF 상위 5, 후보 13개 중 정답 확인",
+   "candidates": [
+    "spot_125671",
+    "spot_125675",
+    "spot_125676",
+    "spot_126037",
+    "spot_126638",
+    "spot_127531",
+    "spot_1626649",
+    "spot_1627287",
+    "spot_228886",
+    "spot_2514658",
+    "spot_2606603",
+    "spot_2758652",
+    "spot_482093"
+   ],
+   "bm25_top5": [
+    "spot_1626649",
+    "spot_125676",
+    "spot_127531",
+    "spot_482093",
+    "spot_126037"
+   ],
+   "e5_top5": [
+    "spot_2606603",
+    "spot_1627287",
+    "spot_2514658",
+    "spot_126638",
+    "spot_228886"
+   ],
+   "validator_answer": [
+    "spot_2758652"
+   ],
+   "validator_reason": "햇살에 물보라가 무지개를 만들고 2단 폭포가 바위 계곡을 따라 흐르며 접근성도 좋다고 설명되어 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 2,
+   "noun_overlap": 0.143,
+   "redrafts": 0,
+   "attempts": [
+    {
+     "question": "햇살에 여러 빛깔이 번지는 층층 물줄기와 바위 골짜기를 가까이서 보는 곳은 어디야?",
+     "ratio": 0.143,
+     "shared": [
+      "햇살"
+     ],
+     "rare": [],
+     "lcs": 2,
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  {
+   "question_id": "q006",
+   "generated_by": "gpt-5.6-luna 초안(바꿔 말하기 v2)",
+   "seed_doc_id": "spot_126321",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 5 + e5-small 상위 5 + 같은 분류 RRF 상위 5, 후보 12개 중 정답 확인",
+   "candidates": [
+    "spot_126321",
+    "spot_126485",
+    "spot_126577",
+    "spot_127959",
+    "spot_129597",
+    "spot_2514658",
+    "spot_2614727",
+    "spot_2736392",
+    "spot_2783317",
+    "spot_2784060",
+    "spot_3399181",
+    "spot_753983"
+   ],
+   "bm25_top5": [
+    "spot_127959",
+    "spot_753983",
+    "spot_2614727",
+    "spot_2784060",
+    "spot_129597"
+   ],
+   "e5_top5": [
+    "spot_126321",
+    "spot_126577",
+    "spot_127959",
+    "spot_2514658",
+    "spot_129597"
+   ],
+   "validator_answer": [
+    "spot_126321"
+   ],
+   "validator_reason": "봄철 벚꽃 사진촬영대회와 산책로, 군산 시가지 및 서해를 내려다보는 전망이 모두 문서에 근거한다.",
+   "extras_added": [],
+   "longest_copy_chars": 3,
+   "noun_overlap": 0.25,
+   "redrafts": 0,
+   "attempts": [
+    {
+     "question": "봄꽃철 사진 애호가들이 모이고 산책길 끝에서 도심과 바다를 굽어보는 물가 명소는 어디야?",
+     "ratio": 0.25,
+     "shared": [
+      "바다",
+      "봄",
+      "사진"
+     ],
+     "rare": [],
+     "lcs": 3,
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  {
+   "question_id": "q007",
+   "generated_by": "gpt-5.6-luna 초안(바꿔 말하기 v2)",
+   "seed_doc_id": "spot_126730",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 5 + e5-small 상위 5 + 같은 분류 RRF 상위 5, 후보 10개 중 정답 확인",
+   "candidates": [
+    "spot_1215292",
+    "spot_126447",
+    "spot_126638",
+    "spot_126696",
+    "spot_126730",
+    "spot_128795",
+    "spot_129056",
+    "spot_129395",
+    "spot_131105",
+    "spot_2035859"
+   ],
+   "bm25_top5": [
+    "spot_126730",
+    "spot_129056",
+    "spot_131105",
+    "spot_126696",
+    "spot_2035859"
+   ],
+   "e5_top5": [
+    "spot_126638",
+    "spot_129395",
+    "spot_126447",
+    "spot_128795",
+    "spot_1215292"
+   ],
+   "validator_answer": [
+    "spot_126730"
+   ],
+   "validator_reason": "간조 때 드러나는 넓은 갯벌과 5.4㎢ 규모의 거대한 갈대 군락이 문서에 명시되어 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 4,
+   "noun_overlap": 0.0,
+   "redrafts": 0,
+   "attempts": [
+    {
+     "question": "썰물 때 드러나는 넓은 진흙벌과 끝없이 펼쳐진 키 큰 물풀밭을 걷는 곳은 어디야?",
+     "ratio": 0.0,
+     "shared": [],
+     "rare": [],
+     "lcs": 4,
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  {
+   "question_id": "q008",
+   "generated_by": "gpt-5.6-luna 초안(바꿔 말하기 v2)",
+   "seed_doc_id": "spot_231954",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 5 + e5-small 상위 5 + 같은 분류 RRF 상위 5, 후보 9개 중 정답 확인",
+   "candidates": [
+    "spot_126990",
+    "spot_127726",
+    "spot_128573",
+    "spot_129471",
+    "spot_231891",
+    "spot_231954",
+    "spot_2775495",
+    "spot_317526",
+    "spot_488273"
+   ],
+   "bm25_top5": [
+    "spot_126990",
+    "spot_231891",
+    "spot_488273",
+    "spot_129471",
+    "spot_127726"
+   ],
+   "e5_top5": [
+    "spot_317526",
+    "spot_126990",
+    "spot_231954",
+    "spot_231891",
+    "spot_128573"
+   ],
+   "validator_answer": [
+    "spot_231954"
+   ],
+   "validator_reason": "사라진 대통사의 당간지주로서 깃발을 다는 석조 기둥이며 바깥면에 굵은 띠 모양이 새겨져 있다고 설명되어 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 2,
+   "noun_overlap": 0.286,
+   "redrafts": 0,
+   "attempts": [
+    {
+     "question": "옛 불교 터에서 깃발을 세우던 석조 기둥과 띠무늬를 살펴보는 곳은 어디야?",
+     "ratio": 0.286,
+     "shared": [
+      "기둥",
+      "띠"
+     ],
+     "rare": [],
+     "lcs": 2,
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  {
+   "question_id": "q009",
+   "generated_by": "gpt-5.6-luna 초안(바꿔 말하기 v2)",
+   "seed_doc_id": "spot_1859903",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 5 + e5-small 상위 5 + 같은 분류 RRF 상위 5, 후보 11개 중 정답 확인",
+   "candidates": [
+    "spot_125731",
+    "spot_128508",
+    "spot_137809",
+    "spot_1859903",
+    "spot_2500201",
+    "spot_2606150",
+    "spot_2852296",
+    "spot_2946242",
+    "spot_3060930",
+    "spot_584891",
+    "spot_780778"
+   ],
+   "bm25_top5": [
+    "spot_2606150",
+    "spot_2852296",
+    "spot_1859903",
+    "spot_125731",
+    "spot_137809"
+   ],
+   "e5_top5": [
+    "spot_128508",
+    "spot_584891",
+    "spot_1859903",
+    "spot_3060930",
+    "spot_2500201"
+   ],
+   "validator_answer": [
+    "spot_1859903"
+   ],
+   "validator_reason": "치즈 만들기와 피자 굽기 체험, 아이들이 즐기는 레일 썰매 타기를 함께 제공한다.",
+   "extras_added": [],
+   "longest_copy_chars": 3,
+   "noun_overlap": 0.2,
+   "redrafts": 2,
+   "attempts": [
+    {
+     "question": "가족이 우유로 쫀득한 먹거리를 만들고 화덕 요리와 미끄럼 놀이를 즐기는 곳은 어디야?",
+     "ratio": 0.429,
+     "shared": [
+      "가족",
+      "먹거리",
+      "우유"
+     ],
+     "rare": [],
+     "lcs": 4,
+     "reasons": [
+      "명사 겹침 0.43"
+     ],
+     "ok": false
+    },
+    {
+     "question": "아이들과 치즈를 빚고 피자를 구우며 레일 썰매를 타는 곳은 어디야?",
+     "ratio": 1.0,
+     "shared": [
+      "레일",
+      "썰매",
+      "아이",
+      "치즈",
+      "피자"
+     ],
+     "rare": [],
+     "lcs": 4,
+     "reasons": [
+      "명사 겹침 1.00"
+     ],
+     "ok": false
+    },
+    {
+     "question": "가족이 유제품을 만들고 빵을 구우며 경사진 놀이기구를 타는 곳은 어디야?",
+     "ratio": 0.2,
+     "shared": [
+      "가족"
+     ],
+     "rare": [],
+     "lcs": 3,
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  {
+   "question_id": "q010",
+   "generated_by": "gpt-5.6-luna 초안(바꿔 말하기 v2)",
+   "seed_doc_id": "spot_1245865",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 5 + e5-small 상위 5 + 같은 분류 RRF 상위 5, 후보 11개 중 정답 확인",
+   "candidates": [
+    "spot_1245865",
+    "spot_125513",
+    "spot_128168",
+    "spot_128588",
+    "spot_2456837",
+    "spot_2638475",
+    "spot_2718257",
+    "spot_2767753",
+    "spot_3065503",
+    "spot_3106562",
+    "spot_971122"
+   ],
+   "bm25_top5": [
+    "spot_128588",
+    "spot_971122",
+    "spot_1245865",
+    "spot_2456837",
+    "spot_3106562"
+   ],
+   "e5_top5": [
+    "spot_3065503",
+    "spot_128168",
+    "spot_125513",
+    "spot_1245865",
+    "spot_2718257"
+   ],
+   "validator_answer": [
+    "spot_1245865"
+   ],
+   "validator_reason": "연주회·음악회와 연극을 관람할 수 있고 교육실에서 교육, 회의, 세미나를 진행할 수 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 4,
+   "noun_overlap": 0.333,
+   "redrafts": 2,
+   "attempts": [
+    {
+     "question": "연주와 연극을 즐기고 수업이나 모임도 열 수 있는 전문 무대 공간은 어디야?",
+     "ratio": 0.429,
+     "shared": [
+      "공간",
+      "연극",
+      "전문"
+     ],
+     "rare": [],
+     "lcs": 5,
+     "reasons": [
+      "명사 겹침 0.43"
+     ],
+     "ok": false
+    },
+    {
+     "question": "음악과 무용 공연을 보고 강좌와 모임까지 열 수 있는 곳은 어디야?",
+     "ratio": 0.6,
+     "shared": [
+      "강좌",
+      "공연",
+      "무용"
+     ],
+     "rare": [],
+     "lcs": 3,
+     "reasons": [
+      "명사 겹침 0.60"
+     ],
+     "ok": false
+    },
+    {
+     "question": "음악과 연극을 즐기고 배움과 모임도 할 수 있는 곳은 어디야?",
+     "ratio": 0.333,
+     "shared": [
+      "연극"
+     ],
+     "rare": [],
+     "lcs": 4,
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  {
+   "question_id": "q011",
+   "generated_by": "gpt-5.6-luna 초안(바꿔 말하기 v2)",
+   "seed_doc_id": "spot_129509",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 5 + e5-small 상위 5 + 같은 분류 RRF 상위 5, 후보 15개 중 정답 확인",
+   "candidates": [
+    "spot_125768",
+    "spot_126462",
+    "spot_126638",
+    "spot_126747",
+    "spot_126990",
+    "spot_128168",
+    "spot_128824",
+    "spot_128890",
+    "spot_128994",
+    "spot_129509",
+    "spot_1606001",
+    "spot_1613886",
+    "spot_231954",
+    "spot_348783",
+    "spot_809372"
+   ],
+   "bm25_top5": [
+    "spot_1606001",
+    "spot_809372",
+    "spot_128824",
+    "spot_128994",
+    "spot_128890"
+   ],
+   "e5_top5": [
+    "spot_126747",
+    "spot_1613886",
+    "spot_128168",
+    "spot_126462",
+    "spot_126638"
+   ],
+   "validator_answer": [
+    "spot_129509"
+   ],
+   "validator_reason": "장식 없는 처마와 많은 창문이 있는 대웅전이 요사채와 실내 복도로 이어져 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 3,
+   "noun_overlap": 0.0,
+   "redrafts": 1,
+   "attempts": [
+    {
+     "question": "장식 없는 처마와 복도로 이어진 옛 불교 건물은 어디야?",
+     "ratio": 0.8,
+     "shared": [
+      "복도",
+      "불교",
+      "장식",
+      "처마"
+     ],
+     "rare": [],
+     "lcs": 6,
+     "reasons": [
+      "명사 겹침 0.80"
+     ],
+     "ok": false
+    },
+    {
+     "question": "꾸밈없는 지붕선과 창 많은 큰 예배 공간이 안채와 이어진 곳은 어디야?",
+     "ratio": 0.0,
+     "shared": [],
+     "rare": [],
+     "lcs": 3,
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  {
+   "question_id": "q012",
+   "generated_by": "gpt-5.6-luna 초안(바꿔 말하기 v2)",
+   "seed_doc_id": "spot_127266",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 5 + e5-small 상위 5 + 같은 분류 RRF 상위 5, 후보 13개 중 정답 확인",
+   "candidates": [
+    "spot_126747",
+    "spot_127266",
+    "spot_128760",
+    "spot_147656",
+    "spot_147684",
+    "spot_1606001",
+    "spot_1954655",
+    "spot_1957444",
+    "spot_2035859",
+    "spot_228886",
+    "spot_2783317",
+    "spot_301276",
+    "spot_584891"
+   ],
+   "bm25_top5": [
+    "spot_1606001",
+    "spot_127266",
+    "spot_147656",
+    "spot_2783317",
+    "spot_2035859"
+   ],
+   "e5_top5": [
+    "spot_147656",
+    "spot_584891",
+    "spot_301276",
+    "spot_228886",
+    "spot_126747"
+   ],
+   "validator_answer": [
+    "spot_127266"
+   ],
+   "validator_reason": "교육 공간과 제례 공간이 앞뒤로 나뉘며 대성전 지붕을 다른 건물보다 높게 설치했다.",
+   "extras_added": [],
+   "longest_copy_chars": 2,
+   "noun_overlap": 0.25,
+   "redrafts": 2,
+   "attempts": [
+    {
+     "question": "옛 학자들을 기리는 제례 공간과 뒤편 숲이 있는 곳은 어디야?",
+     "ratio": 0.8,
+     "shared": [
+      "공간",
+      "뒤편",
+      "숲",
+      "제례"
+     ],
+     "rare": [],
+     "lcs": 4,
+     "reasons": [
+      "명사 겹침 0.80"
+     ],
+     "ok": false
+    },
+    {
+     "question": "앞쪽 배움터와 뒤쪽 제향 구역, 높은 지붕의 큰 전각을 품은 곳은 어디야?",
+     "ratio": 0.429,
+     "shared": [
+      "뒤쪽",
+      "앞쪽",
+      "지붕"
+     ],
+     "rare": [],
+     "lcs": 2,
+     "reasons": [
+      "명사 겹침 0.43"
+     ],
+     "ok": false
+    },
+    {
+     "question": "배우는 마당과 제사를 올리는 마당이 나뉘고 큰 전각 지붕이 높은 곳은 어디야?",
+     "ratio": 0.25,
+     "shared": [
+      "지붕"
+     ],
+     "rare": [],
+     "lcs": 2,
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  {
+   "question_id": "q020",
+   "generated_by": "gpt-5.6-luna 초안(바꿔 말하기 v2)",
+   "seed_doc_id": "spot_127805",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 5 + e5-small 상위 5 + 같은 분류 RRF 상위 5, 후보 12개 중 정답 확인",
+   "candidates": [
+    "spot_125424",
+    "spot_125650",
+    "spot_125651",
+    "spot_125667",
+    "spot_126267",
+    "spot_126441",
+    "spot_127050",
+    "spot_127479",
+    "spot_127531",
+    "spot_127805",
+    "spot_127929",
+    "spot_129153"
+   ],
+   "bm25_top5": [
+    "spot_127805",
+    "spot_126441",
+    "spot_126267",
+    "spot_129153",
+    "spot_125651"
+   ],
+   "e5_top5": [
+    "spot_129153",
+    "spot_127050",
+    "spot_125667",
+    "spot_125650",
+    "spot_126267"
+   ],
+   "validator_answer": [
+    "spot_127805"
+   ],
+   "validator_reason": "맑은 물과 크고 작은 폭포가 굽이치는 계곡에 선림원지와 불바라기약수터가 있어 모든 조건을 충족한다.",
+   "extras_added": [],
+   "longest_copy_chars": 3,
+   "noun_overlap": 0.333,
+   "redrafts": 1,
+   "attempts": [
+    {
+     "question": "맑은 물줄기와 폭포를 따라 걷고 옛 절터와 샘터도 만나는 산속 쉼터는?",
+     "ratio": 0.167,
+     "shared": [
+      "폭포"
+     ],
+     "rare": [],
+     "lcs": 3,
+     "reasons": [
+      "장소를 묻는 질문이 아님"
+     ],
+     "ok": false
+    },
+    {
+     "question": "맑은 물이 굽이치고 곳곳에 물이 떨어지며 옛 절터와 샘터도 만나는 산속 쉼터는 어디야?",
+     "ratio": 0.333,
+     "shared": [
+      "곳곳",
+      "물"
+     ],
+     "rare": [],
+     "lcs": 3,
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  {
+   "question_id": "q026",
+   "generated_by": "gpt-5.6-luna 초안(바꿔 말하기 v2)",
+   "seed_doc_id": "spot_128555",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 5 + e5-small 상위 5 + 같은 분류 RRF 상위 5, 후보 14개 중 정답 확인",
+   "candidates": [
+    "spot_126108",
+    "spot_126447",
+    "spot_127101",
+    "spot_127850",
+    "spot_127952",
+    "spot_128555",
+    "spot_128770",
+    "spot_128936",
+    "spot_129153",
+    "spot_1627287",
+    "spot_2496315",
+    "spot_587699",
+    "spot_591866",
+    "spot_780778"
+   ],
+   "bm25_top5": [
+    "spot_1627287",
+    "spot_129153",
+    "spot_128770",
+    "spot_128555",
+    "spot_128936"
+   ],
+   "e5_top5": [
+    "spot_126447",
+    "spot_591866",
+    "spot_2496315",
+    "spot_127101",
+    "spot_780778"
+   ],
+   "validator_answer": [
+    "spot_128555"
+   ],
+   "validator_reason": "천장과 벽면이 유리로 되어 있고 제주의 풍경을 보며 온천욕을 즐길 수 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 3,
+   "noun_overlap": 0.286,
+   "redrafts": 0,
+   "attempts": [
+    {
+     "question": "유리 벽 너머 섬 풍경을 보며 따뜻한 물에 몸을 담그는 곳은 어디야?",
+     "ratio": 0.286,
+     "shared": [
+      "물",
+      "유리"
+     ],
+     "rare": [],
+     "lcs": 3,
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  {
+   "question_id": "q028",
+   "generated_by": "gpt-5.6-luna 초안(바꿔 말하기 v2)",
+   "seed_doc_id": "spot_127801",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 5 + e5-small 상위 5 + 같은 분류 RRF 상위 5, 후보 12개 중 정답 확인",
+   "candidates": [
+    "spot_126298",
+    "spot_126632",
+    "spot_126832",
+    "spot_127801",
+    "spot_128025",
+    "spot_128142",
+    "spot_128306",
+    "spot_128728",
+    "spot_128936",
+    "spot_129027",
+    "spot_129153",
+    "spot_131105"
+   ],
+   "bm25_top5": [
+    "spot_127801",
+    "spot_131105",
+    "spot_128142",
+    "spot_128306",
+    "spot_128728"
+   ],
+   "e5_top5": [
+    "spot_129153",
+    "spot_129027",
+    "spot_128306",
+    "spot_128936",
+    "spot_126632"
+   ],
+   "validator_answer": [
+    "spot_127801"
+   ],
+   "validator_reason": "민머루수욕장에서 갯벌체험과 캠핑을 할 수 있고 배낚시, 보문사의 마애관음좌상과 일몰을 함께 즐길 수 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 5,
+   "noun_overlap": 0.4,
+   "redrafts": 0,
+   "attempts": [
+    {
+     "question": "갯벌 체험과 야영, 배낚시를 즐기며 절벽 새김 불상과 해넘이를 보는 섬은 어디야?",
+     "ratio": 0.4,
+     "shared": [
+      "갯벌",
+      "배",
+      "섬",
+      "체험"
+     ],
+     "rare": [],
+     "lcs": 5,
+     "reasons": [],
+     "ok": true
+    }
+   ]
+  },
+  {
+   "question_id": "q031",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_809190",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 8개 중 정답 확인",
+   "candidates": [
+    "spot_125473",
+    "spot_125798",
+    "spot_126037",
+    "spot_126436",
+    "spot_126637",
+    "spot_127726",
+    "spot_2496315",
+    "spot_809190"
+   ],
+   "validator_answer": [
+    "spot_809190"
+   ],
+   "validator_reason": "북악산은 창의문과 능선을 따라 보존된 옛 성벽을 함께 볼 수 있는 산이다.",
+   "extras_added": [],
+   "longest_copy_chars": 3,
+   "key_term": "창의문"
+  },
+  {
+   "question_id": "q032",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_126744",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 5개 중 정답 확인",
+   "candidates": [
+    "spot_126366",
+    "spot_126744",
+    "spot_128573",
+    "spot_128812",
+    "spot_129509"
+   ],
+   "validator_answer": [
+    "spot_126744"
+   ],
+   "validator_reason": "미래사는 통영에 있으며 구산수련대선사가 1954년에 창건한 사찰이다.",
+   "extras_added": [],
+   "longest_copy_chars": 8,
+   "key_term": "구산수련대선사"
+  },
+  {
+   "question_id": "q033",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_1626649",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 9개 중 정답 확인",
+   "candidates": [
+    "spot_125473",
+    "spot_125667",
+    "spot_125671",
+    "spot_125675",
+    "spot_126267",
+    "spot_126366",
+    "spot_126441",
+    "spot_126654",
+    "spot_1626649"
+   ],
+   "validator_answer": [
+    "spot_1626649"
+   ],
+   "validator_reason": "중선암은 곡운 김수증이 명명한 것으로 전해지는 계곡 명소이다.",
+   "extras_added": [],
+   "longest_copy_chars": 6,
+   "key_term": "곡운 김수증"
+  },
+  {
+   "question_id": "q034",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_1604652",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 9개 중 정답 확인",
+   "candidates": [
+    "spot_126208",
+    "spot_126512",
+    "spot_126995",
+    "spot_127691",
+    "spot_1604652",
+    "spot_1626649",
+    "spot_250134",
+    "spot_297989",
+    "spot_3399181"
+   ],
+   "validator_answer": [
+    "spot_1604652"
+   ],
+   "validator_reason": "경복궁 건청궁의 곤녕합 옥호루에서 1895년 을미사변이 일어났다.",
+   "extras_added": [],
+   "longest_copy_chars": 7,
+   "key_term": "옥호루"
+  },
+  {
+   "question_id": "q035",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_125417",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 7개 중 정답 확인",
+   "candidates": [
+    "spot_125417",
+    "spot_125697",
+    "spot_127479",
+    "spot_127805",
+    "spot_128681",
+    "spot_129193",
+    "spot_2606230"
+   ],
+   "validator_answer": [
+    "spot_125417"
+   ],
+   "validator_reason": "국립대관령자연휴양림은 한국에서 최초로 개장한 휴양림이며 오죽헌 등 강릉 유적지 여행의 거점으로 소개되어 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 4,
+   "key_term": "오죽헌"
+  },
+  {
+   "question_id": "q036",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_2608977",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 10개 중 정답 확인",
+   "candidates": [
+    "spot_128588",
+    "spot_1594374",
+    "spot_2469196",
+    "spot_2469439",
+    "spot_250147",
+    "spot_2553876",
+    "spot_2608977",
+    "spot_598187",
+    "spot_735749",
+    "spot_775394"
+   ],
+   "validator_answer": [
+    "spot_2608977"
+   ],
+   "validator_reason": "국립민속박물관 야외 공간에 1970~80년대 골목을 재현한 ‘추억의 거리’가 있다고 명시되어 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 8,
+   "key_term": "추억의 거리"
+  },
+  {
+   "question_id": "q037",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_126462",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 9개 중 정답 확인",
+   "candidates": [
+    "spot_125636",
+    "spot_126462",
+    "spot_126948",
+    "spot_127239",
+    "spot_128776",
+    "spot_1956297",
+    "spot_1956320",
+    "spot_1957403",
+    "spot_1957412"
+   ],
+   "validator_answer": [
+    "spot_126462"
+   ],
+   "validator_reason": "오현단은 귤림서원 옛터에 제주 지역 교학 발전에 공헌한 5현을 기리는 제단으로 조성되었다.",
+   "extras_added": [],
+   "longest_copy_chars": 6,
+   "key_term": "귤림서원"
+  },
+  {
+   "question_id": "q038",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_126211",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 7개 중 정답 확인",
+   "candidates": [
+    "spot_126211",
+    "spot_128555",
+    "spot_128634",
+    "spot_128681",
+    "spot_128782",
+    "spot_1829741",
+    "spot_250410"
+   ],
+   "validator_answer": [
+    "spot_126211"
+   ],
+   "validator_reason": "경주 선덕여왕릉은 선덕여왕이 부처의 나라인 도리천에 묻어 달라고 했다는 뜻이 전해지는 능이다.",
+   "extras_added": [],
+   "longest_copy_chars": 5,
+   "key_term": "도리천"
+  },
+  {
+   "question_id": "q039",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_129056",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 5개 중 정답 확인",
+   "candidates": [
+    "spot_128768",
+    "spot_128770",
+    "spot_128936",
+    "spot_129056",
+    "spot_129175"
+   ],
+   "validator_answer": [
+    "spot_129056"
+   ],
+   "validator_reason": "울릉군 태하마을은 대풍령과 만물상 등 주변 절경이 있고 봄에 유채꽃밭의 노란 물결을 볼 수 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 3
+  },
+  {
+   "question_id": "q040",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_128936",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 5개 중 정답 확인",
+   "candidates": [
+    "spot_128768",
+    "spot_128770",
+    "spot_128936",
+    "spot_129056",
+    "spot_129175"
+   ],
+   "validator_answer": [
+    "spot_128936"
+   ],
+   "validator_reason": "울릉도 섬 일대를 배로 유람하며 본섬 주변을 한 바퀴 둘러보는 관광 코스라고 명시되어 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 10
+  },
+  {
+   "question_id": "q041",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_127758",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 5개 중 정답 확인",
+   "candidates": [
+    "spot_126696",
+    "spot_126724",
+    "spot_127757",
+    "spot_127758",
+    "spot_131105"
+   ],
+   "validator_answer": [
+    "spot_127758"
+   ],
+   "validator_reason": "암태도는 긴 역사와 역사의 흔적을 간직하면서 쌀·보리·마늘 등 농작물이 풍성한 농경지와 섬 여행 코스를 함께 소개한다.",
+   "extras_added": [],
+   "longest_copy_chars": 4
+  },
+  {
+   "question_id": "q042",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_127757",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 5개 중 정답 확인",
+   "candidates": [
+    "spot_126696",
+    "spot_126724",
+    "spot_127757",
+    "spot_127758",
+    "spot_131105"
+   ],
+   "validator_answer": [
+    "spot_126696",
+    "spot_126724",
+    "spot_127757"
+   ],
+   "validator_reason": "백길해변은 울창한 송림과 해수욕장, 신도해변은 송림과 백사장 해수욕장, 분계해변은 소나무 군락과 분계해수욕장을 함께 갖추고 있다.",
+   "extras_added": [
+    "spot_126696",
+    "spot_126724"
+   ],
+   "longest_copy_chars": 3
+  },
+  {
+   "question_id": "q043",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_125999",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 4개 중 정답 확인",
+   "candidates": [
+    "spot_125902",
+    "spot_125999",
+    "spot_1951612",
+    "spot_485687"
+   ],
+   "validator_answer": [
+    "spot_125999"
+   ],
+   "validator_reason": "금남 백로 서식지는 백로와 왜가리 등이 많이 서식하는 생태 명소로 소개되어 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 3
+  },
+  {
+   "question_id": "q044",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_2733971",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 15개 중 정답 확인",
+   "candidates": [
+    "spot_126485",
+    "spot_126491",
+    "spot_126747",
+    "spot_128968",
+    "spot_129507",
+    "spot_1605927",
+    "spot_2661506",
+    "spot_2733971",
+    "spot_2752552",
+    "spot_2758809",
+    "spot_2761745",
+    "spot_2784060",
+    "spot_3067314",
+    "spot_754063",
+    "spot_775394"
+   ],
+   "validator_answer": [
+    "spot_2733971"
+   ],
+   "validator_reason": "노을공원은 드넓은 잔디밭과 일몰 시 아름다운 경치를 갖춘 서울의 시민공원이다.",
+   "extras_added": [],
+   "longest_copy_chars": 4
+  },
+  {
+   "question_id": "q045",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_130284",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 8개 중 정답 확인",
+   "candidates": [
+    "spot_126747",
+    "spot_130284",
+    "spot_2500201",
+    "spot_2553876",
+    "spot_2606150",
+    "spot_2661506",
+    "spot_2784060",
+    "spot_2852296"
+   ],
+   "validator_answer": [
+    "spot_130284"
+   ],
+   "validator_reason": "코엑스 아쿠아리움은 650여 종 4만여 마리의 수중생물을 전시하는 대형 수족관이다.",
+   "extras_added": [],
+   "longest_copy_chars": 6
+  },
+  {
+   "question_id": "q046",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_129402",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 8개 중 정답 확인",
+   "candidates": [
+    "spot_126434",
+    "spot_126672",
+    "spot_127050",
+    "spot_127860",
+    "spot_129073",
+    "spot_129327",
+    "spot_129402",
+    "spot_598187"
+   ],
+   "validator_answer": [
+    "spot_129402"
+   ],
+   "validator_reason": "방사탑은 부정과 악을 막고 마을을 지키기 위해 공동으로 쌓은 제주 전통 돌탑이다.",
+   "extras_added": [],
+   "longest_copy_chars": 3
+  },
+  {
+   "question_id": "q047",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_126672",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 10개 중 정답 확인",
+   "candidates": [
+    "spot_1215292",
+    "spot_126434",
+    "spot_126435",
+    "spot_126436",
+    "spot_126672",
+    "spot_127479",
+    "spot_127529",
+    "spot_127861",
+    "spot_128795",
+    "spot_129699"
+   ],
+   "validator_answer": [
+    "spot_126672"
+   ],
+   "validator_reason": "송악산은 이중 분화구를 가진 화산지형이며 해안가 절벽과 올레 10코스 둘레길이 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 3
+  },
+  {
+   "question_id": "q048",
+   "generated_by": "gpt-5.6-luna 초안",
+   "seed_doc_id": "spot_125694",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 9개 중 정답 확인",
+   "candidates": [
+    "spot_125417",
+    "spot_125694",
+    "spot_125695",
+    "spot_125696",
+    "spot_125697",
+    "spot_125707",
+    "spot_128728",
+    "spot_128758",
+    "spot_129022"
+   ],
+   "validator_answer": [
+    "spot_125694",
+    "spot_125695",
+    "spot_125696",
+    "spot_125707",
+    "spot_128758"
+   ],
+   "validator_reason": "송정해변, 등명해변, 사천해변, 속초해수욕장, 경포해수욕장은 본문에 백사장 또는 모래사장과 소나무 숲이 함께 언급되어 있다.",
+   "extras_added": [
+    "spot_125695",
+    "spot_125696",
+    "spot_125707",
+    "spot_128758"
+   ],
+   "longest_copy_chars": 3
+  },
+  {
+   "question_id": "q049",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "anchor_id": "spot_129585",
+   "group": "해변",
+   "categories": [
+    "자연관광/해변·해수욕장"
+   ]
+  },
+  {
+   "question_id": "q050",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "anchor_id": "spot_128994",
+   "group": "사찰",
+   "categories": [
+    "역사관광/불교"
+   ]
+  },
+  {
+   "question_id": "q051",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "anchor_id": "spot_127479",
+   "group": "산",
+   "categories": [
+    "자연관광/산·고개·오름·봉우리"
+   ]
+  },
+  {
+   "question_id": "q052",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "anchor_id": "spot_127850",
+   "group": "공원",
+   "categories": [
+    "문화관광/근린공원",
+    "문화관광/소공원",
+    "문화관광/시민공원",
+    "문화관광/주제공원"
+   ]
+  },
+  {
+   "question_id": "q053",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "anchor_id": "spot_127659",
+   "group": "사찰",
+   "categories": [
+    "역사관광/불교"
+   ]
+  },
+  {
+   "question_id": "q054",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "anchor_id": "spot_2775570",
+   "group": "물가",
+   "categories": [
+    "자연관광/계곡",
+    "자연관광/폭포"
+   ]
+  },
+  {
+   "question_id": "q055",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "rule": {
+    "kind": "count",
+    "where": {
+     "sido": "제주",
+     "category_prefix": "자연관광/"
+    }
+   }
+  },
+  {
+   "question_id": "q056",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "rule": {
+    "kind": "count",
+    "where": {
+     "sido": "서울",
+     "category_prefix": "역사관광/"
+    }
+   }
+  },
+  {
+   "question_id": "q057",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "rule": {
+    "kind": "count",
+    "where": {
+     "category": "역사관광/불교"
+    }
+   }
+  },
+  {
+   "question_id": "q058",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "rule": {
+    "kind": "count",
+    "info_eq": {
+     "is_free": "1"
+    }
+   }
+  },
+  {
+   "question_id": "q059",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "rule": {
+    "kind": "count",
+    "where": {
+     "sigungu": "경주시"
+    },
+    "info_contains": {
+     "restdate": "연중무휴"
+    }
+   }
+  },
+  {
+   "question_id": "q060",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "rule": {
+    "kind": "argmax_sido",
+    "where": {
+     "category": "자연관광/섬"
+    }
+   }
+  },
+  {
+   "question_id": "q061",
+   "generated_by": "gpt-5.6-luna 초안(목표 8개 뒤 예비 질문)",
+   "seed_doc_id": "spot_128168",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 8개 중 정답 확인",
+   "candidates": [
+    "spot_126632",
+    "spot_128168",
+    "spot_129022",
+    "spot_129056",
+    "spot_2456536",
+    "spot_2514658",
+    "spot_3056468",
+    "spot_3065503"
+   ],
+   "validator_answer": [
+    "spot_128168"
+   ],
+   "validator_reason": "헤이리 예술마을은 통일동산 관광특구 내에 위치하며 예술가 300여 명이 거주하는 공동체 마을이다.",
+   "extras_added": [],
+   "longest_copy_chars": 8,
+   "key_term": "통일동산 관광특구",
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q062",
+   "generated_by": "사람 작성(2026-10-12, PROMPT_NAME 규칙)",
+   "seed_doc_id": "spot_1249812",
+   "validated": "사람 판정: BM25 상위 5 + 대상 문서, 후보 5개 중 정답 확인",
+   "candidates": [
+    "spot_1249812",
+    "spot_127659",
+    "spot_2992822",
+    "spot_598187",
+    "spot_735749"
+   ],
+   "validator_answer": [
+    "spot_1249812"
+   ],
+   "validator_reason": "핵심어 '말전거리'는 이 문서 본문에만 있고, BM25 상위 5 후보 가운데 말 장터 옛 이름을 말하는 곳은 이 문서뿐",
+   "extras_added": [],
+   "longest_copy_chars": 7,
+   "key_term": "말전거리",
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q063",
+   "generated_by": "사람 작성(2026-10-12, PROMPT_NAME 규칙)",
+   "seed_doc_id": "spot_125636",
+   "validated": "사람 판정: BM25 상위 5 + 대상 문서, 후보 5개 중 정답 확인",
+   "candidates": [
+    "spot_125636",
+    "spot_125667",
+    "spot_125798",
+    "spot_126654",
+    "spot_128824"
+   ],
+   "validator_answer": [
+    "spot_125636"
+   ],
+   "validator_reason": "핵심어 '김중한'은 이 문서 본문에만 있음('최문한'은 송정해변 문서에도 있어 쓰지 않음)",
+   "extras_added": [],
+   "longest_copy_chars": 4,
+   "key_term": "김중한",
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q064",
+   "generated_by": "사람 작성(2026-10-12, PROMPT_NAME 규칙)",
+   "seed_doc_id": "spot_125675",
+   "validated": "사람 판정: BM25 상위 5 + 대상 문서, 후보 5개 중 정답 확인",
+   "candidates": [
+    "spot_125667",
+    "spot_125671",
+    "spot_125675",
+    "spot_125676",
+    "spot_126441"
+   ],
+   "validator_answer": [
+    "spot_125675"
+   ],
+   "validator_reason": "핵심어 '동정기'는 이 문서 본문에만 있고, 다른 설악산 폭포 문서에는 김창협·동정기가 없음",
+   "extras_added": [],
+   "longest_copy_chars": 8,
+   "key_term": "동정기",
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q065",
+   "generated_by": "사람 작성(2026-10-12, PROMPT_NAME 규칙)",
+   "seed_doc_id": "spot_125748",
+   "validated": "사람 판정: BM25 상위 5 + 대상 문서, 후보 5개 중 정답 확인",
+   "candidates": [
+    "spot_125417",
+    "spot_125695",
+    "spot_125748",
+    "spot_126467",
+    "spot_231927"
+   ],
+   "validator_answer": [
+    "spot_125748"
+   ],
+   "validator_reason": "핵심어 '삽당령'은 이 문서 본문에만 있음",
+   "extras_added": [],
+   "longest_copy_chars": 5,
+   "key_term": "삽당령",
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q066",
+   "generated_by": "사람 작성(2026-10-12, PROMPT_NAME 규칙)",
+   "seed_doc_id": "spot_126298",
+   "validated": "사람 판정: BM25 상위 5 + 대상 문서, 후보 5개 중 정답 확인",
+   "candidates": [
+    "spot_126298",
+    "spot_126696",
+    "spot_126724",
+    "spot_127529",
+    "spot_128728"
+   ],
+   "validator_answer": [
+    "spot_126298"
+   ],
+   "validator_reason": "핵심어 '어청도'는 이 문서 본문에만 있고, 고군산 군도의 다른 섬 문서(무녀도, 장자도)에는 어청도 항로 이야기가 없음",
+   "extras_added": [],
+   "longest_copy_chars": 5,
+   "key_term": "어청도",
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q067",
+   "generated_by": "사람 작성(2026-10-12, PROMPT_NAME 규칙)",
+   "seed_doc_id": "spot_126330",
+   "validated": "사람 판정: BM25 상위 5 + 대상 문서, 후보 5개 중 정답 확인",
+   "candidates": [
+    "spot_126330",
+    "spot_127149",
+    "spot_1605933",
+    "spot_228886",
+    "spot_488273"
+   ],
+   "validator_answer": [
+    "spot_126330"
+   ],
+   "validator_reason": "핵심어 '환선정'은 이 문서 본문에만 있음",
+   "extras_added": [],
+   "longest_copy_chars": 3,
+   "key_term": "환선정",
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q068",
+   "generated_by": "gpt-5.6-luna 초안(목표 10개 뒤 예비 질문)",
+   "seed_doc_id": "spot_2606230",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 8개 중 정답 확인",
+   "candidates": [
+    "spot_2350092",
+    "spot_252564",
+    "spot_2606230",
+    "spot_2614727",
+    "spot_2736392",
+    "spot_2758489",
+    "spot_3027575",
+    "spot_702551"
+   ],
+   "validator_answer": [
+    "spot_2606230"
+   ],
+   "validator_reason": "국립달음산자연휴양림은 달음산에 위치하며 산과 바다를 모두 보고 즐길 수 있는 휴양림으로 명시되어 있다.",
+   "extras_added": [],
+   "longest_copy_chars": 6,
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q069",
+   "generated_by": "gpt-5.6-luna 초안(목표 10개 뒤 예비 질문)",
+   "seed_doc_id": "spot_127581",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 8개 중 정답 확인",
+   "candidates": [
+    "spot_126577",
+    "spot_126588",
+    "spot_126589",
+    "spot_126832",
+    "spot_127101",
+    "spot_127266",
+    "spot_127581",
+    "spot_128142"
+   ],
+   "validator_answer": [
+    "spot_126588",
+    "spot_127581"
+   ],
+   "validator_reason": "노자산과 산방산은 본문에 기암괴석과 정상 또는 주변에서 바라보는 다도해 전망이 명시되어 있다.",
+   "extras_added": [
+    "spot_126588"
+   ],
+   "longest_copy_chars": 4,
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q070",
+   "generated_by": "gpt-5.6-luna 초안(목표 10개 뒤 예비 질문)",
+   "seed_doc_id": "spot_126990",
+   "validated": "gpt-5.6-luna 판정: BM25 상위 후보 + 같은 분류 문서 8개 중 정답 확인",
+   "candidates": [
+    "spot_125894",
+    "spot_126699",
+    "spot_126990",
+    "spot_129471",
+    "spot_129575",
+    "spot_231954",
+    "spot_304816",
+    "spot_479924"
+   ],
+   "validator_answer": [
+    "spot_126990",
+    "spot_231954"
+   ],
+   "validator_reason": "공주상신리 당간지주와 공주 반죽동당간지주는 사찰 입구에서 깃발을 달던 당간을 지탱하는 유적이라고 설명되어 있다.",
+   "extras_added": [
+    "spot_231954"
+   ],
+   "longest_copy_chars": 5,
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q071",
+   "generated_by": "사람 작성(2026-10-12, PROMPT_COND 규칙)",
+   "seed_doc_id": "spot_1254680",
+   "validated": "사람 판정: 필터 안 BM25 상위 8 + 같은 분류 문서(필터 문서 12건 이하면 전부), 후보 9개 중 정답 확인",
+   "candidates": [
+    "spot_1254680",
+    "spot_127213",
+    "spot_127801",
+    "spot_128814",
+    "spot_128824",
+    "spot_128890",
+    "spot_631066",
+    "spot_800798",
+    "spot_971122"
+   ],
+   "validator_answer": [
+    "spot_1254680",
+    "spot_127213",
+    "spot_128814"
+   ],
+   "validator_reason": "spot_1254680: 정답: 돌로 쌓은 관측·방어시설(돈대); spot_127213: 정답: 강화해협을 지키는 요새, 신미양요 격전지; spot_127801: 섬 관광지라 아님; spot_128814: 정답: 개경과 한양을 방어하던 성곽; spot_128824: 석탑이라 아님; spot_128890: 선원이라 아님; spot_631066: 북한을 바라보는 전망대라 방어 시설 아님; spot_800798: 농촌체험마을이라 아님; spot_971122: 약쑥 체험 공간이라 아님",
+   "extras_added": [
+    "spot_127213",
+    "spot_128814"
+   ],
+   "longest_copy_chars": 4,
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q072",
+   "generated_by": "사람 작성(2026-10-12, PROMPT_COND 규칙)",
+   "seed_doc_id": "spot_1613886",
+   "validated": "사람 판정: 필터 안 BM25 상위 8 + 같은 분류 문서(필터 문서 12건 이하면 전부), 후보 8개 중 정답 확인",
+   "candidates": [
+    "spot_1249812",
+    "spot_126160",
+    "spot_126802",
+    "spot_127659",
+    "spot_128119",
+    "spot_128508",
+    "spot_1613886",
+    "spot_297989"
+   ],
+   "validator_answer": [
+    "spot_1613886"
+   ],
+   "validator_reason": "spot_1249812: 오토바이 골목이라 아님; spot_126160: 절이라 아님; spot_126802: 미술 거리라 아님; spot_127659: 산이라 아님; spot_128119: 향교라 아님; spot_128508: 전원주택형 농촌 체험 마을로 서양식 옛 주택이 아님; spot_1613886: 정답: 1910년경 붉은 벽돌로 지은 서양식 2층 건물; spot_297989: 절이라 아님",
+   "extras_added": [],
+   "longest_copy_chars": 4,
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q073",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "anchor_id": "spot_129193",
+   "group": "물가",
+   "categories": [
+    "자연관광/계곡",
+    "자연관광/폭포"
+   ],
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q074",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "anchor_id": "spot_127266",
+   "group": "산",
+   "categories": [
+    "자연관광/산·고개·오름·봉우리"
+   ],
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q075",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "anchor_id": "spot_127929",
+   "group": "공원",
+   "categories": [
+    "문화관광/근린공원",
+    "문화관광/소공원",
+    "문화관광/시민공원",
+    "문화관광/주제공원"
+   ],
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q076",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "anchor_id": "spot_128651",
+   "group": "해변",
+   "categories": [
+    "자연관광/해변·해수욕장"
+   ],
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q077",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "anchor_id": "spot_601489",
+   "group": "물가",
+   "categories": [
+    "자연관광/계곡",
+    "자연관광/폭포"
+   ],
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q078",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "anchor_id": "spot_126126",
+   "group": "사찰",
+   "categories": [
+    "역사관광/불교"
+   ],
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q079",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "anchor_id": "spot_129575",
+   "group": "공원",
+   "categories": [
+    "문화관광/근린공원",
+    "문화관광/소공원",
+    "문화관광/시민공원",
+    "문화관광/주제공원"
+   ],
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q080",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "anchor_id": "spot_129029",
+   "group": "해변",
+   "categories": [
+    "자연관광/해변·해수욕장"
+   ],
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q081",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "anchor_id": "spot_127778",
+   "group": "섬",
+   "categories": [
+    "자연관광/섬"
+   ],
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q082",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "rule": {
+    "kind": "count",
+    "where": {
+     "category_prefix": "체험관광/"
+    }
+   },
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q083",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "rule": {
+    "kind": "count",
+    "where": {
+     "sido": "부산",
+     "category_prefix": "문화관광/"
+    }
+   },
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q084",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "rule": {
+    "kind": "count",
+    "where": {
+     "sido": "서울"
+    },
+    "info_eq": {
+     "is_free": "1"
+    }
+   },
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q085",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "rule": {
+    "kind": "argmax_sido",
+    "where": {
+     "category": "자연관광/해변·해수욕장"
+    }
+   },
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q086",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "rule": {
+    "kind": "count",
+    "where": {
+     "sido": "서울",
+     "sigungu": "종로구",
+     "category_prefix": "역사관광/"
+    }
+   },
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q087",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "rule": {
+    "kind": "count",
+    "info_eq": {
+     "is_free": "0"
+    }
+   },
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q088",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "rule": {
+    "kind": "count",
+    "where": {
+     "sido": "제주"
+    },
+    "info_contains": {
+     "restdate": "연중무휴"
+    }
+   },
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q089",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "rule": {
+    "kind": "argmax_sido",
+    "where": {
+     "category": "역사관광/불교"
+    }
+   },
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  },
+  {
+   "question_id": "q090",
+   "generated_by": "code",
+   "validated": "규칙으로 계산(자기검증에서 재계산)",
+   "rule": {
+    "kind": "argmax_sido",
+    "where": {
+     "category": "문화관광/시민공원"
+    }
+   },
+   "added": "유형별 문항 수 맞추기(2026-10-12)로 더함"
+  }
+ ],
+ "dropped_drafts": [
+  {
+   "type": "묘사",
+   "seed_doc_id": "spot_129193",
+   "question": "나무가 우거진 산기슭에서 계절 풍경과 물가 쉼을 즐기는 숙박처는 어디야?",
+   "drop_reason": "검증 모델이 원래 문서를 정답으로 보지 않음"
+  },
+  {
+   "type": "묘사",
+   "seed_doc_id": "spot_129147",
+   "question": "밤바다 뱃길을 비추는 하얀 탑과 여러 나라 축소 작품을 함께 보는 곳은 어디야?",
+   "drop_reason": "검증 모델이 원래 문서를 정답으로 보지 않음"
+  },
+  {
+   "type": "묘사",
+   "seed_doc_id": "spot_125922",
+   "question": "산꼭대기를 둘러싼 옛 돌담과 옛 물길을 함께 살펴볼 수 있는 성터는 어디야?",
+   "drop_reason": "검증 모델이 원래 문서를 정답으로 보지 않음"
+  },
+  {
+   "type": "묘사",
+   "seed_doc_id": "spot_1364932",
+   "question": "온화한 옛 임금의 앉은 모습을 보고 하늘과 날씨를 재는 기구도 살피는 곳은 어디야?",
+   "drop_reason": "관문 통과 실패(다시 쓰기 2회 뒤)"
+  },
+  {
+   "type": "묘사",
+   "seed_doc_id": "spot_129575",
+   "question": "옛 왕국의 예술을 담은 기념 조형물과 긴 계단, 땅속 공간이 있는 곳은 어디야?",
+   "drop_reason": "관문 통과 실패(다시 쓰기 2회 뒤)"
+  }
+ ],
+ "superseded": [
+  {
+   "old_question_id": "q001",
+   "question": "계곡에서 여름 물놀이를 즐기고 통나무집 등 다양한 숙박을 이용할 수 있는 곳은?",
+   "relevant_doc_ids": [
+    "spot_129193"
+   ],
+   "seed_doc_id": "spot_129193",
+   "noun_overlap": 0.571,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q002",
+   "question": "생태 체험시설과 두 개의 하늘다리를 갖추고 긴 계곡에서 여름 피서를 즐기는 산악공원은?",
+   "relevant_doc_ids": [
+    "spot_127806"
+   ],
+   "seed_doc_id": "spot_127806",
+   "noun_overlap": 0.5,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q003",
+   "question": "조선시대 세 도의 수군을 지휘한 본영으로 지어져 현재 옛 건물 하나가 남은 곳은?",
+   "relevant_doc_ids": [
+    "spot_231923"
+   ],
+   "seed_doc_id": "spot_231923",
+   "noun_overlap": 0.5,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q004",
+   "question": "제주에서 가장 먼저 불을 밝히고 50㎞ 밖까지 빛을 보내는 등대는?",
+   "relevant_doc_ids": [
+    "spot_129147"
+   ],
+   "seed_doc_id": "spot_129147",
+   "noun_overlap": 1.0,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q005",
+   "question": "강가 절벽 위에서 넓은 들판을 바라보며 마루와 온돌방을 갖춘 정자는?",
+   "relevant_doc_ids": [
+    "spot_126995"
+   ],
+   "seed_doc_id": "spot_126995",
+   "noun_overlap": 1.0,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q006",
+   "question": "서울 도심에서 수십 종의 나무 숲과 추모 공간, 야외 문화시설을 함께 만나는 공원은?",
+   "relevant_doc_ids": [
+    "spot_1131275"
+   ],
+   "seed_doc_id": "spot_1131275",
+   "noun_overlap": 0.727,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q007",
+   "question": "부산 기장의 두 단 폭포로 물보라 무지개와 인근 사찰을 함께 볼 수 있는 곳은?",
+   "relevant_doc_ids": [
+    "spot_2758652"
+   ],
+   "seed_doc_id": "spot_2758652",
+   "noun_overlap": 0.625,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q008",
+   "question": "군산의 산속 호수에서 봄 벚꽃과 시가지 전망을 함께 즐길 수 있는 곳은?",
+   "relevant_doc_ids": [
+    "spot_126321"
+   ],
+   "seed_doc_id": "spot_126321",
+   "noun_overlap": 0.714,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q009",
+   "question": "남해안의 넓은 만에서 갯벌과 드넓은 갈대밭을 만날 수 있는 곳은?",
+   "relevant_doc_ids": [
+    "spot_126730"
+   ],
+   "seed_doc_id": "spot_126730",
+   "noun_overlap": 0.75,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q010",
+   "question": "공주의 옛 사찰에서 깃발 장대를 받치던 두 돌기둥을 볼 수 있는 곳은?",
+   "relevant_doc_ids": [
+    "spot_231954"
+   ],
+   "seed_doc_id": "spot_231954",
+   "noun_overlap": 0.8,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q011",
+   "question": "공주에서 치즈 피자 만들기와 레일 썰매를 함께 체험할 수 있는 곳은?",
+   "relevant_doc_ids": [
+    "spot_1859903"
+   ],
+   "seed_doc_id": "spot_1859903",
+   "noun_overlap": 1.0,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q012",
+   "question": "서울 서초구에서 공연 관람과 문화 강좌를 함께 이용할 수 있는 공간은?",
+   "relevant_doc_ids": [
+    "spot_1245865"
+   ],
+   "seed_doc_id": "spot_1245865",
+   "noun_overlap": 0.625,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q013",
+   "question": "강 상류 교통로를 지키던 산 정상의 석축 산성으로 성문 흔적이 세 곳 남은 곳은?",
+   "relevant_doc_ids": [
+    "spot_125922"
+   ],
+   "seed_doc_id": "spot_125922",
+   "noun_overlap": 0.889,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q014",
+   "question": "해방 뒤 한국에 남은 유일한 일본식 사찰로 대웅전과 요사채가 복도로 이어진 곳은?",
+   "relevant_doc_ids": [
+    "spot_129509"
+   ],
+   "seed_doc_id": "spot_129509",
+   "noun_overlap": 1.0,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q015",
+   "question": "교육 공간과 제례 공간을 앞뒤로 배치하고 뒤편에 인공 숲을 둔 유교 시설은?",
+   "relevant_doc_ids": [
+    "spot_127266"
+   ],
+   "seed_doc_id": "spot_127266",
+   "noun_overlap": 0.7,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q016",
+   "question": "갈대와 갯벌 사이로 굽은 수로의 노을을 감상하려 계단 산책로를 오르는 곳은?",
+   "relevant_doc_ids": [
+    "spot_228886"
+   ],
+   "seed_doc_id": "spot_228886",
+   "noun_overlap": 0.75,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q017",
+   "question": "한 손에 책을 든 온화한 대형 좌상 앞에 천문·강우 측정 기구가 전시된 곳은?",
+   "relevant_doc_ids": [
+    "spot_1364932"
+   ],
+   "seed_doc_id": "spot_1364932",
+   "noun_overlap": 0.8,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q018",
+   "question": "언덕 골목에서 바다와 두 다리를 바라보며 해양·역사 벽화를 걷는 마을은?",
+   "relevant_doc_ids": [
+    "spot_2514658"
+   ],
+   "seed_doc_id": "spot_2514658",
+   "noun_overlap": 0.875,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q019",
+   "question": "신라 화랑의 훈련장이었고 계절마다 꽃과 단풍을 즐기는 도심 숲은?",
+   "relevant_doc_ids": [
+    "spot_127619"
+   ],
+   "seed_doc_id": "spot_127619",
+   "noun_overlap": 0.75,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q020",
+   "question": "1910년 처음 점등했고 높은 해안 지대에서 배길잡이를 하다 무인화된 등대는?",
+   "relevant_doc_ids": [
+    "spot_129150"
+   ],
+   "seed_doc_id": "spot_129150",
+   "noun_overlap": 0.625,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q021",
+   "question": "무료로 피부 진단과 퍼스널 컬러를 체험하고 뷰티 수업도 듣는 곳은?",
+   "relevant_doc_ids": [
+    "spot_2946230"
+   ],
+   "seed_doc_id": "spot_2946230",
+   "noun_overlap": 0.875,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q022",
+   "question": "한옥 골목 사이에 갤러리와 카페가 어우러져 옛 정취를 느끼는 거리는?",
+   "relevant_doc_ids": [
+    "spot_250147"
+   ],
+   "seed_doc_id": "spot_250147",
+   "noun_overlap": 1.0,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q023",
+   "question": "문구점 120여 곳에서 학용품과 이월상품을 저렴하게 살 수 있는 곳은?",
+   "relevant_doc_ids": [
+    "spot_1187220"
+   ],
+   "seed_doc_id": "spot_1187220",
+   "noun_overlap": 1.0,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q024",
+   "question": "맑은 계곡물과 폭포를 보며 숙박하고 옛 절터도 둘러볼 수 있는 곳은?",
+   "relevant_doc_ids": [
+    "spot_127805"
+   ],
+   "seed_doc_id": "spot_127805",
+   "noun_overlap": 0.8,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q025",
+   "question": "종로의 오래된 4층 전자상가에서 부품과 수리점을 함께 볼 수 있는 곳은?",
+   "relevant_doc_ids": [
+    "spot_2553876"
+   ],
+   "seed_doc_id": "spot_2553876",
+   "noun_overlap": 0.833,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q026",
+   "question": "통영에서 세 섬을 잇는 산행과 해안 드라이브, 낚시를 함께 즐길 곳은?",
+   "relevant_doc_ids": [
+    "spot_126832"
+   ],
+   "seed_doc_id": "spot_126832",
+   "noun_overlap": 0.667,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q027",
+   "question": "공주에서 백제 예술과 충남의 새 출발을 표현하고 계단·지하 공간을 갖춘 탑은?",
+   "relevant_doc_ids": [
+    "spot_129575"
+   ],
+   "seed_doc_id": "spot_129575",
+   "noun_overlap": 0.9,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q028",
+   "question": "강릉에서 완만한 백사장과 소나무 숲을 즐기고 여름밤 공연도 볼 수 있는 해변은?",
+   "relevant_doc_ids": [
+    "spot_128758"
+   ],
+   "seed_doc_id": "spot_128758",
+   "noun_overlap": 0.714,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q029",
+   "question": "종로에서 궁궐 돌담과 가로수를 따라 아픈 근현대사를 되새길 수 있는 길은?",
+   "relevant_doc_ids": [
+    "spot_250134"
+   ],
+   "seed_doc_id": "spot_250134",
+   "noun_overlap": 0.429,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  },
+  {
+   "old_question_id": "q030",
+   "question": "남해에서 거센 물살의 전통 어업과 일몰을 다리 위에서 함께 볼 수 있는 곳은?",
+   "relevant_doc_ids": [
+    "spot_249984"
+   ],
+   "seed_doc_id": "spot_249984",
+   "noun_overlap": 0.714,
+   "reason": "본문 명사를 많이 가져와 어휘 검색에 치우침(바꿔 말하기 v2로 교체)"
+  }
+ ],
+ "rebalanced": {
+  "date": "2026-10-12",
+  "target_per_type": 15,
+  "desc_rule": "명사 겹침 0.40 이하인 묘사 질문을 시도 라운드로 고름(라운드마다 id 순, 시도마다 하나씩)",
+  "desc_kept": [
+   "q001",
+   "q002",
+   "q003",
+   "q004",
+   "q005",
+   "q006",
+   "q007",
+   "q008",
+   "q020",
+   "q026",
+   "q028",
+   "q009",
+   "q010",
+   "q011",
+   "q012"
+  ],
+  "desc_removed": [
+   {
+    "question_id": "q013",
+    "question": "갈대밭과 갯벌 사이로 굽은 물길의 노을을 바라보는 언덕은 어디야?",
+    "relevant_doc_ids": [
+     "spot_228886"
+    ],
+    "seed_doc_id": "spot_228886"
+   },
+   {
+    "question_id": "q014",
+    "question": "오래된 골목에서 푸른 수평선과 두 다리를 보고 색칠된 담장을 만나는 곳은 어디야?",
+    "relevant_doc_ids": [
+     "spot_2514658"
+    ],
+    "seed_doc_id": "spot_2514658"
+   },
+   {
+    "question_id": "q015",
+    "question": "도시 안에서 고목과 푸른 나무길을 거닐며 계절 꽃과 단풍을 즐기는 곳은 어디야?",
+    "relevant_doc_ids": [
+     "spot_127619"
+    ],
+    "seed_doc_id": "spot_127619"
+   },
+   {
+    "question_id": "q016",
+    "question": "흰 사각 건물 안에 나선형 철제 계단이 있는 바닷가 시설은 어디야?",
+    "relevant_doc_ids": [
+     "spot_129150"
+    ],
+    "seed_doc_id": "spot_129150"
+   },
+   {
+    "question_id": "q017",
+    "question": "무료로 피부 상태를 점검하고 어울리는 색조 화장을 알아보는 곳은 어디야?",
+    "relevant_doc_ids": [
+     "spot_2946230"
+    ],
+    "seed_doc_id": "spot_2946230"
+   },
+   {
+    "question_id": "q018",
+    "question": "옛 기와집 사이 전시관과 찻집을 둘러보며 조용히 걷기 좋은 곳은?",
+    "relevant_doc_ids": [
+     "spot_250147"
+    ],
+    "seed_doc_id": "spot_250147"
+   },
+   {
+    "question_id": "q019",
+    "question": "아이 선물과 필기 도구를 여러 가게에서 저렴하게 고를 수 있는 곳은?",
+    "relevant_doc_ids": [
+     "spot_1187220"
+    ],
+    "seed_doc_id": "spot_1187220"
+   },
+   {
+    "question_id": "q021",
+    "question": "오래된 번화가에서 전자 부속과 소리 장비를 사고 손질하는 곳은 어디야?",
+    "relevant_doc_ids": [
+     "spot_2553876"
+    ],
+    "seed_doc_id": "spot_2553876"
+   },
+   {
+    "question_id": "q022",
+    "question": "험한 암릉길과 바다 고기잡이, 굽은 물가길 달리기를 함께 즐기는 곳은 어디야?",
+    "relevant_doc_ids": [
+     "spot_126832"
+    ],
+    "seed_doc_id": "spot_126832"
+   },
+   {
+    "question_id": "q023",
+    "question": "넓은 흰 모래사장과 해송 그늘에서 물놀이와 자전거 타기를 즐기는 곳은 어디야?",
+    "relevant_doc_ids": [
+     "spot_128758"
+    ],
+    "seed_doc_id": "spot_128758"
+   },
+   {
+    "question_id": "q024",
+    "question": "옛 궁궐 돌담과 나무 그늘을 따라 걸으며 끊긴 왕실 유적의 사연을 생각해 볼 곳은 어디야?",
+    "relevant_doc_ids": [
+     "spot_250134"
+    ],
+    "seed_doc_id": "spot_250134"
+   },
+   {
+    "question_id": "q025",
+    "question": "물살이 빠른 바다를 가로지르는 다리에서 대나무 그물로 고기를 잡는 전통 방식과 노을을 보는 곳은?",
+    "relevant_doc_ids": [
+     "spot_249984"
+    ],
+    "seed_doc_id": "spot_249984"
+   },
+   {
+    "question_id": "q027",
+    "question": "얕고 맑은 물가, 나무 그늘, 사진 명소와 계절 행사가 있는 곳은?",
+    "relevant_doc_ids": [
+     "spot_125707"
+    ],
+    "seed_doc_id": "spot_125707"
+   },
+   {
+    "question_id": "q029",
+    "question": "사람 모습 돌조각과 민속 이야기, 굴속 기도처를 함께 보는 정원은 어디야?",
+    "relevant_doc_ids": [
+     "spot_127860"
+    ],
+    "seed_doc_id": "spot_127860"
+   },
+   {
+    "question_id": "q030",
+    "question": "산길 끝 넓은 물가에서 전기차를 타고 떠 있는 동물 모양 설비와 정자를 보는 공원은 어디야?",
+    "relevant_doc_ids": [
+     "spot_603727"
+    ],
+    "seed_doc_id": "spot_603727"
+   }
+  ],
+  "name_rule": "예비 이름 질문(초안·검증 통과, 목표 8개 뒤)을 순서대로 쓰고, 모자란 수는 human_name_seeds 규칙으로 고른 문서에 사람이 질문을 씀",
+  "name_spares_skipped": [
+   {
+    "seed_doc_id": "spot_128556",
+    "question": "‘랜드아트’로 꾸며진 국내 유일의 성 테마 조각공원은 어디야?",
+    "reason": "성(性) 테마 공원이라 수업용 평가셋에 맞지 않음"
+   },
+   {
+    "seed_doc_id": "spot_127101",
+    "question": "‘희망봉’과 작은 산을 중심으로 마을이 자리한 섬은 어디야?",
+    "reason": "핵심어 '희망봉'이 다른 문서(spot_129145)에도 나와 핵심어가 한 문서를 가리키지 않음"
+   }
+  ],
+  "name_human_skipped": [
+   {
+    "seed_doc_id": "spot_125731",
+    "reason": "드문 고유명사 후보가 놀이기구·동물 이름(바이킹, 범퍼카, 수리부엉이 등)뿐이라 이 장소의 핵심어가 아님"
+   },
+   {
+    "seed_doc_id": "spot_126292",
+    "reason": "유일한 후보 '대장도'는 다른 섬 이름이고 이 문서에는 섬끼리 다리로 이어졌다는 한 줄에만 나와, 대장도를 넣은 질문의 답이 이 섬으로 좁혀지지 않음"
+   }
+  ],
+  "condition_rule": "예비 조건 질문(초안·검증 통과, 목표 10개 뒤)을 순서대로 쓰고, 모자란 수는 조건 질문이 없던 지역에서 사람이 씀(COND_HUMAN)",
+  "relation_rule": "relation_questions(n=15, relax_caps=(2, 3)): 첫 라운드 시도 1개·묶음 2개 상한으로 10개, 같은 후보 순서로 시도 2개·묶음 3개 상한의 두 번째 라운드",
+  "aggregate_rule": "AGG_RULES_EXTRA 의 규칙을 eval_rule 로 계산",
+  "added_ids": [
+   "q061",
+   "q062",
+   "q063",
+   "q064",
+   "q065",
+   "q066",
+   "q067",
+   "q068",
+   "q069",
+   "q070",
+   "q071",
+   "q072",
+   "q073",
+   "q074",
+   "q075",
+   "q076",
+   "q077",
+   "q078",
+   "q079",
+   "q080",
+   "q081",
+   "q082",
+   "q083",
+   "q084",
+   "q085",
+   "q086",
+   "q087",
+   "q088",
+   "q089",
+   "q090"
+  ]
+ }
+}

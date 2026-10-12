@@ -1,0 +1,381 @@
+{
+ "collected_at": "2026-10-08",
+ "laws": [
+  {
+   "law_name": "근로기준법",
+   "doc_type": "법률",
+   "doc_id_prefix": "lsa",
+   "effective_date": "2026-10-08",
+   "promulgation": "법률 제21533호, 2026. 4. 7., 일부개정",
+   "articles": 131,
+   "deleted": [
+    "lsa_35"
+   ],
+   "entry_url": "https://www.law.go.kr/법령/근로기준법",
+   "page_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=285279&efYd=20261008",
+   "body_url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=285279&efYd=20261008&chrClsCd=010202&ancYnChk=0",
+   "lsiSeq": "285279",
+   "efYd": "20261008",
+   "fetched_at": "2026-10-08",
+   "html_sha256": "7833189c07709578fb0e8287f13cc43f97ac25cc14debc8b9c846f8aaeeb776c"
+  },
+  {
+   "law_name": "근로기준법 시행령",
+   "doc_type": "시행령",
+   "doc_id_prefix": "lsd",
+   "effective_date": "2025-10-23",
+   "promulgation": "대통령령 제35436호, 2025. 4. 8., 일부개정",
+   "articles": 75,
+   "deleted": [
+    "lsd_16",
+    "lsd_32",
+    "lsd_38",
+    "lsd_45",
+    "lsd_53"
+   ],
+   "entry_url": "https://www.law.go.kr/법령/근로기준법시행령",
+   "page_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=270551&efYd=20251023",
+   "body_url": "https://www.law.go.kr/LSW/lsInfoR.do?lsiSeq=270551&efYd=20251023&chrClsCd=010202&ancYnChk=0",
+   "lsiSeq": "270551",
+   "efYd": "20251023",
+   "fetched_at": "2026-10-08",
+   "html_sha256": "ce56dd1ea58bf5d59b945d8a1aac55167c26482a581c70ec4137dbb9c344b832"
+  }
+ ],
+ "law_license": "법령은 저작권법 제7조에 따라 보호받지 않는 저작물",
+ "law_collection_attempts": [
+  {
+   "route": "국가법령정보 공동활용 Open API (law.go.kr/DRF/lawService.do)",
+   "result": "사용 안 함: 필요한 OC(사용자 ID)가 .env에 없음"
+  },
+  {
+   "route": "공공데이터포털 법제처 국가법령정보 공유서비스 (data.go.kr 15000115, apis.data.go.kr/1170000/law)",
+   "result": "SERVICE_KEY_IS_NOT_REGISTERED_ERROR: GONGGONG_API_KEY에 이 서비스 활용 신청이 없음"
+  },
+  {
+   "route": "국가법령정보센터 법령 본문 페이지 (law.go.kr/LSW/lsInfoR.do)",
+   "result": "사용: 현행 본문 HTML을 받아 조 단위로 파싱"
+  }
+ ],
+ "manual": {
+  "name": "고용노동부 유연근무 활용 매뉴얼(2024)",
+  "publisher": "고용노동부 고용문화개선정책과",
+  "published": "2024년 10월 (판권면), 게시 2024-10-24",
+  "post_url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+  "pdf": "day47_하이브리드검색_질의변환/data/originals/MOEL_flexible_work_manual_2024.pdf",
+  "reused_from": "day47_하이브리드검색_질의변환/data/practice_docs.json (본문 그대로)",
+  "documents": [
+   {
+    "doc_id": "hr_purpose",
+    "pdf_page": 12,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 12쪽 / 인쇄 6쪽",
+    "sha256": "b5ede2166ef1d4c2387ad9f13c79f9d1f34b6fe699a1d778df4c8ce7b1a1430c"
+   },
+   {
+    "doc_id": "hr_eligibility",
+    "pdf_page": 18,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 18쪽 / 인쇄 12쪽",
+    "sha256": "34c4234fd6855845d8ebe1a8960041b9e0cabc39379610b00bbc240f54ea46de"
+   },
+   {
+    "doc_id": "hr_approval",
+    "pdf_page": 18,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 18쪽 / 인쇄 12쪽",
+    "sha256": "13474bb404a204fbb2f9fc0b82984ddd50681b4417bac0ee5f84518bc7606c23"
+   },
+   {
+    "doc_id": "hr_management",
+    "pdf_page": 19,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 19쪽 / 인쇄 13쪽",
+    "sha256": "c8dd74e5bb269c023d0749cbf1505e511384c3a61e5f3e6d38f92c28cdcfaed0"
+   },
+   {
+    "doc_id": "hr_effect",
+    "pdf_page": 20,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 20쪽 / 인쇄 14쪽",
+    "sha256": "dfa7e9db714fccc67df055ba198249540806e6113c38a1089abe4f3f5f405cb8"
+   },
+   {
+    "doc_id": "hr_remote",
+    "pdf_page": 71,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 71쪽 / 인쇄 65쪽",
+    "sha256": "0f9e3e29f8736957c5b5534c1ba6b786a7de448827a5265cbc38024c94b97d23"
+   },
+   {
+    "doc_id": "hr_environment",
+    "pdf_page": 73,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 73쪽 / 인쇄 67쪽",
+    "sha256": "dfbcb859165ff727261c78e48b2d6d33048da8ec0c81d2f34312b8558e1e5c18"
+   },
+   {
+    "doc_id": "hr_security",
+    "pdf_page": 74,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 74쪽 / 인쇄 68쪽",
+    "sha256": "7b5a5c05243bc12aa6f9dd7211e7c39cc5e160602737f7bd834bc9dc1c5532b8"
+   },
+   {
+    "doc_id": "hr_service",
+    "pdf_page": 77,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 77쪽 / 인쇄 71쪽",
+    "sha256": "79349efb4a8ae9941b7b8551e8ce2027a6f6a56a854b577576892688f3b8fd6c"
+   },
+   {
+    "doc_id": "hr_feedback",
+    "pdf_page": 82,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 82쪽 / 인쇄 76쪽",
+    "sha256": "822904707129c20454b46f1a38eaa47eb9cc6c0591fd33d77c3f12abdc082997"
+   },
+   {
+    "doc_id": "hr_general_types",
+    "pdf_page": 9,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 9쪽 / 인쇄 3쪽",
+    "sha256": "02add87c28119e2f666aa1dd768c3d6d78491e0bd0280630ecc82a402d49fe77"
+   },
+   {
+    "doc_id": "hr_design_principles",
+    "pdf_page": 10,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 10쪽 / 인쇄 4쪽",
+    "sha256": "2e27a4c54850598969dc931f7298237097ee5f4624bc67e1dd0bd35228cba18a"
+   },
+   {
+    "doc_id": "hr_readiness_survey",
+    "pdf_page": 12,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 12쪽 / 인쇄 6쪽",
+    "sha256": "1db1cc32471e766b09fbb8ae7c6109959eac62c8394b128fd7ccdee64e7d032b"
+   },
+   {
+    "doc_id": "hr_job_review",
+    "pdf_page": 17,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 17쪽 / 인쇄 11쪽",
+    "sha256": "2061f6754c2d4a283421f3c1481dd38182cf00a8e058de32922c319e04f48027"
+   },
+   {
+    "doc_id": "hr_training",
+    "pdf_page": 19,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 19쪽 / 인쇄 13쪽",
+    "sha256": "d1507d01925d033246cca85bc4aa8098924435a393cd8550d2f256eebf5e15c4"
+   },
+   {
+    "doc_id": "hr_staff_workshop",
+    "pdf_page": 20,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 20쪽 / 인쇄 14쪽",
+    "sha256": "9aa92682092dc219b290605cda927395ac30b79773e1fefa36fd1c84acf67d4b"
+   },
+   {
+    "doc_id": "hr_stagger_definition",
+    "pdf_page": 25,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 25쪽 / 인쇄 19쪽",
+    "sha256": "ce4ffe290436c17d2c594fb63c6f1348b241e766be9db72b2dbe224a983c17b7"
+   },
+   {
+    "doc_id": "hr_stagger_models",
+    "pdf_page": 26,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 26쪽 / 인쇄 20쪽",
+    "sha256": "6c116e450c9d0cf532f0739835ba6a6160df35f28a35b4259e5e6d1af614fd5a"
+   },
+   {
+    "doc_id": "hr_stagger_type_mix",
+    "pdf_page": 27,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 27쪽 / 인쇄 21쪽",
+    "sha256": "e2f75a439cf59fbce78d1fe25aac9517b00928a994f2fb815f78e8e9e31213ca"
+   },
+   {
+    "doc_id": "hr_stagger_admission_contract",
+    "pdf_page": 28,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 28쪽 / 인쇄 22쪽",
+    "sha256": "8878cae3233e73e149ebed9711582f5ba8f25008dfe9c89c9262bb1f0b895092"
+   },
+   {
+    "doc_id": "hr_stagger_rules",
+    "pdf_page": 30,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 30쪽 / 인쇄 24쪽",
+    "sha256": "cc2b3018c7ed067a449956e5c55b2a1ec46ea69936292c2ab4ea90f36a9704e8"
+   },
+   {
+    "doc_id": "hr_stagger_attendance",
+    "pdf_page": 31,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 31쪽 / 인쇄 25쪽",
+    "sha256": "6c85b378182a6e12528860e8475dac552053535c66a26b5ac47f7b7eeab9a0f7"
+   },
+   {
+    "doc_id": "hr_stagger_consent",
+    "pdf_page": 40,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 40쪽 / 인쇄 34쪽",
+    "sha256": "c1b385f1b41fc1b399c25a61f5d4dc9fdc993d32fd81a938579b984750dba57b"
+   },
+   {
+    "doc_id": "hr_stagger_hours",
+    "pdf_page": 41,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 41쪽 / 인쇄 35쪽",
+    "sha256": "5bc14f1e64d2b6487c50d4b7dabb8602e25acd00cbc4d05caf602d2ed4b83ff6"
+   },
+   {
+    "doc_id": "hr_stagger_remote_combination",
+    "pdf_page": 42,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 42쪽 / 인쇄 36쪽",
+    "sha256": "fecc72e8d295e2ea49bdcb427194510f7cfb71b665ed5c030f8adecf2398fea9"
+   },
+   {
+    "doc_id": "hr_select_definition",
+    "pdf_page": 49,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 49쪽 / 인쇄 43쪽",
+    "sha256": "76d365654b34d35e725702d63da3ee207fe8639123879a3fd6d4da4fdce2cf1c"
+   },
+   {
+    "doc_id": "hr_select_adoption_rules",
+    "pdf_page": 52,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 52쪽 / 인쇄 46쪽",
+    "sha256": "d4533940167d6df891205f0c522ce440376cd830bbade78531016d54223d8856"
+   },
+   {
+    "doc_id": "hr_select_scope_period",
+    "pdf_page": 54,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 54쪽 / 인쇄 48쪽",
+    "sha256": "bc8654698012c237d8acf70be2316ab3df4dcb491b7b35cc863137212ea4ff5f"
+   },
+   {
+    "doc_id": "hr_select_time_agreement",
+    "pdf_page": 55,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 55쪽 / 인쇄 49쪽",
+    "sha256": "3b1eefcdd370059e93747b4652528f51ecc3d2ba8539ca0e71c6c9b4b3ba6844"
+   },
+   {
+    "doc_id": "hr_select_attendance_night",
+    "pdf_page": 57,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 57쪽 / 인쇄 51쪽",
+    "sha256": "297767bba0dcaf7bc8ed34edf34d4d391ddcb5252511ae09818752d3346b1f50"
+   },
+   {
+    "doc_id": "hr_select_core_standard",
+    "pdf_page": 62,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 62쪽 / 인쇄 56쪽",
+    "sha256": "3553903aa89dfb0f6c5435f0837a4c810b474dd0153e9c4e9d21749aed537304"
+   },
+   {
+    "doc_id": "hr_select_workdays_leave",
+    "pdf_page": 63,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 63쪽 / 인쇄 57쪽",
+    "sha256": "196985152775f699dc72517abf7799a451985697383217e67e0f142762c75c5a"
+   },
+   {
+    "doc_id": "hr_select_settlement_balance",
+    "pdf_page": 64,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 64쪽 / 인쇄 58쪽",
+    "sha256": "5b7a3cda2c8db7d25b37b11a5fb40bf32305fbaf113fb8f7e9e58570662b2f70"
+   },
+   {
+    "doc_id": "hr_select_health_protection",
+    "pdf_page": 65,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 65쪽 / 인쇄 59쪽",
+    "sha256": "9ae0eca6279b51a8b7013c28b0ae50bece860b88fa3b37aaec18a374541eb4df"
+   },
+   {
+    "doc_id": "hr_remote_rule_change",
+    "pdf_page": 75,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 75쪽 / 인쇄 69쪽",
+    "sha256": "26d6616d3deaf5ef34f950cde0cccd89a7f2d958eff1b089bedce5af5c1ceb34"
+   },
+   {
+    "doc_id": "hr_remote_rule_structure",
+    "pdf_page": 76,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 76쪽 / 인쇄 70쪽",
+    "sha256": "e7037b0130058f0c46c567f9cd8e1b96ef0a9080f51e3ab20ee6576bb2193be0"
+   },
+   {
+    "doc_id": "hr_collaboration_team_trust",
+    "pdf_page": 84,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 84쪽 / 인쇄 78쪽",
+    "sha256": "1f1a03494ca44d937eccfa682bbde46442a6a17c91dc7d5d94ead40f512e4464"
+   },
+   {
+    "doc_id": "hr_remote_daily_routine",
+    "pdf_page": 85,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 85쪽 / 인쇄 79쪽",
+    "sha256": "3072bea87f0ed75cf149b94064e4ec6726714cc34970f02ed029694f6f9e87da"
+   },
+   {
+    "doc_id": "hr_remote_application_design",
+    "pdf_page": 87,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 87쪽 / 인쇄 81쪽",
+    "sha256": "6cd5242db0fd6b522ca6df234ffafd17e52ac484681020e652bc4ba9e4b0a514"
+   },
+   {
+    "doc_id": "hr_remote_operation_conditions",
+    "pdf_page": 88,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 88쪽 / 인쇄 82쪽",
+    "sha256": "ebb5db03f2632bfd643826756b4229e3f3e0e1caf76ba2894482bf7a077d5f65"
+   },
+   {
+    "doc_id": "hr_remote_eligibility_rules",
+    "pdf_page": 89,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 89쪽 / 인쇄 83쪽",
+    "sha256": "2bd1f29568233eb20a89d519997c3c406acb55912d9653dec41d91a392d81978"
+   },
+   {
+    "doc_id": "hr_remote_service_rule_design",
+    "pdf_page": 90,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 90쪽 / 인쇄 84쪽",
+    "sha256": "3bbd8291da8c6f96974f9bed0c6f6364d4dfca0bccb717f3d5a2bb019d939ec6"
+   },
+   {
+    "doc_id": "hr_remote_support_policy",
+    "pdf_page": 92,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 92쪽 / 인쇄 86쪽",
+    "sha256": "83fac82601def4c1b7cea38e0b87de3e86964ad91359b3b7a82c96a6cbde7383"
+   },
+   {
+    "doc_id": "hr_remote_emergency_rules",
+    "pdf_page": 93,
+    "source": "고용노동부 2024 유연근무 활용 매뉴얼 / PDF 93쪽 / 인쇄 87쪽",
+    "sha256": "776222a7be932dfeceffbbdd58fbff4dcc143ff50bf0e028e00a922b0acc88da"
+   }
+  ]
+ },
+ "questions": {
+  "questions.json": "v2: 직원 말투 질문 + v1에서 가져온 a01, a02, a03, a04, a06, a08, f01, f02, f03, f04, f05, f06, l01, l02, l03, l04, l05, r2_01, r2_02, r2_03, r2_04 + 사람이 쓴 l06, r2_05, r2_06",
+  "questions_v1.json": "v1(추적용): day47 practice_questions.json 82문항(id 앞에 m_) + 새 질문",
+  "employee_gates": "정답 문서(제목+본문)와 Kiwi 명사(NNG·NNP) 겹침 0.4 이하, 문서 3곳 미만에 나오는 세 글자 이상 명사 금지, 법령 이름·조문번호 금지, 물음표로 끝남",
+  "employee_candidates": "BM25 상위 5 + multilingual-e5-small 상위 5(query:/passage:) + 같은 주제 RRF 상위 5",
+  "new_question_model": "gpt-5.6-luna",
+  "gpt_responses_used": 35,
+  "gpt_calls_total": 50,
+  "gpt_cache_files": [
+   "aug_09d43b1cbf70efbc.json",
+   "aug_0fab36cda23b322a.json",
+   "aug_2f62b03e61877879.json",
+   "aug_56d9a229a768f82d.json",
+   "aug_5c8f6a4c82f8d9d7.json",
+   "aug_6601b6bb07f483f6.json",
+   "aug_a16506114b7f315f.json",
+   "aug_d3db0c2df6f54241.json",
+   "aug_e04fe72c12f8575e.json",
+   "check_2단계_6290fcf397ee2c82.json",
+   "check_관계_3ba568a313fc1b33.json",
+   "check_법+매뉴얼_1d3f8b6463681ec2.json",
+   "check_조문번호_9772a609f93ceae7.json",
+   "check_필터_a6da57005c503928.json",
+   "draft_관계_d10a190ddd2907fa.json",
+   "draft_법+매뉴얼_32d964e010869402.json",
+   "draft_조문번호_7d4332e4ae696913.json",
+   "draft_필터_a5e69d72606c0ae8.json",
+   "emp_check_4133fc4307eefbfd.json",
+   "emp_check_50f6810114798928.json",
+   "emp_check_694f17bf72d69d24.json",
+   "emp_check_92bd50a56c7e141c.json",
+   "emp_check_aa724a88616703d6.json",
+   "emp_check_e7f0389ec7975195.json",
+   "emp_check_f8f72bf12ec6433c.json",
+   "emp_check_fe5eed5f06e209b5.json",
+   "emp_draft_1a2b6ecae75b8740.json",
+   "emp_draft_6c23765e6624a634.json",
+   "emp_draft_c64d8d4a1f741ee7.json",
+   "emp_redraft1_5a301044f67d948d.json",
+   "emp_strict_8e34ebd5414011eb.json",
+   "emp_strict_e2ccde697c6d8df7.json",
+   "strict_2단계_0859016860699a21.json",
+   "strict_551e22c4667bc84c.json",
+   "strict_b4aa9a9ac8d95fe7.json"
+  ],
+  "lexical_check": "rank-bm25 BM25Okapi, kiwipiepy 명사·외국어·숫자 토큰, title+text"
+ }
+}

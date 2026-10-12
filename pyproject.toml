@@ -18,7 +18,9 @@ dependencies = [
     "langchain>=1.3.13",
     "langchain-core>=1.6.5,<2",
     "langchain-classic>=1.0.8",
-    "langchain-community>=0.4",
+    #   0.4.2 에서 langchain_community.chat_models.vertexai 가 빠져 day59 의 ragas 0.4.3 import 가 실패한다.
+    #   원본 실습 환경도 0.4.1 로 교안을 실행했으므로 상한을 건다.
+    "langchain-community>=0.4,<0.4.2",
     "langchain-openai>=1.3.5",
     "langchain-chroma>=1.1",
     "langchain-text-splitters>=1.1",
@@ -86,6 +88,8 @@ dependencies = [
     # day56: Langfuse 로 에이전트 실행을 기록한다. CallbackHandler 와 trace 조회 방식이
     #   이 버전 API 로 쓰였으므로 고정한다.
     "langfuse==4.14.0",
+    #   교안이 httpx 를 직접 import 한다(openai·langfuse 로도 깔리지만 직접 쓰는 것은 적는다).
+    "httpx>=0.28",
     # day57: GraphRAG 변형 비교(Microsoft GraphRAG·LightRAG 공식 패키지)
     #   graphrag 3.1.1 부터는 pandas 3 을 요구해 이 저장소(pandas<3)와 충돌하므로 3.1.0 에 고정한다.
     #   graphrag 3.1.0 이 litellm 을 고정해 openai 는 2.x 로 잠긴다.
@@ -93,6 +97,21 @@ dependencies = [
     "lightrag-hku==1.5.7",
     #   교안 01·02 색인 그래프 시각화(HTML). 리랭커·Jev 는 day48·day47 의존성을 그대로 쓴다.
     "pyvis>=0.3.2",
+    #   교안이 litellm(모델 호출 설정)과 networkx(색인 그래프)를 직접 import 한다. graphrag 로도 깔리지만 직접 쓰는 것은 적는다.
+    "litellm>=1.86",
+    "networkx>=3.6",
+    # day58: RAG 아키텍처 설계
+    #   Supabase(PostgreSQL)에 SQL 을 직접 보낸다(DDL·JOIN·SET·용량 함수).
+    "psycopg2-binary>=2.9.12",
+    #   OpenAI 토큰 수로 임베딩 비용을 계산한다. langchain-openai 로도 깔리지만 교안이 직접 import 한다.
+    "tiktoken>=0.13",
+    #   교안 02 가 KURE-v1 을 LangChain 검색기(Chroma)에 넣으려고 HuggingFaceEmbeddings 를 직접 import 한다.
+    "langchain-huggingface>=1.2.2",
+    # day59: LLM 평가와 RAGAS
+    #   교안이 ragas.metrics.collections·ascore·llm_factory(0.4 API)로 쓰였으므로 고정한다.
+    #   평가용 LLM 은 OpenAI SDK 의 AsyncOpenAI 를 직접 import 한다.
+    "ragas==0.4.3",
+    "openai>=2,<3",
 ]
 
 [tool.uv]

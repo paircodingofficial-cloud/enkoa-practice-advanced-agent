@@ -1,0 +1,45 @@
+{
+  "model": "KURE-v1 (1024)",
+  "candidates": [
+    {
+      "model": "BM25",
+      "dimension": 0,
+      "mean_recall_at_5": 0.458,
+      "doc_embed_seconds": 2.304,
+      "truncated_ratio": 0.0,
+      "external_api": false
+    },
+    {
+      "model": "3-small (1536)",
+      "dimension": 1536,
+      "mean_recall_at_5": 0.25,
+      "doc_embed_seconds": 2.141,
+      "truncated_ratio": 0.0,
+      "external_api": true
+    },
+    {
+      "model": "3-small (512)",
+      "dimension": 512,
+      "mean_recall_at_5": 0.25,
+      "doc_embed_seconds": 1.392,
+      "truncated_ratio": 0.0,
+      "external_api": true
+    },
+    {
+      "model": "me5-small (384)",
+      "dimension": 384,
+      "mean_recall_at_5": 0.375,
+      "doc_embed_seconds": 1.349,
+      "truncated_ratio": 0.452,
+      "external_api": false
+    },
+    {
+      "model": "KURE-v1 (1024)",
+      "dimension": 1024,
+      "mean_recall_at_5": 0.708,
+      "doc_embed_seconds": 19.423,
+      "truncated_ratio": 0.0,
+      "external_api": false
+    }
+  ]
+}

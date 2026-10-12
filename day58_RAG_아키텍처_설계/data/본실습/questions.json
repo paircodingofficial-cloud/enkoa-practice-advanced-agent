@@ -1,0 +1,1359 @@
+[
+ {
+  "question_id": "q001",
+  "question": "희귀한 야생화와 곤충을 관찰하고 높은 흔들다리를 건너는 산속 명소는 어디야?",
+  "question_type": "묘사",
+  "relevant_doc_ids": [
+   "spot_127806"
+  ],
+  "note": "본문과 다른 낱말로 바꿔 말한 묘사 질문(강사 검토로 문장 수정)"
+ },
+ {
+  "question_id": "q002",
+  "question": "옛 군영의 큰 전각 하나와 되살린 옛 모습을 살펴보는 곳은 어디야?",
+  "question_type": "묘사",
+  "relevant_doc_ids": [
+   "spot_231923"
+  ],
+  "note": "본문과 다른 낱말로 바꿔 말한 묘사 질문"
+ },
+ {
+  "question_id": "q003",
+  "question": "옛 문관을 기리는 쉼터에서 높은 바위턱 아래 물줄기와 너른 들을 굽어보는 곳은 어디야?",
+  "question_type": "묘사",
+  "relevant_doc_ids": [
+   "spot_126995"
+  ],
+  "note": "본문과 다른 낱말로 바꿔 말한 묘사 질문"
+ },
+ {
+  "question_id": "q004",
+  "question": "도심의 나무 그늘길과 어린이 놀 거리, 바깥 무대를 함께 즐기는 곳은 어디야?",
+  "question_type": "묘사",
+  "relevant_doc_ids": [
+   "spot_1131275"
+  ],
+  "note": "본문과 다른 낱말로 바꿔 말한 묘사 질문"
+ },
+ {
+  "question_id": "q005",
+  "question": "햇살에 여러 빛깔이 번지는 층층 물줄기와 바위 골짜기를 가까이서 보는 곳은 어디야?",
+  "question_type": "묘사",
+  "relevant_doc_ids": [
+   "spot_2758652"
+  ],
+  "note": "본문과 다른 낱말로 바꿔 말한 묘사 질문"
+ },
+ {
+  "question_id": "q006",
+  "question": "봄꽃철 사진 애호가들이 모이고 산책길 끝에서 도심과 바다를 굽어보는 물가 명소는 어디야?",
+  "question_type": "묘사",
+  "relevant_doc_ids": [
+   "spot_126321"
+  ],
+  "note": "본문과 다른 낱말로 바꿔 말한 묘사 질문"
+ },
+ {
+  "question_id": "q007",
+  "question": "썰물 때 드러나는 넓은 진흙벌과 끝없이 펼쳐진 키 큰 물풀밭을 걷는 곳은 어디야?",
+  "question_type": "묘사",
+  "relevant_doc_ids": [
+   "spot_126730"
+  ],
+  "note": "본문과 다른 낱말로 바꿔 말한 묘사 질문"
+ },
+ {
+  "question_id": "q008",
+  "question": "옛 불교 터에서 깃발을 세우던 석조 기둥과 띠무늬를 살펴보는 곳은 어디야?",
+  "question_type": "묘사",
+  "relevant_doc_ids": [
+   "spot_231954"
+  ],
+  "note": "본문과 다른 낱말로 바꿔 말한 묘사 질문"
+ },
+ {
+  "question_id": "q009",
+  "question": "가족이 유제품을 만들고 빵을 구우며 경사진 놀이기구를 타는 곳은 어디야?",
+  "question_type": "묘사",
+  "relevant_doc_ids": [
+   "spot_1859903"
+  ],
+  "note": "본문과 다른 낱말로 바꿔 말한 묘사 질문"
+ },
+ {
+  "question_id": "q010",
+  "question": "음악과 연극을 즐기고 배움과 모임도 할 수 있는 곳은 어디야?",
+  "question_type": "묘사",
+  "relevant_doc_ids": [
+   "spot_1245865"
+  ],
+  "note": "본문과 다른 낱말로 바꿔 말한 묘사 질문"
+ },
+ {
+  "question_id": "q011",
+  "question": "꾸밈없는 지붕선과 창 많은 큰 예배 공간이 안채와 이어진 곳은 어디야?",
+  "question_type": "묘사",
+  "relevant_doc_ids": [
+   "spot_129509"
+  ],
+  "note": "본문과 다른 낱말로 바꿔 말한 묘사 질문"
+ },
+ {
+  "question_id": "q012",
+  "question": "배우는 마당과 제사를 올리는 마당이 나뉘고 큰 전각 지붕이 높은 곳은 어디야?",
+  "question_type": "묘사",
+  "relevant_doc_ids": [
+   "spot_127266"
+  ],
+  "note": "본문과 다른 낱말로 바꿔 말한 묘사 질문"
+ },
+ {
+  "question_id": "q020",
+  "question": "맑은 물이 굽이치고 곳곳에 물이 떨어지며 옛 절터와 샘터도 만나는 산속 쉼터는 어디야?",
+  "question_type": "묘사",
+  "relevant_doc_ids": [
+   "spot_127805"
+  ],
+  "note": "본문과 다른 낱말로 바꿔 말한 묘사 질문"
+ },
+ {
+  "question_id": "q026",
+  "question": "유리 벽 너머 섬 풍경을 보며 따뜻한 물에 몸을 담그는 곳은 어디야?",
+  "question_type": "묘사",
+  "relevant_doc_ids": [
+   "spot_128555"
+  ],
+  "note": "본문과 다른 낱말로 바꿔 말한 묘사 질문"
+ },
+ {
+  "question_id": "q028",
+  "question": "갯벌 체험과 야영, 배낚시를 즐기며 절벽 새김 불상과 해넘이를 보는 섬은 어디야?",
+  "question_type": "묘사",
+  "relevant_doc_ids": [
+   "spot_127801"
+  ],
+  "note": "본문과 다른 낱말로 바꿔 말한 묘사 질문"
+ },
+ {
+  "question_id": "q031",
+  "question": "창의문과 옛 성벽을 함께 볼 수 있는 산은 어디야?",
+  "question_type": "이름",
+  "relevant_doc_ids": [
+   "spot_809190"
+  ],
+  "note": "핵심어: 창의문"
+ },
+ {
+  "question_id": "q032",
+  "question": "구산수련대선사가 창건한 통영의 사찰은 어디야?",
+  "question_type": "이름",
+  "relevant_doc_ids": [
+   "spot_126744"
+  ],
+  "note": "핵심어: 구산수련대선사"
+ },
+ {
+  "question_id": "q033",
+  "question": "곡운 김수증이 이름 붙였다고 전해지는 계곡 명소는 어디야?",
+  "question_type": "이름",
+  "relevant_doc_ids": [
+   "spot_1626649"
+  ],
+  "note": "핵심어: 곡운 김수증"
+ },
+ {
+  "question_id": "q034",
+  "question": "옥호루에서 을미사변이 일어난 궁궐 속 전각은 어디야?",
+  "question_type": "이름",
+  "relevant_doc_ids": [
+   "spot_1604652"
+  ],
+  "note": "핵심어: 옥호루"
+ },
+ {
+  "question_id": "q035",
+  "question": "오죽헌 여행의 거점으로도 좋은 최초의 국립 휴양림은 어디야?",
+  "question_type": "이름",
+  "relevant_doc_ids": [
+   "spot_125417"
+  ],
+  "note": "핵심어: 오죽헌"
+ },
+ {
+  "question_id": "q036",
+  "question": "‘추억의 거리’가 재현된 전통생활사 박물관은 어디야?",
+  "question_type": "이름",
+  "relevant_doc_ids": [
+   "spot_2608977"
+  ],
+  "note": "핵심어: 추억의 거리"
+ },
+ {
+  "question_id": "q037",
+  "question": "‘귤림서원’ 옛터에 5현을 기리는 제단은 어디야?",
+  "question_type": "이름",
+  "relevant_doc_ids": [
+   "spot_126462"
+  ],
+  "note": "핵심어: 귤림서원"
+ },
+ {
+  "question_id": "q038",
+  "question": "‘도리천’에 묻어 달라는 뜻이 전해지는 여왕의 능은 어디야?",
+  "question_type": "이름",
+  "relevant_doc_ids": [
+   "spot_126211"
+  ],
+  "note": "핵심어: 도리천"
+ },
+ {
+  "question_id": "q061",
+  "question": "‘통일동산 관광특구’ 안에 조성된 예술인 공동체 마을은 어디야?",
+  "question_type": "이름",
+  "relevant_doc_ids": [
+   "spot_128168"
+  ],
+  "note": "핵심어: 통일동산 관광특구"
+ },
+ {
+  "question_id": "q062",
+  "question": "옛날 말 장터가 서서 ‘말전거리’라 불렸다는 대구의 골목은 어디야?",
+  "question_type": "이름",
+  "relevant_doc_ids": [
+   "spot_1249812"
+  ],
+  "note": "핵심어: 말전거리"
+ },
+ {
+  "question_id": "q063",
+  "question": "고려가 무너진 뒤 김중한 등 충신들이 숨어들었다는 강릉의 계곡 피서지는 어디야?",
+  "question_type": "이름",
+  "relevant_doc_ids": [
+   "spot_125636"
+  ],
+  "note": "핵심어: 김중한"
+ },
+ {
+  "question_id": "q064",
+  "question": "김창협이 ‘동정기’에서 경관을 보고 이름을 붙였다고도 하는 설악산 폭포는 어디야?",
+  "question_type": "이름",
+  "relevant_doc_ids": [
+   "spot_125675"
+  ],
+  "note": "핵심어: 동정기"
+ },
+ {
+  "question_id": "q065",
+  "question": "‘삽당령’ 부근에서 시작해 강릉 시내를 가로질러 동해로 흐르는 하천은 어디야?",
+  "question_type": "이름",
+  "relevant_doc_ids": [
+   "spot_125748"
+  ],
+  "note": "핵심어: 삽당령"
+ },
+ {
+  "question_id": "q066",
+  "question": "군산항과 ‘어청도’ 사이 뱃길 중간에 있어 어선 피난항으로 쓰여 온 섬은 어디야?",
+  "question_type": "이름",
+  "relevant_doc_ids": [
+   "spot_126298"
+  ],
+  "note": "핵심어: 어청도"
+ },
+ {
+  "question_id": "q067",
+  "question": "활터로 쓰이는 ‘환선정’과 팔각 정자 전망대가 있는 순천의 공원은 어디야?",
+  "question_type": "이름",
+  "relevant_doc_ids": [
+   "spot_126330"
+  ],
+  "note": "핵심어: 환선정"
+ },
+ {
+  "question_id": "q039",
+  "question": "울릉도에서 봄철 노란 꽃밭과 마을 주변 절경을 함께 볼 수 있는 곳은?",
+  "question_type": "조건",
+  "relevant_doc_ids": [
+   "spot_129056"
+  ],
+  "filter": {
+   "sido": "경북",
+   "sigungu": "울릉군"
+  },
+  "note": "지역 필터를 함께 써야 하는 질문"
+ },
+ {
+  "question_id": "q040",
+  "question": "울릉도에서 배를 타고 섬을 한 바퀴 둘러보는 관광은?",
+  "question_type": "조건",
+  "relevant_doc_ids": [
+   "spot_128936"
+  ],
+  "filter": {
+   "sido": "경북",
+   "sigungu": "울릉군"
+  },
+  "note": "지역 필터를 함께 써야 하는 질문"
+ },
+ {
+  "question_id": "q041",
+  "question": "신안 섬 지역에서 역사와 농촌 풍경을 함께 만나는 섬 여행지는?",
+  "question_type": "조건",
+  "relevant_doc_ids": [
+   "spot_127758"
+  ],
+  "filter": {
+   "sido": "전남광주",
+   "sigungu": "신안군"
+  },
+  "note": "지역 필터를 함께 써야 하는 질문"
+ },
+ {
+  "question_id": "q042",
+  "question": "신안 섬 지역에서 소나무 숲과 해수욕을 함께 즐길 수 있는 해변은?",
+  "question_type": "조건",
+  "relevant_doc_ids": [
+   "spot_126696",
+   "spot_126724",
+   "spot_127757"
+  ],
+  "filter": {
+   "sido": "전남광주",
+   "sigungu": "신안군"
+  },
+  "note": "지역 필터를 함께 써야 하는 질문"
+ },
+ {
+  "question_id": "q043",
+  "question": "세종에서 백로와 왜가리 무리를 관찰할 수 있는 생태 명소는?",
+  "question_type": "조건",
+  "relevant_doc_ids": [
+   "spot_125999"
+  ],
+  "filter": {
+   "sido": "세종"
+  },
+  "note": "지역 필터를 함께 써야 하는 질문"
+ },
+ {
+  "question_id": "q044",
+  "question": "서울에서 일몰 풍경과 잔디밭을 즐길 수 있는 시민공원은?",
+  "question_type": "조건",
+  "relevant_doc_ids": [
+   "spot_2733971"
+  ],
+  "filter": {
+   "sido": "서울"
+  },
+  "note": "지역 필터를 함께 써야 하는 질문"
+ },
+ {
+  "question_id": "q045",
+  "question": "서울에서 다양한 수중생물을 만날 수 있는 대형 수족관은?",
+  "question_type": "조건",
+  "relevant_doc_ids": [
+   "spot_130284"
+  ],
+  "filter": {
+   "sido": "서울"
+  },
+  "note": "지역 필터를 함께 써야 하는 질문"
+ },
+ {
+  "question_id": "q046",
+  "question": "제주에서 마을을 지키는 전통 돌탑을 볼 수 있는 곳은?",
+  "question_type": "조건",
+  "relevant_doc_ids": [
+   "spot_129402"
+  ],
+  "filter": {
+   "sido": "제주"
+  },
+  "note": "지역 필터를 함께 써야 하는 질문"
+ },
+ {
+  "question_id": "q047",
+  "question": "제주에서 화산 분화구와 해안 절벽을 걷는 곳은?",
+  "question_type": "조건",
+  "relevant_doc_ids": [
+   "spot_126672"
+  ],
+  "filter": {
+   "sido": "제주"
+  },
+  "note": "지역 필터를 함께 써야 하는 질문"
+ },
+ {
+  "question_id": "q048",
+  "question": "강원도에서 소나무 숲과 백사장을 함께 즐길 수 있는 해변은?",
+  "question_type": "조건",
+  "relevant_doc_ids": [
+   "spot_125694",
+   "spot_125695",
+   "spot_125696",
+   "spot_125707",
+   "spot_128758"
+  ],
+  "filter": {
+   "sido": "강원"
+  },
+  "note": "지역 필터를 함께 써야 하는 질문"
+ },
+ {
+  "question_id": "q068",
+  "question": "부산에서 산과 바다를 함께 즐기는 자연휴양림은?",
+  "question_type": "조건",
+  "relevant_doc_ids": [
+   "spot_2606230"
+  ],
+  "filter": {
+   "sido": "부산"
+  },
+  "note": "지역 필터를 함께 써야 하는 질문"
+ },
+ {
+  "question_id": "q069",
+  "question": "경남에서 기암괴석과 다도해 전망을 즐기는 산은?",
+  "question_type": "조건",
+  "relevant_doc_ids": [
+   "spot_126588",
+   "spot_127581"
+  ],
+  "filter": {
+   "sido": "경남"
+  },
+  "note": "지역 필터를 함께 써야 하는 질문"
+ },
+ {
+  "question_id": "q070",
+  "question": "충남에서 사찰 입구에 세우던 깃발 기둥 유적은?",
+  "question_type": "조건",
+  "relevant_doc_ids": [
+   "spot_126990",
+   "spot_231954"
+  ],
+  "filter": {
+   "sido": "충남"
+  },
+  "note": "지역 필터를 함께 써야 하는 질문"
+ },
+ {
+  "question_id": "q071",
+  "question": "인천에서 외적을 막던 옛 성곽이나 방어 시설을 둘러볼 수 있는 곳은?",
+  "question_type": "조건",
+  "relevant_doc_ids": [
+   "spot_1254680",
+   "spot_127213",
+   "spot_128814"
+  ],
+  "filter": {
+   "sido": "인천"
+  },
+  "note": "지역 필터를 함께 써야 하는 질문"
+ },
+ {
+  "question_id": "q072",
+  "question": "대구에서 오래된 서양식 벽돌 주택을 둘러볼 수 있는 곳은?",
+  "question_type": "조건",
+  "relevant_doc_ids": [
+   "spot_1613886"
+  ],
+  "filter": {
+   "sido": "대구"
+  },
+  "note": "지역 필터를 함께 써야 하는 질문"
+ },
+ {
+  "question_id": "q049",
+  "question": "소돌아들바위공원 근처(10km 안)에서 함께 둘러볼 만한 해수욕장은 어디야?",
+  "question_type": "관계",
+  "relevant_doc_ids": [
+   "spot_125696",
+   "spot_128728"
+  ],
+  "note": "spots_nearby.csv 에서 spot_129585 의 이웃 가운데 분류가 '해변' 묶음인 곳"
+ },
+ {
+  "question_id": "q050",
+  "question": "구례 운조루 고택 근처(10km 안)에서 함께 둘러볼 만한 절이나 불교 유적은 어디야?",
+  "question_type": "관계",
+  "relevant_doc_ids": [
+   "spot_126363",
+   "spot_126366"
+  ],
+  "note": "spots_nearby.csv 에서 spot_128994 의 이웃 가운데 분류가 '사찰' 묶음인 곳"
+ },
+ {
+  "question_id": "q051",
+  "question": "제주절물자연휴양림 근처(10km 안)에서 함께 둘러볼 만한 산이나 오름은 어디야?",
+  "question_type": "관계",
+  "relevant_doc_ids": [
+   "spot_1215292",
+   "spot_126436"
+  ],
+  "note": "spots_nearby.csv 에서 spot_127479 의 이웃 가운데 분류가 '산' 묶음인 곳"
+ },
+ {
+  "question_id": "q052",
+  "question": "금강온천 근처(10km 안)에서 함께 둘러볼 만한 공원은 어디야?",
+  "question_type": "관계",
+  "relevant_doc_ids": [
+   "spot_1170335",
+   "spot_2035859"
+  ],
+  "note": "spots_nearby.csv 에서 spot_127850 의 이웃 가운데 분류가 '공원' 묶음인 곳"
+ },
+ {
+  "question_id": "q053",
+  "question": "팔공산국립공원 근처(10km 안)에서 함께 둘러볼 만한 절이나 불교 유적은 어디야?",
+  "question_type": "관계",
+  "relevant_doc_ids": [
+   "spot_126160",
+   "spot_297989"
+  ],
+  "note": "spots_nearby.csv 에서 spot_127659 의 이웃 가운데 분류가 '사찰' 묶음인 곳"
+ },
+ {
+  "question_id": "q054",
+  "question": "칠암항 근처(10km 안)에서 함께 둘러볼 만한 계곡이나 폭포는 어디야?",
+  "question_type": "관계",
+  "relevant_doc_ids": [
+   "spot_2758489",
+   "spot_2758652"
+  ],
+  "note": "spots_nearby.csv 에서 spot_2775570 의 이웃 가운데 분류가 '물가' 묶음인 곳"
+ },
+ {
+  "question_id": "q073",
+  "question": "소선암자연휴양림 근처(10km 안)에서 함께 둘러볼 만한 계곡이나 폭포는 어디야?",
+  "question_type": "관계",
+  "relevant_doc_ids": [
+   "spot_126654",
+   "spot_1626649",
+   "spot_1627287"
+  ],
+  "note": "spots_nearby.csv 에서 spot_129193 의 이웃 가운데 분류가 '물가' 묶음인 곳"
+ },
+ {
+  "question_id": "q074",
+  "question": "거제향교 근처(10km 안)에서 함께 둘러볼 만한 산이나 오름은 어디야?",
+  "question_type": "관계",
+  "relevant_doc_ids": [
+   "spot_126588",
+   "spot_127581"
+  ],
+  "note": "spots_nearby.csv 에서 spot_127266 의 이웃 가운데 분류가 '산' 묶음인 곳"
+ },
+ {
+  "question_id": "q075",
+  "question": "청평자연휴양림 근처(10km 안)에서 함께 둘러볼 만한 공원은 어디야?",
+  "question_type": "관계",
+  "relevant_doc_ids": [
+   "spot_603727"
+  ],
+  "note": "spots_nearby.csv 에서 spot_127929 의 이웃 가운데 분류가 '공원' 묶음인 곳"
+ },
+ {
+  "question_id": "q076",
+  "question": "경주 이견대 근처(10km 안)에서 함께 둘러볼 만한 해수욕장은 어디야?",
+  "question_type": "관계",
+  "relevant_doc_ids": [
+   "spot_128680"
+  ],
+  "note": "spots_nearby.csv 에서 spot_128651 의 이웃 가운데 분류가 '해변' 묶음인 곳"
+ },
+ {
+  "question_id": "q077",
+  "question": "서귀포해양도립공원 근처(10km 안)에서 함께 둘러볼 만한 계곡이나 폭포는 어디야?",
+  "question_type": "관계",
+  "relevant_doc_ids": [
+   "spot_126441",
+   "spot_127050"
+  ],
+  "note": "spots_nearby.csv 에서 spot_601489 의 이웃 가운데 분류가 '물가' 묶음인 곳"
+ },
+ {
+  "question_id": "q078",
+  "question": "안동댐 근처(10km 안)에서 함께 둘러볼 만한 절이나 불교 유적은 어디야?",
+  "question_type": "관계",
+  "relevant_doc_ids": [
+   "spot_318181",
+   "spot_348783"
+  ],
+  "note": "spots_nearby.csv 에서 spot_126126 의 이웃 가운데 분류가 '사찰' 묶음인 곳"
+ },
+ {
+  "question_id": "q079",
+  "question": "웅비탑 근처(10km 안)에서 함께 둘러볼 만한 공원은 어디야?",
+  "question_type": "관계",
+  "relevant_doc_ids": [
+   "spot_1170335",
+   "spot_2035859"
+  ],
+  "note": "spots_nearby.csv 에서 spot_129575 의 이웃 가운데 분류가 '공원' 묶음인 곳"
+ },
+ {
+  "question_id": "q080",
+  "question": "주문리마을 근처(10km 안)에서 함께 둘러볼 만한 해수욕장은 어디야?",
+  "question_type": "관계",
+  "relevant_doc_ids": [
+   "spot_125696",
+   "spot_128728"
+  ],
+  "note": "spots_nearby.csv 에서 spot_129029 의 이웃 가운데 분류가 '해변' 묶음인 곳"
+ },
+ {
+  "question_id": "q081",
+  "question": "다랭이마을 근처(10km 안)에서 함께 둘러볼 만한 섬은 어디야?",
+  "question_type": "관계",
+  "relevant_doc_ids": [
+   "spot_128105"
+  ],
+  "note": "spots_nearby.csv 에서 spot_127778 의 이웃 가운데 분류가 '섬' 묶음인 곳"
+ },
+ {
+  "question_id": "q055",
+  "question": "제주 관광지 가운데 자연관광으로 분류된 곳은 몇 곳이야?",
+  "question_type": "집계",
+  "relevant_doc_ids": [
+   "spot_1215292",
+   "spot_126434",
+   "spot_126435",
+   "spot_126436",
+   "spot_126441",
+   "spot_126445",
+   "spot_126447",
+   "spot_126467",
+   "spot_126672",
+   "spot_127050",
+   "spot_127479",
+   "spot_127529",
+   "spot_127860",
+   "spot_127861",
+   "spot_128795",
+   "spot_129395",
+   "spot_129699",
+   "spot_264590",
+   "spot_591866",
+   "spot_601489"
+  ],
+  "answer": 20,
+  "note": "상위 k개 검색으로는 셀 수 없는 질문. 메타데이터·운영 정보 표로 계산한 값"
+ },
+ {
+  "question_id": "q056",
+  "question": "서울에서 역사관광으로 분류된 관광지는 모두 몇 곳이야?",
+  "question_type": "집계",
+  "relevant_doc_ids": [
+   "spot_126512",
+   "spot_126522",
+   "spot_126747",
+   "spot_126803",
+   "spot_127642",
+   "spot_1604652",
+   "spot_1605933",
+   "spot_1606001",
+   "spot_1606042",
+   "spot_1825460",
+   "spot_231938",
+   "spot_2373247",
+   "spot_2373326",
+   "spot_250134",
+   "spot_250299",
+   "spot_250338",
+   "spot_250358",
+   "spot_250362",
+   "spot_2733864",
+   "spot_2774286",
+   "spot_300076",
+   "spot_754003",
+   "spot_945824"
+  ],
+  "answer": 23,
+  "note": "상위 k개 검색으로는 셀 수 없는 질문. 메타데이터·운영 정보 표로 계산한 값"
+ },
+ {
+  "question_id": "q057",
+  "question": "절이나 불교 유적으로 분류된 관광지는 전체에서 몇 곳이야?",
+  "question_type": "집계",
+  "relevant_doc_ids": [
+   "spot_125768",
+   "spot_125770",
+   "spot_125894",
+   "spot_125902",
+   "spot_126160",
+   "spot_126216",
+   "spot_126337",
+   "spot_126363",
+   "spot_126366",
+   "spot_126744",
+   "spot_126782",
+   "spot_126848",
+   "spot_126990",
+   "spot_127674",
+   "spot_127715",
+   "spot_128573",
+   "spot_128812",
+   "spot_128890",
+   "spot_129471",
+   "spot_129509",
+   "spot_129510",
+   "spot_1942233",
+   "spot_231954",
+   "spot_2774286",
+   "spot_2775495",
+   "spot_297989",
+   "spot_300076",
+   "spot_301276",
+   "spot_304816",
+   "spot_309943",
+   "spot_317526",
+   "spot_318181",
+   "spot_348783",
+   "spot_479924",
+   "spot_482093",
+   "spot_485687",
+   "spot_488273"
+  ],
+  "answer": 37,
+  "note": "상위 k개 검색으로는 셀 수 없는 질문. 메타데이터·운영 정보 표로 계산한 값"
+ },
+ {
+  "question_id": "q058",
+  "question": "입장료가 무료라고 확인된 관광지는 전체에서 몇 곳이야?",
+  "question_type": "집계",
+  "relevant_doc_ids": [
+   "spot_1019182",
+   "spot_1187220",
+   "spot_1215292",
+   "spot_125473",
+   "spot_125476",
+   "spot_125605",
+   "spot_125617",
+   "spot_125618",
+   "spot_125636",
+   "spot_125671",
+   "spot_125675",
+   "spot_125676",
+   "spot_125697",
+   "spot_125707",
+   "spot_125894",
+   "spot_125902",
+   "spot_125922",
+   "spot_125999",
+   "spot_126087",
+   "spot_126134",
+   "spot_126204",
+   "spot_126211",
+   "spot_126281",
+   "spot_126282",
+   "spot_126299",
+   "spot_126316",
+   "spot_126321",
+   "spot_126337",
+   "spot_126366",
+   "spot_126386",
+   "spot_126434",
+   "spot_126436",
+   "spot_126441",
+   "spot_126447",
+   "spot_126454",
+   "spot_126458",
+   "spot_126462",
+   "spot_126466",
+   "spot_126479",
+   "spot_126491",
+   "spot_126522",
+   "spot_126588",
+   "spot_126623",
+   "spot_126638",
+   "spot_126654",
+   "spot_126672",
+   "spot_126680",
+   "spot_126693",
+   "spot_126696",
+   "spot_126724",
+   "spot_126744",
+   "spot_126747",
+   "spot_126802",
+   "spot_126848",
+   "spot_126850",
+   "spot_126948",
+   "spot_126990",
+   "spot_126995",
+   "spot_127042",
+   "spot_127050",
+   "spot_127100",
+   "spot_127101",
+   "spot_127104",
+   "spot_127239",
+   "spot_127308",
+   "spot_127339",
+   "spot_127456",
+   "spot_127484",
+   "spot_127492",
+   "spot_127565",
+   "spot_127581",
+   "spot_127619",
+   "spot_127659",
+   "spot_127674",
+   "spot_127715",
+   "spot_127726",
+   "spot_127806",
+   "spot_127861",
+   "spot_127959",
+   "spot_128105",
+   "spot_128560",
+   "spot_128573",
+   "spot_128634",
+   "spot_128639",
+   "spot_128640",
+   "spot_128651",
+   "spot_128676",
+   "spot_128680",
+   "spot_128681",
+   "spot_128692",
+   "spot_128728",
+   "spot_128758",
+   "spot_128760",
+   "spot_128768",
+   "spot_128770",
+   "spot_128782",
+   "spot_128796",
+   "spot_128822",
+   "spot_128890",
+   "spot_128996",
+   "spot_129022",
+   "spot_129035",
+   "spot_129056",
+   "spot_129092",
+   "spot_129148",
+   "spot_129153",
+   "spot_129157",
+   "spot_129175",
+   "spot_129179",
+   "spot_129186",
+   "spot_129196",
+   "spot_129395",
+   "spot_129402",
+   "spot_129407",
+   "spot_129471",
+   "spot_129474",
+   "spot_129507",
+   "spot_129509",
+   "spot_129520",
+   "spot_129575",
+   "spot_129585",
+   "spot_129589",
+   "spot_129597",
+   "spot_129610",
+   "spot_129699",
+   "spot_1364932",
+   "spot_1364975",
+   "spot_147684",
+   "spot_1594374",
+   "spot_1605927",
+   "spot_1606001",
+   "spot_1613886",
+   "spot_1626645",
+   "spot_1626649",
+   "spot_1825460",
+   "spot_1829741",
+   "spot_1835181",
+   "spot_1859903",
+   "spot_1942233",
+   "spot_1951612",
+   "spot_1956297",
+   "spot_1956320",
+   "spot_1957403",
+   "spot_1957444",
+   "spot_1960614",
+   "spot_2035859",
+   "spot_231891",
+   "spot_231927",
+   "spot_231932",
+   "spot_231938",
+   "spot_231940",
+   "spot_2373247",
+   "spot_2373326",
+   "spot_2373360",
+   "spot_2496315",
+   "spot_249984",
+   "spot_2500201",
+   "spot_250134",
+   "spot_250147",
+   "spot_250266",
+   "spot_250278",
+   "spot_250299",
+   "spot_250326",
+   "spot_250338",
+   "spot_250358",
+   "spot_250362",
+   "spot_2514658",
+   "spot_252562",
+   "spot_252564",
+   "spot_2606603",
+   "spot_2608977",
+   "spot_2614727",
+   "spot_2616165",
+   "spot_2655928",
+   "spot_2733864",
+   "spot_2733971",
+   "spot_2736392",
+   "spot_2752525",
+   "spot_2752552",
+   "spot_2758489",
+   "spot_2758652",
+   "spot_2758809",
+   "spot_2761745",
+   "spot_2762874",
+   "spot_2774286",
+   "spot_2775495",
+   "spot_2775570",
+   "spot_2775577",
+   "spot_2783306",
+   "spot_2783317",
+   "spot_2784060",
+   "spot_2852296",
+   "spot_2946230",
+   "spot_297989",
+   "spot_2992823",
+   "spot_2993160",
+   "spot_300076",
+   "spot_301276",
+   "spot_3064931",
+   "spot_3067314",
+   "spot_318181",
+   "spot_3353856",
+   "spot_348783",
+   "spot_482093",
+   "spot_485687",
+   "spot_488273",
+   "spot_584824",
+   "spot_584861",
+   "spot_591866",
+   "spot_601489",
+   "spot_603727",
+   "spot_735749",
+   "spot_753983",
+   "spot_754003",
+   "spot_754063",
+   "spot_775394",
+   "spot_809190",
+   "spot_945824",
+   "spot_971122"
+  ],
+  "answer": 219,
+  "note": "상위 k개 검색으로는 셀 수 없는 질문. 메타데이터·운영 정보 표로 계산한 값"
+ },
+ {
+  "question_id": "q059",
+  "question": "경주 관광지 가운데 쉬는 날이 연중무휴로 적힌 곳은 몇 곳이야?",
+  "question_type": "집계",
+  "relevant_doc_ids": [
+   "spot_126134",
+   "spot_126204",
+   "spot_126208",
+   "spot_126216",
+   "spot_127484",
+   "spot_127619",
+   "spot_128634",
+   "spot_128639",
+   "spot_128651",
+   "spot_128676",
+   "spot_128680",
+   "spot_128681",
+   "spot_128692",
+   "spot_129520",
+   "spot_231891",
+   "spot_231927",
+   "spot_250266"
+  ],
+  "answer": 17,
+  "note": "상위 k개 검색으로는 셀 수 없는 질문. 메타데이터·운영 정보 표로 계산한 값"
+ },
+ {
+  "question_id": "q060",
+  "question": "섬으로 분류된 관광지가 가장 많은 시도는 어디고, 몇 곳이야?",
+  "question_type": "집계",
+  "relevant_doc_ids": [
+   "spot_126087",
+   "spot_126292",
+   "spot_126298",
+   "spot_126299",
+   "spot_126832",
+   "spot_126967",
+   "spot_127042",
+   "spot_127101",
+   "spot_127104",
+   "spot_127529",
+   "spot_127758",
+   "spot_127801",
+   "spot_128025",
+   "spot_128105",
+   "spot_131105",
+   "spot_2496315",
+   "spot_753983"
+  ],
+  "answer": "경남 (6곳)",
+  "note": "상위 k개 검색으로는 셀 수 없는 질문. 메타데이터·운영 정보 표로 계산한 값"
+ },
+ {
+  "question_id": "q082",
+  "question": "체험관광으로 분류된 관광지는 전체에서 몇 곳이야?",
+  "question_type": "집계",
+  "relevant_doc_ids": [
+   "spot_126108",
+   "spot_127850",
+   "spot_127952",
+   "spot_128142",
+   "spot_128306",
+   "spot_128508",
+   "spot_128555",
+   "spot_128588",
+   "spot_128776",
+   "spot_128936",
+   "spot_129073",
+   "spot_129327",
+   "spot_129407",
+   "spot_1594374",
+   "spot_1594500",
+   "spot_1859903",
+   "spot_1987566",
+   "spot_2455084",
+   "spot_2456837",
+   "spot_2469196",
+   "spot_2469439",
+   "spot_2553876",
+   "spot_2589657",
+   "spot_2608977",
+   "spot_2655928",
+   "spot_2785271",
+   "spot_2852296",
+   "spot_2946230",
+   "spot_2946242",
+   "spot_2992823",
+   "spot_3060930",
+   "spot_3064931",
+   "spot_3065503",
+   "spot_3106562",
+   "spot_3523287",
+   "spot_587699",
+   "spot_702551",
+   "spot_780778",
+   "spot_800798",
+   "spot_971122",
+   "spot_987720"
+  ],
+  "answer": 41,
+  "note": "상위 k개 검색으로는 셀 수 없는 질문. 메타데이터·운영 정보 표로 계산한 값"
+ },
+ {
+  "question_id": "q083",
+  "question": "부산 관광지 가운데 문화관광으로 분류된 곳은 몇 곳이야?",
+  "question_type": "집계",
+  "relevant_doc_ids": [
+   "spot_127149",
+   "spot_129092",
+   "spot_129157",
+   "spot_129597",
+   "spot_1960614",
+   "spot_229912",
+   "spot_2350092",
+   "spot_252562",
+   "spot_252564",
+   "spot_2736392",
+   "spot_2775577",
+   "spot_2783306",
+   "spot_3027575",
+   "spot_3353856"
+  ],
+  "answer": 14,
+  "note": "상위 k개 검색으로는 셀 수 없는 질문. 메타데이터·운영 정보 표로 계산한 값"
+ },
+ {
+  "question_id": "q084",
+  "question": "서울에서 입장료가 무료라고 확인된 관광지는 몇 곳이야?",
+  "question_type": "집계",
+  "relevant_doc_ids": [
+   "spot_1019182",
+   "spot_1187220",
+   "spot_126479",
+   "spot_126491",
+   "spot_126522",
+   "spot_126747",
+   "spot_127308",
+   "spot_129186",
+   "spot_129507",
+   "spot_1364932",
+   "spot_1364975",
+   "spot_1605927",
+   "spot_1606001",
+   "spot_1825460",
+   "spot_1829741",
+   "spot_1835181",
+   "spot_231938",
+   "spot_2373247",
+   "spot_2373326",
+   "spot_2373360",
+   "spot_2500201",
+   "spot_250134",
+   "spot_250147",
+   "spot_250299",
+   "spot_250338",
+   "spot_250358",
+   "spot_250362",
+   "spot_2608977",
+   "spot_2655928",
+   "spot_2733864",
+   "spot_2733971",
+   "spot_2752525",
+   "spot_2752552",
+   "spot_2758809",
+   "spot_2761745",
+   "spot_2762874",
+   "spot_2774286",
+   "spot_2783317",
+   "spot_2784060",
+   "spot_2852296",
+   "spot_2946230",
+   "spot_2992823",
+   "spot_2993160",
+   "spot_300076",
+   "spot_3067314",
+   "spot_735749",
+   "spot_753983",
+   "spot_754003",
+   "spot_754063",
+   "spot_775394",
+   "spot_809190",
+   "spot_945824"
+  ],
+  "answer": 52,
+  "note": "상위 k개 검색으로는 셀 수 없는 질문. 메타데이터·운영 정보 표로 계산한 값"
+ },
+ {
+  "question_id": "q085",
+  "question": "해변·해수욕장으로 분류된 관광지가 가장 많은 시도는 어디고, 몇 곳이야?",
+  "question_type": "집계",
+  "relevant_doc_ids": [
+   "spot_125694",
+   "spot_125695",
+   "spot_125696",
+   "spot_125697",
+   "spot_125707",
+   "spot_126281",
+   "spot_126282",
+   "spot_126447",
+   "spot_126577",
+   "spot_126589",
+   "spot_126696",
+   "spot_126724",
+   "spot_127100",
+   "spot_127456",
+   "spot_127757",
+   "spot_128680",
+   "spot_128728",
+   "spot_128758",
+   "spot_129589",
+   "spot_591866"
+  ],
+  "answer": "강원 (7곳)",
+  "note": "상위 k개 검색으로는 셀 수 없는 질문. 메타데이터·운영 정보 표로 계산한 값"
+ },
+ {
+  "question_id": "q086",
+  "question": "서울 종로구 관광지 가운데 역사관광으로 분류된 곳은 몇 곳이야?",
+  "question_type": "집계",
+  "relevant_doc_ids": [
+   "spot_126512",
+   "spot_126522",
+   "spot_127642",
+   "spot_1604652",
+   "spot_1605933",
+   "spot_1606042",
+   "spot_231938",
+   "spot_250134",
+   "spot_250338",
+   "spot_250358",
+   "spot_2774286",
+   "spot_945824"
+  ],
+  "answer": 12,
+  "note": "상위 k개 검색으로는 셀 수 없는 질문. 메타데이터·운영 정보 표로 계산한 값"
+ },
+ {
+  "question_id": "q087",
+  "question": "입장료가 유료라고 확인된 관광지는 전체에서 몇 곳이야?",
+  "question_type": "집계",
+  "relevant_doc_ids": [
+   "spot_125417",
+   "spot_125424",
+   "spot_1254680",
+   "spot_125513",
+   "spot_125604",
+   "spot_125667",
+   "spot_125731",
+   "spot_125770",
+   "spot_125854",
+   "spot_126108",
+   "spot_126298",
+   "spot_126363",
+   "spot_126512",
+   "spot_126535",
+   "spot_126581",
+   "spot_127479",
+   "spot_127531",
+   "spot_127642",
+   "spot_127691",
+   "spot_127778",
+   "spot_127805",
+   "spot_127952",
+   "spot_128142",
+   "spot_128555",
+   "spot_128588",
+   "spot_128776",
+   "spot_128936",
+   "spot_129027",
+   "spot_129073",
+   "spot_129145",
+   "spot_129193",
+   "spot_129572",
+   "spot_1594500",
+   "spot_1627287",
+   "spot_228886",
+   "spot_2350092",
+   "spot_250410",
+   "spot_251994",
+   "spot_2606230",
+   "spot_2661506",
+   "spot_2763871",
+   "spot_2767753",
+   "spot_3060930",
+   "spot_587699",
+   "spot_598187",
+   "spot_702551",
+   "spot_780778",
+   "spot_800798"
+  ],
+  "answer": 48,
+  "note": "상위 k개 검색으로는 셀 수 없는 질문. 메타데이터·운영 정보 표로 계산한 값"
+ },
+ {
+  "question_id": "q088",
+  "question": "제주 관광지 가운데 쉬는 날이 연중무휴로 적힌 곳은 몇 곳이야?",
+  "question_type": "집계",
+  "relevant_doc_ids": [
+   "spot_1215292",
+   "spot_126434",
+   "spot_126436",
+   "spot_126441",
+   "spot_126445",
+   "spot_126447",
+   "spot_126454",
+   "spot_126458",
+   "spot_126462",
+   "spot_126466",
+   "spot_126467",
+   "spot_126672",
+   "spot_127050",
+   "spot_127479",
+   "spot_127492",
+   "spot_127529",
+   "spot_127860",
+   "spot_127861",
+   "spot_128555",
+   "spot_128556",
+   "spot_128640",
+   "spot_128641",
+   "spot_128795",
+   "spot_128796",
+   "spot_129145",
+   "spot_129147",
+   "spot_129148",
+   "spot_129395",
+   "spot_129402",
+   "spot_129699",
+   "spot_264590",
+   "spot_309943",
+   "spot_482093",
+   "spot_591866",
+   "spot_598187",
+   "spot_601489",
+   "spot_780778"
+  ],
+  "answer": 37,
+  "note": "상위 k개 검색으로는 셀 수 없는 질문. 메타데이터·운영 정보 표로 계산한 값"
+ },
+ {
+  "question_id": "q089",
+  "question": "절이나 불교 유적으로 분류된 관광지가 가장 많은 시도는 어디고, 몇 곳이야?",
+  "question_type": "집계",
+  "relevant_doc_ids": [
+   "spot_125768",
+   "spot_125770",
+   "spot_125894",
+   "spot_125902",
+   "spot_126160",
+   "spot_126216",
+   "spot_126337",
+   "spot_126363",
+   "spot_126366",
+   "spot_126744",
+   "spot_126782",
+   "spot_126848",
+   "spot_126990",
+   "spot_127674",
+   "spot_127715",
+   "spot_128573",
+   "spot_128812",
+   "spot_128890",
+   "spot_129471",
+   "spot_129509",
+   "spot_129510",
+   "spot_1942233",
+   "spot_231954",
+   "spot_2774286",
+   "spot_2775495",
+   "spot_297989",
+   "spot_300076",
+   "spot_301276",
+   "spot_304816",
+   "spot_309943",
+   "spot_317526",
+   "spot_318181",
+   "spot_348783",
+   "spot_479924",
+   "spot_482093",
+   "spot_485687",
+   "spot_488273"
+  ],
+  "answer": "전남광주 (7곳)",
+  "note": "상위 k개 검색으로는 셀 수 없는 질문. 메타데이터·운영 정보 표로 계산한 값"
+ },
+ {
+  "question_id": "q090",
+  "question": "시민공원으로 분류된 관광지가 가장 많은 시도는 어디고, 몇 곳이야?",
+  "question_type": "집계",
+  "relevant_doc_ids": [
+   "spot_126330",
+   "spot_126454",
+   "spot_126491",
+   "spot_127619",
+   "spot_129507",
+   "spot_129585",
+   "spot_129597",
+   "spot_1605927",
+   "spot_2035859",
+   "spot_2661506",
+   "spot_2733971",
+   "spot_2752552",
+   "spot_2758809",
+   "spot_2761745",
+   "spot_2784060",
+   "spot_754063"
+  ],
+  "answer": "서울 (10곳)",
+  "note": "상위 k개 검색으로는 셀 수 없는 질문. 메타데이터·운영 정보 표로 계산한 값"
+ }
+]
