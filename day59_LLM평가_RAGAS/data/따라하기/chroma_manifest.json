@@ -1,0 +1,149 @@
+{
+  "built_at_utc": "2026-10-08T08:14:00.584615+00:00",
+  "collection": "parenting_support",
+  "count": 33,
+  "distance": "cosine",
+  "embedding_model": "text-embedding-3-large",
+  "dimensions": 768,
+  "check_embedding_ctx_length": false,
+  "embedding_input": "support_docs.json의 text (레코드 하나 = 지원 서비스 하나)",
+  "documents": [
+    {
+      "id": "gov24_000000465790",
+      "text_sha256": "388d7ec4d827e64938da3c50ab111e54d10f0ffaf81abda347d7cf399ef9b9e2"
+    },
+    {
+      "id": "gov24_134200005012",
+      "text_sha256": "d8b26821d26e8a00db9931d7ec466ee693babf5cd336f4b18b865c724ab97fe2"
+    },
+    {
+      "id": "gov24_134200005031",
+      "text_sha256": "3cee91401afc3ca47ee25aeaebec23de06f3c4b4b29860f3b91b873d1c46d96e"
+    },
+    {
+      "id": "gov24_134200005036",
+      "text_sha256": "c9a2ce3e63c945c2cb461bef4c959ff5833a65cdbb153b600af60c33190f4d55"
+    },
+    {
+      "id": "gov24_134200005047",
+      "text_sha256": "23aadbbc308b05959944263471699afd3c93d843b573b12061056bf8c8d6e75a"
+    },
+    {
+      "id": "gov24_135200000005",
+      "text_sha256": "987dd161522a4f5822c7329b0066b38ce777d217ab8b9b00d7e937d9f70f3e79"
+    },
+    {
+      "id": "gov24_135200000120",
+      "text_sha256": "18e00b33720eb1226a949c80f9a13ad67e9bd2f38f264ef8babef958c8982a8d"
+    },
+    {
+      "id": "gov24_135200005015",
+      "text_sha256": "5fd3048fcc399f5f9cdb1c4a91ccaa14c36d38126c2577a8bff49e3c8264320c"
+    },
+    {
+      "id": "gov24_135200005038",
+      "text_sha256": "991da6d3423e2788dc37135316306571208cd1039407069c07d72d2b74b00a8d"
+    },
+    {
+      "id": "gov24_135200005048",
+      "text_sha256": "e2ff3943faf34b5221ded4ac4461f8ffbb392d9e734020c28d54c89c4c596c65"
+    },
+    {
+      "id": "gov24_135200005050",
+      "text_sha256": "19e4ae3b73f4b72c25fbe2fd2ba5564dbbef409213678b75ee01138f3f4f0ec7"
+    },
+    {
+      "id": "gov24_138300000051",
+      "text_sha256": "2a8753cd7084794bea71179f07739d6ebcf6f61f7861426d7b98aed70e3ac5a5"
+    },
+    {
+      "id": "gov24_138300000065",
+      "text_sha256": "1cdc4a4fd85b4fbaedc4658e660b8e3a00abf5ae5b354cc51f22420e6f0601a9"
+    },
+    {
+      "id": "gov24_138300000066",
+      "text_sha256": "0efea3fddf606f1b56853400795622d1d20e6d0abbed42cd3ed25c71ac1cc93f"
+    },
+    {
+      "id": "gov24_149200000153",
+      "text_sha256": "4dd7b6bb5b0e3e32b9fb8f198b53b1ecaa0dfe91b8db727b0b663096d8b55a3e"
+    },
+    {
+      "id": "gov24_149200005017",
+      "text_sha256": "bd95cb870639d574e82a8020318d53edf29ed9d9e663be70184d0e05d8eadafd"
+    },
+    {
+      "id": "gov24_149200005026",
+      "text_sha256": "cc2d9b3733c63eb58d72c764e56e15b263315685c7dd94988c45617d580c7933"
+    },
+    {
+      "id": "gov24_423000000362",
+      "text_sha256": "11872af0145f1781b4baf99557b9e1812364f20f947963061a08fca986268474"
+    },
+    {
+      "id": "gov24_999000000004",
+      "text_sha256": "1ab2591a8eff2cbc308c754f6cd93e9e09a351dd3a2cc2f3828e27ba91ab7676"
+    },
+    {
+      "id": "gov24_999000000007",
+      "text_sha256": "ed607ed5ec6f4cc455ca2913252874dc01e2eb07b28d6a0e91dadba9e79a2d47"
+    },
+    {
+      "id": "gov24_999000000008",
+      "text_sha256": "cfa4848a9295c020ee7c2a2499063e08e46b5fd9cc11825d84068dd4c51f8013"
+    },
+    {
+      "id": "gov24_999000000039",
+      "text_sha256": "f274ed8e558a749724fedf0ed0919c86bbbb540e3d637a135fd23b84c3a6fc3a"
+    },
+    {
+      "id": "gov24_PTR000050390",
+      "text_sha256": "617f4109101b143e190a63a54ea5da5ceaa929c534fc2be1c502f9571f909e56"
+    },
+    {
+      "id": "gov24_PTR000050397",
+      "text_sha256": "f4ac0c6a8dd8988947757c73e803e9e0325daec0089073cd66cb7f1721f768ca"
+    },
+    {
+      "id": "gov24_SCH000000070",
+      "text_sha256": "56622398df29fe7b9c1b112807100c135c1430ffdbb15f8c62d4aa6be00211c0"
+    },
+    {
+      "id": "gov24_SD0000006936",
+      "text_sha256": "30b8d4682f4106ec7c1d3c801311ba534cb4fc64f022ec73e57815fa0756d7d7"
+    },
+    {
+      "id": "gov24_SD0000007672",
+      "text_sha256": "96c2151a2b681c869cf182cbb474eca9f0dc66c2259464fcc220972d156a19cc"
+    },
+    {
+      "id": "gov24_SD0000016095",
+      "text_sha256": "199b246d852ce696b8086e295f1f90d25f40a742015a52cc2f764f044c93f45e"
+    },
+    {
+      "id": "gov24_SME000000100",
+      "text_sha256": "ffd3c01d9868bca433fc1b6a6811eeb5e699827d3cbc42cdfb35c0cd6b8016b0"
+    },
+    {
+      "id": "gov24_SSI000000020",
+      "text_sha256": "0efe486b5985f940cfdead5d38c4ef2f12c8a9d3b26bcb3b7f0c6c1eda2c1e09"
+    },
+    {
+      "id": "gov24_WII000000260",
+      "text_sha256": "2b6fcf044f27be9a4371ba9f433682e3122ef9721febc9bbfe53049da8bde4fa"
+    },
+    {
+      "id": "gov24_WII000000500",
+      "text_sha256": "1bda2c12d19215d56049477abc9df73c8f316e046e268399676a4c582b4f14ab"
+    },
+    {
+      "id": "gov24_WII000001460",
+      "text_sha256": "9439e11bd7319e1748280f3f9643590269cfad60336b76857fbe3076ad9591c7"
+    }
+  ],
+  "packages": {
+    "chromadb": "1.5.9",
+    "langchain-chroma": "1.1.0",
+    "langchain-openai": "1.3.5"
+  }
+}

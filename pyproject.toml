@@ -112,6 +112,8 @@ dependencies = [
     #   평가용 LLM 은 OpenAI SDK 의 AsyncOpenAI 를 직접 import 한다.
     "ragas==0.4.3",
     "openai>=2,<3",
+    #   평가 작업을 동시에 실행할 때 진행 막대를 보여 주는 tqdm_asyncio 를 직접 import 한다(ragas 가 함께 설치하지만 직접 선언한다).
+    "tqdm>=4.66",
 ]
 
 [tool.uv]

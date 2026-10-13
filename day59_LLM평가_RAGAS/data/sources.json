@@ -1,0 +1,485 @@
+{
+  "description": "day59 본실습 데이터 출처. scripts/day59_build/build_data.py가 만든다(API 호출 없음).",
+  "original_document": {
+    "title": "고용노동부, 「일·생활 균형을 위한 유연근무 활용 매뉴얼」, 2024년 10월",
+    "page_url": "https://www.worklife.kr/website_renew/index/newsroom/press_releases_view.asp?GUID=B1C5B341-D745-40C5-9D6B-769F3D75E921",
+    "download_url": "https://www.worklife.kr/library/server/common.attach.download.asp?GUID=DC573FB9-EB3D-45F5-AC37-EC7F9EF77F2B",
+    "pdf_copy": "day47_하이브리드검색_질의변환/data/originals/MOEL_flexible_work_manual_2024.pdf (167쪽, 2026-09-18 내려받음, day46 README 기록)",
+    "pdf_sha256": "9819b98f1f6ac3afc20eb9e921344198725107572c9c48e67506231b45333b24",
+    "license": "앞 일차(day46·47·48) 출처 기록에 라이선스 표기가 없다. 정부 기관 발간 공개 자료이며, 공공누리 유형은 원문 게시 페이지에서 따로 확인하지 않았다."
+  },
+  "derived_from": {
+    "docs": "day47_하이브리드검색_질의변환/data/practice_docs.json",
+    "questions": "day47_하이브리드검색_질의변환/data/practice_questions.json",
+    "docs_sha256": "cd66edcdf087db5e8033ec7a4049ee7048f34387602cdd0a875c55f70244bb7b",
+    "questions_sha256": "d9148f9ca560eacceeaf9c70f273bcff852f9704766d2f2bf9f9964de18190d7"
+  },
+  "files": {
+    "본실습/manual_docs.json": {
+      "count": 44,
+      "note": "44절 본문을 그대로 복사했다. category는 수업용 분류, pdf_page는 PDF 뷰어 기준 페이지다.",
+      "text_sha256": {
+        "hr_purpose": "b5ede2166ef1d4c2387ad9f13c79f9d1f34b6fe699a1d778df4c8ce7b1a1430c",
+        "hr_eligibility": "34c4234fd6855845d8ebe1a8960041b9e0cabc39379610b00bbc240f54ea46de",
+        "hr_approval": "13474bb404a204fbb2f9fc0b82984ddd50681b4417bac0ee5f84518bc7606c23",
+        "hr_management": "c8dd74e5bb269c023d0749cbf1505e511384c3a61e5f3e6d38f92c28cdcfaed0",
+        "hr_effect": "dfa7e9db714fccc67df055ba198249540806e6113c38a1089abe4f3f5f405cb8",
+        "hr_remote": "0f9e3e29f8736957c5b5534c1ba6b786a7de448827a5265cbc38024c94b97d23",
+        "hr_environment": "dfbcb859165ff727261c78e48b2d6d33048da8ec0c81d2f34312b8558e1e5c18",
+        "hr_security": "7b5a5c05243bc12aa6f9dd7211e7c39cc5e160602737f7bd834bc9dc1c5532b8",
+        "hr_service": "79349efb4a8ae9941b7b8551e8ce2027a6f6a56a854b577576892688f3b8fd6c",
+        "hr_feedback": "822904707129c20454b46f1a38eaa47eb9cc6c0591fd33d77c3f12abdc082997",
+        "hr_general_types": "02add87c28119e2f666aa1dd768c3d6d78491e0bd0280630ecc82a402d49fe77",
+        "hr_design_principles": "2e27a4c54850598969dc931f7298237097ee5f4624bc67e1dd0bd35228cba18a",
+        "hr_readiness_survey": "1db1cc32471e766b09fbb8ae7c6109959eac62c8394b128fd7ccdee64e7d032b",
+        "hr_job_review": "2061f6754c2d4a283421f3c1481dd38182cf00a8e058de32922c319e04f48027",
+        "hr_training": "d1507d01925d033246cca85bc4aa8098924435a393cd8550d2f256eebf5e15c4",
+        "hr_staff_workshop": "9aa92682092dc219b290605cda927395ac30b79773e1fefa36fd1c84acf67d4b",
+        "hr_stagger_definition": "ce4ffe290436c17d2c594fb63c6f1348b241e766be9db72b2dbe224a983c17b7",
+        "hr_stagger_models": "6c116e450c9d0cf532f0739835ba6a6160df35f28a35b4259e5e6d1af614fd5a",
+        "hr_stagger_type_mix": "e2f75a439cf59fbce78d1fe25aac9517b00928a994f2fb815f78e8e9e31213ca",
+        "hr_stagger_admission_contract": "8878cae3233e73e149ebed9711582f5ba8f25008dfe9c89c9262bb1f0b895092",
+        "hr_stagger_rules": "cc2b3018c7ed067a449956e5c55b2a1ec46ea69936292c2ab4ea90f36a9704e8",
+        "hr_stagger_attendance": "6c85b378182a6e12528860e8475dac552053535c66a26b5ac47f7b7eeab9a0f7",
+        "hr_stagger_consent": "c1b385f1b41fc1b399c25a61f5d4dc9fdc993d32fd81a938579b984750dba57b",
+        "hr_stagger_hours": "5bc14f1e64d2b6487c50d4b7dabb8602e25acd00cbc4d05caf602d2ed4b83ff6",
+        "hr_stagger_remote_combination": "fecc72e8d295e2ea49bdcb427194510f7cfb71b665ed5c030f8adecf2398fea9",
+        "hr_select_definition": "76d365654b34d35e725702d63da3ee207fe8639123879a3fd6d4da4fdce2cf1c",
+        "hr_select_adoption_rules": "d4533940167d6df891205f0c522ce440376cd830bbade78531016d54223d8856",
+        "hr_select_scope_period": "bc8654698012c237d8acf70be2316ab3df4dcb491b7b35cc863137212ea4ff5f",
+        "hr_select_time_agreement": "3b1eefcdd370059e93747b4652528f51ecc3d2ba8539ca0e71c6c9b4b3ba6844",
+        "hr_select_attendance_night": "297767bba0dcaf7bc8ed34edf34d4d391ddcb5252511ae09818752d3346b1f50",
+        "hr_select_core_standard": "3553903aa89dfb0f6c5435f0837a4c810b474dd0153e9c4e9d21749aed537304",
+        "hr_select_workdays_leave": "196985152775f699dc72517abf7799a451985697383217e67e0f142762c75c5a",
+        "hr_select_settlement_balance": "5b7a3cda2c8db7d25b37b11a5fb40bf32305fbaf113fb8f7e9e58570662b2f70",
+        "hr_select_health_protection": "9ae0eca6279b51a8b7013c28b0ae50bece860b88fa3b37aaec18a374541eb4df",
+        "hr_remote_rule_change": "26d6616d3deaf5ef34f950cde0cccd89a7f2d958eff1b089bedce5af5c1ceb34",
+        "hr_remote_rule_structure": "e7037b0130058f0c46c567f9cd8e1b96ef0a9080f51e3ab20ee6576bb2193be0",
+        "hr_collaboration_team_trust": "1f1a03494ca44d937eccfa682bbde46442a6a17c91dc7d5d94ead40f512e4464",
+        "hr_remote_daily_routine": "3072bea87f0ed75cf149b94064e4ec6726714cc34970f02ed029694f6f9e87da",
+        "hr_remote_application_design": "6cd5242db0fd6b522ca6df234ffafd17e52ac484681020e652bc4ba9e4b0a514",
+        "hr_remote_operation_conditions": "ebb5db03f2632bfd643826756b4229e3f3e0e1caf76ba2894482bf7a077d5f65",
+        "hr_remote_eligibility_rules": "2bd1f29568233eb20a89d519997c3c406acb55912d9653dec41d91a392d81978",
+        "hr_remote_service_rule_design": "3bbd8291da8c6f96974f9bed0c6f6364d4dfca0bccb717f3d5a2bb019d939ec6",
+        "hr_remote_support_policy": "83fac82601def4c1b7cea38e0b87de3e86964ad91359b3b7a82c96a6cbde7383",
+        "hr_remote_emergency_rules": "776222a7be932dfeceffbbdd58fbff4dcc143ff50bf0e028e00a922b0acc88da"
+      }
+    },
+    "본실습/answer_samples.json": {
+      "count": 3,
+      "responses": 12,
+      "note": "질문과 답변 변형은 수업용으로 사람이 쓴 통제 입력이다. retrieved_contexts는 manual_docs.json 본문 그대로다. 모델이 만든 답이 아니다.",
+      "text_sha256": {
+        "s1": {
+          "user_input": "99c84bca07c61dffc82a85e3aab4bf40c928c9603f1511ec2fc8a41aa604cabb",
+          "reference": "683ce16261774b8b0256c41dee5e56f2673480eea59efe5a67d36ff7936228c8",
+          "responses": {
+            "근거대로": "148f97a06eb5ca044c3b2c754687118f964869720be70e7ba306d33869ae9a4b",
+            "근거에_없는_내용_추가": "3c464c9b4c8ed94a1a1add48aeadd0bba670340094dd6bcbdde280f675dc65ee",
+            "숫자_조건_바꿈": "175a9e747316a4f6cc1996be5a78784c35b6b659227d21fdd79bf422b6fffb9b",
+            "질문과_다른_이야기": "f22056f8f55d979b5162ab8546c076a38464dd2e94e342d08c657a572cfa0e93"
+          }
+        },
+        "s2": {
+          "user_input": "787670dbf1a09f83e6effc02e36bb1cf98e68d9f915e533d3b4e6a4d41838043",
+          "reference": "75dcdc86b428d4a947d2085ab4acc7738399b2b407db23633d15286371c03890",
+          "responses": {
+            "근거대로": "89740e7ce3dc255f3385805450ec75fb64aab52524d497c948fe0fe80527a1da",
+            "근거에_없는_내용_추가": "08c35062c65a0983487e480ed75202b128f6dedc395300e84a9635fd5a5c4d10",
+            "숫자_조건_바꿈": "28f02c289fd1633ef4bd87f60bd246b1dbd84966fe2aa30e24e2d67ce82f9cc8",
+            "질문과_다른_이야기": "8ee1d53c6c06e026caa8e457baaa41a33814689f91276635e8ea5bdc8675d73e"
+          }
+        },
+        "s3": {
+          "user_input": "3298313482575d55b5eb892eff61b13678a73d641564dee59826b8ca406e9295",
+          "reference": "29a5e2c3d9548ada71b903103816b300f25e34aaefb8c560f5247f6507f5e08a",
+          "responses": {
+            "근거대로": "5694f11a175ffed7e7db10cfe5c3a38cea24fa9491234fbe5a12875f0401eb7b",
+            "근거에_없는_내용_추가": "542b1ed8be05d43c05b89daa7c0327878daf7a2b13f0285a3c0b5f645e8de6f5",
+            "숫자_조건_바꿈": "cbad54d876f56cb2cd7bfe9ae3937f6280bf59a6e3396897bc3a0e8847c2c128",
+            "질문과_다른_이야기": "8cdc32c9a910effdc645cd54dbe5a0da3ba8b8853dd7a3690feee93b6967d7f0"
+          }
+        }
+      }
+    },
+    "본실습/questions.json": {
+      "count": 6,
+      "note": "q로 시작하는 ID는 day47 원문항, a로 시작하는 ID는 원문항과 문서를 묶어 새로 만든 질문이다.",
+      "text_sha256": {
+        "q7": {
+          "question": "3f866d664a07f25191b19fccab37d97ec76765ecb630c77dc0ee846819daa894",
+          "reference": "f973bfb36c0008c0d9989e3ad1eb0950ebfeb58ee52366002428d1bc6bde3680"
+        },
+        "q33": {
+          "question": "d9e60d009ed718b624b1f64e877403301bc0efb8caee4cd53408658db7650ac4",
+          "reference": "93217bbdf4c351af7ee2c122019498167b0f48dcf5e481b8acd8cfc38ac4d549"
+        },
+        "q34": {
+          "question": "441be72ac0d6376d1afb59338f189dc2a4ceb24b80820311b0a40f671dfae622",
+          "reference": "f115bc30e0e06042fc72c5c29df86907390d1391c996a2e59c2e28235aa468c9"
+        },
+        "q61": {
+          "question": "a4a1db2084d7d3de16cce04a24f92ef9e6f7189091b2a9ed50221a7686831014",
+          "reference": "3cffb6db51ea427716d131e488efe53c935fe49f03663f1a78f6695488d7ca23"
+        },
+        "a1": {
+          "question": "3bd74179fa5729d0f186838286af4053a533006c31f3d86748f67e54b1ebac2f",
+          "reference": "ebdae753b5fe2d64031d08d6a2773b85677c38af3af543b6ee591c3bfb751021"
+        },
+        "a2": {
+          "question": "767291c816c5ccd4b5169928add6af44bff04723c9b87cff800901b1a4a7e424",
+          "reference": "87000705b30056dbd4a9e05373748d9d014c9569d5efec900207b841deb71998"
+        }
+      }
+    }
+  },
+  "reference_rewrites": [
+    {
+      "file": "본실습/answer_samples.json",
+      "id": "s1",
+      "based_on": [],
+      "original_reference": [],
+      "original_evidence": [],
+      "rewritten_reference": "1개월을 넘는 정산기간은 신상품 또는 신기술의 연구개발 업무에만 둘 수 있고 최대 3개월입니다. 이 경우 근로일 사이에 11시간 이상의 연속 휴식을 주어야 합니다. 천재지변 등 대통령령으로 정하는 불가피한 경우에는 근로자대표와의 서면합의에 따릅니다.",
+      "note": "교안 01용 새 질문. 정답 답변은 context_doc_ids 문서의 원문 문장에서 주장 2~3개를 골라 풀어 썼다."
+    },
+    {
+      "file": "본실습/answer_samples.json",
+      "id": "s2",
+      "based_on": [
+        "q53"
+      ],
+      "original_reference": [
+        "근로시간이 법정근로시간인 1일 8시간을 초과하면 연장근로수당이 발생한다고 설명합니다. 야간시간인 22:00~06:00에 근무했다면 야간근로수당을 추가로 지급하도록 설명합니다."
+      ],
+      "original_evidence": [
+        "시차출퇴근시 소정근로시간을 초과하여 근무한 경우, 근로시간이 법정근로시간(1일 8시간)을 초과하는 경우라면 연장근로수당이 발생합니다. 근무한 시간이 야간시간 (22:00~06:00)대라면 야간근로수당을 추가로 지급해야 합니다."
+      ],
+      "rewritten_reference": "하루 근로시간이 법정근로시간인 8시간을 넘으면 연장근로수당이 발생합니다. 22시부터 다음 날 6시 사이에 일했다면 야간근로수당을 추가로 받습니다. 분쟁을 막으려면 연장·야간근로 전에 사전 신청과 승인을 거치도록 노사가 정해 두는 것이 바람직합니다.",
+      "note": "교안 01용 새 질문. 정답 답변은 context_doc_ids 문서의 원문 문장에서 주장 2~3개를 골라 풀어 썼다."
+    },
+    {
+      "file": "본실습/answer_samples.json",
+      "id": "s3",
+      "based_on": [
+        "q56"
+      ],
+      "original_reference": [
+        "취업규칙이 있으면 그 취업규칙에, 없으면 취업규칙에 준하는 것에 규정하도록 합니다."
+      ],
+      "original_evidence": [
+        "취업규칙 작성･신고 의무가 없는 상시 근로자 9인 이하 사업장이 제도를 도입하기 위해서는 취업규칙이 있는 경우에는 그 ‘취업규칙’, 취업규칙이 없는 경우에는 ‘취업규칙에 준하는 것’으로 규정하여야 합니다."
+      ],
+      "rewritten_reference": "상시 근로자 9인 이하 사업장은 취업규칙 작성·신고 의무가 없습니다. 취업규칙이 있으면 그 취업규칙에, 없으면 '취업규칙에 준하는 것'에 규정해야 합니다. 취업규칙에 준하는 것은 특별한 형식은 없지만 최소한 서면으로 작성해 해당 근로자에게 알려야 합니다.",
+      "note": "교안 01용 새 질문. 정답 답변은 context_doc_ids 문서의 원문 문장에서 주장 2~3개를 골라 풀어 썼다."
+    },
+    {
+      "file": "본실습/questions.json",
+      "id": "q7",
+      "based_on": [
+        "q7"
+      ],
+      "original_reference": [
+        "노사 간 충분한 소통이 중요합니다."
+      ],
+      "original_evidence": [
+        "노사간 충분한 소통을 통한 공감대 형성이 중요합니다."
+      ],
+      "rewritten_reference": "설문조사 등으로 직원들의 수요와 기대효과를 파악해 도입목적을 명확히 합니다. 노사 간 충분한 소통이 중요하며, 이 소통으로 도입 목적과 운영방식 등에 대한 공감대를 형성해야 합니다.",
+      "note": "원본 질문을 넓혔다. 첫 주장은 hr_purpose에만 있고, 둘째 주장은 hr_design_principles의 '도입 목적과 운영방식' 공감대 문장이다."
+    },
+    {
+      "file": "본실습/questions.json",
+      "id": "q33",
+      "based_on": [
+        "q33"
+      ],
+      "original_reference": [
+        "반려 시에는 신청인의 이의제기 절차를 마련하는 것이 바람직합니다. 승인 후 보안 등의 문제에는 관리자가 인사부서에 해제를 요청할 기준·절차를 마련할 수 있습니다."
+      ],
+      "original_evidence": [
+        "단, 유연근무 신청에 대해 불승인 또는 반려(조정)할 경우 신청인이 이의제기를 할 수 있는 절차 등을 마련하여 수용성을 높이는 것이 바람직합니다.",
+        "유연근무자의 복무관리 또는 보안상 등의 문제가 있다고 판단될 경우에는 관리자가 해당 근무자의 유연근무 해제를 인사부서에 요청할 수 있도록 기준 및 절차를 마련할 수 있습니다."
+      ],
+      "rewritten_reference": "유연근무 신청을 불승인하거나 반려할 때는 신청인이 이의를 제기할 수 있는 절차를 마련하는 것이 바람직합니다. 승인 후 복무관리나 보안상 문제가 있으면 관리자가 인사부서에 유연근무 해제를 요청할 수 있도록 기준과 절차를 마련할 수 있습니다.",
+      "note": "원본의 두 주장을 근거 인용 표현에 맞춰 풀어 썼다. 주장은 문서마다 하나씩이다."
+    },
+    {
+      "file": "본실습/questions.json",
+      "id": "q34",
+      "based_on": [
+        "q34"
+      ],
+      "original_reference": [
+        "일부 요일·시간의 재택·원격근무 또는 거점오피스를 활용할 수 있고, 채팅·화상회의·파일 공유·공동 작업 도구로 내외부 소통과 협업을 지원할 수 있습니다."
+      ],
+      "original_evidence": [
+        "장거리 출퇴근 등 비대면 근로의 필요성은 있으나 거래처 등과의 업무협조, 의사소통이 필요한 경우는 일부 요일 또는 일부 시간만 재택 ･원격근무를 활용하거나 거점오피스 등의 활용이 가능합니다.",
+        "채팅, 화상회의, 파일 공유, 공동 작업 등을 위한 협업툴을 활용하여 내부소통, 외부 소통, 협업 등을 할 수 있습니다."
+      ],
+      "rewritten_reference": "일부 요일이나 일부 시간만 재택·원격근무를 하거나 거점오피스를 활용할 수 있습니다. 채팅, 화상회의, 파일 공유, 공동 작업을 위한 협업툴로 내부·외부 소통과 협업을 할 수 있습니다.",
+      "note": "원본의 두 주장을 근거 인용(hr_remote, hr_feedback) 표현에 맞춰 문장 둘로 나눴다."
+    },
+    {
+      "file": "본실습/questions.json",
+      "id": "q61",
+      "based_on": [
+        "q61"
+      ],
+      "original_reference": [
+        "선택근무 자체가 소정근로일의 출근 여부까지 자율에 맡기는 것은 아닙니다. 다만 취업규칙이나 근로자대표와의 서면합의에서 출근 여부까지 자율적으로 결정하도록 정했다면, 출근하지 않아도 결근 처리할 수 없다고 설명합니다."
+      ],
+      "original_evidence": [
+        "선택근무는 일정기간의 단위로 정해진 총 근로시간 범위 내에서 업무의 시작 및 종료시각, 1일의 근로시간을 근로자가 자율적으로 결정할 수 있는 제도로, 소정근로일의 출근 여부까지 근로자의 자율에 맡기는 것을 의미하지는 않습니다. - 다만, 취업규칙 또는 근로자대표와의 서면합의 시 소정근로일의 출근 여부까지 근로자의 자율적 결정에 맡기는 내용을 규정한 경우에는 소정근로일에 근로자가 출근하지 않더라도 결근으로 처리할 수 없을 것입니다."
+      ],
+      "rewritten_reference": "선택근무는 소정근로일의 출근 여부까지 근로자 자율에 맡기는 제도가 아닙니다. 취업규칙이나 근로자대표와의 서면합의로 출근 여부까지 자율에 맡긴 경우에는 출근하지 않아도 결근으로 처리할 수 없다고 봅니다. 출근일 제한이 없는 완전 선택근무에서는 출근하지 않아도 결근이 아닙니다.",
+      "note": "원본 두 주장에 hr_select_attendance_night의 완전 선택근무 주장을 더해 주장 3개를 두 문서에 나눴다."
+    },
+    {
+      "file": "본실습/questions.json",
+      "id": "a1",
+      "based_on": [
+        "q58",
+        "q64"
+      ],
+      "original_reference": [
+        "각 근로일이나 주별 근로시간을 미리 정하지 않고, 정산기간 전체를 대상으로 한 총 근로시간만 정합니다.",
+        "휴가를 사용하는 날에 따라 표준근로시간이 달라질 수 있어, 하루의 표준근로시간을 유급휴가 등의 계산기준으로 삼으려는 취지에 맞지 않습니다. 대상 근로자 전체에 일률적으로 적용되는 특정 근로시간으로 정해야 합니다."
+      ],
+      "original_evidence": [
+        "각 근로일별 근로시간이나 각 주별 근로시간을 미리 정할 수 없으며, 정산기간 전체를 대상으로 한 총 근로시간만 정하여야 합니다.",
+        "사전에 근로자가 근로하기로 신청한 시간을 표준근로시간으로 정할 수 있게 할 경우 휴가 사용일에 따라 표준근로시간이 달라질 수 있어 1일의 근로시간을 표준근로시간으로 정하여 유급휴가 등의 계산 기준으로 삼도록 한 법 취지에 부합하지 않는 바, 대상 근로자 전체에 일률적으로 적용되는 특정의 근로시간을 표준근로시간으로 정하는 것이 타당함"
+      ],
+      "rewritten_reference": "연차휴가수당은 표준근로시간을 기준으로 계산합니다. 표준근로시간은 사용자와 근로자대표가 합의해 정한 1일의 근로시간입니다. 표준근로시간은 근로자가 미리 신청한 시간이 아니라 대상 근로자 전체에 일률적으로 적용되는 특정 시간으로 정해야 합니다.",
+      "note": "새 질문. 첫 주장은 hr_select_workdays_leave Q7, 둘째 주장은 hr_select_time_agreement ④(hr_select_workdays_leave 괄호에도 있음), 셋째 주장은 hr_select_core_standard Q5에 있다."
+    },
+    {
+      "file": "본실습/questions.json",
+      "id": "a2",
+      "based_on": [
+        "q50"
+      ],
+      "original_reference": [
+        "상시 10명 이상의 근로자를 사용하는 사용자를 작성·신고 대상으로 설명합니다. 변경할 때 근로자 과반수를 대표하는 노동조합 또는 근로자 과반수의 의견을 듣도록 합니다."
+      ],
+      "original_evidence": [
+        "상시 10명 이상의 근로자를 사용하는 사용자는 취업규칙을 작성 ･신고하여야 합니다.",
+        "근로자의 과반수를 대표하는 노동조합 또는 근로자 과반수의 의견을 듣고 취업규칙을 변경해야 합니다."
+      ],
+      "rewritten_reference": "상시 10명 이상의 근로자를 사용하는 사용자는 취업규칙을 작성해 신고해야 하며, 취업규칙에는 시차출퇴근의 신청 절차, 출퇴근 시간대, 의무근로 시간대, 사용 기간 등을 적습니다. 취업규칙을 바꿀 때는 과반수 노조(없으면 근로자 과반수)의 의견을 들어야 합니다. 임금이나 근로시간 등 다른 근로조건의 변동이 없으면 불이익 변경에 해당하지 않아 의견청취를 거쳐 개정할 수 있습니다.",
+      "note": "q50을 넓힌 새 질문. 앞 두 주장은 hr_stagger_rules, 셋째 주장은 hr_stagger_hours Q3에 있다."
+    }
+  ],
+  "followalong": {
+    "description": "day59 함께 따라하기 데이터 출처. scripts/day59_build/build_followalong_data.py가 만든다(API 호출 없음).",
+    "scenario": "부모가 묻는 출산·육아 지원금 상담 챗봇",
+    "source": {
+      "title": "행정안전부, 「대한민국 공공서비스(혜택) 정보」(보조금24)",
+      "provider": "공공데이터포털(data.go.kr)",
+      "dataset_url": "https://www.data.go.kr/data/15113968/openapi.do",
+      "api": "https://api.odcloud.kr/api/gov24/v3/serviceDetail (serviceDetail)",
+      "collected_on": "2026-10-08",
+      "collector": "scripts/day59_build/collect_followalong.py",
+      "license": "공공누리(출처표시). 사용 시 출처: 행정안전부, 대한민국 공공서비스(혜택) 정보, 공공데이터포털",
+      "raw_file": "scripts/day59_build/raw/gov24_service_detail.jsonl (원자료, 배포하지 않음)",
+      "raw_rows": 10950,
+      "raw_sha256": "5426521dd0cebda1c0f0ffa48758c5def1b1bf7bb2733c5353a1eb5f71c20a54"
+    },
+    "selection_rule": {
+      "agencies": [
+        "고용노동부",
+        "교육부",
+        "국민건강보험공단",
+        "국민연금공단",
+        "보건복지부",
+        "성평등가족부",
+        "여성가족부"
+      ],
+      "name_includes": "출산|육아|아동|양육|임신|보육|부모급여|첫만남|난임|산모|영유아|유아|아이돌봄|기저귀",
+      "name_excludes": "시설|쉼터|공동생활|기능보강|운영|사례관리|보호대상|학대|실종|성매매|자립|입양|가정위탁|드림스타트|디딤씨앗|보호비|장려금|장애|의료급여",
+      "note": "소관기관명이 중앙부처·공단이고, 서비스명에 출산·육아 낱말이 있으며, 부모 개인이 신청하는 서비스만 남겼다. 시설·기관 대상, 보호대상아동·입양·위탁 전용, 장애·의료급여 수급 자격 전용, 사업주 장려금은 뺐다.",
+      "document_fields": [
+        "서비스명",
+        "지원대상",
+        "선정기준",
+        "지원내용",
+        "신청방법",
+        "신청기한",
+        "구비서류",
+        "접수기관명"
+      ],
+      "document_rule": "원문 필드를 '필드명: 값'으로 이어 붙였다. 줄바꿈 정리와 공백 다듬기 외에 내용은 바꾸지 않았다. 선정기준이 지원대상과 같으면 한 번만 두고, 구비서류는 300자 이하일 때만 넣었다. 원문 표기(화살표 등)는 그대로 두었다.",
+      "doc_id": "gov24_ + 서비스ID"
+    },
+    "files": {
+      "따라하기/support_docs.json": {
+        "count": 33,
+        "services": [
+          "유아학비 (누리과정) 지원",
+          "가정양육수당 지원",
+          "시간제보육 지원",
+          "영유아보육료 지원",
+          "유아교육비·보육료 추가지원",
+          "임산부 및 영유아 영양플러스",
+          "아동수당",
+          "첫만남이용권 지원",
+          "아동 입원진료비 지원",
+          "위기임신 및 보호출산 지원",
+          "2세미만 영유아 입원진료비 본인부담금 면제",
+          "청소년부모 아동양육비 지원사업",
+          "양육비 선지급 지원",
+          "양육비 이행 지원 서비스",
+          "고용보험 미적용자 출산급여",
+          "예술인ㆍ노무제공자 출산전후급여등",
+          "난임치료휴가 급여",
+          "아이돌봄 서비스",
+          "배우자 출산휴가 급여",
+          "육아기 근로시간 단축 급여",
+          "육아휴직급여",
+          "고위험 산모 맞춤형 지원",
+          "산모·신생아 건강관리 지원",
+          "요양기관 외 출산 시 출산비 지급",
+          "그 밖의 연장형 보육료 지원",
+          "청소년산모 임신·출산 의료비 지원",
+          "건강보험 임신·출산 진료비 지원",
+          "영유아 발달 정밀검사비 지원",
+          "난임부부 시술비 지원",
+          "한부모가족 아동양육비 지원",
+          "국민연금출산크레딧",
+          "저소득층 기저귀·조제분유 지원",
+          "출산전후(유산ㆍ사산)휴가 급여"
+        ],
+        "text_sha256": {
+          "gov24_000000465790": "388d7ec4d827e64938da3c50ab111e54d10f0ffaf81abda347d7cf399ef9b9e2",
+          "gov24_134200005012": "d8b26821d26e8a00db9931d7ec466ee693babf5cd336f4b18b865c724ab97fe2",
+          "gov24_134200005031": "3cee91401afc3ca47ee25aeaebec23de06f3c4b4b29860f3b91b873d1c46d96e",
+          "gov24_134200005036": "c9a2ce3e63c945c2cb461bef4c959ff5833a65cdbb153b600af60c33190f4d55",
+          "gov24_134200005047": "23aadbbc308b05959944263471699afd3c93d843b573b12061056bf8c8d6e75a",
+          "gov24_135200000005": "987dd161522a4f5822c7329b0066b38ce777d217ab8b9b00d7e937d9f70f3e79",
+          "gov24_135200000120": "18e00b33720eb1226a949c80f9a13ad67e9bd2f38f264ef8babef958c8982a8d",
+          "gov24_135200005015": "5fd3048fcc399f5f9cdb1c4a91ccaa14c36d38126c2577a8bff49e3c8264320c",
+          "gov24_135200005038": "991da6d3423e2788dc37135316306571208cd1039407069c07d72d2b74b00a8d",
+          "gov24_135200005048": "e2ff3943faf34b5221ded4ac4461f8ffbb392d9e734020c28d54c89c4c596c65",
+          "gov24_135200005050": "19e4ae3b73f4b72c25fbe2fd2ba5564dbbef409213678b75ee01138f3f4f0ec7",
+          "gov24_138300000051": "2a8753cd7084794bea71179f07739d6ebcf6f61f7861426d7b98aed70e3ac5a5",
+          "gov24_138300000065": "1cdc4a4fd85b4fbaedc4658e660b8e3a00abf5ae5b354cc51f22420e6f0601a9",
+          "gov24_138300000066": "0efea3fddf606f1b56853400795622d1d20e6d0abbed42cd3ed25c71ac1cc93f",
+          "gov24_149200000153": "4dd7b6bb5b0e3e32b9fb8f198b53b1ecaa0dfe91b8db727b0b663096d8b55a3e",
+          "gov24_149200005017": "bd95cb870639d574e82a8020318d53edf29ed9d9e663be70184d0e05d8eadafd",
+          "gov24_149200005026": "cc2d9b3733c63eb58d72c764e56e15b263315685c7dd94988c45617d580c7933",
+          "gov24_423000000362": "11872af0145f1781b4baf99557b9e1812364f20f947963061a08fca986268474",
+          "gov24_999000000004": "1ab2591a8eff2cbc308c754f6cd93e9e09a351dd3a2cc2f3828e27ba91ab7676",
+          "gov24_999000000007": "ed607ed5ec6f4cc455ca2913252874dc01e2eb07b28d6a0e91dadba9e79a2d47",
+          "gov24_999000000008": "cfa4848a9295c020ee7c2a2499063e08e46b5fd9cc11825d84068dd4c51f8013",
+          "gov24_999000000039": "f274ed8e558a749724fedf0ed0919c86bbbb540e3d637a135fd23b84c3a6fc3a",
+          "gov24_PTR000050390": "617f4109101b143e190a63a54ea5da5ceaa929c534fc2be1c502f9571f909e56",
+          "gov24_PTR000050397": "f4ac0c6a8dd8988947757c73e803e9e0325daec0089073cd66cb7f1721f768ca",
+          "gov24_SCH000000070": "56622398df29fe7b9c1b112807100c135c1430ffdbb15f8c62d4aa6be00211c0",
+          "gov24_SD0000006936": "30b8d4682f4106ec7c1d3c801311ba534cb4fc64f022ec73e57815fa0756d7d7",
+          "gov24_SD0000007672": "96c2151a2b681c869cf182cbb474eca9f0dc66c2259464fcc220972d156a19cc",
+          "gov24_SD0000016095": "199b246d852ce696b8086e295f1f90d25f40a742015a52cc2f764f044c93f45e",
+          "gov24_SME000000100": "ffd3c01d9868bca433fc1b6a6811eeb5e699827d3cbc42cdfb35c0cd6b8016b0",
+          "gov24_SSI000000020": "0efe486b5985f940cfdead5d38c4ef2f12c8a9d3b26bcb3b7f0c6c1eda2c1e09",
+          "gov24_WII000000260": "2b6fcf044f27be9a4371ba9f433682e3122ef9721febc9bbfe53049da8bde4fa",
+          "gov24_WII000000500": "1bda2c12d19215d56049477abc9df73c8f316e046e268399676a4c582b4f14ab",
+          "gov24_WII000001460": "9439e11bd7319e1748280f3f9643590269cfad60336b76857fbe3076ad9591c7"
+        }
+      },
+      "따라하기/answer_drafts.json": {
+        "count": 3,
+        "drafts": 12,
+        "note": "질문·정답 답변·답변 초안은 수업용으로 사람이 쓴 통제 입력이다. retrieved_contexts는 support_docs.json 본문 그대로다. 모델이 만든 답이 아니다.",
+        "text_sha256": {
+          "f1": {
+            "user_input": "998a1e250ba494b43769fdd5f337af41f29e1f50a5de7c486b9c8919c0796038",
+            "reference": "fcc09b24a9e4b675e626bceaa4baaab2bf4daa76bf9b37fc873244b995116f4b",
+            "drafts": {
+              "근거대로": "e330beacbcb9eaec8048c09e60616ad387cc1e6bc26bb970793b18400975f188",
+              "금액_기한_틀림": "71e31264731763db05ec08e98b1ebaf5ad4b8f20cb1c1f6ae3d4d2dd4e858fd7",
+              "근거에_없는_조건_추가": "3d4c509f9c6ae31a7815c074e5be285496c362b614d694a63b35a2f766287c73",
+              "질문과_다른_안내": "74eb7b6ebb2d8199e0ac42215264a8562a3d8302835954bbc54a6f0d47ad060b"
+            }
+          },
+          "f2": {
+            "user_input": "b08997b41be0a2725b630461fc0dbee1a632d8ced076c5daf70a8254de8e31ab",
+            "reference": "ffc9250dc1723e3ded9fc3537db83090d51a9c33a45bec94653ed411afb2b2a5",
+            "drafts": {
+              "근거대로": "cfafb36f3feffb05b16507f4308d03777915210eaa51208693f58b0b39aa41e4",
+              "금액_기한_틀림": "81ef310063fd22a46eaceae6d4d2bca5f62fd503bb6b30a004527c4180132fd6",
+              "근거에_없는_조건_추가": "e5fd8c5ab15c93b26f1f2a4d9a8b37b35a738c110cde654e6ef05e9c3278e72e",
+              "질문과_다른_안내": "33f42ef643f70ea2f79f8e257aa6216e869346c72a680aa2546e407da0b5354f"
+            }
+          },
+          "f3": {
+            "user_input": "2a8b39e978dbb6f70f08c0a6495af458dca7725614f8df97da6ebb0d9ae39f88",
+            "reference": "2a8a5138fc71bba59c46793b0d2a3015b777671db3be58a7423ebc64b4958244",
+            "drafts": {
+              "근거대로": "f9b771a145abb9240afa778cd0434be944f9bf0c79c948f1139b45072e712aa1",
+              "금액_기한_틀림": "41561c35e0980d8ef576544146d520b2d3e5ccb964d2229d16fefe5659b9c179",
+              "근거에_없는_조건_추가": "82f2f2dc2e78bcf9938264647875d3aa63b32df043d9c989cb8ff6ce60d20825",
+              "질문과_다른_안내": "c4a8a9f033884e505de69181fa84dee60ba05da82f1a7f95b799302e602e3c31"
+            }
+          }
+        }
+      },
+      "따라하기/questions.json": {
+        "count": 10,
+        "note": "질문과 정답 답변(주장 2~3개)은 relevant_doc_ids 문서 원문을 보고 새로 썼다.",
+        "reference_notes": {
+          "g1": "주장 1·2는 아동수당(검색 4위), 주장 3은 가정양육수당, 주장 4는 시간제보육(독립반 6~36개월 미만)에 있다.",
+          "g2": "주장 1~3은 출산전후(유산ㆍ사산)휴가 급여(검색 4위), 주장 4는 배우자 출산휴가 급여, 주장 5는 육아휴직급여에 있다.",
+          "g3": "주장 1은 고용보험 미적용자 출산급여, 주장 2·3은 국민연금출산크레딧(검색 4위) 지원내용·신청방법에 있다.",
+          "g4": "주장 1은 양육비 선지급 지원, 주장 2·3은 한부모가족 아동양육비 지원(검색 5위) 선정기준·지원내용에 있다.",
+          "g5": "주장 1은 건강보험 임신·출산 진료비 지원, 주장 2·3은 산모·신생아 건강관리 지원(검색 5위) 지원내용에 있다.",
+          "s1": "주장 1은 산모·신생아 건강관리 지원의 신청방법(신청권자), 주장 2는 지원내용(서비스기간)에 있다. 정답 문서가 검색 1위.",
+          "s2": "주장 1은 첫만남이용권 지원내용, 주장 2는 지원대상의 2024년 이후 출생아 기간에 있다. 정답 문서가 검색 1위.",
+          "s3": "주장 1·2는 난임치료휴가 급여 지원내용에 있다. 정답 문서가 검색 1위.",
+          "s4": "주장 1은 지원대상, 주장 2는 지원내용에 있다. 정답 문서가 검색 1위.",
+          "s5": "주장 1은 지원내용, 주장 2는 지원대상·선정기준에 있다. 정답 문서가 검색 1위."
+        },
+        "text_sha256": {
+          "g1": {
+            "question": "4c97f3b55c95bdf850fe12d5c5b193c9c89d189e32c7f4d232b77f4894fbe4d5",
+            "reference": "45c14edc1556b30d1db3c130fef909c877f20be4a0af415b0b2dd3fd1cf400d5"
+          },
+          "g2": {
+            "question": "6393c99d8845c02ee6da45b88433694e4cd811e5e68076eef636860fbf6c9c8b",
+            "reference": "78db8bd61e78931f79f607daa95eb8f7cedf1f83d5d961795a58927acd1e335c"
+          },
+          "g3": {
+            "question": "b226d5b3d4878a4a3f7e8111166d5a6a6cbc2124ab5de51db37024425771cee2",
+            "reference": "3f2aae435d153a7d54beec5a34e1487fcbb6e08ed1e9246f2724f2af5320786b"
+          },
+          "g4": {
+            "question": "5171d8678d8ec060c3e8d3a5c21576e367199fa25b8641ad046c83c4cec55c27",
+            "reference": "645cd0821bc9130f90036a9c86b1b7a48a847b07a051c9e4a91ce84ebb045755"
+          },
+          "g5": {
+            "question": "07e4ca4ebca7aebc6e4f1b17bc4f4cd67b09ff69894f4e3073c008aa19ec6eeb",
+            "reference": "3db74cf4d1577925f4112a46c8e2c15eb6f01b5a3deb1cc03d99d8f5bbd45ee8"
+          },
+          "s1": {
+            "question": "48754a352d46b0d13af004b89172cea3f88186176217ebf37b0015e7ea996d0a",
+            "reference": "49b1f2222ec811847b44a2aea741921b16995ab84d8d31b864471b6aac1a6363"
+          },
+          "s2": {
+            "question": "601878fab1c16aa897e032e22789c594ed3eb2e7a01f9ff2b0f88dfc900b5829",
+            "reference": "bf2c8f83245511c2d357a49cdf934565c5eab87cb7fb3722fde64f6aace7075e"
+          },
+          "s3": {
+            "question": "70fec41fb45f5af2e48a1f0003d2d006d6aafb2e666f6f71b8dff8d96afe27b9",
+            "reference": "15eb93196e8848334cae07d4c6a71ac284229d434e42350128c7493a5043b60c"
+          },
+          "s4": {
+            "question": "10b2458982a075778fb9b53e08401f7b7b2633d73eb1a0f43a203f4ec36b890b",
+            "reference": "428c1547283e86b0fab5992d05cb2124417a1299f93148c6d566ae183a13e075"
+          },
+          "s5": {
+            "question": "473b84d34d2df44e1d7d59f8c13a838e787e088b1d721337748ac7377d976f4e",
+            "reference": "487287e69976ff010f664121474e96740bb341d1b98a13142ee9a2ba1175ace9"
+          }
+        }
+      }
+    }
+  }
+}

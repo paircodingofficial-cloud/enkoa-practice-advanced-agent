@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+output/
+.DS_Store
+.env
+
+# 그림 후보·작업 파일(배포 제외)
+images/_candidates/
+images/_old_terms/

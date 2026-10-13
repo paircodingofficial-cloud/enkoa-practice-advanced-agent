@@ -18,6 +18,7 @@
 | **day56** | 멀티에이전트 관측·실패 처리 | **Langfuse**로 멀티에이전트 실행을 trace 로 남겨 궤적에서 원인을 찾고, 핑퐁 반복·재시도(`RetryPolicy`)·노드 타임아웃을 막습니다. 병렬 작업의 부분 실패와 폴백, 체크포인트에서 이어 하기와 분기 실행(fork)을 다루고, 병원 예약 상담 팀 관측과 택배 지연 대응 팀 실패 처리 과제로 적용합니다 |
 | **day57** | GraphRAG 변형 비교 | **Microsoft GraphRAG**(`graphrag` 3.1.0)로 관광지 안내문을 색인해 개체·관계·계층 커뮤니티·커뮤니티 보고서를 만들고 **Basic·Local·Global·DRIFT** 네 검색이 답변 모델에 넘긴 근거를 비교합니다. 이어서 **LightRAG**(`lightrag-hku` 1.5.7)로 구체·주제 키워드 검색과 문서 추가·삭제를 다루고, 부록에서 LazyGraphRAG·HippoRAG 2 와 네 방식의 비용·근거를 질문 유형(단일 사실·멀티홉·전역)별로 비교합니다. 과제는 의약품 안내문에 두 방식을 적용합니다 |
 | **day58** | RAG 아키텍처 설계 | 임베딩 모델·검색 전략·벡터 저장소를 리더보드 순위나 기본값이 아니라 같은 평가셋으로 고릅니다. 교안 01은 MTEB(kor) 후보와 BM25를 **Recall@5·MRR·걸린 시간·비용·잘림 비율**로 비교하고 차원과 정밀도를 낮춰 저장 공간을 줄입니다. 교안 02는 질문 유형(묘사·이름·조건·관계·집계)마다 검색 전략을 측정하고, 그 전략에 필요한 질의로 벡터 저장소(**pgvector**)를 고른 뒤 정확도·지연·비용·저장 공간 네 축을 **제약·지배 제거·가중 점수·민감도** 순서로 종합해 결정을 **ADR**로 남깁니다. 과제는 의약품 안내문에 같은 절차를 적용합니다 |
+| **day59** | LLM 평가·RAGAS | RAG 답변과 검색 결과를 **RAGAS**(`ragas` 0.4.3) 지표 6종으로 평가합니다. 교안 01은 결함을 일부러 넣은 답변으로 **Faithfulness·Answer Relevancy·Answer Correctness**가 결함마다 어떻게 떨어지는지 보고, 두 지표를 함께 읽어 결함 종류와 고칠 곳을 가립니다. 교안 02는 **Context Precision·Context Recall·Context Relevancy**를 더해 지표 6개의 합격선 판정과 기준선 비교로 RAG의 고장 위치(검색·생성)를 진단합니다. 과제는 의약품 상담 도우미에 같은 절차를 적용합니다 |
 
 ---
 
@@ -68,6 +69,8 @@ day56은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_K
 day57은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`와 `TYPESAFE_API_KEY`를 넣습니다. 색인이 오래 걸리면 교안의 색인 셀 대신 미리 만든 색인을 복사하는 셀을 실행합니다(`data/*/prebuilt/`). `output/`에는 강사가 실행해 둔 교안 01·02 본실습 색인이 들어 있습니다. 교안 02 함께 따라하기는 day48과 같은 Qwen3-Reranker-0.6B를 씁니다.
 
 day58은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`(교안 01 임베딩, 약 7센트)와 `SUPABASE_DB_URL`(교안 02)을 넣습니다. Supabase 주소 만드는 법은 [Supabase_접속_주소_만들기.md](day58_RAG_아키텍처_설계/Supabase_접속_주소_만들기.md)에 있습니다. 과제 02는 내 PC의 Neo4j(2026.06 이상) 접속 정보(`NEO4J_URI`, `NEO4J_USER`, `NEO4J_PASSWORD`)도 넣습니다. 교안 01은 로컬 임베딩 모델 `intfloat/multilingual-e5-small`(약 0.5GB)과 `nlpai-lab/KURE-v1`(약 2.3GB)을 내려받으므로 수업 전에 첫 코드 셀만 먼저 실행해 두세요.
+
+day59는 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`를 넣습니다. 평가용 LLM은 코드 기본값 `gpt-6-luna`를 쓰므로 따로 적지 않아도 됩니다(ragas 0.4.3은 `gpt-5.6-luna`처럼 버전에 소수점이 든 이름에서 요청 오류가 납니다). 교안 02·과제 02는 미리 만든 Chroma DB(`data/*/chroma/`)를 그대로 여니 폴더를 통째로 둡니다. 평가 셀은 평가용 LLM을 동시에 호출하며 상한은 `MAX_CONCURRENCY = 32`입니다. 429 오류가 나면 이 값을 줄입니다.
 
 ## 폴더 구성
 

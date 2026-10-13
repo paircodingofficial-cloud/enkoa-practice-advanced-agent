@@ -1,0 +1,167 @@
+{
+  "description": "day59 과제 02 데이터 출처. scripts/day59_build/build_gwaje02_data.py가 만든다.",
+  "original": {
+    "title": "식품의약품안전처 의약품개요정보(e약은요)",
+    "url": "https://www.data.go.kr/data/15075057/openapi.do",
+    "license": "공공누리 제1유형(출처표시)",
+    "derived_from": "day58_RAG_아키텍처_설계/data/과제/docs.jsonl",
+    "derived_from_sha256": "aecac5eaeb3ba129b9abeead7dca168cced5e52766ea40258e0a4fd529e137d0",
+    "doc_count": 394
+  },
+  "chroma": {
+    "collection": "drug_guides",
+    "embedding_model": "text-embedding-3-large",
+    "dimensions": 768,
+    "distance": "cosine",
+    "document": "제목 + 줄바꿈 + 안내문(text), 문서 하나가 레코드 하나",
+    "metadata": [
+      "source_id",
+      "title",
+      "manufacturer",
+      "form",
+      "efficacy_group"
+    ]
+  },
+  "golden_set": {
+    "written_by": "API로 생성하지 않고 안내문 원문과 대조해 작성",
+    "documents": [
+      {
+        "doc_id": "drug_195900043",
+        "title": "아네모정",
+        "page_content_sha256": "13dcb4334ed67dae9f4dc978784868f49410b7d446a9c9f1cd62384fedb289a0"
+      },
+      {
+        "doc_id": "drug_195900045",
+        "title": "자모",
+        "page_content_sha256": "3eb01b075f01c97c3ed50fbf7e0f603c19078305be33e6eb2ecaa5d0404f38fd"
+      },
+      {
+        "doc_id": "drug_197600412",
+        "title": "로프민캡슐(로페라미드염산염)",
+        "page_content_sha256": "1c54bd2d7d5acbce585adfba5491c24e79b48231477a1f5ad3b8394a68422c56"
+      },
+      {
+        "doc_id": "drug_197600483",
+        "title": "신일비사코딜정",
+        "page_content_sha256": "f623649f40b3ffddc870df757226c7261e4e0fac50747757d9f073e87d7cbd30"
+      },
+      {
+        "doc_id": "drug_198400661",
+        "title": "아락실과립",
+        "page_content_sha256": "f428ce72f993cbfe3f2688aa3542acc72a0230c7a7eb315d7f7f77d1c9a6f982"
+      },
+      {
+        "doc_id": "drug_198500893",
+        "title": "에세푸릴캡슐(니푸록사지드)",
+        "page_content_sha256": "15f51331253625f3cb1a0171353c469cfbf574d49baa0a917b356247460eab3f"
+      },
+      {
+        "doc_id": "drug_198700152",
+        "title": "베노플러스겔(수출명:베노포르테겔,트롬보실겔)",
+        "page_content_sha256": "d517f1b0165bba80c3463a09d6f78c3b39c27249310aac3cf2b6f75ccea80cd2"
+      },
+      {
+        "doc_id": "drug_199500435",
+        "title": "엘도스캡슐(에르도스테인)",
+        "page_content_sha256": "4fd66419654fef2bba21a0f46c56948ad5c2004b923d73dec5befdf0491d74c1"
+      },
+      {
+        "doc_id": "drug_199806985",
+        "title": "씨메탈시정",
+        "page_content_sha256": "5b99d3b89a617faa928d5a6e1f3ef41edd83cb036757f72d0de9fd08b638bf88"
+      }
+    ],
+    "claims": [
+      {
+        "question_id": "g1",
+        "doc_id": "drug_195900043",
+        "claim": "아네모정은 성인이 1회 2정을 1일 3회 식간(식사와 식사 사이) 및 취침 시에 복용합니다.",
+        "evidence": "성인 1회 2정, 1일 3회 식간(식사와 식사때 사이) 및 취침시에 복용합니다."
+      },
+      {
+        "question_id": "g1",
+        "doc_id": "drug_195900043",
+        "claim": "위장진통·진경제, 테트라사이클린계 항생제와 함께 복용하지 않습니다.",
+        "evidence": "위장진통ㆍ진경제, 테트라사이클린계 항생제와 함께 복용하지 마십시오."
+      },
+      {
+        "question_id": "g2",
+        "doc_id": "drug_197600483",
+        "claim": "신일비사코딜정은 이뇨제, 부신피질호르몬제, 다형성 심실빈맥을 초래하는 약물, 제산제와 함께 복용하지 않습니다.",
+        "evidence": "이뇨제, 부신피질호르몬제, 다형성 심실빈맥을 초래하는 약물, 제산제와 함께 복용하지 마십시오."
+      },
+      {
+        "question_id": "g2",
+        "doc_id": "drug_197600483",
+        "claim": "신일비사코딜정은 우유를 섭취한 뒤 1시간 이내에는 복용하지 않습니다.",
+        "evidence": "우유 섭취 후 1시간 이내에 이 약을 복용하지 마십시오."
+      },
+      {
+        "question_id": "g2",
+        "doc_id": "drug_198400661",
+        "claim": "아락실과립은 강심배당체와 함께 복용할 때 의사 또는 약사와 상의해야 합니다.",
+        "evidence": "강심배당체를 함께 복용 시 의사 또는 약사와 상의하십시오."
+      },
+      {
+        "question_id": "g3",
+        "doc_id": "drug_199806985",
+        "claim": "씨메탈시정은 15세 이상~80세 미만 성인이 1회 2정씩 1일 3회까지 복용하며, 1일 3회(6정)를 초과하여 복용하지 않습니다.",
+        "evidence": "15세 이상~80세 미만 성인은 1회 2정씩 복용합니다.필요시 4시간 간격으로 1회 2정씩, 1일 3회까지 복용할 수 있습니다.단, 1일 3회(6정)을 초과하여 복용하지 마십시오."
+      },
+      {
+        "question_id": "g3",
+        "doc_id": "drug_199806985",
+        "claim": "복용하는 동안 스테로이드제, 항생물질, 항암제, 아졸계 항진균제, 다른 위장약과 함께 복용하지 않습니다.",
+        "evidence": "상호작용: 스테로이드제, 항생물질, 항암제, 아졸계 항진균제, 다른 위장약과 함께 복용하지 마십시오."
+      },
+      {
+        "question_id": "g3",
+        "doc_id": "drug_199806985",
+        "claim": "복용 중에는 알코올성 음료를 피합니다.",
+        "evidence": "복용 중에는 알코올성 음료를 피하십시오."
+      },
+      {
+        "question_id": "g4",
+        "doc_id": "drug_198700152",
+        "claim": "베노플러스겔을 쿠마린, 아스피린 같은 다른 혈액응고저지제와 함께 사용하면 출혈이 증가할 수 있습니다.",
+        "evidence": "다른 혈액응고저지제(예, 쿠마린, 아스피린, 디피리다몰, 덱스트란, 스트렙토키나제 등)와 함께 사용 시 출혈이 증가 할 수 있으므로"
+      },
+      {
+        "question_id": "g4",
+        "doc_id": "drug_198700152",
+        "claim": "그래서 함께 사용할 때는 의사 또는 약사와 상의해야 합니다.",
+        "evidence": "출혈이 증가 할 수 있으므로 의사 또는 약사와 상의하십시오."
+      },
+      {
+        "question_id": "g5",
+        "doc_id": "drug_199500435",
+        "claim": "엘도스캡슐은 기침약을 복용 중인 사람이면 의사 또는 약사와 상의해야 합니다.",
+        "evidence": "기침약을 복용중인 사람은 의사 또는 약사와 상의하십시오."
+      },
+      {
+        "question_id": "g5",
+        "doc_id": "drug_195900045",
+        "claim": "자모를 복용하는 동안에는 다른 진해거담제, 감기약, 항히스타민제를 함유하는 내복약, 진정제 등을 복용하지 않습니다.",
+        "evidence": "이 약을 복용하는 동안 다른 진해거담제, 감기약, 항히스타민제를 함유하는 내복약(비염용 경구제, 멀미약, 알레르기용약), 진정제 등을 복용하지 마십시오."
+      },
+      {
+        "question_id": "g6",
+        "doc_id": "drug_197600412",
+        "claim": "로프민캡슐은 퀴니딘, 리토나비르와 함께 복용할 때 의사 또는 약사와 상의해야 합니다.",
+        "evidence": "퀴니딘, 리토나비르와 함께 복용 시 의사 또는 약사와 상의하십시오."
+      },
+      {
+        "question_id": "g6",
+        "doc_id": "drug_197600412",
+        "claim": "로프민캡슐은 복용 후 피로, 어지러움, 졸음이 나타날 수 있어 운전 또는 기계조작 시 주의해야 합니다.",
+        "evidence": "복용 후에 피로, 어지러움, 졸음이 나타날 수 있으므로 운전 또는 기계조작 시 주의하십시오."
+      },
+      {
+        "question_id": "g6",
+        "doc_id": "drug_198500893",
+        "claim": "에세푸릴캡슐을 먹는 동안에는 설사 중 생야채, 과일, 녹색채소, 매운 음식과 얼린 음식 및 음료를 피하고 가능한 익힌 음식(고기, 쌀)을 섭취합니다.",
+        "evidence": "설사 중 생야채, 과일, 녹색채소, 매운 음식과 얼린 음식 및 음료를 피하고 가능한 익힌 음식(고기, 쌀)을 섭취하십시오."
+      }
+    ]
+  }
+}
