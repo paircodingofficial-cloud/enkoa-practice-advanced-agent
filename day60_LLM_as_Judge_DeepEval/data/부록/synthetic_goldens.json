@@ -1,0 +1,245 @@
+[
+    {
+        "input": "환불은 어떻게 신청하나요?",
+        "actual_output": null,
+        "expected_output": "프런트에서 신청서를 작성하시면 환불이 처리됩니다.",
+        "retrieval_context": null,
+        "context": [
+            "불은 프런트에서 신청서를 작성해야 처리됩니다.\n- 환불 금액은 신청한 날부터 7영업"
+        ],
+        "name": null,
+        "comments": null,
+        "source_file": "data/부록/fitplus_guide.md",
+        "tools_called": null,
+        "expected_tools": null,
+        "token_cost": null,
+        "input_token_count": null,
+        "output_token_count": null,
+        "additional_metadata": {
+            "evolutions": [],
+            "synthetic_input_quality": 0.7,
+            "context_source_files": [
+                "data/부록/fitplus_guide.md"
+            ],
+            "used_source_files": []
+        },
+        "custom_column_key_values": null,
+        "expectations": null
+    },
+    {
+        "input": "락커키를 잃어버렸는데 어떻게 해야 하나요?",
+        "actual_output": null,
+        "expected_output": "락커 열쇠를 잃어버리면 교체 비용 1만 원을 내야 합니다.",
+        "retrieval_context": null,
+        "context": [
+            "�를 가져와야 합니다.\n- 락커 열쇠를 잃어버리면 교체 비용 1만 원을 냅니다.\n\n## 시설\n\n- �"
+        ],
+        "name": null,
+        "comments": null,
+        "source_file": "data/부록/fitplus_guide.md",
+        "tools_called": null,
+        "expected_tools": null,
+        "token_cost": null,
+        "input_token_count": null,
+        "output_token_count": null,
+        "additional_metadata": {
+            "evolutions": [],
+            "synthetic_input_quality": 1.0,
+            "context_source_files": [
+                "data/부록/fitplus_guide.md"
+            ],
+            "used_source_files": []
+        },
+        "custom_column_key_values": null,
+        "expectations": null
+    },
+    {
+        "input": "헬스장 어떻게 이용하나요?",
+        "actual_output": null,
+        "expected_output": "안내 문서를 참고하여 헬스장 이용 방법을 확인하실 수 있습니다.",
+        "retrieval_context": null,
+        "context": [
+            "다.\n"
+        ],
+        "name": null,
+        "comments": null,
+        "source_file": "data/부록/fitplus_guide.md",
+        "tools_called": null,
+        "expected_tools": null,
+        "token_cost": null,
+        "input_token_count": null,
+        "output_token_count": null,
+        "additional_metadata": {
+            "evolutions": [],
+            "synthetic_input_quality": 0.9,
+            "context_source_files": [
+                "data/부록/fitplus_guide.md"
+            ],
+            "used_source_files": []
+        },
+        "custom_column_key_values": null,
+        "expectations": null
+    },
+    {
+        "input": "주말에 핏플러스 강남점은 몇 시까지 이용할 수 있나요?",
+        "actual_output": null,
+        "expected_output": "주말에는 오전 9시부터 오후 6시까지 이용할 수 있습니다.",
+        "retrieval_context": null,
+        "context": [
+            "토요일과 일요일 운영 시간은 오전 9시부터 오후 6시까지입니다.\n- 공휴일에는 주말과 "
+        ],
+        "name": null,
+        "comments": null,
+        "source_file": "data/부록/fitplus_guide.md",
+        "tools_called": null,
+        "expected_tools": null,
+        "token_cost": null,
+        "input_token_count": null,
+        "output_token_count": null,
+        "additional_metadata": {
+            "evolutions": [],
+            "synthetic_input_quality": 0.3,
+            "context_source_files": [
+                "data/부록/fitplus_guide.md"
+            ],
+            "used_source_files": []
+        },
+        "custom_column_key_values": null,
+        "expectations": null
+    },
+    {
+        "input": "개인 락커 신청 방법 알려주세요.",
+        "actual_output": null,
+        "expected_output": "개인 락커는 3개월 이상 회원만 한 달에 1만 원에 신청할 수 있습니다.",
+        "retrieval_context": null,
+        "context": [
+            "동복\n\n- 개인 락커는 한 달에 1만 원에 빌릴 수 있습니다.\n- 개인 락커는 3개월 이상 회원"
+        ],
+        "name": null,
+        "comments": null,
+        "source_file": "data/부록/fitplus_guide.md",
+        "tools_called": null,
+        "expected_tools": null,
+        "token_cost": null,
+        "input_token_count": null,
+        "output_token_count": null,
+        "additional_metadata": {
+            "evolutions": [],
+            "synthetic_input_quality": 0.5,
+            "context_source_files": [
+                "data/부록/fitplus_guide.md"
+            ],
+            "used_source_files": []
+        },
+        "custom_column_key_values": null,
+        "expectations": null
+    },
+    {
+        "input": "요가 단체 수업은 이번 주에 언제 들을 수 있나요?",
+        "actual_output": null,
+        "expected_output": "요가 단체 수업은 평일 오전 10시와 오후 8시에 들을 수 있습니다.",
+        "retrieval_context": null,
+        "context": [
+            "�면 추가 비용 없이 들을 수 있습니다.\n- 단체 수업은 평일 오전 10시와 오후 8시에 열립니다.\n"
+        ],
+        "name": null,
+        "comments": null,
+        "source_file": "data/부록/fitplus_guide.md",
+        "tools_called": null,
+        "expected_tools": null,
+        "token_cost": null,
+        "input_token_count": null,
+        "output_token_count": null,
+        "additional_metadata": {
+            "evolutions": [],
+            "synthetic_input_quality": 0.4,
+            "context_source_files": [
+                "data/부록/fitplus_guide.md"
+            ],
+            "used_source_files": []
+        },
+        "custom_column_key_values": null,
+        "expectations": null
+    },
+    {
+        "input": "일시 정지 신청은 어떻게 하나요?",
+        "actual_output": null,
+        "expected_output": "일시 정지는 시작일 하루 전까지 프런트나 앱에서 신청할 수 있습니다.",
+        "retrieval_context": null,
+        "context": [
+            "�지 일시 정지할 수 있습니다.\n- 일시 정지는 시작일 하루 전까지 프런트나 앱에서 신청"
+        ],
+        "name": null,
+        "comments": null,
+        "source_file": "data/부록/fitplus_guide.md",
+        "tools_called": null,
+        "expected_tools": null,
+        "token_cost": null,
+        "input_token_count": null,
+        "output_token_count": null,
+        "additional_metadata": {
+            "evolutions": [],
+            "synthetic_input_quality": 0.3,
+            "context_source_files": [
+                "data/부록/fitplus_guide.md"
+            ],
+            "used_source_files": []
+        },
+        "custom_column_key_values": null,
+        "expectations": null
+    },
+    {
+        "input": "지하 주차장 2시간 무료 주차는 어떻게 이용하나요?",
+        "actual_output": null,
+        "expected_output": "회원은 건물 지하 주차장을 이용할 때 2시간 무료 주차가 가능합니다.",
+        "retrieval_context": null,
+        "context": [
+            "## 주차와 출입\n\n- 건물 지하 주차장을 이용하면 회원은 2시간 무료로 주차할 수 있습니다.\n"
+        ],
+        "name": null,
+        "comments": null,
+        "source_file": "data/부록/fitplus_guide.md",
+        "tools_called": null,
+        "expected_tools": null,
+        "token_cost": null,
+        "input_token_count": null,
+        "output_token_count": null,
+        "additional_metadata": {
+            "evolutions": [],
+            "synthetic_input_quality": 0.35,
+            "context_source_files": [
+                "data/부록/fitplus_guide.md"
+            ],
+            "used_source_files": []
+        },
+        "custom_column_key_values": null,
+        "expectations": null
+    },
+    {
+        "input": "헬스장 내에서 촬영이 가능한지, 촬영 규칙이 어떻게 되나요?",
+        "actual_output": null,
+        "expected_output": "안내 문서에 따르면 헬스장 내에서 회원을 촬영하면 안 되며, 규칙을 반복해서 어기면 회원권 이용이 제한될 수 있습니다.",
+        "retrieval_context": null,
+        "context": [
+            "� 회원을 촬영하면 안 됩니다.\n- 규칙을 반복해서 어기면 회원권 이용이 제한될 수 있습니"
+        ],
+        "name": null,
+        "comments": null,
+        "source_file": "data/부록/fitplus_guide.md",
+        "tools_called": null,
+        "expected_tools": null,
+        "token_cost": null,
+        "input_token_count": null,
+        "output_token_count": null,
+        "additional_metadata": {
+            "evolutions": [],
+            "synthetic_input_quality": 0.2,
+            "context_source_files": [
+                "data/부록/fitplus_guide.md"
+            ],
+            "used_source_files": []
+        },
+        "custom_column_key_values": null,
+        "expectations": null
+    }
+]

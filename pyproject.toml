@@ -114,8 +114,8 @@ dependencies = [
     "openai>=2,<3",
     #   평가 작업을 동시에 실행할 때 진행 막대를 보여 주는 tqdm_asyncio 를 직접 import 한다(ragas 가 함께 설치하지만 직접 선언한다).
     "tqdm>=4.66",
-    # day60: LLM-as-Judge 와 테스트 케이스 평가. 교안의 API·점수 해석을 확인한 버전으로 고정한다.
-    "deepeval==4.1.1",
+    # day60: LLM-as-Judge 와 DeepEval. 부록의 JevEval(4.2.5부터)·PromptOptimizer 를 확인한 버전으로 고정한다.
+    "deepeval==4.2.9",
 ]
 
 [tool.uv]

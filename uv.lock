@@ -834,7 +834,7 @@ wheels = [
 
 [[package]]
 name = "deepeval"
-version = "4.1.1"
+version = "4.2.9"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
@@ -859,7 +859,6 @@ dependencies = [
     { name = "questionary" },
     { name = "requests" },
     { name = "rich" },
-    { name = "sentry-sdk" },
     { name = "setuptools" },
     { name = "tabulate" },
     { name = "tenacity" },
@@ -867,9 +866,9 @@ dependencies = [
     { name = "typer" },
     { name = "wheel" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/23/df/c2a2d90ad772c9d8d7fedc8d52a140298e693eac68dba3f3d2d4ba6a51fb/deepeval-4.1.1.tar.gz", hash = "sha256:97cc33366ed8d271bc53c245eeaf4b0f3ff19875b47a9908c64da930f0293c38", size = 765865, upload-time = "2026-07-16T14:06:25.671Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6c/04/2e0fea518476c80325d88cbb49ae071987d3c0dee69ea6f7f244460f70dc/deepeval-4.2.9.tar.gz", hash = "sha256:fae6793ed195fbefd5f41ca0ba3783b8bf497cbcbb0a7071aebb1ee090541be3", size = 1048720, upload-time = "2026-10-15T03:20:31.231Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/62/2e/fd14e7dcf7798d22c23e487b3af81247cd76d041c4491c4b32162df97d5f/deepeval-4.1.1-py3-none-any.whl", hash = "sha256:653ceaf59d6d48c679d182d10a8c7d8358e43022eb3cbbcefc5ec80059f72114", size = 1097406, upload-time = "2026-07-16T14:06:27.778Z" },
+    { url = "https://files.pythonhosted.org/packages/3c/2f/2e7642444102b049e51419abc4f532c90b2b8d47bb8c752010047c084b71/deepeval-4.2.9-py3-none-any.whl", hash = "sha256:0d6c9812c73ae08514f188e4f0a7eae20c4ff063cf0914d1b80d604ab1dde3f4", size = 1515612, upload-time = "2026-10-15T03:20:33.065Z" },
 ]
 
 [[package]]
@@ -1053,7 +1052,7 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "chromadb", specifier = "==1.5.9" },
-    { name = "deepeval", specifier = "==4.1.1" },
+    { name = "deepeval", specifier = "==4.2.9" },
     { name = "en-core-web-sm", url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl" },
     { name = "fastembed", specifier = "==0.8.0" },
     { name = "flagembedding", specifier = "==1.4.2" },
@@ -4806,19 +4805,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/b6/2d/37e3da037318a70066ded0d51bc2a7f35491ae6338dd993d5eb1503fc3b5/sentencepiece-0.2.2-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:c8a168b040bc61681293f79a949b5d911c8e25086f4260285b8d97ab5f1195da", size = 1397736, upload-time = "2026-07-12T08:38:35.771Z" },
     { url = "https://files.pythonhosted.org/packages/8d/11/753fca2e6b109be3ab7867abf357dfe48677fe726ae5a5363d0b54ca9450/sentencepiece-0.2.2-cp312-cp312-win_amd64.whl", hash = "sha256:7c6e7bf684dc12145bfa685d3060beaea55139134ba848289bee514ed42e7383", size = 1248030, upload-time = "2026-07-12T08:38:37.604Z" },
     { url = "https://files.pythonhosted.org/packages/e2/0a/70efbe861ca182d7d4b6e1a20f58e043400848fa9f2915229f082e221648/sentencepiece-0.2.2-cp312-cp312-win_arm64.whl", hash = "sha256:76ff5814db72e7462dece042d7593cdf102b8ec82c2b1cc201a2add34ee3050d", size = 1187325, upload-time = "2026-07-12T08:38:39.348Z" },
-]
-
-[[package]]
-name = "sentry-sdk"
-version = "2.72.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "certifi" },
-    { name = "urllib3" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/26/c1/d2bbb2b03bdc2ef14b35e02b647b8489156c50b6e0b8bacc5fa303902e23/sentry_sdk-2.72.0.tar.gz", hash = "sha256:0d2ffbc28ee2e63cbaf3d015e93b448cffcc3ef3be03a44704ad36ade72faa95", size = 1069699, upload-time = "2026-10-12T13:08:11.195Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/d0/0b/0dd9686842d9dc49c3ee84cced31c54bceb0fb52a826be7d3d4fe30d882a/sentry_sdk-2.72.0-py3-none-any.whl", hash = "sha256:3e13ace4ffd0b3cc78288236edfc4e4bd90eb12a396cc5845fa10a58ff289f50", size = 544754, upload-time = "2026-10-12T13:08:01.619Z" },
 ]
 
 [[package]]
