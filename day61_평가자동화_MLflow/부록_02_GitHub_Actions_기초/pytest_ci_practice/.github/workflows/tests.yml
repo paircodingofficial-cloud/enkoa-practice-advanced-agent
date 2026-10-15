@@ -1,0 +1,29 @@
+name: tests                                       # Actions 탭과 검사 영역에 보일 워크플로 이름
+
+on:                                               # 이 워크플로를 실행할 이벤트
+  push:                                           # 브랜치에 커밋을 올릴 때
+    branches: [main]                              # 그중 main 브랜치에 올릴 때만
+  pull_request:                                   # pull request를 열거나 커밋을 더할 때
+  workflow_dispatch:                              # Actions 탭의 Run workflow 버튼을 누를 때
+
+jobs:                                             # 할 작업 목록(작업마다 새 러너에서 따로 실행)
+  pytest:                                         # 작업 이름. 실행 화면과 검사 영역에 이 이름으로 보임
+    runs-on: ubuntu-latest                        # 러너: GitHub가 빌려주는 최신 우분투 가상 컴퓨터
+    timeout-minutes: 10                           # 10분이 지나도 안 끝나면 작업을 멈춤
+    steps:                                        # 차례로 실행할 단계(앞 단계가 실패하면 뒤는 건너뜀)
+      - name: 저장소 받기                         # 단계 이름. 실행 로그에 이 이름으로 보임
+        uses: actions/checkout@v7                 # 남이 만든 액션 실행: 저장소 코드를 러너로 내려받음
+      - name: uv 설치
+        uses: astral-sh/setup-uv@v10.2.0          # 남이 만든 액션 실행: 러너에 uv 설치(@ 뒤는 버전)
+        with:                                     # 액션에 넘기는 값(받는 값은 액션 README에 있음)
+          python-version: "3.12"                  # uv가 쓸 파이썬 버전
+      - name: 라이브러리 설치
+        run: uv sync --locked                     # 명령 실행: uv.lock에 적힌 버전 그대로 설치
+      - name: 비밀 변수 확인
+        env:                                      # 이 단계에서만 쓰는 환경변수
+          DEMO_TOKEN: ${{ secrets.DEMO_TOKEN }}   # 등록한 비밀 변수의 값(4-2에서 등록)
+        run: |                                    # | 다음 줄부터 들여 쓴 여러 줄을 차례로 실행
+          echo "DEMO_TOKEN 값: $DEMO_TOKEN"
+          echo "DEMO_TOKEN 길이: ${#DEMO_TOKEN}"  # ${#변수}는 셸에서 값의 글자 수
+      - name: 테스트
+        run: uv run pytest -v tests               # 명령 실행: 테스트. 하나라도 실패하면 작업 실패

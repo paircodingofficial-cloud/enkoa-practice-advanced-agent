@@ -1,0 +1,7 @@
+{
+  "collection": "hr_manual",
+  "model": "text-embedding-3-large",
+  "dimensions": 768,
+  "count": 44,
+  "fingerprint": "c173e46b6de4e2b649e12d76a9cc66e2b5a2e7bbb6782bd9731e3bd227d573eb"
+}

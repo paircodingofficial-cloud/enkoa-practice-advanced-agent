@@ -1,0 +1,15 @@
+[project]
+name = "pytest-ci-practice"
+version = "0.1.0"
+description = "day61 부록 연습 프로젝트: 인용 검사와 회귀 게이트 규칙의 pytest 테스트, GitHub Actions"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pytest==9.1.1",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+# 저장소 최상위를 import 경로에 넣어 tests/ 안에서 citation_check, gate_rules 를 바로 불러옵니다.
+pythonpath = ["."]

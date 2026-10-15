@@ -1,0 +1,145 @@
+{
+ "notice": "루나와 소속사, 팬미팅, 굿즈, 일정, 금액은 모두 수업용 가상 자료입니다.",
+ "persona_from": "day60_LLM_as_Judge_DeepEval/data/본실습/luna_guide.json (L1~L8)",
+ "docs_from_day62": [
+  "profile-01",
+  "song-02",
+  "notice-fm",
+  "faq-goods",
+  "faq-fanclub",
+  "notice-safety"
+ ],
+ "docs_written_for_day61": [
+  "song-01",
+  "notice-fm-refund",
+  "notice-fm-entry",
+  "broadcast-replay",
+  "faq-letter",
+  "faq-app",
+  "policy-fanart",
+  "goods-lightstick"
+ ],
+ "docs_sha256": "33294690825bf5c6f835ba5949930508134599aa541aed30f908d34c21011c08",
+ "embedding": {
+  "model": "text-embedding-3-large",
+  "dimensions": 768,
+  "collection": "luna_guides",
+  "builder": "build/build_chroma.py"
+ },
+ "golden_claims": [
+  {
+   "case_id": "fan-01",
+   "evidence": [
+    {
+     "doc_id": "notice-fm",
+     "sentence": "2026년 11월 8일 오후 7시 루미너스홀에서 시작한다"
+    }
+   ]
+  },
+  {
+   "case_id": "fan-02",
+   "evidence": [
+    {
+     "doc_id": "faq-fanclub",
+     "sentence": "연회비는 33,000원이다"
+    }
+   ]
+  },
+  {
+   "case_id": "fan-03",
+   "evidence": [
+    {
+     "doc_id": "faq-goods",
+     "sentence": "주문 후 3~5영업일 안에 배송되고"
+    }
+   ]
+  },
+  {
+   "case_id": "fan-04",
+   "evidence": [
+    {
+     "doc_id": "song-02",
+     "sentence": "공식 응원법은 후렴의 '루나, 루미!' 구호를 두 번 외치는 것이다"
+    }
+   ]
+  },
+  {
+   "case_id": "fan-05",
+   "evidence": [
+    {
+     "doc_id": "broadcast-replay",
+     "sentence": "끝난 뒤 7일 동안 공식 앱에서 다시 볼 수 있다"
+    }
+   ]
+  },
+  {
+   "case_id": "fan-06",
+   "evidence": [
+    {
+     "doc_id": "faq-goods",
+     "sentence": "받은 날부터 7일 안에 뜯지 않은 상품만 교환·환불할 수 있다"
+    }
+   ]
+  },
+  {
+   "case_id": "fan-07",
+   "evidence": [
+    {
+     "doc_id": "notice-fm-refund",
+     "sentence": "관람일 10일 전까지 취소하면 전액 환불된다"
+    },
+    {
+     "doc_id": "notice-fm-refund",
+     "sentence": "관람일 9일 전부터 3일 전까지는 취소 수수료 30%를 뗀 금액을 환불하고"
+    }
+   ]
+  },
+  {
+   "case_id": "fan-08",
+   "evidence": [
+    {
+     "doc_id": "notice-fm",
+     "sentence": "팬클럽 선예매는 10월 20일 오후 8시"
+    },
+    {
+     "doc_id": "faq-fanclub",
+     "sentence": "선예매는 회원 계정으로 로그인해야 열리며"
+    }
+   ]
+  },
+  {
+   "case_id": "fan-09",
+   "evidence": [
+    {
+     "doc_id": "notice-fm",
+     "sentence": "개별 사인회나 사진 촬영 시간은 없다"
+    },
+    {
+     "doc_id": "notice-safety",
+     "sentence": "팬과 따로 만나거나 선물을 직접 주고받지 않는다"
+    }
+   ]
+  },
+  {
+   "case_id": "fan-10",
+   "evidence": [
+    {
+     "doc_id": "notice-fm-entry",
+     "sentence": "응원봉은 한 사람당 1개까지 가지고 들어갈 수 있고"
+    },
+    {
+     "doc_id": "goods-lightstick",
+     "sentence": "공식 앱에서 좌석 정보를 등록해야 켜진다"
+    }
+   ]
+  },
+  {
+   "case_id": "fan-11",
+   "evidence": []
+  },
+  {
+   "case_id": "fan-12",
+   "evidence": []
+  }
+ ]
+}

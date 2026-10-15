@@ -1,0 +1,20 @@
+[project]
+name = "rag-eval-ci"
+version = "0.1.0"
+description = "도서관 안내 RAG의 평가 자동화 예제(골든셋, MLflow 기록, pytest 게이트)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "mlflow==3.14.0",
+    "deepeval==4.2.9",
+    "langchain-openai==1.3.5",
+    "langchain-chroma==1.1.0",
+    "langchain-core==1.6.5",
+    "chromadb==1.5.9",
+    "pydantic==2.13.4",
+    "python-dotenv==1.2.2",
+    "pandas==2.3.3",
+    "pytest==9.1.1",
+]
+
+[tool.uv]
+package = false

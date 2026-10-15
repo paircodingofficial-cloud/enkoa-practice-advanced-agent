@@ -1,0 +1,87 @@
+{
+  "run_id": "e3ef1397a7f44ba0b3a28b46c80e0060",
+  "params": {
+    "prompt_version": "v1",
+    "app_model": "gpt-4.1",
+    "judge_model": "gpt-5.6-luna",
+    "top_k": 3
+  },
+  "stable_cases": [
+    "lib-01",
+    "lib-02",
+    "lib-03",
+    "lib-04",
+    "lib-05",
+    "lib-06",
+    "lib-07",
+    "lib-08",
+    "lib-09",
+    "lib-10",
+    "lib-15",
+    "lib-16"
+  ],
+  "splits": {
+    "full": {
+      "case_ids": [
+        "lib-01",
+        "lib-02",
+        "lib-03",
+        "lib-04",
+        "lib-05",
+        "lib-06",
+        "lib-07",
+        "lib-08",
+        "lib-09",
+        "lib-10",
+        "lib-11",
+        "lib-12",
+        "lib-13",
+        "lib-14",
+        "lib-15",
+        "lib-16"
+      ],
+      "metrics": {
+        "correctness": 0.8125,
+        "citation_valid": 1.0
+      },
+      "noise": {
+        "correctness": 0.0625,
+        "citation_valid": 0.0
+      },
+      "max_drop": {
+        "correctness": 0.125,
+        "citation_valid": 0.0625
+      },
+      "min": {
+        "correctness": 0.6,
+        "citation_valid": 0.8
+      }
+    },
+    "smoke": {
+      "case_ids": [
+        "lib-01",
+        "lib-04",
+        "lib-09",
+        "lib-10",
+        "lib-13",
+        "lib-15"
+      ],
+      "metrics": {
+        "correctness": 0.8333,
+        "citation_valid": 1.0
+      },
+      "noise": {
+        "correctness": 0.0,
+        "citation_valid": 0.0
+      },
+      "max_drop": {
+        "correctness": 0.1667,
+        "citation_valid": 0.1667
+      },
+      "min": {
+        "correctness": 0.6,
+        "citation_valid": 0.8
+      }
+    }
+  }
+}

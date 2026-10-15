@@ -1,0 +1,51 @@
+{
+ "split": "full",
+ "run_id": "fixture-report",
+ "errors": 0,
+ "metrics": {
+  "correctness": 0.9,
+  "citation_valid": 1.0
+ },
+ "cases": {
+  "c01": {
+   "correctness": true,
+   "citation_valid": true
+  },
+  "c02": {
+   "correctness": true,
+   "citation_valid": true
+  },
+  "c03": {
+   "correctness": true,
+   "citation_valid": true
+  },
+  "c04": {
+   "correctness": true,
+   "citation_valid": true
+  },
+  "c05": {
+   "correctness": true,
+   "citation_valid": true
+  },
+  "c06": {
+   "correctness": true,
+   "citation_valid": true
+  },
+  "c07": {
+   "correctness": true,
+   "citation_valid": true
+  },
+  "c08": {
+   "correctness": true,
+   "citation_valid": true
+  },
+  "c10": {
+   "correctness": false,
+   "citation_valid": true
+  },
+  "c11": {
+   "correctness": true,
+   "citation_valid": true
+  }
+ }
+}

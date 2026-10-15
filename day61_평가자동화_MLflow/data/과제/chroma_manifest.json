@@ -1,0 +1,7 @@
+{
+  "collection": "luna_guides",
+  "model": "text-embedding-3-large",
+  "dimensions": 768,
+  "count": 14,
+  "fingerprint": "bf8b6302a2a06262b6b92f9562460533fa0006d825167f1002ce6a2b343ba180"
+}

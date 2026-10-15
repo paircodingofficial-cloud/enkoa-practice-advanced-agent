@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+# 평가 실행 산출물은 CI 산출물(artifact)로 받습니다.
+reports/
+mlruns/
+mlflow.db

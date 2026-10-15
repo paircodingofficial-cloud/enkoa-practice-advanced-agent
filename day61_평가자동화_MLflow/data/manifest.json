@@ -1,0 +1,27 @@
+{
+  "files": {
+    "본실습/docs.jsonl": {
+      "sha256": "fc1cbad9309869782bce439e158854ef6b8ed8ee8388808c3d6a83dbb3b48301",
+      "rows": 15
+    },
+    "본실습/golden.jsonl": {
+      "sha256": "33f46368bc9271f7b3d92d4fcb7b884e407e2d47662c8a6e0977210df706a711",
+      "rows": 16
+    },
+    "따라하기/docs.jsonl": {
+      "sha256": "66b2a1c957488513bfd6b60409fc68cf03df1197f4e140cb06497b02a051d26c",
+      "rows": 44
+    },
+    "따라하기/golden.jsonl": {
+      "sha256": "8198b88236eae6bab1d9bbb252fd064700c4586dc39d98edf53a861d98d4dc18",
+      "rows": 24
+    }
+  },
+  "sources": {
+    "build/sources/library_docs.json": "f6cdf41d2c3f30b056421a3c41f77f4bfd22539346594f1ad5c21d8da2512060",
+    "build/sources/library_golden.json": "4c0cab4504d5cceecb0ff1e435b49c7dfdee6fe7807e0803d4bfba479e6f0f90",
+    "build/sources/hr_selection.json": "40c83baf835085739e8d351ef5e23059bd04bb0b08d30ea0ae3b1207a2e66229",
+    "day48_리랭킹_컨텍스트압축/data/practice_docs.json": "cd66edcdf087db5e8033ec7a4049ee7048f34387602cdd0a875c55f70244bb7b",
+    "day48_리랭킹_컨텍스트압축/data/practice_questions.json": "2867b945727e7da59bbea99a34529ad0a2d3bedaa5e404401e02ac9d5ef1985c"
+  }
+}

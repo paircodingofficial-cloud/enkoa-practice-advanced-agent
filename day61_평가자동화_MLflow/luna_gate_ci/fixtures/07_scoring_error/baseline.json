@@ -1,0 +1,48 @@
+{
+ "run_id": "fixture-baseline",
+ "params": {
+  "prompt_version": "v1"
+ },
+ "stable_cases": [
+  "c01",
+  "c02",
+  "c03",
+  "c04",
+  "c05",
+  "c06",
+  "c07",
+  "c08"
+ ],
+ "splits": {
+  "full": {
+   "case_ids": [
+    "c01",
+    "c02",
+    "c03",
+    "c04",
+    "c05",
+    "c06",
+    "c07",
+    "c08",
+    "c09",
+    "c10"
+   ],
+   "metrics": {
+    "correctness": 0.9,
+    "citation_valid": 1.0
+   },
+   "noise": {
+    "correctness": 0.1,
+    "citation_valid": 0.0
+   },
+   "max_drop": {
+    "correctness": 0.2,
+    "citation_valid": 0.1
+   },
+   "min": {
+    "correctness": 0.7,
+    "citation_valid": 0.8
+   }
+  }
+ }
+}

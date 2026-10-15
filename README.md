@@ -19,6 +19,8 @@
 | **day57** | GraphRAG 변형 비교 | **Microsoft GraphRAG**(`graphrag` 3.1.0)로 관광지 안내문을 색인해 개체·관계·계층 커뮤니티·커뮤니티 보고서를 만들고 **Basic·Local·Global·DRIFT** 네 검색이 답변 모델에 넘긴 근거를 비교합니다. 이어서 **LightRAG**(`lightrag-hku` 1.5.7)로 구체·주제 키워드 검색과 문서 추가·삭제를 다루고, 부록에서 LazyGraphRAG·HippoRAG 2 와 네 방식의 비용·근거를 질문 유형(단일 사실·멀티홉·전역)별로 비교합니다. 과제는 의약품 안내문에 두 방식을 적용합니다 |
 | **day58** | RAG 아키텍처 설계 | 임베딩 모델·검색 전략·벡터 저장소를 리더보드 순위나 기본값이 아니라 같은 평가셋으로 고릅니다. 교안 01은 MTEB(kor) 후보와 BM25를 **Recall@5·MRR·걸린 시간·비용·잘림 비율**로 비교하고 차원과 정밀도를 낮춰 저장 공간을 줄입니다. 교안 02는 질문 유형(묘사·이름·조건·관계·집계)마다 검색 전략을 측정하고, 그 전략에 필요한 질의로 벡터 저장소(**pgvector**)를 고른 뒤 정확도·지연·비용·저장 공간 네 축을 **제약·지배 제거·가중 점수·민감도** 순서로 종합해 결정을 **ADR**로 남깁니다. 과제는 의약품 안내문에 같은 절차를 적용합니다 |
 | **day59** | LLM 평가·RAGAS | RAG 답변과 검색 결과를 **RAGAS**(`ragas` 0.4.3) 지표 6종으로 평가합니다. 교안 01은 결함을 일부러 넣은 답변으로 **Faithfulness·Answer Relevancy·Answer Correctness**가 결함마다 어떻게 떨어지는지 보고, 두 지표를 함께 읽어 결함 종류와 고칠 곳을 가립니다. 교안 02는 **Context Precision·Context Recall·Context Relevancy**를 더해 지표 6개의 합격선 판정과 기준선 비교로 RAG의 고장 위치(검색·생성)를 진단합니다. 과제는 의약품 상담 도우미에 같은 절차를 적용합니다 |
+| **day60** | LLM-as-Judge·DeepEval | 판사 모델의 점수화·쌍대 비교와 위치·장황함 편향을 살펴보고, **DeepEval**(`deepeval` 4.2.9)의 G-Eval·ArenaGEval·Hallucination·Toxicity·Bias 지표로 답변을 평가합니다. 사람 라벨과 비교해 판정 기준과 테스트 케이스를 점검합니다. 부록은 골든셋과 Jev 판사로 챗봇 프롬프트를 자동으로 고칩니다(`PromptOptimizer`) |
+| **day61** | 평가 자동화·MLflow | 골든셋 평가를 **MLflow**(`mlflow` 3.14.0)에 기록하고, DeepEval 판사(정답 판정·검색 근거 판정)와 코드 채점(인용 검증)을 채점 함수(`@scorer`)로 붙여 실행 기록(trace)과 함께 비교합니다. 교안 02는 같은 설정을 반복 평가해 판정 흔들림을 확인하고, 기준선·**pytest** 회귀 테스트·**GitHub Actions**/GitLab CI 회귀 게이트를 만듭니다. 부록은 MLflow GenAI 화면, pytest 기초, GitHub Actions 기초 |
 
 ---
 
@@ -71,6 +73,10 @@ day57은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_K
 day58은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`(교안 01 임베딩, 약 7센트)와 `SUPABASE_DB_URL`(교안 02)을 넣습니다. Supabase 주소 만드는 법은 [Supabase_접속_주소_만들기.md](day58_RAG_아키텍처_설계/Supabase_접속_주소_만들기.md)에 있습니다. 과제 02는 내 PC의 Neo4j(2026.06 이상) 접속 정보(`NEO4J_URI`, `NEO4J_USER`, `NEO4J_PASSWORD`)도 넣습니다. 교안 01은 로컬 임베딩 모델 `intfloat/multilingual-e5-small`(약 0.5GB)과 `nlpai-lab/KURE-v1`(약 2.3GB)을 내려받으므로 수업 전에 첫 코드 셀만 먼저 실행해 두세요.
 
 day59는 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`를 넣습니다. 평가용 LLM은 코드 기본값 `gpt-6-luna`를 쓰므로 따로 적지 않아도 됩니다(ragas 0.4.3은 `gpt-5.6-luna`처럼 버전에 소수점이 든 이름에서 요청 오류가 납니다). 교안 02·과제 02는 미리 만든 Chroma DB(`data/*/chroma/`)를 그대로 여니 폴더를 통째로 둡니다. 평가 셀은 평가용 LLM을 동시에 호출하며 상한은 `MAX_CONCURRENCY = 32`입니다. 429 오류가 나면 이 값을 줄입니다.
+
+day60은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`를 넣습니다. DeepEval은 `uv sync`에 포함된 4.2.9를 사용합니다. G-Eval의 logprobs 지원 때문에 판사 모델을 바꿀 때는 해당 모델이 logprobs를 지원하는지 확인하세요. 부록의 Jev 판사는 `TYPESAFE_API_KEY`가 필요합니다.
+
+day61은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`를 넣습니다(교안 01의 Jev 소절은 선택이며 `TYPESAFE_API_KEY`가 필요합니다). MLflow 화면은 단원 폴더에서 `uv run mlflow server --backend-store-uri sqlite:///mlflow.db --port 5050`으로 켭니다. 교안 02의 `rag_eval_ci/`와 부록 02의 `pytest_ci_practice/`는 자기 `pyproject.toml`이 있는 별도 프로젝트라, 그 폴더를 GitHub 저장소로 올려 씁니다.
 
 ## 폴더 구성
 

@@ -116,6 +116,11 @@ dependencies = [
     "tqdm>=4.66",
     # day60: LLM-as-Judge 와 DeepEval. 부록의 JevEval(4.2.5부터)·PromptOptimizer 를 확인한 버전으로 고정한다.
     "deepeval==4.2.9",
+    # day61: 평가 자동화. 평가 기록·실행 기록(trace)·화면 서버를 MLflow 이 버전 API(genai.evaluate·@scorer)로 썼으므로 고정한다.
+    #   mlflow 가 cryptography<49 를 요구해 cryptography 가 50.0.2 에서 48.0.1 로 내려간다.
+    "mlflow==3.14.0",
+    #   부록 02 가 워크플로 YAML 을 읽어 설정을 확인한다(yaml.load).
+    "pyyaml>=6",
 ]
 
 [tool.uv]

@@ -1,0 +1,61 @@
+name: rag-eval
+
+on:
+  pull_request:
+    paths:
+      - "app.py"
+      - "run_eval.py"
+      - "data/**"
+      - "tests/**"
+      - "baselines/**"
+      - "pyproject.toml"
+      - "uv.lock"
+      - ".github/workflows/rag-eval.yml"
+  schedule:
+    - cron: "0 17 * * *"   # 매일 UTC 17시(한국 시간 새벽 2시)에 전체 사례 평가
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# 같은 브랜치에 새 커밋이 올라오면 진행 중인 이전 평가를 취소해 비용을 아낍니다.
+concurrency:
+  group: rag-eval-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v10.2.0
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - name: 라이브러리 설치
+        run: uv sync --locked
+      - name: 평가 실행
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            uv run python run_eval.py --split smoke
+          else
+            uv run python run_eval.py --split full
+          fi
+      - name: 회귀 테스트
+        run: uv run pytest -q tests --junitxml=reports/junit.xml
+      - name: 결과 요약
+        if: always()
+        run: |
+          if [ -f reports/summary.md ]; then
+            cat reports/summary.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: 평가 산출물 저장
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: rag-eval-reports
+          path: reports/
+          retention-days: 14

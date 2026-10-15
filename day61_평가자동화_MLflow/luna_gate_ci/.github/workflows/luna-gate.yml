@@ -1,0 +1,53 @@
+# 루나 팬 대화 챗봇 회귀 게이트. app.py, run_eval.py 는 교안 02의 rag_eval_ci 와 같은 이름과 역할이라고 가정합니다.
+name: luna-gate
+
+on:
+  # TODO 1) 변경 요청에서 app.py, run_eval.py, data/, tests/, baselines/ 아래 파일이 바뀔 때만 실행
+  pull_request:
+    paths: TODO
+  # TODO 2) 매일 한국 시간 오전 6시(UTC 21시)에 실행
+  schedule: TODO
+  # TODO 3) Actions 화면에서 직접 실행
+
+permissions:
+  contents: read
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    # TODO 4) 20분이 지나면 작업을 멈춤
+    env:
+      # TODO 5) 저장소 비밀 변수 OPENAI_API_KEY 를 같은 이름의 환경변수로
+      OPENAI_API_KEY: TODO
+    steps:
+      - name: 저장소 받기
+        uses: actions/checkout@v7
+      - name: uv 설치
+        uses: astral-sh/setup-uv@v10.2.0
+        with:
+          python-version: "3.12"
+          enable-cache: true
+      - name: 라이브러리 설치
+        run: uv sync --locked
+      - name: 평가 실행
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            uv run python run_eval.py --split smoke
+          else
+            uv run python run_eval.py --split full
+          fi
+      - name: 회귀 테스트
+        run: uv run pytest -q tests --junitxml=reports/junit.xml
+      - name: 결과 요약
+        # TODO 6) 앞 단계가 실패해도 실행
+        run: |
+          if [ -f reports/summary.md ]; then
+            cat reports/summary.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: 평가 산출물 저장
+        # TODO 7) 앞 단계가 실패해도 실행
+        uses: actions/upload-artifact@v7
+        with:
+          name: luna-gate-reports
+          path: reports/
+          retention-days: 14

@@ -1,0 +1,32 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.env
+# MLflow 기록과 평가 산출물은 실행할 때마다 새로 생깁니다.
+mlflow.db
+mlartifacts/
+mlruns/
+.pytest_cache/
+.deepeval/
+.deepeval_telemetry.txt
+교안_02_GitHub_Actions_기초/rag_eval_ci/reports/
+교안_02_GitHub_Actions_기초/rag_eval_ci/.venv/
+# 따라하기 실행 산출물(정답 테스트가 들어 있어 배포하지 않습니다)
+교안_02_GitHub_Actions_기초/hr_eval_ci/
+# 강사 제작 자료(학생 배포에서 제외)
+build/embeddings/
+이전_자료/
+# 연습 프로젝트를 터미널에서 uv run 하면 생기는 전용 환경과 결과
+부록_02_GitHub_Actions_기초/pytest_ci_practice/.venv/
+부록_02_GitHub_Actions_기초/pytest_ci_practice/reports/
+정답/부록_02_GitHub_Actions_기초/pytest_ci_practice/.venv/
+정답/부록_02_GitHub_Actions_기초/pytest_ci_practice/reports/
+# 과제 02 프로젝트를 실행하면 생기는 기준선·결과(노트북이 다시 만듭니다)
+luna_gate_ci/reports/
+luna_gate_ci/baselines/
+luna_gate_ci/.venv/
+정답/luna_gate_ci/reports/
+정답/luna_gate_ci/baselines/
+정답/luna_gate_ci/.venv/

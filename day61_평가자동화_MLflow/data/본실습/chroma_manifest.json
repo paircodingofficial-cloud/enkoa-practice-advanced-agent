@@ -1,0 +1,7 @@
+{
+  "collection": "library_docs",
+  "model": "text-embedding-3-large",
+  "dimensions": 768,
+  "count": 15,
+  "fingerprint": "9edd4d4b6bf6ea009cba5ce2d21351f50444a9e8eeeafe4c9c26d92f64aabf55"
+}
