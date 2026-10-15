@@ -9,7 +9,8 @@ report = json.loads((ROOT / "reports" / "results.json").read_text(encoding="utf-
 baseline = json.loads((ROOT / "baselines" / "baseline.json").read_text(encoding="utf-8"))
 # 이번 평가 범위(smoke 또는 full)에 맞는 기준값을 고릅니다.
 split = baseline["splits"][report["split"]]
-GATE_NAMES = list(split["metrics"])
+# 판정에 쓰는 채점 함수 이름 목록입니다. 기준선에 지표를 저장한 채점 함수 이름을 그대로 씁니다.
+JUDGED_SCORERS = list(split["metrics"])
 
 # 사례별 회귀는 기준선에서 늘 통과하던 사례 가운데 이번에 평가한 것만 봅니다.
 stable_in_scope = []
@@ -28,13 +29,13 @@ def test_no_scoring_errors():
     pytest.fail("이 테스트를 작성하세요")
 
 
-@pytest.mark.parametrize("name", GATE_NAMES)
+@pytest.mark.parametrize("name", JUDGED_SCORERS)
 def test_metric_floor(name):
     # 3. 이번 지표(report["metrics"][name])가 절대 하한(split["min"][name]) 이상인지 확인하세요.
     pytest.fail("이 테스트를 작성하세요")
 
 
-@pytest.mark.parametrize("name", GATE_NAMES)
+@pytest.mark.parametrize("name", JUDGED_SCORERS)
 def test_metric_drop(name):
     # 4. 기준선 지표(split["metrics"][name])에서 이번 지표를 뺀 하락폭을 소수 넷째 자리로 반올림하고,
     #    허용 하락폭(split["max_drop"][name]) 이하인지 확인하세요.
@@ -43,5 +44,5 @@ def test_metric_drop(name):
 
 @pytest.mark.parametrize("case_id", stable_in_scope)
 def test_stable_case_still_passes(case_id):
-    # 5. 이 사례의 판정(report["cases"][case_id])이 GATE_NAMES 의 모든 채점 함수에서 True 인지 확인하세요.
+    # 5. 이 사례의 판정(report["cases"][case_id])이 JUDGED_SCORERS 의 모든 채점 함수에서 True 인지 확인하세요.
     pytest.fail("이 테스트를 작성하세요")

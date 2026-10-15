@@ -28,7 +28,8 @@ REPORTS = ROOT / "reports"
 # gpt-5.6-luna 는 temperature 를 지정할 수 없는 모델이라 지정하지 않습니다.
 JUDGE_MODEL = os.getenv("OPENAI_EVAL_MODEL", "gpt-5.6-luna")
 judge_llm = OpenAIModel(model=JUDGE_MODEL)
-GATE_NAMES = ["correctness", "citation_valid"]
+# 회귀 게이트가 통과·실패를 판정할 때 쓰는 채점 함수 이름 목록입니다. @scorer 함수 이름과 같아야 합니다.
+JUDGED_SCORERS = ["correctness", "citation_valid"]
 
 
 def read_jsonl(path):
@@ -122,9 +123,9 @@ def to_records(cases):
 
 
 def pass_rates(cases, case_ids):
-    """case_ids 사례 가운데 채점 함수마다 통과한 비율을 계산합니다."""
+    """case_ids 사례 가운데 채점 함수마다 통과한 비율을 계산합니다. 전체를 셀 때는 list(cases), 빠른 점검(smoke) 사례만 셀 때는 그 ID 목록을 넘깁니다."""
     rates = {}
-    for name in GATE_NAMES:
+    for name in JUDGED_SCORERS:
         passed = 0
         for case_id in case_ids:
             if cases[case_id][name] is True:
@@ -139,7 +140,7 @@ def make_report(result, split):
     errors = 0
     for _, row in result.result_df.iterrows():
         case = {}
-        for name in GATE_NAMES:
+        for name in JUDGED_SCORERS:
             value = row[f"{name}/value"]
             # 채점 중 오류가 난 행은 값이 비어 있습니다. 통과로 세지 않고 오류로 셉니다.
             if pd.isna(value):

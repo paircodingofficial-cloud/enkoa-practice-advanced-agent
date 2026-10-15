@@ -9,7 +9,8 @@ report = json.loads((ROOT / "reports" / "results.json").read_text(encoding="utf-
 baseline = json.loads((ROOT / "baselines" / "baseline.json").read_text(encoding="utf-8"))
 # 이번 평가 범위(smoke 또는 full)에 맞는 기준값을 고릅니다.
 split = baseline["splits"][report["split"]]
-GATE_NAMES = list(split["metrics"])
+# 판정에 쓰는 채점 함수 이름 목록입니다. 기준선에 지표를 저장한 채점 함수 이름을 그대로 씁니다.
+JUDGED_SCORERS = list(split["metrics"])
 
 # 사례별 회귀는 기준선에서 늘 통과하던 사례 가운데 이번에 평가한 것만 봅니다.
 stable_in_scope = []
@@ -27,13 +28,13 @@ def test_no_scoring_errors():
     assert report["errors"] == 0, f"채점 오류 {report['errors']}건"
 
 
-@pytest.mark.parametrize("name", GATE_NAMES)
+@pytest.mark.parametrize("name", JUDGED_SCORERS)
 def test_metric_floor(name):
     current = report["metrics"][name]
     assert current >= split["min"][name], f"{name} {current} 가 절대 하한 {split['min'][name]} 보다 낮습니다"
 
 
-@pytest.mark.parametrize("name", GATE_NAMES)
+@pytest.mark.parametrize("name", JUDGED_SCORERS)
 def test_metric_drop(name):
     drop = round(split["metrics"][name] - report["metrics"][name], 4)
     assert drop <= split["max_drop"][name], f"{name} 가 기준선보다 {drop} 떨어졌습니다(허용 {split['max_drop'][name]})"
@@ -42,5 +43,5 @@ def test_metric_drop(name):
 @pytest.mark.parametrize("case_id", stable_in_scope)
 def test_stable_case_still_passes(case_id):
     case = report["cases"][case_id]
-    for name in GATE_NAMES:
+    for name in JUDGED_SCORERS:
         assert case[name] is True, f"{case_id}: 기준선에서 늘 통과하던 질문이 {name} 에서 실패했습니다"
