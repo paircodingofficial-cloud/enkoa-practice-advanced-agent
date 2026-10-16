@@ -20,7 +20,7 @@
 | **day58** | RAG 아키텍처 설계 | 임베딩 모델·검색 전략·벡터 저장소를 리더보드 순위나 기본값이 아니라 같은 평가셋으로 고릅니다. 교안 01은 MTEB(kor) 후보와 BM25를 **Recall@5·MRR·걸린 시간·비용·잘림 비율**로 비교하고 차원과 정밀도를 낮춰 저장 공간을 줄입니다. 교안 02는 질문 유형(묘사·이름·조건·관계·집계)마다 검색 전략을 측정하고, 그 전략에 필요한 질의로 벡터 저장소(**pgvector**)를 고른 뒤 정확도·지연·비용·저장 공간 네 축을 **제약·지배 제거·가중 점수·민감도** 순서로 종합해 결정을 **ADR**로 남깁니다. 과제는 의약품 안내문에 같은 절차를 적용합니다 |
 | **day59** | LLM 평가·RAGAS | RAG 답변과 검색 결과를 **RAGAS**(`ragas` 0.4.3) 지표 6종으로 평가합니다. 교안 01은 결함을 일부러 넣은 답변으로 **Faithfulness·Answer Relevancy·Answer Correctness**가 결함마다 어떻게 떨어지는지 보고, 두 지표를 함께 읽어 결함 종류와 고칠 곳을 가립니다. 교안 02는 **Context Precision·Context Recall·Context Relevancy**를 더해 지표 6개의 합격선 판정과 기준선 비교로 RAG의 고장 위치(검색·생성)를 진단합니다. 과제는 의약품 상담 도우미에 같은 절차를 적용합니다 |
 | **day60** | LLM-as-Judge·DeepEval | 판사 모델의 점수화·쌍대 비교와 위치·장황함 편향을 살펴보고, **DeepEval**(`deepeval` 4.2.9)의 G-Eval·ArenaGEval·Hallucination·Toxicity·Bias 지표로 답변을 평가합니다. 사람 라벨과 비교해 판정 기준과 테스트 케이스를 점검합니다. 부록은 골든셋과 Jev 판사로 챗봇 프롬프트를 자동으로 고칩니다(`PromptOptimizer`) |
-| **day61** | 평가 자동화·MLflow | 골든셋 평가를 **MLflow**(`mlflow` 3.14.0)에 기록하고, DeepEval 판사(정답 판정·검색 근거 판정)와 코드 채점(인용 검증)을 채점 함수(`@scorer`)로 붙여 실행 기록(trace)과 함께 비교합니다. 교안 02는 같은 설정을 반복 평가해 판정 흔들림을 확인하고, 기준선·**pytest** 회귀 테스트·**GitHub Actions**/GitLab CI 회귀 게이트를 만듭니다. 부록은 MLflow GenAI 화면, pytest 기초, GitHub Actions 기초 |
+| **day61** | 평가 자동화·MLflow | 골든셋 평가를 **MLflow**(`mlflow` 3.14.0)에 기록하고, DeepEval 판사(정답 판정·검색 근거 판정)와 코드 채점(인용 검증)을 채점 함수(`@scorer`)로 붙여 실행 기록(trace)과 함께 비교합니다. 교안 02는 같은 설정을 반복 평가해 판정 흔들림을 확인하고, 기준선·**pytest** 회귀 테스트·**GitHub Actions**/GitLab CI 회귀 게이트를 만듭니다. 부록은 MLflow GenAI 화면, pytest 기초, GitHub Actions 기초, GitHub Actions 심화(Ruff 코드 검사와 AI 코드 리뷰) |
 
 ---
 

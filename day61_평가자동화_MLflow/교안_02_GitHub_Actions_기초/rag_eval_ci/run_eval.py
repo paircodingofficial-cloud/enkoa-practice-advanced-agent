@@ -1,7 +1,7 @@
 """골든셋으로 app.py 를 평가해 reports/ 에 결과를 남깁니다.
 
 사용: uv run python run_eval.py --split smoke   (변경 요청마다, 대표 사례만)
-      uv run python run_eval.py --split full    (야간·수동, 전체 사례)
+      uv run python run_eval.py --split full    (main 통합 뒤, 전체 사례)
 합격 여부는 여기서 정하지 않고 tests/ 의 pytest 가 reports/results.json 을 읽어 판정합니다.
 """
 import argparse

@@ -2,20 +2,23 @@
 name: luna-gate
 
 on:
-  # TODO 1) 변경 요청에서 app.py, run_eval.py, data/, tests/, baselines/ 아래 파일이 바뀔 때만 실행
-  pull_request:
+  pull_request:                                                   # 병합 전: smoke 6건으로 검사
+    # TODO 1) 초안을 "검토 준비 완료"로 바꿀 때와 라벨을 붙일 때도 실행(기본 활동 세 가지는 그대로)
+    types: TODO
+    # TODO 2) app.py, run_eval.py, data/, tests/, baselines/ 아래 파일이 바뀔 때만 실행
     paths: TODO
-  # TODO 2) 매일 한국 시간 오전 6시(UTC 21시)에 실행
-  schedule: TODO
-  # TODO 3) Actions 화면에서 직접 실행
+  # TODO 3) main 에 통합(push)될 때도 2와 같은 파일이 바뀌면 실행
+  push: TODO
 
 permissions:
-  contents: read
+  contents: read                                                  # 코드는 읽기만 허용
 
 jobs:
-  evaluate:
+  evaluate:                                                       # 평가 후 기준선과 비교해 판정
+    # TODO 4) 초안(draft) 변경 요청이면 이 작업을 건너뜀(main 통합은 항상 실행)
+    if: TODO
     runs-on: ubuntu-latest
-    # TODO 4) 20분이 지나면 작업을 멈춤
+    timeout-minutes: 20                                           # 20분이 지나면 멈춤
     env:
       # TODO 5) 저장소 비밀 변수 OPENAI_API_KEY 를 같은 이름의 환경변수로
       OPENAI_API_KEY: TODO
@@ -26,28 +29,31 @@ jobs:
         uses: astral-sh/setup-uv@v10.2.0
         with:
           python-version: "3.12"
-          enable-cache: true
+          enable-cache: true                                      # 라이브러리 캐시 재사용
       - name: 라이브러리 설치
-        run: uv sync --locked
-      - name: 평가 실행
+        run: uv sync --locked                                     # uv.lock 버전 그대로 설치
+      - name: 평가 실행                                           # 채점 결과를 reports/ 에 저장
         run: |
-          if [ "${{ github.event_name }}" = "pull_request" ]; then
-            uv run python run_eval.py --split smoke
+          if [ "${{ github.event_name }}" = "push" ]; then
+            uv run python run_eval.py --split full                # main 통합: 전체 12건
+          # TODO 6) full-eval 라벨이 붙은 변경 요청이면 참이 되는 조건
+          elif TODO; then
+            uv run python run_eval.py --split full                # full-eval 라벨: 전체 12건
           else
-            uv run python run_eval.py --split full
+            uv run python run_eval.py --split smoke               # 변경 요청: 대표 6건
           fi
-      - name: 회귀 테스트
-        run: uv run pytest -q tests --junitxml=reports/junit.xml
+      - name: 회귀 테스트                                         # 하나라도 실패하면 검사 실패
+        run: uv run pytest -q tests --junitxml=reports/junit.xml  # 결과를 XML 로도 남김
       - name: 결과 요약
-        # TODO 6) 앞 단계가 실패해도 실행
+        # TODO 7) 앞 단계가 실패해도 실행
         run: |
           if [ -f reports/summary.md ]; then
-            cat reports/summary.md >> "$GITHUB_STEP_SUMMARY"
+            cat reports/summary.md >> "$GITHUB_STEP_SUMMARY"      # 실행 화면 Summary 에 표시
           fi
       - name: 평가 산출물 저장
-        # TODO 7) 앞 단계가 실패해도 실행
-        uses: actions/upload-artifact@v7
+        # TODO 8) 앞 단계가 실패해도 실행
+        uses: actions/upload-artifact@v7                          # reports/ 를 산출물로 올림
         with:
           name: luna-gate-reports
           path: reports/
-          retention-days: 14
+          retention-days: 14                                      # 14일 보관

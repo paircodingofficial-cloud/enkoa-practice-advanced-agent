@@ -1,16 +1,21 @@
 """pull request 에서 바뀐 코드(git diff)를 LLM 에게 보여 주고 받은 리뷰를 review.md 로 저장합니다.
 
-GitHub Actions 의 tests 워크플로(ai-review 작업)가 실행하고, review.md 를 pull request 댓글로 올립니다.
-로컬 실행(pytest_ci_practice 폴더에서, OPENAI_API_KEY 필요):
+GitHub Actions 의 ci 워크플로(ai-review 작업)가 실행하고, review.md 를 pull request 댓글로 올립니다.
+로컬 실행(pytest_ci_practice 폴더에서, .env 에 OPENAI_API_KEY 필요):
     git fetch origin main
-    uv run --group review python tools/ai_reviewer.py
+    uv run python tools/ai_reviewer.py
 """
 
 import subprocess
 from pathlib import Path
 
+from dotenv import find_dotenv, load_dotenv
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
+
+# 내 컴퓨터에서는 .env 의 OPENAI_API_KEY 를 읽습니다. CI 에서는 워크플로가 비밀 변수를 환경변수로 넘겨 주고,
+# load_dotenv 는 이미 있는 환경변수를 덮어쓰지 않으므로 .env 가 없어도 그대로 동작합니다.
+load_dotenv(find_dotenv(usecwd=True))
 
 # main 과 갈라진 지점부터 지금까지 이 브랜치에서 바뀐 부분만 가져옵니다(main 에 새로 생긴 커밋은 빠집니다).
 diff = subprocess.run(["git", "diff", "origin/main...HEAD"], capture_output=True, text=True, check=True).stdout

@@ -1,7 +1,18 @@
 name: rag-eval
 
 on:
-  pull_request:
+  pull_request:                                                   # 병합 전: smoke 6건으로 검사
+    paths:                                                        # 이 파일들이 바뀔 때만 실행
+      - "app.py"
+      - "run_eval.py"
+      - "data/**"
+      - "tests/**"
+      - "baselines/**"
+      - "pyproject.toml"
+      - "uv.lock"
+      - ".github/workflows/rag-eval.yml"
+  push:                                                           # 병합 후(main 통합): full 16건
+    branches: [main]
     paths:
       - "app.py"
       - "run_eval.py"
@@ -11,51 +22,47 @@ on:
       - "pyproject.toml"
       - "uv.lock"
       - ".github/workflows/rag-eval.yml"
-  schedule:
-    - cron: "0 17 * * *"   # 매일 UTC 17시(한국 시간 새벽 2시)에 전체 사례 평가
-  workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: read                                                  # 코드는 읽기만 허용
 
-# 같은 브랜치에 새 커밋이 올라오면 진행 중인 이전 평가를 취소해 비용을 아낍니다.
-concurrency:
+concurrency:                                                      # 새 커밋이 오면 이전 평가 취소
   group: rag-eval-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  evaluate:
+  evaluate:                                                       # 평가 후 기준선과 비교해 판정
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 20                                           # 20분이 지나면 멈춤
     env:
-      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}               # Secrets 에 등록한 키
     steps:
-      - uses: actions/checkout@v7
-      - uses: astral-sh/setup-uv@v10.2.0
+      - uses: actions/checkout@v7                                 # 저장소 코드 받기
+      - uses: astral-sh/setup-uv@v10.2.0                          # uv 설치
         with:
           python-version: "3.12"
-          enable-cache: true
+          enable-cache: true                                      # 라이브러리 캐시 재사용
       - name: 라이브러리 설치
-        run: uv sync --locked
-      - name: 평가 실행
+        run: uv sync --locked                                     # uv.lock 버전 그대로 설치
+      - name: 평가 실행                                           # 채점 결과를 reports/ 에 저장
         run: |
           if [ "${{ github.event_name }}" = "pull_request" ]; then
-            uv run python run_eval.py --split smoke
+            uv run python run_eval.py --split smoke               # 변경 요청: 대표 6건
           else
-            uv run python run_eval.py --split full
+            uv run python run_eval.py --split full                # main 통합: 전체 16건
           fi
-      - name: 회귀 테스트
-        run: uv run pytest -q tests --junitxml=reports/junit.xml
+      - name: 회귀 테스트                                         # 하나라도 실패하면 검사 실패
+        run: uv run pytest -q tests --junitxml=reports/junit.xml  # 결과를 XML 로도 남김
       - name: 결과 요약
-        if: always()
+        if: always()                                              # 앞 단계가 실패해도 실행
         run: |
           if [ -f reports/summary.md ]; then
-            cat reports/summary.md >> "$GITHUB_STEP_SUMMARY"
+            cat reports/summary.md >> "$GITHUB_STEP_SUMMARY"      # 실행 화면 Summary 에 표시
           fi
       - name: 평가 산출물 저장
-        if: always()
-        uses: actions/upload-artifact@v7
+        if: always()                                              # 앞 단계가 실패해도 실행
+        uses: actions/upload-artifact@v7                          # reports/ 를 산출물로 올림
         with:
           name: rag-eval-reports
           path: reports/
-          retention-days: 14
+          retention-days: 14                                      # 14일 보관

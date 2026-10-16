@@ -21,7 +21,7 @@ rag_eval_ci/
 
 1. `run_eval.py`가 평가만 하고 결과를 `reports/results.json`에 씁니다.
 2. pytest가 이 파일과 `baselines/baseline.json`을 읽어 판정합니다. 실패하면 종료 코드가 0이 아니라 CI 검사가 실패합니다.
-3. 변경 요청은 대표 6건(`smoke`), 매일 예약 실행과 직접 실행은 전체 16건(`full`)을 평가합니다.
+3. 변경 요청은 병합 전에 대표 6건(`smoke`)을, main에 통합(push)된 뒤에는 전체 16건(`full`)을 평가합니다.
 
 ## 실행
 
