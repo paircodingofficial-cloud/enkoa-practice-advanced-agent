@@ -1,5 +1,5 @@
 {
-  "run_id": "cd8b0c373f1b4c12bf0342ae09caa15b",
+  "run_id": "1e8ad3d861de410dbb338f0c18e76054",
   "params": {
     "prompt_version": "v1",
     "app_model": "gpt-4.1",
@@ -43,15 +43,15 @@
       ],
       "metrics": {
         "correctness": 0.8125,
-        "citation_valid": 0.9375
+        "citation_valid": 1.0
       },
       "noise": {
         "correctness": 0.0,
-        "citation_valid": 0.0625
+        "citation_valid": 0.0
       },
       "allowed_drop": {
         "correctness": 0.0625,
-        "citation_valid": 0.125
+        "citation_valid": 0.0625
       },
       "absolute_floor": {
         "correctness": 0.6,
