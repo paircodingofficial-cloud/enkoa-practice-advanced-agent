@@ -2,6 +2,7 @@
 
 실행 방법(pytest_ci_practice 폴더에서): uv run pytest -v tests/test_gate_rules.py
 """
+
 import pytest
 
 from gate_rules import drop_allowed, metric_drop, regressed_cases
@@ -16,10 +17,10 @@ def test_metric_drop_sign():
 @pytest.mark.parametrize(
     "baseline_value, current_value, allowed_drop, expected",
     [
-        (0.875, 0.8125, 0.1, True),     # 0.0625 하락: 허용 하락폭보다 작음
+        (0.875, 0.8125, 0.1, True),  # 0.0625 하락: 허용 하락폭보다 작음
         (0.875, 0.8125, 0.0625, True),  # 허용 하락폭과 같게 떨어지면 통과
-        (0.875, 0.75, 0.0625, False),   # 0.125 하락: 허용 하락폭보다 큼
-        (0.75, 0.875, 0.0625, True),    # 오르면 하락폭이 음수라 통과
+        (0.875, 0.75, 0.0625, False),  # 0.125 하락: 허용 하락폭보다 큼
+        (0.75, 0.875, 0.0625, True),  # 오르면 하락폭이 음수라 통과
     ],
     ids=["small_drop", "equal_drop", "big_drop", "rise"],
 )

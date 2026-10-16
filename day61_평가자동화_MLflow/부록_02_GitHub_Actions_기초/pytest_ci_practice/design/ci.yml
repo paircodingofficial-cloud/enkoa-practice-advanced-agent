@@ -1,29 +1,28 @@
-# 함께 따라하기: 아래 요구사항에 맞게 TODO 를 채워 워크플로를 설계하세요.
-# 이 파일은 design/ 에 두고 확인하며, 다 맞으면 .github/workflows/ci.yml 로 옮겨 저장소에 올립니다.
+# 부록 02 7절 요구사항 1~5를 반영한 워크플로입니다.
+# 8절의 Ruff 검사 단계와 9절의 AI 리뷰 작업([Ruff 추가], [AI 리뷰 추가] 주석)까지 들어 있습니다.
+# .github/workflows/ci.yml 로 복사해 저장소에 올립니다.
 name: ci
 
-on:
-  # TODO 1) main 브랜치에 push 할 때, 모든 pull_request, Actions 화면에서 직접 실행할 때
-  #         세 이벤트마다 거를 조건이 필요한지 정합니다. 조건이 없으면 이벤트 이름 뒤를 비워 둡니다.
-  push: TODO
-  pull_request: TODO
-  workflow_dispatch: TODO
+on:                                               # 요구사항 1: main 에 올릴 때, 모든 pull request, 직접 실행할 때
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
 
-concurrency:
-  # TODO 2) 같은 브랜치에 새 실행이 오면 진행 중인 이전 실행을 취소
-  #         group 에는 워크플로 이름 ci 와 실행한 브랜치 github.ref 를 이어 씁니다.
-  group: TODO
-  cancel-in-progress: TODO
+concurrency:                                      # 요구사항 2: 같은 브랜치에 새 실행이 오면 이전 실행 취소
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   unit-tests:
-    # TODO 3) ubuntu-latest 와 windows-latest 두 운영체제에서 같은 단계를 실행하고, 한쪽이 실패해도 다른 쪽은 끝까지 실행
-    #         strategy 아래에 fail-fast 와 matrix 의 os 목록을 만들고, runs-on 에서 matrix.os 를 씁니다.
-    strategy: TODO
-    runs-on: TODO
+    strategy:                                     # 요구사항 3: Ubuntu 와 Windows 에서 같은 단계 실행
+      fail-fast: false                            # 한쪽이 실패해도 다른 쪽은 끝까지 실행
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
     timeout-minutes: 10
     steps:
       - name: 저장소 받기
@@ -37,9 +36,16 @@ jobs:
         run: uv sync --locked
       - name: 단위 테스트
         run: uv run pytest -v tests/test_normalize.py tests/test_check_citation.py
+      # [Ruff 추가] 코드 스타일 검사 단계. 라이브러리 설치 단계가 dev 묶음의 ruff 까지 설치해 두었음
+      - name: 문법·스타일·import 순서 검사
+        if: always()                              # 앞의 테스트가 실패해도 이 검사는 실행
+        run: uv run ruff check .                  # pyproject.toml 의 select 규칙을 어긴 곳이 있으면 실패
+      - name: 포맷 검사
+        if: always()
+        run: uv run ruff format --check .         # 다시 포맷해야 할 파일이 있으면 실패(파일은 바꾸지 않음)
 
   gate-rules:
-    # TODO 4) unit-tests 가 (두 운영체제 모두) 통과한 뒤에만 시작
+    needs: unit-tests                             # 요구사항 4: unit-tests 가 두 운영체제에서 모두 통과한 뒤에만 시작
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -54,5 +60,38 @@ jobs:
         run: uv sync --locked
       - name: 게이트 규칙 테스트
         run: uv run pytest -v tests/test_gate_rules.py --junitxml=reports/junit.xml
-      # TODO 5) 앞 단계가 실패해도 실행되어 reports/ 를 산출물 gate-reports 로 7일 보관하는 단계
-      #         uses: actions/upload-artifact@v7 와 with 아래 name, path, retention-days 를 씁니다.
+      - name: 테스트 결과 저장                    # 요구사항 5: 테스트가 실패해도 reports/ 를 7일 보관
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: gate-reports
+          path: reports/
+          retention-days: 7
+
+  # [AI 리뷰 추가] pull request 에서 바뀐 코드를 LLM 이 리뷰해 댓글로 남기는 작업. 비밀 변수 OPENAI_API_KEY 필요
+  ai-review:
+    if: github.event_name == 'pull_request'      # push·직접 실행에서는 건너뜀(리뷰할 pull request 가 없음)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pull-requests: write                        # 리뷰를 pull request 댓글로 올리려면 필요
+    steps:
+      - name: 저장소 받기
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0                          # 모든 커밋을 받아야 origin/main 과 비교 가능(기본 1은 마지막 커밋만)
+      - name: uv 설치
+        uses: astral-sh/setup-uv@v10.2.0
+        with:
+          python-version: "3.12"
+      - name: 라이브러리 설치
+        run: uv sync --locked --group review      # 기본 묶음에 review 묶음(langchain)까지 설치
+      - name: AI 리뷰 생성
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}   # 4-2 처럼 등록한 비밀 변수
+        run: uv run python tools/ai_reviewer.py   # review.md 를 만듦
+      - name: pull request 댓글로 올리기
+        env:
+          GH_TOKEN: ${{ github.token }}           # 실행마다 GitHub 가 주는 토큰. gh 명령이 이 값으로 로그인
+        run: gh pr comment ${{ github.event.pull_request.number }} --body-file review.md

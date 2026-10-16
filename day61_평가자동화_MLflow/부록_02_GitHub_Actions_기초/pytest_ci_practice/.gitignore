@@ -1,4 +1,24 @@
+# 가상환경과 파이썬 캐시
 .venv/
 __pycache__/
+*.pyc
+
+# 도구가 만드는 캐시
 .pytest_cache/
+.ruff_cache/
+.deepeval/
+.ipynb_checkpoints/
+
+# API 키 같은 비밀 값(저장소에 올리지 않음)
+.env
+.env.*
+
+# 실행 결과(CI 가 만들어 산출물이나 댓글로 올림)
 reports/
+review.md
+
+# 운영체제·편집기 파일
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
