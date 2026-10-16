@@ -10,9 +10,9 @@ def metric_drop(baseline_value, current_value):
     return round(baseline_value - current_value, 4)
 
 
-def drop_allowed(baseline_value, current_value, max_drop):
+def drop_allowed(baseline_value, current_value, allowed_drop):
     """하락폭이 허용 하락폭 이하이면 True 를 돌려줍니다. 허용 하락폭과 같으면 통과입니다."""
-    return metric_drop(baseline_value, current_value) <= max_drop
+    return metric_drop(baseline_value, current_value) <= allowed_drop
 
 
 def regressed_cases(stable_cases, report_cases, names):

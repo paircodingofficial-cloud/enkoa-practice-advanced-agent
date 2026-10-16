@@ -35,11 +35,11 @@
     "correctness": 0.1,
     "citation_valid": 0.0
    },
-   "max_drop": {
+   "allowed_drop": {
     "correctness": 0.2,
     "citation_valid": 0.1
    },
-   "min": {
+   "absolute_floor": {
     "correctness": 0.95,
     "citation_valid": 0.8
    }

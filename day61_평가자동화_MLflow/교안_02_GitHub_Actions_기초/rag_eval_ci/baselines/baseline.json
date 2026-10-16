@@ -1,5 +1,5 @@
 {
-  "run_id": "e3ef1397a7f44ba0b3a28b46c80e0060",
+  "run_id": "cd8b0c373f1b4c12bf0342ae09caa15b",
   "params": {
     "prompt_version": "v1",
     "app_model": "gpt-4.1",
@@ -17,6 +17,7 @@
     "lib-08",
     "lib-09",
     "lib-10",
+    "lib-11",
     "lib-15",
     "lib-16"
   ],
@@ -42,17 +43,17 @@
       ],
       "metrics": {
         "correctness": 0.8125,
-        "citation_valid": 1.0
+        "citation_valid": 0.9375
       },
       "noise": {
-        "correctness": 0.0625,
-        "citation_valid": 0.0
-      },
-      "max_drop": {
-        "correctness": 0.125,
+        "correctness": 0.0,
         "citation_valid": 0.0625
       },
-      "min": {
+      "allowed_drop": {
+        "correctness": 0.0625,
+        "citation_valid": 0.125
+      },
+      "absolute_floor": {
         "correctness": 0.6,
         "citation_valid": 0.8
       }
@@ -74,11 +75,11 @@
         "correctness": 0.0,
         "citation_valid": 0.0
       },
-      "max_drop": {
+      "allowed_drop": {
         "correctness": 0.1667,
         "citation_valid": 0.1667
       },
-      "min": {
+      "absolute_floor": {
         "correctness": 0.6,
         "citation_valid": 0.8
       }

@@ -31,14 +31,14 @@ def test_no_scoring_errors():
 
 @pytest.mark.parametrize("name", JUDGED_SCORERS)
 def test_metric_floor(name):
-    # 3. 이번 지표(report["metrics"][name])가 절대 하한(split["min"][name]) 이상인지 확인하세요.
+    # 3. 이번 지표(report["metrics"][name])가 절대 하한(split["absolute_floor"][name]) 이상인지 확인하세요.
     pytest.fail("이 테스트를 작성하세요")
 
 
 @pytest.mark.parametrize("name", JUDGED_SCORERS)
 def test_metric_drop(name):
     # 4. 기준선 지표(split["metrics"][name])에서 이번 지표를 뺀 하락폭을 소수 넷째 자리로 반올림하고,
-    #    허용 하락폭(split["max_drop"][name]) 이하인지 확인하세요.
+    #    허용 하락폭(split["allowed_drop"][name]) 이하인지 확인하세요.
     pytest.fail("이 테스트를 작성하세요")
 
 

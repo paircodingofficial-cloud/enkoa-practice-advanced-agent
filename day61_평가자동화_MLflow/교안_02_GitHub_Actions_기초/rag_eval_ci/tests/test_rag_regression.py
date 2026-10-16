@@ -31,13 +31,13 @@ def test_no_scoring_errors():
 @pytest.mark.parametrize("name", JUDGED_SCORERS)
 def test_metric_floor(name):
     current = report["metrics"][name]
-    assert current >= split["min"][name], f"{name} {current} 가 절대 하한 {split['min'][name]} 보다 낮습니다"
+    assert current >= split["absolute_floor"][name], f"{name} {current} 가 절대 하한 {split['absolute_floor'][name]} 보다 낮습니다"
 
 
 @pytest.mark.parametrize("name", JUDGED_SCORERS)
 def test_metric_drop(name):
     drop = round(split["metrics"][name] - report["metrics"][name], 4)
-    assert drop <= split["max_drop"][name], f"{name} 가 기준선보다 {drop} 떨어졌습니다(허용 {split['max_drop'][name]})"
+    assert drop <= split["allowed_drop"][name], f"{name} 가 기준선보다 {drop} 떨어졌습니다(허용 {split['allowed_drop'][name]})"
 
 
 @pytest.mark.parametrize("case_id", stable_in_scope)

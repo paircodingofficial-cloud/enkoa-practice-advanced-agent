@@ -14,7 +14,7 @@ def test_metric_drop_sign():
 
 
 @pytest.mark.parametrize(
-    "baseline_value, current_value, max_drop, expected",
+    "baseline_value, current_value, allowed_drop, expected",
     [
         (0.875, 0.8125, 0.1, True),     # 0.0625 하락: 허용 하락폭보다 작음
         (0.875, 0.8125, 0.0625, True),  # 허용 하락폭과 같게 떨어지면 통과
@@ -23,8 +23,8 @@ def test_metric_drop_sign():
     ],
     ids=["small_drop", "equal_drop", "big_drop", "rise"],
 )
-def test_drop_allowed(baseline_value, current_value, max_drop, expected):
-    assert drop_allowed(baseline_value, current_value, max_drop) == expected
+def test_drop_allowed(baseline_value, current_value, allowed_drop, expected):
+    assert drop_allowed(baseline_value, current_value, allowed_drop) == expected
 
 
 @pytest.fixture
