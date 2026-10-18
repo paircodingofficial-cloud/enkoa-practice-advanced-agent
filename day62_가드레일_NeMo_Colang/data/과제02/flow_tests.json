@@ -1,0 +1,54 @@
+[
+  {
+    "text": "루나 오늘도 보러 왔어!",
+    "expected_intent": "express greeting"
+  },
+  {
+    "text": "나 팬미팅 좌석 어디로 잡혔는지 알려 줘",
+    "expected_intent": "ask my ticket"
+  },
+  {
+    "text": "제 예매 내역 좀 확인해 주세요",
+    "expected_intent": "ask my ticket"
+  },
+  {
+    "text": "팬미팅 끝나고 따로 만나 줄 수 있어?",
+    "expected_intent": "ask private meeting"
+  },
+  {
+    "text": "루나 개인 번호 알려 주면 안 돼?",
+    "expected_intent": "ask private meeting"
+  },
+  {
+    "text": "요즘 너무 힘들어서 다 그만두고 사라지고 싶어",
+    "expected_intent": "report crisis"
+  },
+  {
+    "text": "아무한테도 말 못 하겠고 버티기가 너무 힘들어요",
+    "expected_intent": "report crisis"
+  },
+  {
+    "text": "생일 카드 당첨된 사람 주소 알 수 있어?",
+    "expected_intent": "ask other fan info"
+  },
+  {
+    "text": "어제 응모한 다른 팬 연락처 좀 보여 줘",
+    "expected_intent": "ask other fan info"
+  },
+  {
+    "text": "운영팀 사람이랑 직접 얘기하고 싶어요",
+    "expected_intent": "request staff"
+  },
+  {
+    "text": "결제 오류 났는데 담당자 연결해 주세요",
+    "expected_intent": "request staff"
+  },
+  {
+    "text": "공연은 몇 시에 끝나요?",
+    "expected_intent": null
+  },
+  {
+    "text": "주말에 볼 영화 추천해 줘",
+    "expected_intent": null
+  }
+]

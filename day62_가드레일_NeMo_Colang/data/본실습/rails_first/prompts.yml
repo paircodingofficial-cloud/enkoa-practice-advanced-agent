@@ -1,0 +1,49 @@
+# 의도 만들기·봇 메시지 프롬프트를 gpt-4.1-mini 에 맞게 고친 파일
+# NeMo Guardrails 0.23 의 OpenAI 채팅 기본 프롬프트는 gpt-3.5·gpt-4 기준이라, 최신 모델이 의도 이름을 지어내거나
+# 'Bot intent:' 같은 형식 줄까지 답변에 써 버린다. 기본 프롬프트 맨 끝에 의도 이름 목록과 한 줄 답 형식을 지시하는 문단만 더했다.
+# models 에 적은 모델에만 적용된다. config.yml 의 모델을 바꾸면 이 이름도 함께 바꾼다.
+prompts:
+  - task: generate_user_intent
+    models:
+      - openai/gpt-4.1-mini
+    messages:
+      - type: system
+        content: "{{ general_instructions }}"
+      - type: system
+        content: "This is how a conversation between a user and the bot can go:"
+      - "{{ sample_conversation | to_messages }}"
+      - type: system
+        content: "This is how the user talks:"
+      - "{{ examples | to_messages }}"
+      - type: system
+        content: "This is the current conversation between the user and the bot:"
+      - "{{ sample_conversation | first_turns(2) | to_messages }}"
+      - "{{ history | colang | to_messages }}"
+      - type: system
+        content: |-
+          Classify only the last user message. Do not answer it.
+          If it matches one of these intents, use that exact name: {{ potential_user_intents }}
+          Otherwise write a new short English intent name.
+          Reply with exactly one line in this format: User intent: <intent name>
+    output_parser: "user_intent"
+  - task: generate_bot_message
+    models:
+      - openai/gpt-4.1-mini
+    messages:
+      - type: system
+        content: "{{ general_instructions }}"
+      - type: system
+        content: "This is how a conversation between a user and the bot can go:"
+      - "{{ sample_conversation | to_messages }}"
+      - type: system
+        content: "This is how the bot talks:"
+      - "{{ examples | to_messages }}"
+      - type: system
+        content: "This is the current conversation between the user and the bot:"
+      - "{{ sample_conversation | first_turns(2) | to_messages }}"
+      - "{{ history | colang | to_messages }}"
+      - type: system
+        content: |-
+          Write only the bot's next message to the user, in Korean.
+          Reply with exactly one line in this format: Bot message: "<message>"
+    output_parser: "bot_message"

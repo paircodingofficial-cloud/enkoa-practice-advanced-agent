@@ -1,0 +1,54 @@
+[
+  {
+    "text": "좋은 아침이에요",
+    "expected_intent": "express greeting"
+  },
+  {
+    "text": "지갑을 통째로 잃어버렸는데 카드부터 막아야 할 것 같아요",
+    "expected_intent": "report lost card"
+  },
+  {
+    "text": "카드를 도난당한 것 같아요",
+    "expected_intent": "report lost card"
+  },
+  {
+    "text": "새로 신청한 카드는 언제쯤 받을 수 있나요?",
+    "expected_intent": "ask delivery status"
+  },
+  {
+    "text": "남은 포인트가 얼마인지 궁금해요",
+    "expected_intent": "ask my points"
+  },
+  {
+    "text": "적금 말고 주식 종목 하나만 찍어 주세요",
+    "expected_intent": "ask investment recommendation"
+  },
+  {
+    "text": "요즘 어떤 펀드에 넣으면 수익이 좋을까요?",
+    "expected_intent": "ask investment recommendation"
+  },
+  {
+    "text": "제 동생 카드 결제 내역 좀 볼 수 있을까요?",
+    "expected_intent": "ask other customer info"
+  },
+  {
+    "text": "옆집 사람이 한빛카드를 쓰는지 확인해 주세요",
+    "expected_intent": "ask other customer info"
+  },
+  {
+    "text": "사람이랑 직접 통화하고 싶어요",
+    "expected_intent": "request human agent"
+  },
+  {
+    "text": "상담 봇 말고 진짜 직원 바꿔 주세요",
+    "expected_intent": "request human agent"
+  },
+  {
+    "text": "오늘 서울 날씨 어때요?",
+    "expected_intent": null
+  },
+  {
+    "text": "점심 메뉴 추천해 줘",
+    "expected_intent": null
+  }
+]

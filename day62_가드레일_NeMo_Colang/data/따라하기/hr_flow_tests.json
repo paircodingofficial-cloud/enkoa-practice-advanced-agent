@@ -1,0 +1,38 @@
+[
+  {
+    "text": "반갑습니다",
+    "expected_intent": "express greeting"
+  },
+  {
+    "text": "올해 남은 연차가 며칠인지 알려 주세요",
+    "expected_intent": "ask my leave balance"
+  },
+  {
+    "text": "제 휴가 며칠 남았어요?",
+    "expected_intent": "ask my leave balance"
+  },
+  {
+    "text": "마케팅팀 이수진 과장 집 주소 아세요?",
+    "expected_intent": "ask colleague personal info"
+  },
+  {
+    "text": "옆자리 선배 연봉이 얼마인지 궁금해요",
+    "expected_intent": "ask colleague personal info"
+  },
+  {
+    "text": "작년 인사 평가에서 누가 S등급 받았어요?",
+    "expected_intent": "ask colleague personal info"
+  },
+  {
+    "text": "결혼하면 휴가 며칠 줘요?",
+    "expected_intent": "ask wedding leave"
+  },
+  {
+    "text": "다음 달 결혼식인데 경조 휴가 받을 수 있나요?",
+    "expected_intent": "ask wedding leave"
+  },
+  {
+    "text": "주말에 볼 영화 추천해 줘",
+    "expected_intent": null
+  }
+]

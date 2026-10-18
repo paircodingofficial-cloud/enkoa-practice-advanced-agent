@@ -21,6 +21,7 @@
 | **day59** | LLM 평가·RAGAS | RAG 답변과 검색 결과를 **RAGAS**(`ragas` 0.4.3) 지표 6종으로 평가합니다. 교안 01은 결함을 일부러 넣은 답변으로 **Faithfulness·Answer Relevancy·Answer Correctness**가 결함마다 어떻게 떨어지는지 보고, 두 지표를 함께 읽어 결함 종류와 고칠 곳을 가립니다. 교안 02는 **Context Precision·Context Recall·Context Relevancy**를 더해 지표 6개의 합격선 판정과 기준선 비교로 RAG의 고장 위치(검색·생성)를 진단합니다. 과제는 의약품 상담 도우미에 같은 절차를 적용합니다 |
 | **day60** | LLM-as-Judge·DeepEval | 판사 모델의 점수화·쌍대 비교와 위치·장황함 편향을 살펴보고, **DeepEval**(`deepeval` 4.2.9)의 G-Eval·ArenaGEval·Hallucination·Toxicity·Bias 지표로 답변을 평가합니다. 사람 라벨과 비교해 판정 기준과 테스트 케이스를 점검합니다. 부록은 골든셋과 Jev 판사로 챗봇 프롬프트를 자동으로 고칩니다(`PromptOptimizer`) |
 | **day61** | 평가 자동화·MLflow | 골든셋 평가를 **MLflow**(`mlflow` 3.14.0)에 기록하고, DeepEval 판사(정답 판정·검색 근거 판정)와 코드 채점(인용 검증)을 채점 함수(`@scorer`)로 붙여 실행 기록(trace)과 함께 비교합니다. 교안 02는 같은 설정을 반복 평가해 판정 흔들림을 확인하고, 기준선·**pytest** 회귀 테스트·**GitHub Actions**/GitLab CI 회귀 게이트를 만듭니다. 부록은 MLflow GenAI 화면, pytest 기초, GitHub Actions 기초, GitHub Actions 심화(Ruff 코드 검사와 AI 코드 리뷰) |
+| **day62** | 가드레일·NeMo Guardrails | 가드레일 없는 챗봇을 레드팀 테스트 셋으로 공격해 **프롬프트 주입·탈옥·개인정보 유출**의 공격 성공률을 확인하고, 영향 x 가능성으로 위협 분석 표를 만들어 무엇부터 어느 레일로 막을지 정합니다. 교안 02는 **NeMo Guardrails**(`nemoguardrails` 0.23.0)와 **Colang** 1.0으로 대화 레일을 만들어 정해 둔 의도에는 정해 둔 흐름과 문장으로만 답하게 하고, 테스트 문장과 공격 문장으로 대화 레일이 막는 것과 못 막는 것을 확인합니다. 과제는 버추얼 아이돌 팬 챗봇에 같은 절차를 적용합니다 |
 
 ---
 
@@ -77,6 +78,8 @@ day59는 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_K
 day60은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`를 넣습니다. DeepEval은 `uv sync`에 포함된 4.2.9를 사용합니다. G-Eval의 logprobs 지원 때문에 판사 모델을 바꿀 때는 해당 모델이 logprobs를 지원하는지 확인하세요. 부록의 Jev 판사는 `TYPESAFE_API_KEY`가 필요합니다.
 
 day61은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`를 넣습니다(교안 01의 Jev 소절은 선택이며 `TYPESAFE_API_KEY`가 필요합니다). MLflow 화면은 단원 폴더에서 `uv run mlflow server --backend-store-uri sqlite:///mlflow.db --port 5050`으로 켭니다. 교안 02의 `rag_eval_ci/`와 부록 02의 `pytest_ci_practice/`는 자기 `pyproject.toml`이 있는 별도 프로젝트라, 그 폴더를 GitHub 저장소로 올려 씁니다.
+
+day62는 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`를 넣습니다. 교안 02·과제 02의 NeMo Guardrails 모델은 설정 폴더의 `config.yml`(gpt-4.1-mini, text-embedding-3-small)이 정합니다.
 
 ## 폴더 구성
 

@@ -1,0 +1,25 @@
+# 인사: 고객이 인사하면 정해 둔 인사말로 답한다
+define user express greeting
+  "안녕하세요"
+  "안녕"
+  "반가워요"
+
+define bot express greeting
+  "안녕하세요. 한빛카드 고객센터 상담 봇입니다. 무엇을 도와드릴까요?"
+
+define flow greeting
+  user express greeting
+  bot express greeting
+
+# 투자 상품 추천 요청: 상담 봇이 하면 안 되는 일이라 정해 둔 문장으로 거절한다
+define user ask investment recommendation
+  "어떤 주식을 사야 하나요"
+  "펀드 추천해 주세요"
+  "요즘 수익 좋은 투자 상품이 뭐예요"
+
+define bot refuse investment advice
+  "죄송하지만 상담 봇은 투자 상품을 추천해 드릴 수 없습니다. 자산관리 상담은 가까운 영업점에 문의해 주세요."
+
+define flow investment
+  user ask investment recommendation
+  bot refuse investment advice

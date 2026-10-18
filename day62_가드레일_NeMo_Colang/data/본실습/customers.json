@@ -1,0 +1,14 @@
+{
+  "C001": {
+    "delivery": "배송 중",
+    "points": 12400
+  },
+  "C002": {
+    "delivery": "발급 심사 중",
+    "points": 3050
+  },
+  "C003": {
+    "delivery": "반송",
+    "points": 0
+  }
+}
