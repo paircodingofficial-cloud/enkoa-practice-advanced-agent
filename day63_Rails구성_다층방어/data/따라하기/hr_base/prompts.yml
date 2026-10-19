@@ -1,0 +1,70 @@
+# ===== prompts.yml: NeMo Guardrails 가 작업(task)마다 LLM 에 보내는 프롬프트 =====
+# task 와 models 가 맞는 항목이 있으면 NeMo 기본 템플릿 대신 이 항목을 쓴다.
+#
+# 1) 대화 레일: generate_user_intent(의도 이름 정하기), generate_bot_message(봇 답변 만들기)
+#    NeMo 기본 템플릿(openai-chatgpt.yml)을 gpt-4.1-mini 용으로 바꾸고, 끝에 system 지시('추가' 주석)를 더했다.
+#    기본 템플릿대로면 gpt-4.1-mini 가 의도 이름을 지어내거나 답변에 형식 줄을 섞는다.
+# 2) 검사 레일(레일 묶음 폴더에만): self_check_input·self_check_output(Yes 면 막기), self_check_facts(No 면 막기)
+#    NeMo 에 기본 템플릿이 없어 직접 썼다. 없이 켜면 설정 오류가 난다.
+#
+# [주의] task 이름은 NeMo 가 정해 둔 이름이다(틀리면 조용히 기본 템플릿을 쓴다).
+#        models 에 적은 모델에만 적용되므로, config.yml 의 모델을 바꾸면 같이 바꾼다.
+
+prompts:
+  # 1) 의도 이름 정하기: 사용자 메시지마다 가장 먼저 실행된다
+  - task: generate_user_intent
+    models:
+      - openai/gpt-4.1-mini   # 바꿈 (원본: openai/gpt-3.5-turbo, openai/gpt-4)
+    messages:
+      - type: system
+        content: "{{ general_instructions }}"
+      - type: system
+        content: "This is how a conversation between a user and the bot can go:"
+      - "{{ sample_conversation | to_messages }}"
+      - type: system
+        content: "This is how the user talks:"
+      - "{{ examples | to_messages}}"
+      - type: system
+        content: "This is the current conversation between the user and the bot:"
+      - "{{ sample_conversation | first_turns(2) | to_messages }}"
+      - "{{ history | colang | to_messages }}"
+      # 추가: 마지막 메시지만 분류하고, 후보 의도 이름 가운데서 골라 한 줄 형식으로 답하게 한다
+      - type: system
+        content: |-
+          Classify only the last user message. Do not answer it.
+          If it matches one of these intents, use that exact name: {{ potential_user_intents }}
+          Otherwise write a new short English intent name.
+          Reply with exactly one line in this format: User intent: <intent name>
+    output_parser: "user_intent"
+  # 2) 봇 답변 만들기: 고른 봇 메시지에 define bot 문장이 없을 때만 실행된다
+  - task: generate_bot_message
+    models:
+      - openai/gpt-4.1-mini   # 바꿈 (원본: openai/gpt-3.5-turbo, openai/gpt-4)
+    messages:
+      - type: system
+        content: "{{ general_instructions }}"
+      - type: system
+        content: "This is how a conversation between a user and the bot can go:"
+      - "{{ sample_conversation | to_messages }}"
+      # 검색 문서: 앱이 context 메시지로 넘기고 검색 레일이 고친 relevant_chunks 가 들어간다 (원본 끝의 따옴표 한 글자는 뺐다)
+      - type: system
+        content: |-
+          {% if relevant_chunks %}
+          # This is some additional context:
+          ```markdown
+          {{ relevant_chunks }}
+          ```
+          {% endif %}
+      - type: system
+        content: "This is how the bot talks:"
+      - "{{ examples | to_messages}}"
+      - type: system
+        content: "This is the current conversation between the user and the bot:"
+      - "{{ sample_conversation | first_turns(2) | to_messages }}"
+      - "{{ history | colang | to_messages }}"
+      # 추가: 다음 봇 메시지만 한국어로, 한 줄 형식으로 쓰게 한다
+      - type: system
+        content: |-
+          Write only the bot's next message to the user, in Korean.
+          Reply with exactly one line in this format: Bot message: "<message>"
+    output_parser: "bot_message"

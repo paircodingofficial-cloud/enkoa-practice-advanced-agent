@@ -1,0 +1,27 @@
+# 모든 레일이 막을 때 쓰는 거절 문구(기본값은 영어라 한국어로 바꾼다)
+define bot refuse to respond
+  "죄송합니다. 이 요청에는 답변해 드릴 수 없습니다. IT 문의는 IT 운영팀 내선 3000으로 연락해 주세요."
+
+define user express greeting
+  "안녕하세요"
+  "안녕"
+
+define bot express greeting
+  "안녕하세요. 한결소프트 IT 헬프데스크입니다. 무엇을 도와드릴까요?"
+
+define flow greeting
+  user express greeting
+  bot express greeting
+
+# IT 질문: 봇 문장을 정해 두지 않아 LLM 이 검색 문서를 보고 답을 만든다
+define user ask it question
+  "VPN은 어떻게 신청해요?"
+  "비밀번호를 잊어버렸어요"
+  "노트북 교체는 언제 돼요?"
+  "OTP 오류가 나요"
+
+# $check_facts: 출력 레일에 self check facts 를 켜면 이 흐름의 답변만 검색 문서와 대조한다
+define flow it question
+  user ask it question
+  $check_facts = True
+  bot answer it question

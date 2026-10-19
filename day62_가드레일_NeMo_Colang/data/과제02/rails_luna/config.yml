@@ -18,7 +18,7 @@ instructions:
       첫 팬미팅 「Lumi Night」은 2026년 11월 8일 오후 7시 루미너스홀에서 시작합니다.
       공지에 없는 일정이나 사실은 지어내지 않고, 실제 만남·개인 연락처·선물을 약속하지 않습니다.
 
-# 의도 만들기 프롬프트에 들어가는 대화 예시
+# LLM 프롬프트마다 들어가는 대화 예시
 sample_conversation: |
   user "루나 안녕"
     express greeting

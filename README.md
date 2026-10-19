@@ -22,6 +22,7 @@
 | **day60** | LLM-as-Judge·DeepEval | 판사 모델의 점수화·쌍대 비교와 위치·장황함 편향을 살펴보고, **DeepEval**(`deepeval` 4.2.9)의 G-Eval·ArenaGEval·Hallucination·Toxicity·Bias 지표로 답변을 평가합니다. 사람 라벨과 비교해 판정 기준과 테스트 케이스를 점검합니다. 부록은 골든셋과 Jev 판사로 챗봇 프롬프트를 자동으로 고칩니다(`PromptOptimizer`) |
 | **day61** | 평가 자동화·MLflow | 골든셋 평가를 **MLflow**(`mlflow` 3.14.0)에 기록하고, DeepEval 판사(정답 판정·검색 근거 판정)와 코드 채점(인용 검증)을 채점 함수(`@scorer`)로 붙여 실행 기록(trace)과 함께 비교합니다. 교안 02는 같은 설정을 반복 평가해 판정 흔들림을 확인하고, 기준선·**pytest** 회귀 테스트·**GitHub Actions**/GitLab CI 회귀 게이트를 만듭니다. 부록은 MLflow GenAI 화면, pytest 기초, GitHub Actions 기초, GitHub Actions 심화(Ruff 코드 검사와 AI 코드 리뷰) |
 | **day62** | 가드레일·NeMo Guardrails | 가드레일 없는 챗봇을 레드팀 테스트 셋으로 공격해 **프롬프트 주입·탈옥·개인정보 유출**의 공격 성공률을 확인하고, 영향 x 가능성으로 위협 분석 표를 만들어 무엇부터 어느 레일로 막을지 정합니다. 교안 02는 **NeMo Guardrails**(`nemoguardrails` 0.23.0)와 **Colang** 1.0으로 대화 레일을 만들어 정해 둔 의도에는 정해 둔 흐름과 문장으로만 답하게 하고, 테스트 문장과 공격 문장으로 대화 레일이 막는 것과 못 막는 것을 확인합니다. 과제는 버추얼 아이돌 팬 챗봇에 같은 절차를 적용합니다 |
+| **day63** | Rails 구성·다층 방어 | NeMo Guardrails의 **입력·검색·출력 레일**을 세웁니다. 교안 01은 LLM 판정 레일(self check input·output·facts), 정규식 레일과 가리기 액션으로 민감정보를 막거나 가리고, 검색 레일로 숨은 지시가 든 게시판 글을 거른 뒤 레일을 설정 폴더 하나로 묶어 레드팀 셋으로 확인합니다. 교안 02는 그 앞뒤에 입력 분류 모델(**Prompt Guard 2**, **Llama Guard 3 1B**)과 출력 검증(**Guardrails AI**, `guardrails-ai` 0.11.0)을 쌓아 공격 차단율과 정상 질문 오차단율을 함께 확인합니다. 과제는 사내 IT 헬프데스크 봇에 같은 절차를 적용합니다 |
 
 ---
 
@@ -80,6 +81,8 @@ day60은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_K
 day61은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`를 넣습니다(교안 01의 Jev 소절은 선택이며 `TYPESAFE_API_KEY`가 필요합니다). MLflow 화면은 단원 폴더에서 `uv run mlflow server --backend-store-uri sqlite:///mlflow.db --port 5050`으로 켭니다. 교안 02의 `rag_eval_ci/`와 부록 02의 `pytest_ci_practice/`는 자기 `pyproject.toml`이 있는 별도 프로젝트라, 그 폴더를 GitHub 저장소로 올려 씁니다.
 
 day62는 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`를 넣습니다. 교안 02·과제 02의 NeMo Guardrails 모델은 설정 폴더의 `config.yml`(gpt-4.1-mini, text-embedding-3-small)이 정합니다.
+
+day63은 단원 폴더의 `.env.example`을 `.env`로 복사하고 `OPENAI_API_KEY`를 넣습니다. 교안 02·과제 02의 분류 모델 두 개(`Llama-Prompt-Guard-2-86M` 약 1.1GB, `Llama-Guard-3-1B` 약 3.0GB)는 저장소에 들어 있지 않고, 준비 셀이 처음 한 번 구글 드라이브에서 받아 `models/` 폴더에 풉니다. 받는 데 몇 분 걸리고 디스크 여유 공간이 약 8GB 필요하니, 수업 전에 교안 02의 모델 받기 셀까지 먼저 실행해 두세요.
 
 ## 폴더 구성
 

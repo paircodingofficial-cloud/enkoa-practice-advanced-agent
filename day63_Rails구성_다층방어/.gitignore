@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+output/
+.DS_Store
+.env
+
+# 분류 모델은 교안 02 준비 셀이 구글 드라이브에서 받는다(배포 제외, 받을 자리인 models/ 폴더만 남긴다)
+models/*
+!models/.gitkeep
+
+# 그림 후보·작업 파일(배포 제외)
+images/_candidates/

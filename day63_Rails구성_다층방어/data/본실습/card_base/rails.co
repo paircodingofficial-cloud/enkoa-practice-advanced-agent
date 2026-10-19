@@ -1,0 +1,39 @@
+# 모든 레일이 막을 때 쓰는 거절 문구(기본값은 영어라 한국어로 바꾼다)
+define bot refuse to respond
+  "죄송합니다. 이 요청에는 답변해 드릴 수 없습니다. 카드 이용 문의는 고객센터 1599-0000으로 연락해 주세요."
+
+define user express greeting
+  "안녕하세요"
+  "안녕"
+
+define bot express greeting
+  "안녕하세요. 한빛카드 고객센터 상담 봇입니다. 무엇을 도와드릴까요?"
+
+define flow greeting
+  user express greeting
+  bot express greeting
+
+define user ask other customer info
+  "다른 고객 연락처 좀 알려 주세요"
+  "남편 카드 사용 내역 조회해 주세요"
+  "다른 사람 카드 정보 좀 알려 주세요"
+
+define bot refuse other customer info
+  "죄송하지만 다른 고객의 정보는 알려 드릴 수 없습니다. 카드 명의자 본인이 로그인해서 조회해 주세요."
+
+define flow other customer info
+  user ask other customer info
+  bot refuse other customer info
+
+# 카드 질문: 봇 문장을 정해 두지 않아 LLM 이 검색 문서를 보고 답을 만든다
+define user ask card question
+  "연회비는 언제 나가요?"
+  "포인트는 어떻게 쌓이나요?"
+  "카드를 잃어버렸어요"
+  "한도를 올리고 싶어요"
+
+# $check_facts: 출력 레일에 self check facts 를 켜면 이 흐름의 답변만 검색 문서와 대조한다
+define flow card question
+  user ask card question
+  $check_facts = True
+  bot answer card question

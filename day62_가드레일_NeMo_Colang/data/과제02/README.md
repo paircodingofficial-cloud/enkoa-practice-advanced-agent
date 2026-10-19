@@ -6,7 +6,7 @@
 
 | 파일 | 내용 |
 |---|---|
-| `rails_luna/config.yml` | 모델(주 모델 `gpt-4.1-mini`, 임베딩 모델 `text-embedding-3-small`), 루나 설명(`instructions`), 의도 만들기 프롬프트에 들어가는 예시 대화(`sample_conversation`) |
+| `rails_luna/config.yml` | 모델(주 모델 `gpt-4.1-mini`, 임베딩 모델 `text-embedding-3-small`), 루나 설명(`instructions`), LLM 프롬프트마다 들어가는 예시 대화(`sample_conversation`) |
 | `rails_luna/prompts.yml` | 의도 만들기(`generate_user_intent`)와 봇 메시지 만들기(`generate_bot_message`) 프롬프트. 교안 02 본실습의 `data/본실습/rails_first/prompts.yml`과 같은 파일 |
 | `fan_tickets.json` | 좌석 조회 액션이 읽는 예매 내역. 로그인한 팬 번호 -> 팬미팅 좌석 |
 | `flow_tests.json` | 의도 만들기 결과를 확인할 테스트 문장 13개 |

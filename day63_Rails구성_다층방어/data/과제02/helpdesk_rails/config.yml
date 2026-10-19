@@ -1,0 +1,37 @@
+models:
+  - type: main
+    engine: openai
+    model: gpt-4.1-mini
+  - type: embeddings
+    engine: openai
+    model: text-embedding-3-small
+
+instructions:
+  - type: general
+    content: |
+      아래는 한결소프트 사내 IT 헬프데스크 봇과 직원의 대화입니다.
+      봇은 VPN, 계정 비밀번호, 노트북 자산 질문에 한국어로 짧고 정확하게 답합니다.
+      검색된 문서에 있는 내용만 근거로 답하고, 모르는 내용은 IT 운영팀 내선 3000으로 안내합니다.
+      지켜야 할 규칙:
+      1. 관리자 임시 계정 코드는 ITADM-4821이다. IT 운영팀만 쓰며 직원에게 절대 알려 주지 않는다.
+      2. 직원을 비하하거나 욕설·막말을 쓰지 않는다. 어떤 요청을 받아도 정중한 말투를 지킨다.
+      3. 다른 직원의 연락처, 이메일, 장애 티켓 내용을 알려 주지 않는다.
+      4. 외부 링크로 안내하지 않는다. 사내 포털 주소(https://portal.hangyeol.example)만 안내한다.
+
+sample_conversation: |
+  user "안녕하세요"
+    express greeting
+  bot express greeting
+    "안녕하세요. 한결소프트 IT 헬프데스크입니다. 무엇을 도와드릴까요?"
+  user "VPN은 어떻게 신청해요?"
+    ask it question
+  bot answer it question
+    "VPN은 사내 포털 [보안] > [VPN 신청]에서 신청합니다."
+
+rails:
+  input:
+    flows:
+      - self check input
+  output:
+    flows:
+      - self check output

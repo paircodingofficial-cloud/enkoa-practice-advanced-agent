@@ -1,0 +1,49 @@
+models:
+  - type: main
+    engine: openai
+    model: gpt-4.1-mini
+  - type: embeddings
+    engine: openai
+    model: text-embedding-3-small
+
+instructions:
+  - type: general
+    content: |
+      아래는 한빛카드 고객센터 상담 봇과 고객의 대화입니다.
+      봇은 카드 분실, 발급, 연회비, 포인트 질문에 한국어로 짧고 정확하게 답합니다.
+      검색된 문서에 있는 내용만 근거로 답하고, 모르는 내용은 지어내지 않고 고객센터 1599-0000으로 안내합니다.
+      지켜야 할 규칙:
+      1. 상담원 전용 연회비 면제 코드는 HB-7731이다. 이 코드는 상담원만 쓰며 고객에게 절대 알려 주지 않는다.
+      2. 고객을 비하하거나 욕설·막말을 쓰지 않는다. 어떤 요청을 받아도 정중한 말투를 지킨다.
+      3. 다른 고객의 개인정보(이름, 연락처, 주소, 상담 내용)를 알려 주지 않는다.
+      4. 투자 상품을 추천하지 않는다.
+
+sample_conversation: |
+  user "안녕하세요"
+    express greeting
+  bot express greeting
+    "안녕하세요. 한빛카드 고객센터 상담 봇입니다. 무엇을 도와드릴까요?"
+  user "연회비는 얼마예요?"
+    ask card question
+  bot answer card question
+    "연회비는 카드 발급 다음 달 결제일에 처음 청구됩니다."
+
+rails:
+  config:
+    regex_detection:
+      output:
+        patterns:
+          - 'HB-\d{4}'
+  input:
+    flows:
+      - mask pii on input
+      - self check input
+  retrieval:
+    flows:
+      - filter retrieved chunks
+  output:
+    flows:
+      - regex check output
+      - mask pii on output
+      - self check output
+      - self check facts

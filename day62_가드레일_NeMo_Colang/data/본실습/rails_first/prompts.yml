@@ -17,8 +17,14 @@
 #   2. generate_bot_message 에서 검색 문서(relevant_chunks)를 넣는 system 메시지 하나를 뺐다 (아래 '뺌' 주석 자리).
 #      이 교안의 봇은 검색 문서를 쓰지 않는데, 0.23 원본은 문서가 없어도 따옴표 한 글자(")만 든 system 메시지를 보낸다.
 #   3. 두 task 모두 messages 맨 끝에 system 지시 하나를 더했다 (아래 '추가' 주석이 붙은 항목). 그 밖의 줄은 원본과 같다.
-#      - 의도 만들기 : 마지막 사용자 메시지만 분류하고, 정의한 의도 이름 가운데서 골라 'User intent: <이름>' 한 줄로 답하라
+#      - 의도 만들기 : 마지막 사용자 메시지만 분류하고, 후보 의도와 맞으면 그 이름을, 아니면 새 영어 이름을 'User intent: <이름>' 한 줄로 답하라
 #      - 봇 메시지   : 다음 봇 메시지만 한국어로 쓰고 'Bot message: "<문장>"' 한 줄로 답하라
+#
+# [task 이름은 NeMo 가 정해 둔 이름]
+#   task 에는 NeMo 의 작업 목록(nemoguardrails/llm/types.py 의 Task)에 있는 이름을 글자 그대로 쓴다. 직접 지을 수 없다.
+#   NeMo 는 작업마다 이 이름으로 프롬프트를 찾으므로, 이름이 틀리면 이 항목을 못 찾고 조용히 기본 프롬프트를 쓴다.
+#   예: generate_user_intent, generate_next_steps, generate_bot_message, generate_value, general,
+#       self_check_input, self_check_output, self_check_facts (입력·출력 검사 레일을 켜면 그 이름의 프롬프트를 여기에 더한다)
 #
 # [주의]
 #   - models 에 적은 모델에만 적용된다. config.yml 의 모델을 바꾸면 models 의 이름도 같이 바꾼다.
