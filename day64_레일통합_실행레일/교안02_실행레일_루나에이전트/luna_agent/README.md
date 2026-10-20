@@ -65,6 +65,10 @@ uv run mlflow ui --backend-store-uri sqlite:///output/mlflow.db --port 5050  # �
 
 ## 화면
 
+**첫 화면:** 대화를 시작하기 전에는 도구별 예시 질문과 팬아트 요청법이 카드로 보이고, 첫 메시지를 보내면 사라집니다.
+
+<img src="images/ui_start.png" width="800" alt="이렇게 물어보세요 카드에 티켓, 주문, 취소, 지도, 팬아트 예시와 팬아트 요청법이 있는 첫 화면">
+
 **내 정보 조회:** 도구 결과는 카드로, 도구마다 실행 레일 판정은 '레일 판정 기록'으로 봅니다.
 
 <img src="images/ui_normal.png" width="800" alt="내 티켓 좌석 질문에 티켓 카드 두 장과 답을 보여 준 화면">
