@@ -51,7 +51,7 @@ define subflow jev policy input
 
 # 출력 정책을 어길 확률이 기준값 0.5 를 넘으면 막는다. 규칙 id 는 persona.yaml 출력 정책 id(예: OUT-03)
 define subflow jev policy output
-  $verdict = execute jev_policy_output(question=$user_message, answer=$bot_message)
+  $verdict = execute jev_policy_output(question=$user_message, answer=$bot_message, documents=$relevant_chunks)
   if $verdict["probability"] > 0.5
     $reply = $verdict["reply"]
     $rule_id = $verdict["rule_id"]

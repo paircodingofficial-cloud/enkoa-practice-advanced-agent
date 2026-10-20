@@ -64,9 +64,10 @@ async def jev_policy_input(text, events):
 
 
 # [레일 액션] 출력 1층: Jev 출력 정책
-async def jev_policy_output(question, answer):
+async def jev_policy_output(question, answer, documents):
     """봇 답변이 출력 정책을 어길 확률을 {"probability", "rule_id", "reply"} 로 돌려준다."""
-    state = {"user_message": question, "bot_answer": answer}
+    # 근거 문서(이번 턴의 도구 결과)도 넘긴다. 답의 좌석, 주문이 로그인한 계정으로 조회한 정보인지 가릴 수 있게 한다(OUT-03)
+    state = {"user_message": question, "bot_answer": answer, "documents": documents}
     judgement = await jev_policy_judgement(state, OUTPUT_POLICY, PERSONA["output_rules"])
 
     # 규칙을 고르지 못했으면 출력 쪽 규칙이라는 것만 남긴다

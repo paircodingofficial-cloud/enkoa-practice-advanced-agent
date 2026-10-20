@@ -87,7 +87,7 @@ async def fake_jev_input_pass(text, events):
     return {"probability": 0.0, "rule_id": "", "reply": ""}
 
 
-async def fake_jev_output_pass(question, answer):
+async def fake_jev_output_pass(question, answer, documents):
     """Jev 출력 정책 층 대신 쓰는 가짜 액션. 늘 통과시킨다."""
     return {"probability": 0.0, "rule_id": "", "reply": ""}
 

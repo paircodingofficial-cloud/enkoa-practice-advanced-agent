@@ -95,10 +95,11 @@ async def staff_code_output(text):
 
 
 # [레일 액션] 출력 1층: Jev 출력 정책
-async def jev_policy_output(question, answer):
+async def jev_policy_output(question, answer, documents):
     """루나 답의 판정 값 {"probability": 출력 정책 위반 확률, "rule_id": 걸린 규칙 id, "reply": 거절 문장} 을 돌려준다."""
     # 질문도 함께 넘겨 Jev 가 무엇을 물은 답인지 알고 판정하게 한다
-    state = {"user_message": question, "bot_answer": answer}
+    # 근거 문서(기본 사실, 검색 문서, 조회한 내 정보)도 넘긴다. 답의 좌석, 주문이 앱이 조회해 준 본인 정보인지 가릴 수 있게 한다(OUT-03)
+    state = {"user_message": question, "bot_answer": answer, "documents": documents}
     judgement = await jev_policy_judgement(state, OUTPUT_POLICY, PERSONA["output_rules"])
 
     # 규칙을 고르지 못했으면 출력 쪽 규칙이라는 것만 남긴다(OUT-?)
