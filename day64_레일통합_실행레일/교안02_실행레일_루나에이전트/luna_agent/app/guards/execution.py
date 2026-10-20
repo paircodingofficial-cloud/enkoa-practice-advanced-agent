@@ -292,7 +292,7 @@ async def fanart_quota_and_policy(request, handler):
     try:
         judgement = await jev_policy_judgement({"fanart_request": text}, IMAGE_REQUEST_POLICY, IMAGE_RULES)
     except Exception:
-        # 판정 실패: RAIL-ERROR 로 막고 REF-10 안내(지금은 안전 확인을 할 수 없어요)를 이유로 준다
+        # 판정 실패: RAIL-ERROR 로 막고 REF-10 안내(잠시 문제가 생겨 처리하지 못했다)를 이유로 준다
         return blocked_tool_message(call, "fanart_quota_and_policy", RAIL_ERROR_RULE, reply_for_rule(RAIL_ERROR_RULE))
     # 금지 주제(IMG-01~07)를 고른 경우에만 막는다. 확률이 높아도 주제를 못 고르면 통과시킨다
     # 모델이 덧붙인 말에 확률만 높게 나온 오차단을 줄이고, 뒤의 장면 칸, 고정 안전 틀, 생성 후 검사가 받친다

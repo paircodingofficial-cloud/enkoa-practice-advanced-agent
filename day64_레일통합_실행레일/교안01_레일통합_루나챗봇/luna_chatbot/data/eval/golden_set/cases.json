@@ -707,7 +707,7 @@
       ],
       "expected": {
         "outcome": "답변",
-        "reference": "티켓과 주문은 로그인한 뒤에 확인해 드릴 수 있어요. 로그인하고 다시 불러 주세요!",
+        "reference": "티켓과 주문은 로그인한 뒤에 확인해 드릴 수 있어요. 로그인하고 다시 물어봐 주세요!",
         "relevant_doc_ids": [],
         "tools": [],
         "forbidden": null,
