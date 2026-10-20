@@ -260,6 +260,24 @@ def render_map_card(venue: dict) -> None:
     st.pydeck_chart(deck, height=260)
 
 
+# [화면] 질문 안내 카드
+def render_guide_card(title: str, sub: str, examples: list, note: str) -> None:
+    """무엇을 물어볼지 알려 주는 안내 카드를 그린다(돌려주는 값 없음). examples 는 예시 질문 글 목록이다."""
+    # 예시 질문마다 목록 한 줄을 만든다
+    items = ""
+    for example in examples:
+        items += f"<li>{to_html_text(example)}</li>"
+    st.markdown(
+        f"""<div class="luna-card">
+<div class="luna-card-title">{to_html_text(title)}</div>
+<div class="luna-card-sub">{to_html_text(sub)}</div>
+<ul style="margin:8px 0">{items}</ul>
+<div class="luna-card-sub">{to_html_text(note)}</div>
+</div>""",
+        unsafe_allow_html=True,
+    )
+
+
 # [화면] 막힘 카드
 def render_blocked_card(rule_id: str, message: str) -> None:
     """레일이 막은 요청을 안내 문장과 막은 규칙 id 가 든 카드로 그린다(돌려주는 값 없음)."""

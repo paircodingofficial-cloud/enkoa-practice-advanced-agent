@@ -22,6 +22,7 @@ from app.tools.fan_db import get_event, get_fan
 from app.ui.components import (
     inject_css,
     render_blocked_card,
+    render_guide_card,
     render_header,
     render_map_card,
     render_message,
@@ -36,6 +37,15 @@ NO_LOGIN = "로그인 안 함"
 
 # 화면에서 고를 수 있는 팬(평가 케이스의 기준 팬)
 LOGIN_IDS = ["F0001", "F0002", "F0003", "F0004", "F0006"]
+
+# 대화가 비었을 때 보여 줄 예시 질문(질문과 그 질문이 쓰는 기능)
+GUIDE_EXAMPLES = [
+    "LUMI 1기 회원 혜택 알려 줘. (공지, 규정 검색)",
+    "티켓은 공연 며칠 전까지 취소할 수 있어요? (규정 검색)",
+    "내 티켓 좌석 어디예요? (로그인한 팬 본인 정보)",
+    "「Lumi Night」 공연장 지도로 보여 줘. (공연장 주소와 지도)",
+    "루나 오늘도 응원해! (일상 대화)",
+]
 
 # 경로 이름(라우터가 고른 경로, 로그인 안내, 입력 차단) -> 화면 글자
 ROUTE_LABELS = {
@@ -207,6 +217,18 @@ def main() -> None:
     render_header(profile)
     st.markdown(notice_html(), unsafe_allow_html=True)
 
+    # 입력창은 어디서 불러도 화면 맨 아래에 붙는다. 먼저 받아 두어야 첫 메시지를 보낸 화면에서 안내 카드를 감출 수 있다
+    text = st.chat_input("루나에게 메시지를 보내 보세요")
+
+    # 대화가 비어 있고 아직 보낸 메시지가 없을 때만 무엇을 물어볼지 안내한다(대화가 시작되면 화면을 차지하지 않게 감춘다)
+    if len(st.session_state["history"]) == 0 and not text:
+        render_guide_card(
+            "이렇게 물어보세요",
+            "공지와 규정은 문서를 찾아 답하고, 내 티켓과 주문은 왼쪽에서 팬을 고르면 본인 것만 보여 줘요.",
+            GUIDE_EXAMPLES,
+            "막힐 만한 질문도 보내 보고, 답 아래 '레일 판정 기록'을 펼쳐 어느 레일이 막았는지 확인해 보세요.",
+        )
+
     # 지난 대화: Streamlit 은 매번 처음부터 다시 그리므로 저장해 둔 기록을 다시 그린다
     for item in st.session_state["history"]:
         if item["role"] == "user":
@@ -215,7 +237,6 @@ def main() -> None:
             render_answer(item["summary"])
 
     # 새 메시지: 팬 말풍선을 먼저 그리고, 살아 있는 루프에서 한 턴을 실행한 뒤 루나의 답을 그린다
-    text = st.chat_input("루나에게 메시지를 보내 보세요")
     if text:
         render_message("user", text)
         context = replace(get_base_context(), fan_id=login_fan_id)

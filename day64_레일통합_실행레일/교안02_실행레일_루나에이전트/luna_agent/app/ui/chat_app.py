@@ -30,6 +30,7 @@ from app.ui.components import (
     render_approval_card,
     render_blocked_card,
     render_fanart_card,
+    render_guide_card,
     render_header,
     render_map_card,
     render_message,
@@ -41,6 +42,23 @@ from app.ui.runner import BackgroundLoop
 
 # 화면에서 고를 수 있는 로그인 계정(평가 케이스의 기준 팬과 운영팀 한 명)
 LOGIN_IDS = ["F0001", "F0002", "F0003", "F0004", "F0005", "F0006", "S0001"]
+
+# 대화가 비어 있을 때 보여 주는 사용 안내(예시 질문과 설명, 팬아트 요청법)
+GUIDE_TITLE = "이렇게 물어보세요"
+GUIDE_SUB = "왼쪽에서 로그인 계정을 고르면 그 계정의 정보와 권한으로만 도구가 움직여요."
+GUIDE_EXAMPLES = [
+    ("내 티켓 좌석 알려 줘.", "내 티켓 조회"),
+    ("제 주문 배송 상태 알려 줘.", "내 주문 조회"),
+    ("T00003 티켓 취소해 줘.", "F0003 로그인. 취소, 환불은 상담원 승인 카드가 나온 뒤 실행"),
+    ("「Lumi Night」 공연장 위치 지도로 보여 줘.", "등록된 공연장만 지도로"),
+    ("카페 창가에서 별빛 편지를 읽는 루나 팬아트 그려 줘.", "팬아트, 아래 요청법 참고"),
+]
+GUIDE_FANART_TIPS = [
+    "장소, 행동, 계절이나 시간, 소품, 분위기로 장면을 말해 주세요.",
+    "머리색과 의상은 공식 설정대로 그려져요. 외모를 바꾸는 말은 반영되지 않아요.",
+    "그림 속 글자, 실존 인물, 다른 회사 캐릭터, 선정적이거나 폭력적인 장면은 그리지 않아요.",
+    "하루에 일반 회원 1장, LUMI 1기 3장까지 만들 수 있어요.",
+]
 
 # 도구 결과 상태를 화면 표시 색과 글자로
 # rejected: 도구가 실행됐지만 업무 규칙으로 거절함(예: 이미 예매된 좌석). 레일이 막은 것과 글자를 나눈다
@@ -215,6 +233,9 @@ def main() -> None:
         st.caption(f"대화 id: {st.session_state.thread_id}")
 
     render_header(fan)
+    # 대화가 비어 있는 동안만 무엇을 물어볼지 안내한다
+    if not st.session_state.turns:
+        render_guide_card(GUIDE_TITLE, GUIDE_SUB, GUIDE_EXAMPLES, GUIDE_FANART_TIPS)
     for past_turn in st.session_state.turns:
         render_turn(past_turn)
 

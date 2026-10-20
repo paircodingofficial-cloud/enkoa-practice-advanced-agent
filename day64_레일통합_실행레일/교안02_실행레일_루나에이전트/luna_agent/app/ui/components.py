@@ -116,6 +116,27 @@ def render_header(profile: dict | None) -> None:
     )
 
 
+# [화면] 사용 안내 카드
+def render_guide_card(title: str, sub: str, examples: list, fanart_tips: list) -> None:
+    """무엇을 물어볼 수 있는지 예시 질문과 팬아트 요청법을 한 장의 카드로 그린다."""
+    example_items = ""
+    for question, note in examples:
+        example_items += f"<li><b>{to_html_text(question)}</b> ({to_html_text(note)})</li>"
+    tip_items = ""
+    for tip in fanart_tips:
+        tip_items += f"<li>{to_html_text(tip)}</li>"
+    st.markdown(
+        f"""<div class="luna-card">
+<div class="luna-card-title">{to_html_text(title)}</div>
+<div class="luna-card-sub">{to_html_text(sub)}</div>
+<ul>{example_items}</ul>
+<div class="luna-card-title" style="margin-top:10px">팬아트 요청법</div>
+<ul>{tip_items}</ul>
+</div>""",
+        unsafe_allow_html=True,
+    )
+
+
 # [화면] 말풍선
 def render_message(role: str, text: str) -> None:
     """대화 한 줄을 말풍선으로 그린다. role 은 'user'(팬) 또는 'assistant'(루나)다."""
