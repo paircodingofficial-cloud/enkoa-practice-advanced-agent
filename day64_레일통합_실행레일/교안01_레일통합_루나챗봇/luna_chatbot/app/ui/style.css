@@ -1,0 +1,288 @@
+/* 루나 팬 서비스 화면 스타일. components.py 의 inject_css 가 읽어 페이지에 넣는다 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap");
+
+:root {
+  --luna-accent: #8b7fd6;          /* 라벤더 강조색(공식 색) */
+  --luna-accent-strong: #6f62c4;   /* 강조색 글자, 눌린 상태 */
+  --luna-accent-soft: #f1effb;     /* 강조색 옅은 바탕 */
+  --luna-surface: #ffffff;         /* 카드 바탕 */
+  --luna-surface-muted: #f7f7fa;   /* 페이지, 보조 바탕 */
+  --luna-border: #ebeaf1;          /* 테두리 */
+  --luna-text: #23222b;            /* 본문 글자 */
+  --luna-text-muted: #6e6b7b;      /* 보조 글자 */
+  --luna-success: #3f9b74;         /* 통과 */
+  --luna-success-soft: #eaf6f0;
+  --luna-warning: #b7832f;         /* 고침(가림) */
+  --luna-warning-soft: #fbf3e6;
+  --luna-danger: #c4566a;          /* 막음 */
+  --luna-danger-soft: #fbedf0;
+  --luna-radius: 18px;
+  --luna-shadow: 0 1px 2px rgba(35, 34, 43, 0.04), 0 6px 18px rgba(35, 34, 43, 0.05);
+}
+
+html, body, [class*="css"], .stApp, .stMarkdown, button, input, textarea {
+  font-family: "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.stApp {
+  background: linear-gradient(180deg, #fbfaff 0%, var(--luna-surface-muted) 240px);
+  color: var(--luna-text);
+}
+
+.block-container {
+  max-width: 820px;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+/* ===== 머리(헤더) ===== */
+.luna-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 20px;
+  margin-bottom: 24px;
+  background: var(--luna-surface);
+  border: 1px solid var(--luna-border);
+  border-radius: 22px;
+  box-shadow: var(--luna-shadow);
+}
+
+.luna-header img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--luna-accent-soft);
+}
+
+.luna-header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.luna-header-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.luna-header-sub {
+  font-size: 0.85rem;
+  color: var(--luna-text-muted);
+  margin-top: 2px;
+}
+
+.luna-chip-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.luna-chip {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--luna-accent-strong);
+  background: var(--luna-accent-soft);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.luna-chip.muted {
+  color: var(--luna-text-muted);
+  background: var(--luna-surface-muted);
+}
+
+/* ===== 말풍선 ===== */
+.luna-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.luna-row.user {
+  justify-content: flex-end;
+}
+
+.luna-row img.luna-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.luna-bubble {
+  max-width: 78%;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-radius: var(--luna-radius);
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.luna-bubble.assistant {
+  background: var(--luna-surface);
+  border: 1px solid var(--luna-border);
+  border-bottom-left-radius: 6px;
+  box-shadow: var(--luna-shadow);
+}
+
+.luna-bubble.user {
+  color: #ffffff;
+  background: linear-gradient(135deg, var(--luna-accent) 0%, var(--luna-accent-strong) 100%);
+  border-bottom-right-radius: 6px;
+}
+
+/* ===== 카드 공통 ===== */
+.luna-card {
+  padding: 16px 18px;
+  margin: 10px 0 10px 44px;
+  background: var(--luna-surface);
+  border: 1px solid var(--luna-border);
+  border-radius: 16px;
+  box-shadow: var(--luna-shadow);
+}
+
+.luna-card-title {
+  font-weight: 600;
+  font-size: 0.98rem;
+  margin-bottom: 4px;
+}
+
+.luna-card-sub {
+  font-size: 0.84rem;
+  color: var(--luna-text-muted);
+}
+
+.luna-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px 16px;
+  margin-top: 12px;
+}
+
+.luna-field-label {
+  font-size: 0.74rem;
+  color: var(--luna-text-muted);
+}
+
+.luna-field-value {
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+/* 막힘 카드: 왼쪽 선 하나로만 알린다 */
+.luna-card.blocked {
+  border-left: 3px solid var(--luna-danger);
+}
+
+/* ===== 상태 표시 ===== */
+.luna-status {
+  display: inline-block;
+  padding: 2px 9px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+.luna-status.passed {
+  color: var(--luna-success);
+  background: var(--luna-success-soft);
+}
+
+.luna-status.modified {
+  color: var(--luna-warning);
+  background: var(--luna-warning-soft);
+}
+
+.luna-status.blocked {
+  color: var(--luna-danger);
+  background: var(--luna-danger-soft);
+}
+
+.luna-status.info {
+  color: var(--luna-accent-strong);
+  background: var(--luna-accent-soft);
+}
+
+/* ===== 레일 판정 기록 ===== */
+.luna-trace-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--luna-border);
+  font-size: 0.86rem;
+}
+
+.luna-trace-row:last-child {
+  border-bottom: none;
+}
+
+.luna-trace-stage {
+  width: 110px;
+  flex-shrink: 0;
+  color: var(--luna-text-muted);
+}
+
+.luna-trace-detail {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* ===== Streamlit 기본 요소 다듬기 ===== */
+[data-testid="stExpander"] {
+  border: 1px solid var(--luna-border);
+  border-radius: 14px;
+  background: var(--luna-surface);
+  margin-left: 44px;
+}
+
+[data-testid="stChatInput"] textarea {
+  border-radius: 14px;
+}
+
+.stButton > button {
+  border-radius: 12px;
+  border: 1px solid var(--luna-border);
+  font-weight: 500;
+}
+
+/* 머리 아래 공지 줄: 온라인 표시 점과 대표 공연(챗봇 화면 chat_app.py 가 쓴다) */
+.luna-notice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: -4px 0 14px 4px;
+  font-size: 0.86rem;
+  opacity: 0.85;
+}
+
+.luna-online-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #3fbf7f;
+  display: inline-block;
+}
+
+/* 좁은 화면에서는 카드 들여쓰기를 줄인다 */
+@media (max-width: 640px) {
+  .luna-card, [data-testid="stExpander"] {
+    margin-left: 0;
+  }
+  .luna-bubble {
+    max-width: 88%;
+  }
+  .luna-header {
+    flex-wrap: wrap;
+  }
+}

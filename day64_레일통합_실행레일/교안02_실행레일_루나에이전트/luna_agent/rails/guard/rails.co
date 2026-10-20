@@ -1,0 +1,65 @@
+# 이 폴더가 레일의 원본이다. 층을 빼거나 순서를 바꾸려면 flows 목록 한 줄을, 기준값은 흐름 안의 숫자를 고친다. 앱을 다시 실행하면 반영된다.
+# 흐름 이름은 config.yml 의 flows 목록과 똑같이 적는다. 이름이 다르면 NeMo 가 그 층을 찾지 못한다
+# 흐름 이름은 NeMo 기본 흐름 이름과 겹치지 않게 짓는다(겹치면 기본 흐름이 대신 돈다)
+# execute 뒤의 이름은 액션 함수 이름(actions.py)이고, 흐름 이름과 같게 짓는다(공백을 밑줄로). 액션은 dict 를 돌려주고 흐름은 $verdict["probability"] 처럼 키로 읽는다
+
+# 막을 때 쓰는 문장: 액션이 정한 답($reply) 뒤에 막은 규칙 id 를 붙인다
+# 막은 흐름 이름은 NeMo 가 판정 결과(rail)에 직접 알려 주고, 규칙 id 는 앱(rails.py)이 "막은 규칙: " 뒤를 떼어 읽는다
+define bot refuse with rule
+  "$reply 막은 규칙: $rule_id"
+
+# NeMo 기본 거절 문장(영어)을 한국어로 바꿔 둔다
+define bot refuse to respond
+  "죄송해요. 이 요청에는 답할 수 없어요."
+
+# ===== 입력 레일 =====
+
+# 주입, 탈옥 문장일 확률(0~1)이 기준값 0.5 이상이면 막는다
+define subflow prompt guard 2 input
+  $verdict = execute prompt_guard_2_input(text=$user_message)
+  if $verdict["probability"] >= 0.5
+    $reply = $verdict["reply"]
+    $rule_id = $verdict["rule_id"]
+    bot refuse with rule
+    stop
+
+# 입력 정책을 어길 확률이 기준값 0.5 를 넘으면 막는다. 규칙 id 는 persona.yaml 입력 정책 id(예: IN-05)
+# 액션은 NeMo 가 넘겨 주는 대화 기록(events)에서 앞선 팬 메시지도 함께 읽는다
+define subflow jev policy input
+  $verdict = execute jev_policy_input(text=$user_message)
+  if $verdict["probability"] > 0.5
+    $reply = $verdict["reply"]
+    $rule_id = $verdict["rule_id"]
+    bot refuse with rule
+    stop
+
+# ===== 출력 레일 =====
+
+# 출력 정책을 어길 확률이 기준값 0.5 를 넘으면 막는다. 규칙 id 는 persona.yaml 출력 정책 id(예: OUT-03)
+define subflow jev policy output
+  $verdict = execute jev_policy_output(question=$user_message, answer=$bot_message)
+  if $verdict["probability"] > 0.5
+    $reply = $verdict["reply"]
+    $rule_id = $verdict["rule_id"]
+    bot refuse with rule
+    stop
+
+# 답변이 근거 문서(이번 턴의 도구 결과)로 뒷받침될 확률이 기준값 0.5 보다 낮으면 막는다(근거 문서가 없으면 액션이 1.0 을 돌려준다)
+define subflow jev facts output
+  $verdict = execute jev_facts_output(answer=$bot_message, documents=$relevant_chunks)
+  if $verdict["probability"] < 0.5
+    $reply = $verdict["reply"]
+    $rule_id = $verdict["rule_id"]
+    bot refuse with rule
+    stop
+
+# 공식 밖 링크가 있으면 막고, 개인정보는 가린 답변으로 바꾼다
+define subflow guardrails ai output
+  $verdict = execute guardrails_ai_output(text=$bot_message)
+  if $verdict["blocked"]
+    $reply = $verdict["reply"]
+    $rule_id = $verdict["rule_id"]
+    bot refuse with rule
+    stop
+  # 막지 않았으면 답을 개인정보를 가린 글로 바꾼다(바뀌었으면 판정 결과가 modified 가 된다)
+  $bot_message = $verdict["text"]

@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+output/
+.DS_Store
+.env
+.deepeval/
+mlruns/
+mlflow.db
+
+# 분류 모델(Prompt Guard 2, Llama Guard 3)은 각 프로젝트 README 의 안내대로 받는다(배포 제외, 받을 자리인 models/ 폴더만 남긴다)
+models/*
+!models/.gitkeep

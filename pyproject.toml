@@ -129,6 +129,14 @@ dependencies = [
     "guardrails-ai==0.11.0",
     #   교안 02·과제 02 준비 셀이 분류 모델 zip(1.1GB·3.0GB)을 구글 드라이브에서 받는다.
     "gdown>=6.4.2",
+    # day64: 루나 팬 서비스 프로젝트(.py). 배포 환경 검사는 노트북만 읽으므로 프로젝트 코드가 직접 import 하는 것을 적는다.
+    #   채팅 화면(Streamlit)과 공연장 지도(pydeck), .env 설정 읽기(pydantic-settings), 비동기 체크포인터(aiosqlite), 팬아트 그림 처리(Pillow).
+    #   채팅 화면은 원본 실습 환경에서 실행해 본 버전으로 고정한다.
+    "streamlit==1.59.1",
+    "pydeck>=0.9.3",
+    "pydantic-settings>=2.14",
+    "aiosqlite>=0.22",
+    "pillow>=12",
 ]
 
 [tool.uv]

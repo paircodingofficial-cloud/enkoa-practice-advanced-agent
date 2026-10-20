@@ -1,0 +1,19 @@
+# 이 폴더가 레일의 원본이다. 층을 빼거나 순서를 바꾸려면 flows 목록 한 줄을, 기준값은 흐름 안의 숫자를 고친다. 앱을 다시 실행하면 반영된다.
+# 흐름의 내용(무엇을 부르고 어떤 기준으로 막는지)은 같은 폴더의 rails.co 에 있다
+# 모델(models)은 두지 않는다. 앱은 check_async(판정만)로 입력, 출력 레일만 돌리므로 답변 모델(main)도,
+# 예시 문장을 비교할 임베딩 모델도 쓰지 않는다. 판정은 층마다 붙인 액션(분류 모델, Jev, Guardrails AI)이 한다
+
+# 검색 레일은 두지 않는다. 이 에이전트는 규정 검색이 도구라서 검색 결과 검사는 실행 레일(execution.py 의 check_tool_result)이 맡는다
+rails:
+  # 입력 레일: 적은 순서대로 돌고, 한 층이 막으면 뒤 층은 돌지 않는다
+  # 말로 하는 공격(주입, 정책 위반)만 본다. 남의 데이터, 역할, 승인은 도구를 부르는 자리에서 실행 레일이 코드로 막는다
+  input:
+    flows:
+      - prompt guard 2 input  # 1층 Prompt Guard 2: 주입, 탈옥 문장 확률(로컬 모델)
+      - jev policy input      # 2층 Jev: persona.yaml 입력 정책 위반 확률
+  # 출력 레일: 답변이 팬에게 가기 전에 검사하고 고친다
+  output:
+    flows:
+      - jev policy output     # 1층 Jev: persona.yaml 출력 정책 위반 확률
+      - jev facts output      # 2층 Jev: 답변이 도구 결과로 뒷받침될 확률
+      - guardrails ai output  # 3층 Guardrails AI: 공식 밖 링크는 막고 개인정보는 가린다
