@@ -62,6 +62,31 @@ uv run mlflow ui --backend-store-uri sqlite:///output/mlflow.db --port 5050  # �
 - **평가:** 골든셋(정상)과 레드팀 테스트 셋(공격)을 케이스마다 새 대화와 DB 임시 사본으로 돌립니다. 결과는 화면, `output/eval/<run 이름>.csv`, `output/mlflow.db` 에 남습니다.
 - **`uv run -m app.main` 으로 실행하는 이유:** 코드가 `from app.core...` 로 서로를 부르므로 프로젝트 폴더가 import 기준이어야 합니다. 파일 경로(`uv run app/main.py`)로 실행하면 `No module named 'app'` 이 납니다.
 
+
+## 화면
+
+**내 정보 조회:** 도구 결과는 카드로, 도구마다 실행 레일 판정은 '레일 판정 기록'으로 봅니다.
+
+<img src="images/ui_normal.png" width="800" alt="내 티켓 좌석 질문에 티켓 카드 두 장과 답을 보여 준 화면">
+
+**사람 승인 멈춤과 재개:** 취소, 환불은 실행 직전에 멈추고 승인 카드를 띄웁니다. `승인` 을 누르면 같은 대화 ID 로 멈춘 자리에서 이어 갑니다.
+
+<img src="images/ui_approval_pending.png" width="800" alt="티켓 취소 요청이 승인 대기로 멈추고 승인, 거절 버튼이 나온 화면">
+
+<img src="images/ui_approval_resumed.png" width="800" alt="승인 뒤 취소가 실행되고 환불 금액을 안내한 화면">
+
+**팬아트:** 생성 앞에서 하루 한도와 요청 정책을, 생성 뒤에서 모더레이션과 브랜드 검사를 거친 그림만 'AI 생성 팬아트' 표시를 붙여 보여 줍니다.
+
+<img src="images/ui_fanart.png" width="800" alt="카페 창가에서 편지를 읽는 루나 팬아트와 검사 통과 표시">
+
+**공연장 지도:** 공연 id 로만 위치를 찾고, 지도는 답 위의 카드로 보여 줍니다.
+
+<img src="images/ui_venue_map.png" width="800" alt="공연장 카드와 지도, 찾아오는 길 안내">
+
+**막힌 질문:** 입력 레일이 막으면 에이전트와 도구는 돌지 않습니다.
+
+<img src="images/ui_blocked.png" width="800" alt="운영팀 코드를 묻는 요청을 입력 레일이 IN-03 으로 막은 화면">
+
 ## 데이터(`data/`)
 
 | 경로 | 들어 있는 것 | 누가 쓰나 |
@@ -134,7 +159,8 @@ luna_agent/
 │   └── rails.co                   # 레일 흐름과 기준값
 ├── images/
 │   ├── agent_graph.png            # 에이전트 그래프 그림
-│   └── luna_graph.png             # 루나 그래프 그림
+│   ├── luna_graph.png             # 루나 그래프 그림
+│   └── ui_*.png                   # README 의 채팅 화면 캡처
 ├── tests/
 │   ├── conftest.py                # 가짜 키, 모델, 레일, 그림 API, Jev, DB 사본 준비
 │   ├── test_config.py             # 레일 층 목록, Settings 값 확인

@@ -93,6 +93,21 @@ uv run pytest -q
 
 평가 결과는 `output/eval/<run 이름>.csv` 와 `output/mlflow.db` 에 남습니다. 기대 경로(`expected.route`)가 있는 케이스는 케이스마다 경로 맞음(`route_ok`)이, 요약 지표에는 경로 정확도(`route_accuracy`)가 남습니다. 모듈마다 맨 아래에 확인 블록이 있어 `uv run -m app.graph.nodes` 처럼 한 층만 실행해 볼 수 있습니다.
 
+
+## 화면
+
+**정상 질문:** 검색 문서로 답하고, 답 아래 '레일 판정 기록'에서 층마다 판정을 봅니다.
+
+<img src="images/ui_normal.png" width="800" alt="LUMI 1기 회원 혜택 질문에 검색 문서로 답한 화면">
+
+**막힌 질문:** 입력 레일이 막으면 라우터까지 가지 않고, 정해 둔 안내 문장과 막은 규칙 id 가 나옵니다.
+
+<img src="images/ui_blocked.png" width="800" alt="운영팀 코드를 묻는 주입 공격을 입력 레일이 막은 화면">
+
+**공연장 지도:** 공연장 경로는 DB 에 등록된 공연장 주소로 위치를 찾아 답 아래에 지도 카드를 그립니다.
+
+<img src="images/ui_venue_map.png" width="800" alt="Lumi Night 공연장 질문에 주소, 찾아오는 길, 지도를 함께 보여 준 화면">
+
 ## 폴더 구조
 
 ```
@@ -140,7 +155,8 @@ luna_chatbot/
 │   └── rails.co                    # 레일 흐름과 기준값 (함께 따라하기 자리 있음)
 ├── images/
 │   ├── flow.png                    # 흐름 그림
-│   └── l1_overview.png             # README 의 전체 노드 흐름도
+│   ├── l1_overview.png             # README 의 전체 노드 흐름도
+│   └── ui_*.png                    # README 의 채팅 화면 캡처
 ├── tests/
 │   ├── conftest.py                 # 가짜 키, 모델, 레일, Jev, 검색기 준비
 │   ├── test_config.py              # 경로, 레일 설정, Settings 값 확인
