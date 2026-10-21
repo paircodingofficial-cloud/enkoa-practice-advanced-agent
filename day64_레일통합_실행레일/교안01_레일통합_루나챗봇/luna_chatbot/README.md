@@ -99,7 +99,7 @@ uv run mlflow ui --backend-store-uri sqlite:///output/mlflow.db --port 5050
 uv run pytest -q
 ```
 
-답변 품질은 DeepEval 로 채점합니다. 막히지 않은 정상, 경계 케이스의 마지막 답을 `FaithfulnessMetric`(답이 검색 문서와 DB 조회 결과에 근거하는가)과 G-Eval `정답성`(정답 답변과 핵심 사실이 같은가)으로 채점하며, 판사 모델은 `.env` 의 `OPENAI_EVAL_MODEL`(기본 `gpt-4.1-mini`)입니다. 요약 지표 이름은 `faithfulness`, `correctness` 입니다.
+답변 품질은 DeepEval 로 채점합니다. 막히지 않은 정상, 경계 케이스의 마지막 답을 `FaithfulnessMetric`(답이 검색 문서와 DB 조회 결과와 모순되지 않는가)과 G-Eval `정답성`(정답 답변과 핵심 사실이 같은가)으로 채점하며, 판사 모델은 `.env` 의 `OPENAI_EVAL_MODEL`(기본 `gpt-4.1-mini`)입니다. 요약 지표 이름은 `faithfulness`, `correctness` 이고, 케이스별 점수와 한국어 판정 이유는 결과 CSV 의 `faithfulness_reason`, `correctness_reason` 칸에 남습니다.
 
 평가 결과는 `output/eval/<run 이름>.csv` 와 `output/mlflow.db` 에 남습니다. MLflow run 하나에 설정, 케이스별 판정(`mlflow.genai.evaluate` 의 채점 함수, 화면의 Traces 탭), 요약 지표가 함께 남습니다(기록 DB 는 `output/mlflow.db`, 트레이스 같은 파일은 `output/mlartifacts/`). 기대 경로(`expected.route`)가 있는 케이스는 케이스마다 경로 맞음(`route_ok`)이, 요약 지표에는 경로 정확도(`route_accuracy`)가 남습니다. 모듈마다 맨 아래에 확인 블록이 있어 `uv run -m app.graph.nodes` 처럼 한 층만 실행해 볼 수 있습니다.
 

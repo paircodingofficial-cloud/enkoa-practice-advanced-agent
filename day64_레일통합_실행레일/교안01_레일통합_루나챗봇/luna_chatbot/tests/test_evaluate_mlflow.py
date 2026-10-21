@@ -35,8 +35,8 @@ def test_load_selected_cases_by_set():
 def test_scorer_means_match_summary_metrics():
     """채점 함수의 평균(None 은 뺀다)이 같은 뜻의 요약 지표와 같다. 둘이 다르면 MLflow 화면과 성적표가 어긋난다."""
     records = sample_records()
-    evaluate.attach_scores(records, [{"case_id": "n1", "지표": "Faithfulness", "점수": 0.8},
-                                     {"case_id": "n1", "지표": "정답성", "점수": 0.6}])
+    evaluate.attach_scores(records, [{"case_id": "n1", "지표": "Faithfulness", "점수": 0.8, "이유": "근거와 맞다"},
+                                     {"case_id": "n1", "지표": "정답성", "점수": 0.6, "이유": "정보 하나가 빠졌다"}])
     rows = evaluate.eval_rows(records)
     metrics = evaluate.summary_metrics(records)
     assert scorer_mean(evaluate.defended, rows) == metrics["defense_rate"]

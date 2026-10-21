@@ -540,6 +540,11 @@ def log_to_mlflow(run_name: str, params: dict, metrics: dict, records: list | No
             # 기록이 끝나면 원래 값으로 되돌려, 이 뒤에 처음 만드는 라이브러리의 추적 전송이 켜지지 않게 한다
             previous = os.environ.get("OTEL_SDK_DISABLED")
             os.environ["OTEL_SDK_DISABLED"] = "false"
+            # 케이스별 기록을 동시에 처리하는 작업자 수를 4로 정한다. .env 나 환경 변수로 정했으면 그 값을 쓴다
+            # 정하지 않으면 MLflow 3.14 는 "LLM 호출 한 번에 2초"를 가정해 속도 제한(초당 10회 x 채점 함수 수)으로 스레드를 만든다(채점 수백 개)
+            # 이 채점 함수들은 저장된 판정만 읽어 바로 끝나므로, 그 스레드가 한꺼번에 SQLite 에 기록하려다 DB 연결(기본 5 + 초과 10)이 모자라
+            # 30초를 기다린 뒤 실패하고 다시 보낸다(QueuePool limit 경고). SQLite 는 쓰기를 한 번에 하나만 받으므로 작업자 4개로도 충분하다
+            os.environ.setdefault("MLFLOW_GENAI_EVAL_MAX_WORKERS", "4")
             try:
                 mlflow.genai.evaluate(data=eval_rows(records), scorers=SCORERS)
             finally:

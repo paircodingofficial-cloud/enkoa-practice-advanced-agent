@@ -27,6 +27,7 @@ from tqdm.asyncio import tqdm_asyncio
 # DeepEval 이 사용 기록을 외부로 보내지 않게 한다. deepeval 을 불러올 때 읽는 값이라 import 보다 먼저 정한다
 os.environ.setdefault("DEEPEVAL_TELEMETRY_OPT_OUT", "YES")
 from deepeval.metrics import FaithfulnessMetric, GEval
+from deepeval.metrics.faithfulness import FaithfulnessTemplate
 from deepeval.models import OpenAIModel
 from deepeval.test_case import LLMTestCase, SingleTurnParams
 
@@ -64,6 +65,17 @@ CORRECTNESS_STEPS = [
 
 # 이유를 한국어로 받는 한 줄. 채점 규칙이 아니므로 판단 단계 맨 끝에 붙인다(60일차와 같다)
 KO_REASON = "판정 이유(reason)는 한국어로 쓴다."
+
+
+# [판사 프롬프트] Faithfulness 판사 프롬프트에서 판정 이유를 쓰는 부분만 바꿔, 이유를 한국어로 받는다(앞 단원 평가 자동화와 같은 방식)
+class KoreanFaithfulnessTemplate(FaithfulnessTemplate):
+    """Faithfulness 의 판정 이유 프롬프트 끝에 한국어 지시 한 줄을 붙인 템플릿."""
+
+    @staticmethod
+    def generate_reason(**kwargs):
+        # DeepEval 이 넘기는 값(모순된 주장, 점수 등)을 기본 프롬프트에 그대로 넘기고 끝에 한 줄만 붙인다
+        # 주장을 나누고 판정하는 프롬프트는 그대로라 점수는 바뀌지 않는다
+        return FaithfulnessTemplate.generate_reason(**kwargs) + "\n\nreason 값은 한국어로 쓴다."
 
 # 앞 단원과 같은 동시 실행 상한. 케이스와 채점 작업을 이 수만큼만 동시에 돌린다
 SEMAPHORE = asyncio.Semaphore(settings.concurrency_limit)
@@ -416,7 +428,11 @@ def make_judge_metric(metric_name: str):
     """표 이름(Faithfulness, 정답성)에 맞는 DeepEval 지표를 새로 만들어 돌려준다."""
     # Faithfulness: 답의 주장이 근거(검색 문서와 DB 조회 결과, retrieval_context)에 있는지 보는 DeepEval 기본 지표
     if metric_name == "Faithfulness":
-        return FaithfulnessMetric(model=judge_llm, threshold=0.7)
+        # 근거와 모순되는 주장만 실패로 세는 기본 설정(penalize_ambiguous_claims=False)을 쓴다
+        # True 로 두면 근거에 없는 주장도 실패로 세지만, 페르소나 규칙이 시키는 공감, 감사 표현과 같은 뜻의 다른 표현까지 감점해 점수가 흔들린다
+        # 근거에 없는 사실을 지어내는 답은 실행 중에는 출력 레일의 사실 대조(OUT-05)가 막고, 평가에서는 정답성이 함께 본다
+        # evaluation_template: 판정 이유를 한국어로 받는 프롬프트를 쓴다
+        return FaithfulnessMetric(model=judge_llm, threshold=0.7, evaluation_template=KoreanFaithfulnessTemplate)
 
     # 정답성: 질문, 답, 정답 답변을 판사에게 보여 주고 판단 단계대로 점수를 매기는 G-Eval 지표
     return GEval(
@@ -557,13 +573,18 @@ OUTPUT_KEYS = ["group", "expected_outcome", "result", "marker", "needs_crisis", 
 
 # [보조 함수] 판사 점수를 평가 기록에 붙이기
 def attach_scores(records: list, score_rows: list) -> None:
-    """판사 점수 행을 케이스마다 평가 기록의 faithfulness, correctness 칸에 넣는다(채점 안 한 칸은 None, 돌려주는 값 없음)."""
+    """판사 점수와 이유를 케이스마다 평가 기록의 faithfulness, correctness 칸과 _reason 칸에 넣는다(채점 안 한 칸은 None, 돌려주는 값 없음)."""
     for record in records:
         record["faithfulness"] = None
         record["correctness"] = None
+        record["faithfulness_reason"] = None
+        record["correctness_reason"] = None
         for row in score_rows:
             if row["case_id"] == record["case_id"]:
-                record[JUDGE_METRICS[row["지표"]]] = row["점수"]
+                # 점수가 낮을 때 왜 낮은지 CSV 에서 바로 읽을 수 있게 판정 이유도 함께 남긴다
+                name = JUDGE_METRICS[row["지표"]]
+                record[name] = row["점수"]
+                record[name + "_reason"] = row["이유"]
 
 
 # [보조 함수] MLflow 평가 데이터
@@ -603,6 +624,11 @@ def log_to_mlflow(run_name: str, params: dict, metrics: dict, records: list | No
             # 기록이 끝나면 원래 값으로 되돌려, 이 뒤에 처음 만드는 라이브러리의 추적 전송이 켜지지 않게 한다
             previous = os.environ.get("OTEL_SDK_DISABLED")
             os.environ["OTEL_SDK_DISABLED"] = "false"
+            # 케이스별 기록을 동시에 처리하는 작업자 수를 4로 정한다. .env 나 환경 변수로 정했으면 그 값을 쓴다
+            # 정하지 않으면 MLflow 3.14 는 "LLM 호출 한 번에 2초"를 가정해 속도 제한(초당 10회 x 채점 함수 수)으로 스레드를 만든다(채점 수백 개)
+            # 이 채점 함수들은 저장된 판정만 읽어 바로 끝나므로, 그 스레드가 한꺼번에 SQLite 에 기록하려다 DB 연결(기본 5 + 초과 10)이 모자라
+            # 30초를 기다린 뒤 실패하고 다시 보낸다(QueuePool limit 경고). SQLite 는 쓰기를 한 번에 하나만 받으므로 작업자 4개로도 충분하다
+            os.environ.setdefault("MLFLOW_GENAI_EVAL_MAX_WORKERS", "4")
             try:
                 mlflow.genai.evaluate(data=eval_rows(records), scorers=SCORERS)
             finally:
