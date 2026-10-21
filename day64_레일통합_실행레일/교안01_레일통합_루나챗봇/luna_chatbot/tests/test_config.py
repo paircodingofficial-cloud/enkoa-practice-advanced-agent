@@ -79,7 +79,7 @@ def test_guard_rails_flows_have_subflows_and_actions():
     guard_config = RailsConfig.from_path(str(config.RAILS_DIR))
     colang = (config.RAILS_DIR / "rails.co").read_text(encoding="utf-8")
     flows = guard_config.rails.input.flows + guard_config.rails.output.flows
-    assert flows[:3] == ["prompt guard 2 input", "jev policy input", "llama guard 3 input"]
+    assert flows[:3] == ["prompt guard 2 input", "llama guard 3 input", "jev policy input"]
     for flow in flows:
         assert f"define subflow {flow}" in colang, flow
 

@@ -8,13 +8,11 @@
 rails:
   # 입력 레일: 적은 순서대로 돌고, 한 층이 막으면 뒤 층은 돌지 않는다
   # 층을 빼려면 줄을 지운다(분류 모델 층을 빼면 그 모델은 아예 읽지 않는다)
-  # 정책을 아는 Jev 를 범용 분류 모델(Llama Guard 3)보다 앞에 둔다. Llama Guard 3 이 먼저 막으면 페르소나 규칙을 몰라
-  # 비하 유도, 운영 코드 요청에도 업무 밖 안내가 나간다. 정상 메시지는 어차피 세 층을 다 지나므로 Jev 호출은 거의 늘지 않는다
   input:
     flows:
       - prompt guard 2 input  # 1층 Prompt Guard 2: 주입, 탈옥 문장 확률(로컬 모델)
-      - jev policy input      # 2층 Jev: persona.yaml 입력 정책 위반 확률(막은 규칙에 맞는 안내 문장)
-      - llama guard 3 input   # 3층 Llama Guard 3: Jev 가 놓친 유해 범주를 받친다(로컬 모델, 자해는 위기 안내)
+      - llama guard 3 input   # 2층 Llama Guard 3: 유해 범주(로컬 모델)
+      - jev policy input      # 3층 Jev: persona.yaml 입력 정책 위반 확률
   # 출력 레일: 답변이 팬에게 가기 전에 검사하고 고친다. 답을 고치는 층(Guardrails AI)은 맨 뒤에 둔다
   output:
     flows:
