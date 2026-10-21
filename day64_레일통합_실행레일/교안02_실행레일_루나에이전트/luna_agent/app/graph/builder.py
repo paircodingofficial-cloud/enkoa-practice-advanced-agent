@@ -6,10 +6,10 @@
 입력, 출력 레일은 요청마다 한 번 돌아 노드로 둔다. 실행 레일은 에이전트의 도구 반복 안에서 돌아 미들웨어로 둔다.
 
 미들웨어 순서 규칙(langchain 1.3 create_agent)
-- before_model 훅은 목록 순서대로, after_model 훅은 목록의 거꾸로 돈다.
+- before_model 훅은 목록 순서대로, after_model 훅은 목록의 역순으로 돈다.
 - wrap_model_call, wrap_tool_call 은 목록의 첫 미들웨어가 가장 바깥이다. 바깥이 막으면 안쪽은 돌지 않는다.
 그래서 도구 실행 전 검사(2~6번 wrap_tool_call)는 권한 확인이 가장 먼저 돌고, 모델 호출 뒤 훅인 승인(7번)과 답변 가림(8, 9번)은
-목록의 거꾸로 돌아 답변을 가린 다음 승인을 묻는다.
+목록의 역순으로 돌아 답변을 가린 다음 승인을 묻는다.
 """
 import sys
 from pathlib import Path
@@ -41,7 +41,7 @@ ALL_TOOLS = BOOKING_TOOLS + [create_fanart]
 
 # [미들웨어] 실행 레일의 순서와 이유. 번호는 이 목록의 순서다(교안 그림 middleware_order.png 의 번호와 같다)
 # 도구 쪽(2~6, wrap_tool_call): 앞이 바깥이다. 바깥이 막으면 안쪽 검사와 도구는 돌지 않으므로 싼 검사, 넓은 검사를 앞에 둔다
-# 모델 뒤 훅(7~9, after_model): 목록의 거꾸로(9, 8, 7) 돈다. 답변 가림이 먼저 끝나고, 승인은 마지막에 도구 호출만 본다
+# 모델 뒤 훅(7~9, after_model): 목록의 역순(9, 8, 7)으로 돈다. 답변 가림이 먼저 끝나고, 승인은 마지막에 도구 호출만 본다
 MIDDLEWARE = [
     expose_tools_by_role,     # 1. 모델 호출마다: 역할 밖 도구는 모델이 아예 보지 못하게 한다
     check_tool_permission,    # 2. 도구 실행 전 가장 바깥: 남의 데이터, 역할 밖 도구, 없는 공연 id 는 다른 검사보다 먼저 막는다
