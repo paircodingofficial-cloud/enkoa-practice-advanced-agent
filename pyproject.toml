@@ -129,6 +129,11 @@ dependencies = [
     "guardrails-ai==0.11.0",
     #   교안 02·과제 02 준비 셀이 분류 모델 zip(1.1GB·3.0GB)을 구글 드라이브에서 받는다.
     "gdown>=6.4.2",
+    #   교안 02 5-4 가 Guardrails Hub 의 모델 검증기 두 개를 쓴다(공개 PyPI 패키지, 토큰 불필요).
+    #   GuardrailsPII 는 GLiNER 모델과 Presidio 를 쓰고, Presidio 가 시작할 때 영어 spaCy 모델(en_core_web_lg)을 읽는다.
+    "guardrails-ai-guardrails-pii==1.0.8",
+    "guardrails-ai-toxic-language==0.0.2",
+    "en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl",
     # day64: 루나 팬 서비스 프로젝트(.py). 배포 환경 검사는 노트북만 읽으므로 프로젝트 코드가 직접 import 하는 것을 적는다.
     #   채팅 화면(Streamlit)과 공연장 지도(pydeck), .env 설정 읽기(pydantic-settings), 비동기 체크포인터(aiosqlite), 팬아트 그림 처리(Pillow).
     #   채팅 화면은 원본 실습 환경에서 실행해 본 버전으로 고정한다.

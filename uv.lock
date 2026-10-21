@@ -1000,6 +1000,20 @@ wheels = [
 ]
 
 [[package]]
+name = "detoxify"
+version = "0.5.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "sentencepiece" },
+    { name = "torch" },
+    { name = "transformers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e4/7e/92a0d9ce1a145cebe006a3be8c0bf2810d06272fe396ae99a80ca6b3c4ee/detoxify-0.5.4.tar.gz", hash = "sha256:1fa8a18e8ee1bfbaea059f28426a7e17141009bf80c8bdfc7ad7c6fc33fd01f4", size = 14663, upload-time = "2026-10-14T12:09:22.845Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/31/89/c28dab97c2bdf0202c22be78abf36d2beb56c55027f08672e9ea1c7278f2/detoxify-0.5.4-py3-none-any.whl", hash = "sha256:608d6f3c3aee47ca452f484e61c19307d4c58fb0ea4bd26abd2d26fcc6bf56a4", size = 12730, upload-time = "2026-10-14T12:09:21.713Z" },
+]
+
+[[package]]
 name = "devtools"
 version = "0.13.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1091,6 +1105,14 @@ wheels = [
 ]
 
 [[package]]
+name = "en-core-web-lg"
+version = "3.8.0"
+source = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl" }
+wheels = [
+    { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl", hash = "sha256:293e9547a655b25499198ab15a525b05b9407a75f10255e405e8c3854329ab63" },
+]
+
+[[package]]
 name = "en-core-web-sm"
 version = "3.8.0"
 source = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl" }
@@ -1106,12 +1128,15 @@ dependencies = [
     { name = "aiosqlite" },
     { name = "chromadb" },
     { name = "deepeval" },
+    { name = "en-core-web-lg" },
     { name = "en-core-web-sm" },
     { name = "fastembed" },
     { name = "flagembedding" },
     { name = "gdown" },
     { name = "graphrag" },
     { name = "guardrails-ai" },
+    { name = "guardrails-ai-guardrails-pii" },
+    { name = "guardrails-ai-toxic-language" },
     { name = "httpx" },
     { name = "huggingface-hub" },
     { name = "ipykernel" },
@@ -1182,12 +1207,15 @@ requires-dist = [
     { name = "aiosqlite", specifier = ">=0.22" },
     { name = "chromadb", specifier = "==1.5.9" },
     { name = "deepeval", specifier = "==4.2.9" },
+    { name = "en-core-web-lg", url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.8.0/en_core_web_lg-3.8.0-py3-none-any.whl" },
     { name = "en-core-web-sm", url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl" },
     { name = "fastembed", specifier = "==0.8.0" },
     { name = "flagembedding", specifier = "==1.4.2" },
     { name = "gdown", specifier = ">=6.4.2" },
     { name = "graphrag", specifier = "==3.1.0" },
     { name = "guardrails-ai", specifier = "==0.11.0" },
+    { name = "guardrails-ai-guardrails-pii", specifier = "==1.0.8" },
+    { name = "guardrails-ai-toxic-language", specifier = "==0.0.2" },
     { name = "httpx", specifier = ">=0.28" },
     { name = "huggingface-hub", specifier = ">=1.0" },
     { name = "ipykernel", specifier = ">=7.3.0" },
@@ -1528,6 +1556,23 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/c0/ff/fee293f1ec3e1b64db6eb270e00964f29c086d769201474cedb8d1608930/gitpython-3.2.1.tar.gz", hash = "sha256:0f1229ec5c057bdabdeeda8bda4f17bda679ab33dbccc00f24e6a480553c8613", size = 241688, upload-time = "2026-10-14T12:20:20.589Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6b/50/2a923c4dc02522ff9567f07c67ed1deca6d5fa9474f4708168b8088dfa37/gitpython-3.2.1-py3-none-any.whl", hash = "sha256:d66b0832aa8755c1a84892937282df0befb16c97e5a64aeebd68be9c5e323f53", size = 231548, upload-time = "2026-10-14T12:20:18.844Z" },
+]
+
+[[package]]
+name = "gliner"
+version = "0.2.24"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "huggingface-hub" },
+    { name = "onnxruntime" },
+    { name = "sentencepiece" },
+    { name = "torch" },
+    { name = "tqdm" },
+    { name = "transformers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/2b/6d/677d50855311e4a1286204c5ef2ef5672d01688246a303bde5326311bdad/gliner-0.2.24.tar.gz", hash = "sha256:191a37d1b3d297927c37ae890ce904e9d4e9d3f4c8e19715e77a9876e5f8a575", size = 160568, upload-time = "2025-11-26T18:20:32.867Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f1/50/6aae23929bd019300ef13fb79d60609215c53d4541963eaffc438e62f77e/gliner-0.2.24-py3-none-any.whl", hash = "sha256:efe614e05b31d06d848373aef8270f567e34fe1b4e96f816a8c70cef24908a6c", size = 151880, upload-time = "2025-11-26T18:20:28.801Z" },
 ]
 
 [[package]]
@@ -1912,6 +1957,37 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/e4/92/db47f09eb754de93fa337cd7c186df98cfe5150d6c45cae6b904cb148624/guardrails_ai-0.11.0.tar.gz", hash = "sha256:e49d20be90c0b87a7b58bd767523504b2b01f033cce4b4cdff07ef0e142e6096", size = 169885, upload-time = "2026-08-14T14:22:29.219Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/c6/5c/5f4c357bb5a517429d2a94517f60be872d82670e9bce61a6f5f2f85976f4/guardrails_ai-0.11.0-py3-none-any.whl", hash = "sha256:da72ae291db7e45433559a8044f0ec0e5891119f53db767fe4c3c4c7093c498e", size = 237743, upload-time = "2026-08-14T14:22:27.75Z" },
+]
+
+[[package]]
+name = "guardrails-ai-guardrails-pii"
+version = "1.0.8"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "gliner" },
+    { name = "guardrails-ai" },
+    { name = "presidio-analyzer" },
+    { name = "presidio-anonymizer" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a0/ed/cae83f7c9b10775c02e6d1b9c2cb6557d1a2087f29edcf1aa1100397db9b/guardrails_ai_guardrails_pii-1.0.8.tar.gz", hash = "sha256:44d1beb3bf9c47d7acd9812f25ef5c2e92b79e9f456a8a3090237aadd7364c61", size = 7988, upload-time = "2026-06-27T23:46:43.911Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f5/6a/3ce2335b4ddacc6cb0b18aeb2df5931a4f9120d7a1ba19e1ce28b2223ae7/guardrails_ai_guardrails_pii-1.0.8-py3-none-any.whl", hash = "sha256:0e69ef8424a68a2871ab3546ff45a99c94725b38c964f439953d95598166a50f", size = 9143, upload-time = "2026-06-27T23:46:42.737Z" },
+]
+
+[[package]]
+name = "guardrails-ai-toxic-language"
+version = "0.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "detoxify" },
+    { name = "guardrails-ai" },
+    { name = "nltk" },
+    { name = "torch" },
+    { name = "transformers" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/8e/a0/fe8c5dfd275956b9c41a536aed7a85ac521766122a683b3f58e5d992ecd2/guardrails_ai_toxic_language-0.0.2.tar.gz", hash = "sha256:4320d2eb9d87d8ba14c8d515d7f46bffb74ef43f5d829ce19d0d8d46aa3e83a6", size = 8663, upload-time = "2026-07-09T18:34:39.107Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/95/fb/6d3195546bf389e50c57a707399cd2f94f8faa8180484d0f54c6e42a2938/guardrails_ai_toxic_language-0.0.2-py3-none-any.whl", hash = "sha256:781e2fb198a986a6a233f143809f9d2a3de8f03bf11c1bee022422003aa6f8a8", size = 8421, upload-time = "2026-07-09T18:34:37.928Z" },
 ]
 
 [[package]]
@@ -4357,6 +4433,15 @@ wheels = [
 ]
 
 [[package]]
+name = "phonenumbers"
+version = "9.0.41"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/2f/df/cc0d70f1c79e436ea00d935b6352053d526252b81ce6c130d39eee846fb2/phonenumbers-9.0.41.tar.gz", hash = "sha256:dfa6f74eeac67c044b75313fe0af10774d7d1e1242241437279d4c2fb8027c01", size = 2311017, upload-time = "2026-10-08T10:51:09.778Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/60/1a/4059026e9c8a4c3faeab4a45f5aa67fb77d1f0d9c767085ded69c5c533e2/phonenumbers-9.0.41-py2.py3-none-any.whl", hash = "sha256:ccf2ea44f8aa35c487f26146a31520ecedf8e1af1f57c803678ecb5ef5c01668", size = 2594658, upload-time = "2026-10-08T10:51:07.317Z" },
+]
+
+[[package]]
 name = "pillow"
 version = "12.3.0"
 source = { registry = "https://pypi.org/simple" }
@@ -4458,6 +4543,37 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/e6/88/bdb244e40284ded3632a9f88c23bc80230bd7b2ae4a8b7f2cc91adead7a8/preshed-3.0.13-cp312-cp312-musllinux_1_2_x86_64.whl", hash = "sha256:2e77bed56aded7cbe5d28d6bd2178bc5b13eda0e0e464dab205fb578fa915000", size = 1919236, upload-time = "2026-03-23T08:56:42.616Z" },
     { url = "https://files.pythonhosted.org/packages/a0/c9/c91ea56342e6c364fc69b444a1ac5432327857199c44032c9cc9dc4c3a23/preshed-3.0.13-cp312-cp312-win_amd64.whl", hash = "sha256:04d8f13f2986e5d11af5ac51f55ce3106c70c41b483d20ea392e6180bdd0f870", size = 122938, upload-time = "2026-03-23T08:56:44.271Z" },
     { url = "https://files.pythonhosted.org/packages/b2/0b/6a99d99619fd83b14c696e2489caed7070647488d4d3ac0b723d35db2de0/preshed-3.0.13-cp312-cp312-win_arm64.whl", hash = "sha256:19318dc1cd8cac6663c6c830bf7e0002d2de853769fb03e056774e97c21bedfd", size = 109194, upload-time = "2026-03-23T08:56:45.346Z" },
+]
+
+[[package]]
+name = "presidio-analyzer"
+version = "2.2.364"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "click" },
+    { name = "numpy" },
+    { name = "phonenumbers" },
+    { name = "pydantic" },
+    { name = "pyyaml" },
+    { name = "regex" },
+    { name = "spacy" },
+    { name = "tldextract" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c7/50/408a41cf99d076107d3823d514bb6408e249132418f068673cb807839ce5/presidio_analyzer-2.2.364.tar.gz", hash = "sha256:51f27bacf199fb9777ade9552c0f0111e00a1d73cfe2d4797fc05c998de1e0b6", size = 154117, upload-time = "2026-07-22T07:54:36.264Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a6/15/44a64276cd5c45485716314addfb7966c24f61034d8ff8e9a78d13d0afbe/presidio_analyzer-2.2.364-py3-none-any.whl", hash = "sha256:0a9eeb60ccc416c505367b4989d056becb84ef082703ee3361c046fb75941739", size = 266299, upload-time = "2026-07-22T07:54:34.868Z" },
+]
+
+[[package]]
+name = "presidio-anonymizer"
+version = "2.2.364"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "cryptography" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/66/93/0889954ed2448fe20b1a714e96fccd7c4a60dc1cc078efaeae10b7975807/presidio_anonymizer-2.2.364.tar.gz", hash = "sha256:eced015f1195f79a91ad11b34a531ceca2e5c673ed57e97649efea3d3293155d", size = 26006, upload-time = "2026-07-22T07:54:35.861Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c2/47/9a353565cbd6d1af87c9e6f68e9e2b89dd5ced7be9634284c6975abd63d2/presidio_anonymizer-2.2.364-py3-none-any.whl", hash = "sha256:f3edfe80b5e83a22976439727e9d449c796b12efdf6cd70a6db860d4942a6b72", size = 38128, upload-time = "2026-07-22T07:54:34.797Z" },
 ]
 
 [[package]]
@@ -5214,6 +5330,18 @@ socks = [
 ]
 
 [[package]]
+name = "requests-file"
+version = "3.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/3c/f8/5dc70102e4d337063452c82e1f0d95e39abfe67aa222ed8a5ddeb9df8de8/requests_file-3.0.1.tar.gz", hash = "sha256:f14243d7796c588f3521bd423c5dea2ee4cc730e54a3cac9574d78aca1272576", size = 6967, upload-time = "2025-10-20T18:56:42.279Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e1/d5/de8f089119205a09da657ed4784c584ede8381a0ce6821212a6d4ca47054/requests_file-3.0.1-py2.py3-none-any.whl", hash = "sha256:d0f5eb94353986d998f80ac63c7f146a307728be051d4d1cd390dbdb59c10fa2", size = 4514, upload-time = "2025-10-20T18:56:41.184Z" },
+]
+
+[[package]]
 name = "requests-oauthlib"
 version = "2.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -5872,6 +6000,21 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/38/0f/fae085b7f19fe0c67b68e6d70098ac6cd046cc498f253f5ee56a3dd03bbc/tinytag-2.3.2.tar.gz", hash = "sha256:021d711cdbdbf840d3b67b976cb34dadc58d2fcfd490eb74ef9602b37b991414", size = 47353, upload-time = "2026-09-07T17:46:08.886Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/6b/54/d378858d14e5c5c7b921cb9ffccf27be3d34f3d6d010c57404ddd634685d/tinytag-2.3.2-py3-none-any.whl", hash = "sha256:ebaf957915266b9c20414a10f8c5170a345aa039a794650d39d66e7d6b96199f", size = 37171, upload-time = "2026-09-07T17:46:07.434Z" },
+]
+
+[[package]]
+name = "tldextract"
+version = "5.4.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "filelock" },
+    { name = "idna" },
+    { name = "requests" },
+    { name = "requests-file" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/fd/5d/45ece871390ccc985f821353543165bcf3784fa97d8484fd0ca5f2726612/tldextract-5.4.0.tar.gz", hash = "sha256:6c9223212c15c25c0da2bf7313893c14f175cb36b64a0c42da67a468e0c61ee3", size = 197271, upload-time = "2026-10-03T21:32:47.229Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b8/e0/d5760e222a7e3f3aec7ef59f6dff952af27d09ec168bcca50751d9698151/tldextract-5.4.0-py3-none-any.whl", hash = "sha256:7f02aed30bd3b6ad5717192eb859a39b20aafc7caf3917d9cf6cb00a58efb34f", size = 107482, upload-time = "2026-10-03T21:32:45.842Z" },
 ]
 
 [[package]]
