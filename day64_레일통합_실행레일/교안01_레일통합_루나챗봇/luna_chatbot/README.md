@@ -107,7 +107,7 @@ uv run pytest -q
 
 1. `app.evaluate` 가 평가만 하고 결과를 `output/eval/results.json` 에 씁니다(경로만 보는 `--routes-only` 평가는 쓰지 않습니다).
 2. `uv run pytest -q gate` 가 이 파일과 `baselines/baseline.json`(승인한 기준선)을 읽어 판정합니다. 같은 케이스로 평가했는지, 판사 채점 오류, 새어 나감, 방어 성공률 하한, 오차단율 상한, 판사 점수 하한과 하락폭, 늘 통과하던 케이스를 봅니다.
-3. 기준선을 바꿀 때는 `results.json` 을 검토하고, 승인한 값(케이스 목록, 지표, 늘 통과하는 사례)을 `baselines/baseline.json` 에 옮겨 적습니다. 답변 모델이나 판사 모델을 바꾸면 기준선을 새로 만듭니다.
+3. 기준선을 바꿀 때는 `results.json` 을 검토하고, 승인한 값(케이스 목록, 지표, 늘 통과하는 케이스)을 `baselines/baseline.json` 에 옮겨 적습니다. 답변 모델이나 판사 모델을 바꾸면 기준선을 새로 만듭니다.
 
 `uv run pytest -q` 는 `tests/`(가짜 객체로 도는 단위 테스트)만 돌리고, 실제 평가 결과가 있어야 하는 `gate/` 는 따로 실행합니다.
 
