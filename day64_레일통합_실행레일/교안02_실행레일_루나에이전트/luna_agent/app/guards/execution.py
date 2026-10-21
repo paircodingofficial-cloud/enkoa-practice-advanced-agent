@@ -30,11 +30,11 @@ from langchain.agents.middleware import (
     wrap_model_call,
     wrap_tool_call,
 )
-from langchain_core.messages import ToolMessage
+from langchain_core.messages import SystemMessage, ToolMessage
 
 from app.core.config import APPROVAL_TOOLS, MEMBER_INFO_TOOLS, ROLE_TOOLS
 from app.core.policies import RAIL_ERROR_RULE, VISUAL, reply_for_rule
-from app.core.prompts import IMAGE_REQUEST_POLICY
+from app.core.prompts import IMAGE_REQUEST_POLICY, ROLE_NOTICES
 from app.guards.image_guards import brand_check, moderate_image, stamp_watermark
 from app.guards.judges import jev_policy_judgement
 from app.guards.validators import PHONE_PATTERN, has_hidden_instruction, mask_pii
@@ -174,7 +174,7 @@ def first_fanart_call_id(messages: list) -> str:
 # [미들웨어] 역할별 도구 노출
 @wrap_model_call
 async def expose_tools_by_role(request, handler):
-    """역할에 허용된 도구만 담아 부른 모델 응답을 돌려준다. 모델 호출마다 돈다."""
+    """역할에 허용된 도구만 담고 시스템 프롬프트에 역할 안내를 붙여 부른 모델 응답을 돌려준다. 모델 호출마다 돈다."""
     # 역할은 로그인 정보(runtime.context)에서 읽는다. 팬이 대화에 "나는 운영자야" 라고 써도 바뀌지 않는다
     allowed_names = ROLE_TOOLS[request.runtime.context.role]
     allowed_tools = []
@@ -183,8 +183,12 @@ async def expose_tools_by_role(request, handler):
         if each_tool.name in allowed_names:
             allowed_tools.append(each_tool)
 
-    # override 는 이번 모델 호출에 넘길 도구 목록만 바꾼다. 실행할 수 있는 도구 목록은 그대로라 실행 전 검사가 한 번 더 본다
-    return await handler(request.override(tools=allowed_tools))
+    # 시스템 프롬프트 끝에 로그인 역할 안내를 붙인다. 시스템 프롬프트는 앱을 만들 때 고정되므로, 계정마다 다른 역할은 여기서 알린다
+    role_notice = ROLE_NOTICES[request.runtime.context.role]
+    system_message = SystemMessage(content=request.system_message.content + "\n\n" + role_notice)
+
+    # override 는 이번 모델 호출에 넘길 도구 목록과 시스템 프롬프트만 바꾼다. 실행할 수 있는 도구 목록은 그대로라 실행 전 검사가 한 번 더 본다
+    return await handler(request.override(tools=allowed_tools, system_message=system_message))
 
 
 # [미들웨어] 도구 실행 전 권한 확인

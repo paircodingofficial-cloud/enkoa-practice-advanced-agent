@@ -101,11 +101,14 @@ def to_verdict(result) -> dict:
 
 
 # [보조 함수] 입력 레일 판정
-async def check_input(rails: LLMRails, messages: list) -> dict:
-    """대화 기록의 마지막 팬 메시지를 입력 레일로 판정한 {status, blocked_by, rule_id, content} dict 를 돌려준다."""
+async def check_input(rails: LLMRails, messages: list, login_role: str) -> dict:
+    """대화 기록의 마지막 팬 메시지를 입력 레일로 판정한 {status, blocked_by, rule_id, content} dict 를 돌려준다. login_role 은 로그인한 계정의 역할(fan, staff)이다."""
+    # 로그인 역할은 역할(role)이 context 인 메시지로 넘긴다. rails.co 의 흐름이 $login_role 로 읽어 Jev 입력 층에 넘긴다
+    rail_messages = [{"role": "context", "content": {"login_role": login_role}}]
     # 앞선 대화를 함께 넘긴다. NeMo 가 이 대화를 대화 기록(events)으로 바꿔 액션에 넘겨 주므로
     # Jev 입력 층(actions.py 의 jev_policy_input)이 앞선 팬 메시지를 읽어 여러 메시지에 나눠 보낸 공격도 본다
-    result = await rails.check_async(to_rail_messages(messages), rail_types=[RailType.INPUT])
+    rail_messages.extend(to_rail_messages(messages))
+    result = await rails.check_async(rail_messages, rail_types=[RailType.INPUT])
     return to_verdict(result)
 
 

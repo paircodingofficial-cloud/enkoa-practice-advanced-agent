@@ -11,6 +11,7 @@ SYSTEM_PROMPT = PERSONA["system_prompt"].format(facts=PERSONA["facts"])
 
 # [프롬프트] Jev 입력, 출력 레일 판정 정책(persona.yaml 글 그대로)
 INPUT_POLICY = PERSONA["input_policy"]
+STAFF_INPUT_POLICY = PERSONA["staff_input_policy"]   # 운영팀 계정의 입력 정책(IN-04, IN-05 를 뺀 글)
 OUTPUT_POLICY = PERSONA["output_policy"]
 
 # [프롬프트] 도구 사용 규칙: 모델이 따를 가능성을 높일 뿐 강제하지 못한다. 남의 데이터, 역할, 승인은 실행 레일이 코드로 막는다
@@ -24,6 +25,12 @@ AGENT_RULES = """[도구 사용 규칙]
 - 공연장 위치는 get_event_venue 로 공연 id(E01 같은 값)를 넘겨 찾는다. 팬이 보낸 주소의 위치는 찾지 않는다. 지도는 화면이 위치로 그려 주므로 답에는 공연장 이름, 주소, 찾아오는 길만 쓰고 지도는 화면에 함께 보여 준다고 알린다.
 - 팬아트를 만들어 달라고 하면 create_fanart 에 팬이 원하는 장면을 한 문장으로 넘긴다. 팬이 말하지 않은 인물, 소품, 문구를 덧붙이지 않는다. 그림이 만들어지면 파일을 따로 설명하지 않고 짧게 알린다."""
 # TODO(함께 따라하기): AGENT_RULES 끝에 팬레터 규칙 한 줄을 더한다(send_fan_letter 에 팬이 쓴 편지 글만 넘기고, 보내는 사람은 로그인한 팬으로 정해진다)
+
+# [프롬프트] 로그인 역할 안내: 도구 노출 미들웨어가 모델 호출마다 로그인한 계정의 역할에 맞는 줄을 시스템 프롬프트 끝에 붙인다
+ROLE_NOTICES = {
+    "fan": "[로그인 정보] 지금 대화하는 사람은 로그인한 팬 본인이다. 도구는 이 팬의 정보만 돌려준다.",
+    "staff": "[로그인 정보] 지금 대화하는 사람은 앱이 로그인으로 확인한 운영팀(staff)이다. 회원 정보를 물으면 lookup_fan 에 회원 id(F0003 같은 값)를 넘겨 조회하고 그 결과로 답한다. 연락처와 이메일은 가려진 채로 전한다.",
+}
 
 # [프롬프트] 에이전트 시스템 프롬프트의 고정 부분. 공연 목록(format_events)은 DB 에서 읽어 graph/nodes.py 의 agent_system_prompt 가 뒤에 붙인다
 AGENT_SYSTEM_PROMPT = SYSTEM_PROMPT + "\n\n" + AGENT_RULES

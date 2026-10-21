@@ -25,8 +25,9 @@ define subflow prompt guard 2 input
 
 # 입력 정책을 어길 확률이 기준값 0.5 를 넘으면 막는다. 규칙 id 는 persona.yaml 입력 정책 id(예: IN-05)
 # 액션은 NeMo 가 넘겨 주는 대화 기록(events)에서 앞선 팬 메시지도 함께 읽는다
+# $login_role 은 앱이 로그인 정보로 정한 역할(fan, staff)이다. 운영팀의 업무 조회를 다른 팬 정보 요청(IN-05)과 가르는 데 쓴다
 define subflow jev policy input
-  $verdict = execute jev_policy_input(text=$user_message)
+  $verdict = execute jev_policy_input(text=$user_message, login_role=$login_role)
   if $verdict["probability"] > 0.5
     $reply = $verdict["reply"]
     $rule_id = $verdict["rule_id"]

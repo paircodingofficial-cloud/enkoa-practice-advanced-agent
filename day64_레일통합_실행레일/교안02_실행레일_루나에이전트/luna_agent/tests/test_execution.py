@@ -282,3 +282,13 @@ def test_document_type_is_langchain_document():
     sample = load_knowledge_documents()[0]
     assert isinstance(sample, Document)
     assert "source_id" in sample.metadata
+
+
+def test_role_notice_for_every_role():
+    """역할 표(ROLE_TOOLS)의 역할마다 시스템 프롬프트에 붙일 로그인 역할 안내가 있고, 운영팀 안내는 회원 조회 도구를 알린다."""
+    from app.core.config import ROLE_TOOLS
+    from app.core.prompts import ROLE_NOTICES
+    assert sorted(ROLE_NOTICES) == sorted(ROLE_TOOLS)
+    assert "lookup_fan" in ROLE_NOTICES["staff"]
+    assert "lookup_fan" not in ROLE_NOTICES["fan"]
+

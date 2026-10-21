@@ -105,9 +105,11 @@ def fake_rails(monkeypatch):
         "input": {"status": "passed", "blocked_by": "", "rule_id": "", "content": ""},
         "output": {"status": "passed", "blocked_by": "", "rule_id": "", "content": ""},
         "documents_text": "",
+        "login_role": "",
     }
 
-    async def fake_check_input(rails, messages):
+    async def fake_check_input(rails, messages, login_role):
+        verdicts["login_role"] = login_role
         return verdicts["input"]
 
     async def fake_check_output(rails, messages, documents_text):

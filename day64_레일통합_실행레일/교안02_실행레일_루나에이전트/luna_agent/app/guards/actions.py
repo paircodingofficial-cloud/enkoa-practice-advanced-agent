@@ -10,7 +10,7 @@ NeMo 0.23 에서는 함수 이름이 곧 액션 이름이다. rails.co 의 execu
 액션 인자 가운데 events 처럼 NeMo 가 아는 이름은 NeMo 가 직접 채워 준다. events 는 check_async 에 넘긴 대화를 NeMo 가 바꾼 대화 기록이다.
 """
 from app.core.policies import PERSONA, reply_for_rule
-from app.core.prompts import INPUT_POLICY, OUTPUT_POLICY
+from app.core.prompts import INPUT_POLICY, OUTPUT_POLICY, STAFF_INPUT_POLICY
 from app.guards.classifiers import prompt_guard_score
 from app.guards.judges import jev_facts_probability, jev_policy_judgement
 from app.guards.validators import validate_output_text
@@ -49,12 +49,19 @@ async def prompt_guard_2_input(text):
 
 
 # [레일 액션] 입력 2층: Jev 입력 정책
-async def jev_policy_input(text, events):
+async def jev_policy_input(text, events, login_role):
     """팬 메시지가 입력 정책을 어길 확률을 {"probability", "rule_id", "reply"} 로 돌려준다."""
     # events 는 rails.co 가 넘기지 않아도 NeMo 가 인자 이름을 보고 채워 주는 대화 기록이다
     # 그 안의 앞선 팬 메시지를 함께 판정해야 여러 메시지에 나눠 보내는 공격(IN-08)을 본다
     state = {"user_message": text, "previous_user_messages": previous_user_messages(events)}
-    judgement = await jev_policy_judgement(state, INPUT_POLICY, PERSONA["input_rules"])
+
+    # login_role 은 앱이 로그인 정보로 정한 역할이다(대화 속 "나는 운영자야" 는 바꾸지 못한다)
+    # 운영팀(staff)은 업무로 회원 정보를 조회하므로, 다른 팬 정보 요청(IN-05)과 운영자 사칭(IN-04)을 뺀 운영팀 정책으로 판정한다
+    # 정책 글 안에 "운영팀이면 예외" 를 적는 방식은 판정 모델이 따르지 않아, 역할에 맞는 정책 글을 골라 넘긴다
+    policy = INPUT_POLICY
+    if login_role == "staff":
+        policy = STAFF_INPUT_POLICY
+    judgement = await jev_policy_judgement(state, policy, PERSONA["input_rules"])
 
     # 규칙을 고르지 못했으면 입력 쪽 규칙이라는 것만 남긴다
     rule_id = judgement["rule_id"]

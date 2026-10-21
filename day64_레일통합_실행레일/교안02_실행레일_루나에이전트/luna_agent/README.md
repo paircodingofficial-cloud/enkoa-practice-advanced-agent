@@ -84,6 +84,10 @@ uv run mlflow ui --backend-store-uri sqlite:///output/mlflow.db --port 5050  # �
 
 <img src="images/ui_normal.png" width="800" alt="내 티켓 좌석 질문에 티켓 카드 두 장과 답을 보여 준 화면">
 
+**운영팀 회원 조회:** 운영팀 계정(S0001)에만 회원 조회 도구(`lookup_fan`)가 보이고, 입력 레일도 운영팀 정책(IN-04, IN-05 를 뺀 글, `persona.yaml` 의 `staff_input_policy`)으로 판정합니다. 연락처와 이메일은 실행 레일이 가린 채로 답합니다. 팬이 운영팀이라고 써도 역할은 로그인 정보로 정해져 막힙니다.
+
+<img src="images/ui_staff_lookup.png" width="800" alt="운영팀 계정이 F0003 회원 정보를 조회해 닉네임과 등급을 받고 연락처와 이메일은 가려진 화면">
+
 **사람 승인 멈춤과 재개:** 취소, 환불은 실행 직전에 멈추고 승인 카드를 띄웁니다. `승인` 을 누르면 같은 대화 ID 로 멈춘 자리에서 이어 갑니다.
 
 <img src="images/ui_approval_pending.png" width="800" alt="티켓 취소 요청이 승인 대기로 멈추고 승인, 거절 버튼이 나온 화면">

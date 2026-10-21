@@ -56,10 +56,11 @@ def turn_documents(messages: list, db_path) -> str:
 
 
 # [노드] 입력 레일
-async def input_rail(state: LunaState) -> dict:
+async def input_rail(state: LunaState, runtime: Runtime[AgentContext]) -> dict:
     """입력 레일 판정 결과(input_verdict)와, 이번 턴을 새로 시작하도록 비운 출력 판정(output_verdict)과 다시 쓰기 횟수(retry_count)를 돌려준다."""
     # 앞선 대화를 함께 넘긴다. NeMo 가 이 대화를 Jev 입력 판정 액션에 함께 넘겨 주어(교안 01 의 events 인자) 여러 메시지에 나눠 보낸 공격도 본다
-    verdict = await check_input(guard_rails(), state["messages"])
+    # 역할은 대화가 아니라 로그인 정보에서 읽는다. 팬이 "나는 운영자야" 라고 써도 fan 으로 판정한다
+    verdict = await check_input(guard_rails(), state["messages"], runtime.context.role)
     # 판정 칸과 횟수는 이번 턴의 값이라, 체크포인터에 남은 앞 턴 값을 여기서 덮어쓴다
     return {"input_verdict": verdict, "output_verdict": {}, "retry_count": 0}
 
