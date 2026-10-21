@@ -81,6 +81,10 @@ uv run python -m streamlit run app/ui/chat_app.py
 uv run -m app.evaluate --run-name quick --split all --limit 5 --no-ragas
 uv run -m app.evaluate --run-name rails_full --split 최적화용
 
+# 한 파일만: 레드팀 테스트 셋만(입력 레일을 고칠 때), 골든셋만(답변 품질을 고칠 때). 기본값 --set all 은 두 파일 모두
+uv run -m app.evaluate --run-name red_only --set red_team --no-ragas
+uv run -m app.evaluate --run-name golden_only --set golden
+
 # 경로 정확도만(기대 경로가 있는 케이스를 입력 레일과 라우터까지만 돌립니다. 답변 모델 비용 없음, Jev 비용만 듭니다)
 uv run -m app.evaluate --run-name routes --split all --routes-only
 
@@ -91,7 +95,7 @@ uv run mlflow ui --backend-store-uri sqlite:///output/mlflow.db --port 5050
 uv run pytest -q
 ```
 
-평가 결과는 `output/eval/<run 이름>.csv` 와 `output/mlflow.db` 에 남습니다. 기대 경로(`expected.route`)가 있는 케이스는 케이스마다 경로 맞음(`route_ok`)이, 요약 지표에는 경로 정확도(`route_accuracy`)가 남습니다. 모듈마다 맨 아래에 확인 블록이 있어 `uv run -m app.graph.nodes` 처럼 한 층만 실행해 볼 수 있습니다.
+평가 결과는 `output/eval/<run 이름>.csv` 와 `output/mlflow.db` 에 남습니다. MLflow run 하나에 설정, 케이스별 판정(`mlflow.genai.evaluate` 의 채점 함수, 화면의 Traces 탭), 요약 지표가 함께 남습니다(기록 DB 는 `output/mlflow.db`, 트레이스 같은 파일은 `output/mlartifacts/`). 기대 경로(`expected.route`)가 있는 케이스는 케이스마다 경로 맞음(`route_ok`)이, 요약 지표에는 경로 정확도(`route_accuracy`)가 남습니다. 모듈마다 맨 아래에 확인 블록이 있어 `uv run -m app.graph.nodes` 처럼 한 층만 실행해 볼 수 있습니다.
 
 
 ## 화면

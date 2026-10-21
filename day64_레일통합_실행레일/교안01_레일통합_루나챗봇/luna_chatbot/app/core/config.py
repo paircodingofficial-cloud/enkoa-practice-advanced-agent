@@ -44,6 +44,8 @@ os.environ["NEMO_GUARDRAILS_NO_USAGE_STATS"] = "1"
 os.environ["OTEL_SDK_DISABLED"] = "true"
 # RAGAS 도 기본으로 사용 기록을 외부로 보내므로 끈다(평가 evaluate.py 가 쓴다)
 os.environ["RAGAS_DO_NOT_TRACK"] = "true"
+# MLflow 도 사용 기록을 외부로 보내므로 끈다(평가 evaluate.py 가 mlflow.genai.evaluate 를 쓴다)
+os.environ["MLFLOW_DISABLE_TELEMETRY"] = "true"
 # Guardrails AI 검증기를 동기로 돌린다. 비동기 앱 안에서 이벤트 루프 경고가 나지 않게 한다
 os.environ["GUARDRAILS_RUN_SYNC"] = "true"
 

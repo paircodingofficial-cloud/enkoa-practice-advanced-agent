@@ -21,6 +21,7 @@ response_metadata 에 막은 미들웨어 이름(rail)과 규칙 id(rule_id)를 
 사람 승인은 도구 실행 전 검사보다 앞(모델 호출 직후, after_model 훅)에 돈다. 그래서 승인을 물을지 정할 때 권한과 업무 규칙을 먼저 본다(should_ask_approval).
 멈춘 실행은 바깥 그래프의 체크포인터에 대화 ID 별로 저장되고, graph/chat.py 의 resume_turn 이 사람의 결정을 바깥 그래프에 넘겨 이어 간다.
 """
+
 from pathlib import Path
 
 from langchain.agents.middleware import (
@@ -43,18 +44,24 @@ from app.tools.fanart import count_today_fanarts, record_fanart_request
 from app.tools.retriever import format_documents
 
 # 실행 레일이 막을 때 남기는 규칙 id. persona.yaml 입력 정책과 같은 뜻이면 그 id 를 쓴다
-ROLE_RULE = "IN-04"      # 운영팀 권한을 말로 주장하거나 역할 밖 도구를 씀
-OWNER_RULE = "IN-05"     # 다른 팬의 티켓, 주문
-VENUE_RULE = "IN-07"     # 공연장이 아닌 곳의 위치
+ROLE_RULE = "IN-04"  # 운영팀 권한을 말로 주장하거나 역할 밖 도구를 씀
+OWNER_RULE = "IN-05"  # 다른 팬의 티켓, 주문
+VENUE_RULE = "IN-07"  # 공연장이 아닌 곳의 위치
 QUOTA_RULE = "IMG-LIMIT"  # 팬아트 하루 한도(visual.yaml generation.daily_limit)
-FANART_RUN_RULE = "IMG-RUN"  # 팬 메시지 한 번에 팬아트 한 장(그림 한 장마다 비용이 든다)
-LETTER_LENGTH_RULE = "LTR-01"   # 팬레터 글자 수(빈 글, FAN_LETTER_MAX_CHARS 초과). 함께 따라하기에서 쓴다
+FANART_RUN_RULE = (
+    "IMG-RUN"  # 팬 메시지 한 번에 팬아트 한 장(그림 한 장마다 비용이 든다)
+)
+LETTER_LENGTH_RULE = (
+    "LTR-01"  # 팬레터 글자 수(빈 글, FAN_LETTER_MAX_CHARS 초과). 함께 따라하기에서 쓴다
+)
 LETTER_CONTENT_RULE = "LTR-02"  # 팬레터 속 링크, 연락처. 함께 따라하기에서 쓴다
 
 # Jev 가 막은 금지 주제 하나를 고르는 후보 {IMG-01: "[범주] 설명"}. 고객 안내문 생성기와 같은 표(forbidden_content)에서 만든다
 IMAGE_RULES = {}
 for forbidden in VISUAL["forbidden_content"]:
-    IMAGE_RULES[forbidden["id"]] = f"[{forbidden['category']}] {forbidden['description']}"
+    IMAGE_RULES[forbidden["id"]] = (
+        f"[{forbidden['category']}] {forbidden['description']}"
+    )
 
 # 그림 요청 정책 위반 확률이 이 값보다 크면 막는다. 입력, 출력 레일(rails/guard/rails.co)의 Jev 정책 기준값과 같은 0.5 다
 # 팬아트 검사는 NeMo 가 아니라 도구 반복 안의 미들웨어가 하므로 기준값도 이 파일에 둔다
@@ -62,11 +69,16 @@ IMAGE_POLICY_THRESHOLD = 0.5
 
 
 # [보조 함수] 막은 도구 결과
-def blocked_tool_message(tool_call: dict, rail: str, rule_id: str, reason: str) -> ToolMessage:
+def blocked_tool_message(
+    tool_call: dict, rail: str, rule_id: str, reason: str
+) -> ToolMessage:
     """도구를 실행하지 않고 돌려줄 오류 도구 결과(ToolMessage, status="error")를 돌려준다. 같은 호출 id 를 써야 모델이 어느 호출의 결과인지 안다."""
     # content 는 모델이 읽고 팬에게 전할 이유, response_metadata 는 화면과 평가가 읽는 표시(모델에게는 가지 않는다)
     return ToolMessage(
-        content=reason, tool_call_id=tool_call["id"], name=tool_call["name"], status="error",
+        content=reason,
+        tool_call_id=tool_call["id"],
+        name=tool_call["name"],
+        status="error",
         response_metadata={"rail": rail, "rule_id": rule_id},
     )
 
@@ -82,22 +94,37 @@ def permission_problem(tool_call: dict, context) -> dict:
 
     # 1. 역할 확인: 역할별 도구 노출과 같은 표로 다시 본다. 숨긴 도구 이름을 모델이 지어내 불러도 여기서 걸린다
     if name not in ROLE_TOOLS[context.role]:
-        return {"rule_id": ROLE_RULE, "reason": "로그인한 계정의 역할로는 쓸 수 없는 도구예요."}
+        return {
+            "rule_id": ROLE_RULE,
+            "reason": "로그인한 계정의 역할로는 쓸 수 없는 도구예요.",
+        }
 
     # 2. 주인 확인: 모델이 넘긴 티켓 번호, 주문 번호의 주인이 로그인한 계정인가. 없는 번호는 도구가 이유를 돌려준다
     if "ticket_id" in args:
         ticket = find_ticket(args["ticket_id"], context.db_path)
         if ticket is not None and ticket["fan_id"] != context.fan_id:
-            return {"rule_id": OWNER_RULE, "reason": "로그인한 팬 본인의 티켓만 처리할 수 있어요."}
+            return {
+                "rule_id": OWNER_RULE,
+                "reason": "로그인한 팬 본인의 티켓만 처리할 수 있어요.",
+            }
     if "order_id" in args:
         order = find_order(args["order_id"], context.db_path)
         if order is not None and order["fan_id"] != context.fan_id:
-            return {"rule_id": OWNER_RULE, "reason": "로그인한 팬 본인의 주문만 처리할 수 있어요."}
+            return {
+                "rule_id": OWNER_RULE,
+                "reason": "로그인한 팬 본인의 주문만 처리할 수 있어요.",
+            }
 
     # 3. 공연장 확인: DB 공연 목록에 있는 공연 id 만 통과시킨다(주소를 넘기면 여기서 막혀 Nominatim 에 가지 않는다)
     if name == "get_event_venue":
-        if "event_id" not in args or fan_db.get_event(args["event_id"], context.db_path) is None:
-            return {"rule_id": VENUE_RULE, "reason": "공연 목록에 있는 공연의 공연장 위치만 찾을 수 있어요."}
+        if (
+            "event_id" not in args
+            or fan_db.get_event(args["event_id"], context.db_path) is None
+        ):
+            return {
+                "rule_id": VENUE_RULE,
+                "reason": "공연 목록에 있는 공연의 공연장 위치만 찾을 수 있어요.",
+            }
 
     # TODO(함께 따라하기): 4. 팬레터 확인 단계를 여기에 더한다(name 이 "send_fan_letter" 일 때)
     #   - args 의 message 가 빈 글(공백만)이거나 FAN_LETTER_MAX_CHARS 보다 길면 LETTER_LENGTH_RULE(LTR-01) 과 이유를 돌려준다
@@ -169,7 +196,12 @@ async def check_tool_permission(request, handler):
 
     # 막힘: handler 를 부르지 않으므로 안쪽 검사(팬아트 판정 등)와 도구가 모두 돌지 않는다
     if problem["reason"] != "":
-        return blocked_tool_message(request.tool_call, "check_tool_permission", problem["rule_id"], problem["reason"])
+        return blocked_tool_message(
+            request.tool_call,
+            "check_tool_permission",
+            problem["rule_id"],
+            problem["reason"],
+        )
 
     # 통과: handler 가 다음 미들웨어(목록에서 다음 순서)나 도구를 실행한다
     return await handler(request)
@@ -233,8 +265,10 @@ def describe_approval(tool_call, state, runtime) -> str:
     if tool_call["name"] == "cancel_ticket":
         ticket = find_ticket(args["ticket_id"], db_path)
         quote = cancel_quote(ticket, db_path)
-        return (f"티켓 {ticket['ticket_id']} 예매 취소: {ticket['seat']}({ticket['grade']}), "
-                f"수수료 {quote['fee']:,}원, 돌려받을 금액 {quote['refund']:,}원")
+        return (
+            f"티켓 {ticket['ticket_id']} 예매 취소: {ticket['seat']}({ticket['grade']}), "
+            f"수수료 {quote['fee']:,}원, 돌려받을 금액 {quote['refund']:,}원"
+        )
 
     # 굿즈 환불: 상품, 환불 예정 금액
     if tool_call["name"] == "request_goods_refund":
@@ -275,11 +309,21 @@ async def fanart_quota_and_policy(request, handler):
     # 1. 한 메시지 한 장: 이번 턴의 첫 팬아트 호출만 통과한다
     # 같은 AI 메시지의 두 번째 호출, 결과를 본 뒤 다시 부른 호출, 승인으로 멈췄다 이어 간 뒤의 호출을 모두 막는다
     if first_fanart_call_id(request.state["messages"]) != call["id"]:
-        return blocked_tool_message(call, "fanart_quota_and_policy", FANART_RUN_RULE, "팬아트는 팬 메시지 한 번에 한 장만 만들 수 있어요.")
+        return blocked_tool_message(
+            call,
+            "fanart_quota_and_policy",
+            FANART_RUN_RULE,
+            "팬아트는 팬 메시지 한 번에 한 장만 만들 수 있어요.",
+        )
 
     # 2. 하루 한도: 비용이 들지 않는 DB 조회라 Jev 보다 먼저 본다
     if remaining_fanarts(context) <= 0:
-        return blocked_tool_message(call, "fanart_quota_and_policy", QUOTA_RULE, VISUAL["blocked_replies"]["over_limit"])
+        return blocked_tool_message(
+            call,
+            "fanart_quota_and_policy",
+            QUOTA_RULE,
+            VISUAL["blocked_replies"]["over_limit"],
+        )
 
     # 3. 그림 요청 정책(Jev): 모델이 고쳐 쓴 요청만 보지 않고 팬이 직접 쓴 메시지도 함께 판정한다
     tool_request = ""
@@ -290,17 +334,35 @@ async def fanart_quota_and_policy(request, handler):
     # 판정이 오류로 끝나면 판정하지 못한 요청이므로 그림 API 를 부르지 않는다(fail-closed)
     # Jev 클라이언트는 스스로 다시 시도하지 않는다. 여기서도 다시 부르지 않고, 팬이 잠시 뒤 다시 보내게 안내한다
     try:
-        judgement = await jev_policy_judgement({"fanart_request": text}, IMAGE_REQUEST_POLICY, IMAGE_RULES)
+        judgement = await jev_policy_judgement(
+            {"fanart_request": text}, IMAGE_REQUEST_POLICY, IMAGE_RULES
+        )
     except Exception:
         # 판정 실패: RAIL-ERROR 로 막고 REF-10 안내(잠시 문제가 생겨 처리하지 못했다)를 이유로 준다
-        return blocked_tool_message(call, "fanart_quota_and_policy", RAIL_ERROR_RULE, reply_for_rule(RAIL_ERROR_RULE))
+        return blocked_tool_message(
+            call,
+            "fanart_quota_and_policy",
+            RAIL_ERROR_RULE,
+            reply_for_rule(RAIL_ERROR_RULE),
+        )
     # 금지 주제(IMG-01~07)를 고른 경우에만 막는다. 확률이 높아도 주제를 못 고르면 통과시킨다
     # 모델이 덧붙인 말에 확률만 높게 나온 오차단을 줄이고, 뒤의 장면 칸, 고정 안전 틀, 생성 후 검사가 받친다
     rule_id = judgement["rule_id"]
     if judgement["probability"] > IMAGE_POLICY_THRESHOLD and rule_id != "":
         # 막힌 요청도 기록한다(같은 주제가 3번 막히면 7일 정지하는 규칙의 근거). 하루 횟수에는 넣지 않는다
-        record_fanart_request(context.fan_id, f"그림 요청 정책 위반({rule_id})", "차단", rule_id, context.db_path)
-        return blocked_tool_message(call, "fanart_quota_and_policy", rule_id, VISUAL["blocked_replies"]["input_blocked"])
+        record_fanart_request(
+            context.fan_id,
+            f"그림 요청 정책 위반({rule_id})",
+            "차단",
+            rule_id,
+            context.db_path,
+        )
+        return blocked_tool_message(
+            call,
+            "fanart_quota_and_policy",
+            rule_id,
+            VISUAL["blocked_replies"]["input_blocked"],
+        )
 
     # 세 검사를 모두 통과: 안쪽 미들웨어(그림 검사)와 그림 도구를 실행한다
     return await handler(request)
@@ -356,23 +418,45 @@ async def check_fanart_image(request, handler):
         blocked_path = Path(path).parent / "blocked" / Path(path).name
         blocked_path.parent.mkdir(parents=True, exist_ok=True)
         Path(path).replace(blocked_path)
-        record_fanart_request(context.fan_id, result.artifact["summary"], "차단", rule_id, context.db_path)
-        artifact = {"generated": True, "path": None, "verdicts": verdicts, "remaining": remaining_fanarts(context),
-                    "rule_id": rule_id, "blocked_path": str(blocked_path)}
+        record_fanart_request(
+            context.fan_id, result.artifact["summary"], "차단", rule_id, context.db_path
+        )
+        artifact = {
+            "generated": True,
+            "path": None,
+            "verdicts": verdicts,
+            "remaining": remaining_fanarts(context),
+            "rule_id": rule_id,
+            "blocked_path": str(blocked_path),
+        }
         return ToolMessage(
-            content=content, artifact=artifact, tool_call_id=result.tool_call_id,
-            name=result.name, status="error", response_metadata={"rail": "check_fanart_image", "rule_id": rule_id},
+            content=content,
+            artifact=artifact,
+            tool_call_id=result.tool_call_id,
+            name=result.name,
+            status="error",
+            response_metadata={"rail": "check_fanart_image", "rule_id": rule_id},
         )
 
     # 3. 통과: 'AI 생성 팬아트' 를 찍고 생성완료로 기록한다
     stamp_watermark(path)
-    record_fanart_request(context.fan_id, result.artifact["summary"], "생성완료", None, context.db_path)
+    record_fanart_request(
+        context.fan_id, result.artifact["summary"], "생성완료", None, context.db_path
+    )
     remaining = remaining_fanarts(context)
-    artifact = {"generated": True, "path": path, "verdicts": verdicts, "remaining": remaining, "rule_id": ""}
+    artifact = {
+        "generated": True,
+        "path": path,
+        "verdicts": verdicts,
+        "remaining": remaining,
+        "rule_id": "",
+    }
     # 그린 장면 요약을 결과 글에 넣는다. 모델이 그림을 소개한 말이 출력 레일 사실 대조의 근거에 있어야 막히지 않는다
     return ToolMessage(
-        content=f"팬아트를 만들었어요. 그린 장면은 '{result.artifact['summary']}' 예요. 오늘 남은 횟수는 {remaining}회예요.", artifact=artifact,
-        tool_call_id=result.tool_call_id, name=result.name,
+        content=f"팬아트를 만들었어요. 그린 장면은 '{result.artifact['summary']}' 예요. 오늘 남은 횟수는 {remaining}회예요.",
+        artifact=artifact,
+        tool_call_id=result.tool_call_id,
+        name=result.name,
     )
 
 
@@ -410,8 +494,15 @@ async def check_tool_result(request, handler):
 
     # 뺀 절 id 는 response_metadata 에만 남긴다. 모델에게는 남은 절만 간다
     return ToolMessage(
-        content=format_documents(filtered["kept"]), artifact=filtered["kept"], tool_call_id=result.tool_call_id,
-        name=result.name, response_metadata={"rail": "check_tool_result", "rule_id": "", "dropped_ids": filtered["dropped_ids"]},
+        content=format_documents(filtered["kept"]),
+        artifact=filtered["kept"],
+        tool_call_id=result.tool_call_id,
+        name=result.name,
+        response_metadata={
+            "rail": "check_tool_result",
+            "rule_id": "",
+            "dropped_ids": filtered["dropped_ids"],
+        },
     )
 
 
@@ -433,9 +524,21 @@ async def mask_member_info(request, handler):
 # 최종 답변의 전화번호, 이메일을 가린다. 팬이 쓴 입력과 도구 결과는 가리지 않는다(도구 결과는 mask_member_info 가 맡는다)
 # 전화번호 정규식은 Guardrails AI 검증기(validators.py)와 같은 것을 쓴다
 pii_mws = [
-    PIIMiddleware("kr_phone", detector=PHONE_PATTERN.pattern, strategy="mask",
-                  apply_to_input=False, apply_to_tool_results=False, apply_to_output=True),
-    PIIMiddleware("email", strategy="mask", apply_to_input=False, apply_to_tool_results=False, apply_to_output=True),
+    PIIMiddleware(
+        "kr_phone",
+        detector=PHONE_PATTERN.pattern,
+        strategy="mask",
+        apply_to_input=False,
+        apply_to_tool_results=False,
+        apply_to_output=True,
+    ),
+    PIIMiddleware(
+        "email",
+        strategy="mask",
+        apply_to_input=False,
+        apply_to_tool_results=False,
+        apply_to_output=True,
+    ),
 ]
 
 
@@ -448,14 +551,56 @@ if __name__ == "__main__":
 
     fan_f0002 = AgentContext(fan_id="F0002", role="fan")
     fan_f0003 = AgentContext(fan_id="F0003", role="fan")
-    print("F0002 가 T00003 취소:", permission_problem({"name": "cancel_ticket", "args": {"ticket_id": "T00003"}}, fan_f0002))
-    print("F0003 가 T00003 취소:", permission_problem({"name": "cancel_ticket", "args": {"ticket_id": "T00003"}}, fan_f0003))
-    print("팬이 lookup_fan:", permission_problem({"name": "lookup_fan", "args": {"fan_id": "F0004"}}, fan_f0002))
-    print("없는 공연 위치:", permission_problem({"name": "get_event_venue", "args": {"event_id": "서울특별시 누리구"}}, fan_f0002))
+    print(
+        "F0002 가 T00003 취소:",
+        permission_problem(
+            {"name": "cancel_ticket", "args": {"ticket_id": "T00003"}}, fan_f0002
+        ),
+    )
+    print(
+        "F0003 가 T00003 취소:",
+        permission_problem(
+            {"name": "cancel_ticket", "args": {"ticket_id": "T00003"}}, fan_f0003
+        ),
+    )
+    print(
+        "팬이 lookup_fan:",
+        permission_problem(
+            {"name": "lookup_fan", "args": {"fan_id": "F0004"}}, fan_f0002
+        ),
+    )
+    print(
+        "없는 공연 위치:",
+        permission_problem(
+            {"name": "get_event_venue", "args": {"event_id": "서울특별시 누리구"}},
+            fan_f0002,
+        ),
+    )
     # 승인 설명 함수는 runtime.context 만 읽으므로 context 칸 하나만 가진 객체를 넘긴다
     node_runtime = SimpleNamespace(context=fan_f0003)
-    print("F0003 승인 설명:", describe_approval({"name": "cancel_ticket", "args": {"ticket_id": "T00097"}}, {}, node_runtime))
-    print("이미 취소된 T00015 의 업무 규칙 문제:", business_rule_problem({"name": "cancel_ticket", "args": {"ticket_id": "T00015"}}, fan_f0003.db_path))
-    print("F0005 오늘 남은 팬아트:", remaining_fanarts(AgentContext(fan_id="F0005", role="fan")))
-    print("승인 도구:", list(APPROVAL_CONFIG), "/ 그림 정책 금지 주제:", list(IMAGE_RULES))
-    print("결과를 가리는 회원 정보 도구:", MEMBER_INFO_TOOLS, "/ 가린 예:", mask_pii("010-1234-5678, lumi@example.com"))
+    print(
+        "F0003 승인 설명:",
+        describe_approval(
+            {"name": "cancel_ticket", "args": {"ticket_id": "T00097"}}, {}, node_runtime
+        ),
+    )
+    print(
+        "이미 취소된 T00015 의 업무 규칙 문제:",
+        business_rule_problem(
+            {"name": "cancel_ticket", "args": {"ticket_id": "T00015"}},
+            fan_f0003.db_path,
+        ),
+    )
+    print(
+        "F0005 오늘 남은 팬아트:",
+        remaining_fanarts(AgentContext(fan_id="F0005", role="fan")),
+    )
+    print(
+        "승인 도구:", list(APPROVAL_CONFIG), "/ 그림 정책 금지 주제:", list(IMAGE_RULES)
+    )
+    print(
+        "결과를 가리는 회원 정보 도구:",
+        MEMBER_INFO_TOOLS,
+        "/ 가린 예:",
+        mask_pii("010-1234-5678, lumi@example.com"),
+    )

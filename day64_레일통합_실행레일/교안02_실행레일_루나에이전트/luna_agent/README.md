@@ -53,13 +53,14 @@ uv run python -m streamlit run app/ui/chat_app.py
 # 평가
 uv run -m app.evaluate --split all --dry-run                          # 고른 케이스만 보기(비용 없음)
 uv run -m app.evaluate --run-name agent_rails --split 최적화용          # 그림을 만드는 케이스는 건너뜀
+uv run -m app.evaluate --run-name red_only --set red_team            # 레드팀 테스트 셋만(--set golden 이면 골든셋만)
 uv run -m app.evaluate --run-name with_fanart --split all --with-fanart  # 그림 생성 케이스까지(한 장마다 비용)
 uv run mlflow ui --backend-store-uri sqlite:///output/mlflow.db --port 5050  # 평가 기록 비교
 ```
 
 - **사람 승인(CLI):** 취소, 환불을 요청하면 `[승인 필요]` 와 금액이 나오고 `승인/거절` 을 묻습니다. 승인은 상담원 일이고, 실습에서는 내가 상담원 역할입니다. 승인을 기다리다 끈 대화를 `--thread` 로 다시 열면 새 메시지보다 그 승인을 먼저 묻습니다.
 - **사람 승인(화면):** 왼쪽에서 로그인 계정(F0001~F0006, 운영팀 S0001)을 고릅니다. 승인을 기다리는 동안 입력창 대신 승인 카드가 나오고, `승인`, `거절` 버튼으로 멈춘 실행을 이어 갑니다.
-- **평가:** 골든셋(정상)과 레드팀 테스트 셋(공격)을 케이스마다 새 대화와 DB 임시 사본으로 돌립니다. 결과는 화면, `output/eval/<run 이름>.csv`, `output/mlflow.db` 에 남습니다.
+- **평가:** 골든셋(정상)과 레드팀 테스트 셋(공격)을 케이스마다 새 대화와 DB 임시 사본으로 돌립니다. 결과는 화면, `output/eval/<run 이름>.csv`, `output/mlflow.db` 에 남습니다. MLflow run 하나에 설정, 케이스별 판정(`mlflow.genai.evaluate` 의 채점 함수, 화면의 Traces 탭), 요약 지표가 함께 남습니다(기록 DB 는 `output/mlflow.db`, 트레이스 같은 파일은 `output/mlartifacts/`). `--set golden`, `--set red_team` 으로 한 파일만 돌릴 수 있습니다.
 - **`uv run -m app.main` 으로 실행하는 이유:** 코드가 `from app.core...` 로 서로를 부르므로 프로젝트 폴더가 import 기준이어야 합니다. 파일 경로(`uv run app/main.py`)로 실행하면 `No module named 'app'` 이 납니다.
 
 

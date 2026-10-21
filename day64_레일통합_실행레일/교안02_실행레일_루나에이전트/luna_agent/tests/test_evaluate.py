@@ -144,3 +144,15 @@ async def test_run_cases_end_to_end_with_fakes(monkeypatch, fake_rails):
     records = await evaluate.run_cases([case])
     assert records[0]["업무 완료"] is True
     assert records[0]["호출 도구"] == "get_my_tickets"
+
+
+async def test_run_cases_paused_turn_keeps_tool_events(monkeypatch, fake_rails):
+    """승인 대기로 멈춘 턴도 run_graph 가 에이전트 노드 안의 메시지로 바꿔 넣으므로, 먼저 실행한 조회와 승인 대기 호출이 기록에 남고 업무 완료가 된다."""
+    monkeypatch.setattr(builder, "llm", make_fake_model(
+        tool_step("get_my_tickets", {}, "c1"), tool_step("cancel_ticket", {"ticket_id": "T00097"}, "c2")))
+    case = make_case("ag-n03", "정상", "F0003", "승인 대기", tools=["get_my_tickets", "cancel_ticket"])
+    records = await evaluate.run_cases([case])
+    assert records[0]["실제 결과"] == "승인 대기"
+    assert records[0]["호출 도구"] == "get_my_tickets, cancel_ticket"
+    assert records[0]["업무 완료"] is True
+    assert records[0]["승인 없는 실행"] == 0

@@ -46,6 +46,8 @@ MLFLOW_EXPERIMENT = "luna-agent-execution-rails"
 # 라이브러리가 사용 통계와 실행 추적을 외부 서버로 보내지 않게 한다(NeMo, Guardrails AI 를 불러오기 전에 정해야 한다)
 os.environ["NEMO_GUARDRAILS_NO_USAGE_STATS"] = "1"
 os.environ["OTEL_SDK_DISABLED"] = "true"
+# MLflow 도 사용 기록을 외부로 보내므로 끈다(평가 evaluate.py 가 mlflow.genai.evaluate 를 쓴다)
+os.environ["MLFLOW_DISABLE_TELEMETRY"] = "true"
 # Guardrails AI 검증기를 동기로 돌린다. 비동기 앱 안에서 이벤트 루프 경고가 나지 않게 한다
 os.environ["GUARDRAILS_RUN_SYNC"] = "true"
 
