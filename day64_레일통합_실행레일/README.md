@@ -40,12 +40,14 @@
 
 ```bash
 # luna_chatbot (교안 01)
-uv run -m app.evaluate --run-name quick --split all --limit 5 --no-ragas   # 빠르게
-uv run -m app.evaluate --run-name rails_full --split 최적화용               # RAGAS 포함
+uv run -m app.evaluate --run-name quick --split all --limit 5 --no-judge   # 빠르게(판사 채점 없이)
+uv run -m app.evaluate --run-name rails_full --split 최적화용               # DeepEval 판사 채점 포함
+uv run -m app.evaluate --split 확인용 && uv run pytest -q gate              # 회귀 게이트: 평가 결과를 기준선과 비교
 
 # luna_agent (교안 02)
 uv run -m app.evaluate --split all --dry-run                                # 고른 케이스만 보기
 uv run -m app.evaluate --run-name agent_rails --split 최적화용              # 그림 케이스 제외
+uv run -m app.evaluate --split 확인용 && uv run pytest -q gate              # 회귀 게이트: 평가 결과를 기준선과 비교
 uv run -m app.main --fan S0001 --role staff                                 # 운영팀 계정으로 대화
 
 # 평가 기록 비교(두 프로젝트 공통)

@@ -40,6 +40,8 @@ CHROMA_DIR = OUTPUT_DIR / "chroma"                    # 검색 문서 벡터 저
 CHROMA_COLLECTION = "luna_knowledge"
 FANART_DIR = OUTPUT_DIR / "fanart"                    # 만든 팬아트 PNG(이미지 검사가 막은 그림은 그 안의 blocked 폴더에 남긴다)
 EVAL_OUTPUT_DIR = OUTPUT_DIR / "eval"                 # 평가 점수표 CSV
+RESULTS_PATH = EVAL_OUTPUT_DIR / "results.json"       # 이번 평가 결과(케이스별 통과 여부와 요약 지표). 회귀 게이트가 읽는다
+BASELINE_PATH = PROJECT_DIR / "baselines" / "baseline.json"  # 사람이 승인한 기준선. 회귀 게이트가 결과와 비교한다
 MLFLOW_DB_PATH = OUTPUT_DIR / "mlflow.db"             # 평가 run 기록(MLflow, SQLite 파일)
 MLFLOW_EXPERIMENT = "luna-agent-execution-rails"
 

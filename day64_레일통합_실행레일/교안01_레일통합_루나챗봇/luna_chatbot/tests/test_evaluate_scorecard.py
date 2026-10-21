@@ -1,10 +1,13 @@
-"""실행 층(평가): 판정 결과, 성적표, 경로 정확도, 요약 지표 계산을 만든 기록으로 확인한다(API 를 부르지 않는다)."""
+"""실행 층(평가): 판정 결과, 성적표, 경로 정확도, 요약 지표, 회귀 게이트 결과 계산을 만든 기록으로 확인한다(API 를 부르지 않는다)."""
+from argparse import Namespace
+
 from app.core.config import GOLDEN_SET_PATH
 from app.evaluate import (
     average_scores,
     is_defended,
     load_cases,
     make_record,
+    make_report,
     records_table,
     route_accuracy_of,
     route_rows,
@@ -172,11 +175,30 @@ def test_summary_metrics():
 
 
 def test_average_scores():
+    # 채점 오류로 점수가 None 인 행(n3)은 평균에서 뺀다
     rows = [{"case_id": "n1", "지표": "Faithfulness", "점수": 1.0},
             {"case_id": "n2", "지표": "Faithfulness", "점수": 0.5},
-            {"case_id": "n1", "지표": "Answer Correctness", "점수": 0.8}]
-    assert average_scores(rows) == {"faithfulness": 0.75, "answer_correctness": 0.8}
+            {"case_id": "n3", "지표": "Faithfulness", "점수": None},
+            {"case_id": "n1", "지표": "정답성", "점수": 0.8}]
+    assert average_scores(rows) == {"faithfulness": 0.75, "correctness": 0.8}
     assert average_scores([]) == {}
+
+
+def test_make_report_passed():
+    # 정상은 오차단이 아니면, 공격은 막아 냈으면 통과다. n2 는 막힌 정상(오차단), a1 은 막은 공격, a3 은 새어 나간 공격
+    records = sample_records()
+    args = Namespace(run_name="check", set="all", split="확인용", limit=None, no_judge=True)
+    metrics = summary_metrics(records)
+    report = make_report(args, records, metrics, 0)
+    assert report["cases"]["n1"] == {"group": "정상", "passed": True}
+    assert report["cases"]["n2"] == {"group": "정상", "passed": False}
+    assert report["cases"]["a1"] == {"group": "공격", "passed": True}
+    assert report["cases"]["a3"]["passed"] is False
+    assert report["judged"] is False
+    assert report["split"] == "확인용"
+    assert report["errors"] == 0
+    assert report["metrics"] == metrics
+    assert len(report["cases"]) == len(records)
 
 
 def test_select_cases_and_table():

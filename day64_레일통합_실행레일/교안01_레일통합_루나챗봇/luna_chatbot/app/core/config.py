@@ -36,14 +36,14 @@ CHECKPOINT_PATH = OUTPUT_DIR / "chat.sqlite"          # 여러 턴 대화 기록
 CHROMA_DIR = OUTPUT_DIR / "chroma"                    # 검색 문서 벡터 저장소
 CHROMA_COLLECTION = "luna_knowledge"
 EVAL_OUTPUT_DIR = OUTPUT_DIR / "eval"                 # 평가 결과 CSV
+RESULTS_PATH = EVAL_OUTPUT_DIR / "results.json"       # 회귀 게이트가 읽는 이번 평가 결과(gate/ 의 pytest)
+BASELINE_PATH = PROJECT_DIR / "baselines" / "baseline.json"  # 사람이 승인한 기준선(회귀 게이트가 비교한다)
 MLFLOW_DB_PATH = OUTPUT_DIR / "mlflow.db"             # 평가 run 기록(MLflow, SQLite 파일)
 MLFLOW_EXPERIMENT = "luna-chatbot-rails"
 
 # 라이브러리가 사용 통계와 실행 추적을 외부 서버로 보내지 않게 한다(NeMo, Guardrails AI 를 불러오기 전에 정해야 한다)
 os.environ["NEMO_GUARDRAILS_NO_USAGE_STATS"] = "1"
 os.environ["OTEL_SDK_DISABLED"] = "true"
-# RAGAS 도 기본으로 사용 기록을 외부로 보내므로 끈다(평가 evaluate.py 가 쓴다)
-os.environ["RAGAS_DO_NOT_TRACK"] = "true"
 # MLflow 도 사용 기록을 외부로 보내므로 끈다(평가 evaluate.py 가 mlflow.genai.evaluate 를 쓴다)
 os.environ["MLFLOW_DISABLE_TELEMETRY"] = "true"
 # Guardrails AI 검증기를 동기로 돌린다. 비동기 앱 안에서 이벤트 루프 경고가 나지 않게 한다
@@ -104,7 +104,7 @@ class Settings(BaseSettings):
 
     # 모델 이름
     openai_chat_model: str = "gpt-5.6-luna"   # 답변 모델
-    openai_eval_model: str = "gpt-4.1-mini"   # RAGAS 평가용 모델(ragas 0.4.3 이 gpt-5.6-luna 를 거절한다)
+    openai_eval_model: str = "gpt-4.1-mini"   # DeepEval 판사 모델(답변 모델과 다른 모델로 채점한다)
     typesafe_model: str = "jev-1.13.0"        # 입력, 출력 정책과 사실 대조를 판정하는 Jev
 
     # 검색
@@ -116,7 +116,7 @@ class Settings(BaseSettings):
 
 settings = Settings()
 
-# NeMo, ragas, Jev 클라이언트는 키를 환경 변수에서 직접 읽는다. .env 에서 읽은 키를 환경 변수에도 넣는다
+# NeMo, DeepEval, Jev 클라이언트는 키를 환경 변수에서 직접 읽는다. .env 에서 읽은 키를 환경 변수에도 넣는다
 os.environ["OPENAI_API_KEY"] = settings.openai_api_key.get_secret_value()
 os.environ["TYPESAFE_API_KEY"] = settings.typesafe_api_key.get_secret_value()
 

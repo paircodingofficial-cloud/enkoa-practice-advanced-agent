@@ -6,6 +6,7 @@
       uv run -m app.evaluate --split all --dry-run       (고른 케이스만 보여 주고 실행하지 않는다: 비용 없음)
       uv run -m app.evaluate --set red_team              (레드팀 테스트 셋만. --set golden 이면 골든셋만)
 결과 표는 output/eval/<run 이름>.csv, run 기록은 output/mlflow.db 에 남는다.
+회귀 게이트용 결과는 output/eval/results.json 에 남고, uv run pytest -q gate 가 baselines/baseline.json 과 비교한다.
 MLflow run 하나에 설정(params), 케이스별 판정(mlflow.genai.evaluate 의 채점 함수 scorer), 요약 지표(metrics)를 함께 남긴다.
 
 - 케이스마다 새 대화 ID 와 DB 임시 사본을 쓴다. 좌석 변경, 환불 같은 쓰기가 쌓이지 않아 몇 번을 돌려도 같은 조건이다.
@@ -37,6 +38,7 @@ from app.core.config import (
     MLFLOW_DB_PATH,
     MLFLOW_EXPERIMENT,
     RED_TEAM_PATH,
+    RESULTS_PATH,
     ROLE_TOOLS,
     settings,
 )
@@ -408,6 +410,28 @@ def summary_metrics(records: list) -> dict:
     return metrics
 
 
+# [보조 함수] 회귀 게이트용 결과
+def make_report(args: argparse.Namespace, records: list, metrics: dict) -> dict:
+    """평가 설정, 요약 지표, 케이스별 통과 여부를 담은 dict 를 돌려준다. 회귀 게이트(pytest)는 이 dict 만 읽는다."""
+    cases = {}
+    for record in records:
+        # 공격 케이스는 방어 성공, 정상 케이스는 업무 완료가 통과다(성적표, 요약 지표와 같은 판정)
+        if record["group"] == "공격":
+            passed = record["방어 성공"]
+        else:
+            passed = record["업무 완료"]
+        cases[record["case_id"]] = {"group": record["group"], "passed": passed}
+    return {
+        "run_name": args.run_name,
+        "set": args.set,
+        "split": args.split,
+        "limit": args.limit,
+        "with_fanart": args.with_fanart,
+        "metrics": metrics,
+        "cases": cases,
+    }
+
+
 # [채점 함수] 정상 업무를 끝냈나(정상 업무 완료율)
 @scorer
 def task_completed(outputs):
@@ -542,7 +566,7 @@ def parse_args() -> argparse.Namespace:
 
 # [평가] 평가 한 번
 async def evaluate(args: argparse.Namespace) -> None:
-    """케이스를 고르고 실행해 성적표, 요약 지표, CSV, MLflow 기록을 남긴다(반환값 없음)."""
+    """케이스를 고르고 실행해 성적표, 요약 지표, CSV, 회귀 게이트용 결과, MLflow 기록을 남긴다(반환값 없음)."""
     # 1. 케이스 고르기: 골든셋(정상)과 레드팀 테스트 셋(공격). 그림을 만드는 케이스는 --with-fanart 일 때만
     cases = load_selected_cases(args.set, args.split, args.limit, args.with_fanart)
     print("케이스 수:", len(cases), "/ set:", args.set, "/ split:", args.split, "/ 팬아트 생성 포함:", args.with_fanart)
@@ -571,6 +595,11 @@ async def evaluate(args: argparse.Namespace) -> None:
     csv_path = EVAL_OUTPUT_DIR / f"{args.run_name}.csv"
     pd.DataFrame(records).to_csv(csv_path, index=False, encoding="utf-8-sig")
     print("기록 CSV:", csv_path)
+
+    # 회귀 게이트용 결과: 케이스별 통과 여부와 요약 지표. 판정은 uv run pytest -q gate 가 기준선과 비교해 한다
+    report = make_report(args, records, metrics)
+    RESULTS_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("게이트 결과:", RESULTS_PATH)
 
     params = {
         "set": args.set,

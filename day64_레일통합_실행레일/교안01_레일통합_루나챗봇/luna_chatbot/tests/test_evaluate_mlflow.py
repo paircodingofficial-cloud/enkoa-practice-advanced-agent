@@ -35,7 +35,8 @@ def test_load_selected_cases_by_set():
 def test_scorer_means_match_summary_metrics():
     """채점 함수의 평균(None 은 뺀다)이 같은 뜻의 요약 지표와 같다. 둘이 다르면 MLflow 화면과 성적표가 어긋난다."""
     records = sample_records()
-    evaluate.attach_scores(records, [{"case_id": "n1", "지표": "Faithfulness", "점수": 0.8}])
+    evaluate.attach_scores(records, [{"case_id": "n1", "지표": "Faithfulness", "점수": 0.8},
+                                     {"case_id": "n1", "지표": "정답성", "점수": 0.6}])
     rows = evaluate.eval_rows(records)
     metrics = evaluate.summary_metrics(records)
     assert scorer_mean(evaluate.defended, rows) == metrics["defense_rate"]
@@ -43,6 +44,44 @@ def test_scorer_means_match_summary_metrics():
     assert scorer_mean(evaluate.false_block, rows) == metrics["false_block_rate"]
     assert scorer_mean(evaluate.crisis_guided, rows) == metrics["crisis_guided_rate"]
     assert scorer_mean(evaluate.faithfulness, rows) == 0.8
+    assert scorer_mean(evaluate.correctness, rows) == 0.6
+
+
+def test_judge_metrics_are_fresh_objects():
+    """판사 지표는 부를 때마다 새 객체이고, 정답성은 질문, 답, 정답 답변을 보며 이유를 한국어로 받는다(판사를 부르지 않는다)."""
+    first = evaluate.make_judge_metric("정답성")
+    assert first is not evaluate.make_judge_metric("정답성")
+    assert first.evaluation_steps[-1] == evaluate.KO_REASON
+    assert set(first.evaluation_params) == {evaluate.SingleTurnParams.INPUT, evaluate.SingleTurnParams.ACTUAL_OUTPUT,
+                                            evaluate.SingleTurnParams.EXPECTED_OUTPUT}
+    assert first.threshold == 0.7
+    faithfulness = evaluate.make_judge_metric("Faithfulness")
+    assert faithfulness.__name__ == "Faithfulness"
+    assert faithfulness.model is evaluate.judge_llm
+
+
+class BrokenMetric:
+    """채점할 때마다 판사 호출 오류를 내는 가짜 지표."""
+
+    async def a_measure(self, test_case, _show_indicator=True):
+        raise RuntimeError("요청 한도 초과")
+
+
+def make_broken_metric(metric_name):
+    """make_judge_metric 대신 쓰는 가짜: 지표 이름과 상관없이 오류를 내는 지표를 돌려준다."""
+    return BrokenMetric()
+
+
+async def test_judge_error_becomes_none_score(monkeypatch):
+    """판사 호출이 실패하면 평가를 멈추지 않고 점수 None 행으로 남겨, 채점 오류로 셀 수 있다."""
+    monkeypatch.setattr(evaluate, "make_judge_metric", make_broken_metric)
+    records = sample_records()
+    rows = await evaluate.score_answers(records)
+    # 막히지 않은 정상, 경계 n1, b1, n3 마다 정답성과 Faithfulness 두 행
+    assert len(rows) == 6
+    for row in rows:
+        assert row["점수"] is None
+        assert row["이유"].startswith("채점 오류")
 
 
 def test_log_to_mlflow_writes_case_traces(tmp_path, monkeypatch):

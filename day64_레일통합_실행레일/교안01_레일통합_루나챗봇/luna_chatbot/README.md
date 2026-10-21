@@ -56,7 +56,7 @@ NeMo 대화 레일(임베딩 의도 분류)은 쓰지 않습니다. 정해 둔 �
 
    | 키 | 용도 | 발급 |
    |---|---|---|
-   | `OPENAI_API_KEY` | 답변 모델, 검색어 다시 쓰기, 임베딩, RAGAS 평가 모델 | [OpenAI 콘솔](https://platform.openai.com/api-keys) |
+   | `OPENAI_API_KEY` | 답변 모델, 검색어 다시 쓰기, 임베딩, DeepEval 판사 모델 | [OpenAI 콘솔](https://platform.openai.com/api-keys) |
    | `TYPESAFE_API_KEY` | Jev 판정(입력 정책, 출력 정책, 사실 대조, 경로 고르기) | [TypeSafe 콘솔](https://console.typesafe.ai/keys) |
 
 4. 검색 문서 저장소를 한 번 만듭니다(검색 문서 절을 임베딩해 `output/chroma` 에 넣습니다. 비용이 조금 듭니다). 앱, 노트북, 평가는 이 저장소를 열기만 하며, `data/knowledge/*.md` 를 고쳤을 때도 다시 실행합니다.
@@ -77,16 +77,20 @@ uv run -m app.main --fan F0001 --thread <대화 ID>
 # 채팅 화면(왼쪽에서 팬을 고르고, 답 아래 '레일 판정 기록'을 펼쳐 봅니다)
 uv run python -m streamlit run app/ui/chat_app.py
 
-# 평가: 빠르게(파일마다 5개, RAGAS 없이) / 최적화용 전체(RAGAS 포함)
-uv run -m app.evaluate --run-name quick --split all --limit 5 --no-ragas
+# 평가: 빠르게(파일마다 5개, 판사 채점 없이) / 최적화용 전체(판사 채점 포함)
+uv run -m app.evaluate --run-name quick --split all --limit 5 --no-judge
 uv run -m app.evaluate --run-name rails_full --split 최적화용
 
 # 한 파일만: 레드팀 테스트 셋만(입력 레일을 고칠 때), 골든셋만(답변 품질을 고칠 때). 기본값 --set all 은 두 파일 모두
-uv run -m app.evaluate --run-name red_only --set red_team --no-ragas
+uv run -m app.evaluate --run-name red_only --set red_team --no-judge
 uv run -m app.evaluate --run-name golden_only --set golden
 
 # 경로 정확도만(기대 경로가 있는 케이스를 입력 레일과 라우터까지만 돌립니다. 답변 모델 비용 없음, Jev 비용만 듭니다)
 uv run -m app.evaluate --run-name routes --split all --routes-only
+
+# 회귀 게이트: 확인용으로 평가한 뒤, 결과를 승인한 기준선과 비교합니다(실패하면 종료 코드가 0 이 아닙니다)
+uv run -m app.evaluate --split 확인용
+uv run pytest -q gate
 
 # 평가 기록 비교(브라우저에서 http://localhost:5050)
 uv run mlflow ui --backend-store-uri sqlite:///output/mlflow.db --port 5050
@@ -95,7 +99,17 @@ uv run mlflow ui --backend-store-uri sqlite:///output/mlflow.db --port 5050
 uv run pytest -q
 ```
 
+답변 품질은 DeepEval 로 채점합니다. 막히지 않은 정상, 경계 케이스의 마지막 답을 `FaithfulnessMetric`(답이 검색 문서와 DB 조회 결과에 근거하는가)과 G-Eval `정답성`(정답 답변과 핵심 사실이 같은가)으로 채점하며, 판사 모델은 `.env` 의 `OPENAI_EVAL_MODEL`(기본 `gpt-4.1-mini`)입니다. 요약 지표 이름은 `faithfulness`, `correctness` 입니다.
+
 평가 결과는 `output/eval/<run 이름>.csv` 와 `output/mlflow.db` 에 남습니다. MLflow run 하나에 설정, 케이스별 판정(`mlflow.genai.evaluate` 의 채점 함수, 화면의 Traces 탭), 요약 지표가 함께 남습니다(기록 DB 는 `output/mlflow.db`, 트레이스 같은 파일은 `output/mlartifacts/`). 기대 경로(`expected.route`)가 있는 케이스는 케이스마다 경로 맞음(`route_ok`)이, 요약 지표에는 경로 정확도(`route_accuracy`)가 남습니다. 모듈마다 맨 아래에 확인 블록이 있어 `uv run -m app.graph.nodes` 처럼 한 층만 실행해 볼 수 있습니다.
+
+## 회귀 게이트 흐름
+
+1. `app.evaluate` 가 평가만 하고 결과를 `output/eval/results.json` 에 씁니다(경로만 보는 `--routes-only` 평가는 쓰지 않습니다).
+2. `uv run pytest -q gate` 가 이 파일과 `baselines/baseline.json`(승인한 기준선)을 읽어 판정합니다. 같은 케이스로 평가했는지, 판사 채점 오류, 새어 나감, 방어 성공률 하한, 오차단율 상한, 판사 점수 하한과 하락폭, 늘 통과하던 케이스를 봅니다.
+3. 기준선을 바꿀 때는 `results.json` 을 검토하고, 승인한 값(케이스 목록, 지표, 늘 통과하는 사례)을 `baselines/baseline.json` 에 옮겨 적습니다. 답변 모델이나 판사 모델을 바꾸면 기준선을 새로 만듭니다.
+
+`uv run pytest -q` 는 `tests/`(가짜 객체로 도는 단위 테스트)만 돌리고, 실제 평가 결과가 있어야 하는 `gate/` 는 따로 실행합니다.
 
 
 ## 화면
@@ -149,7 +163,7 @@ luna_chatbot/
 │   │   ├── runner.py               # 비동기 그래프용 이벤트 루프 하나
 │   │   └── style.css               # 화면 스타일
 │   ├── main.py                     # 터미널 여러 턴 대화
-│   └── evaluate.py                 # 골든셋과 레드팀 평가, 성적표 기록
+│   └── evaluate.py                 # 골든셋과 레드팀 평가, 성적표와 판사 점수 기록, 결과 파일
 ├── data/
 │   ├── luna_fan.db                 # 팬, 공연, 주문 등 DB (읽기 전용)
 │   ├── knowledge/                  # 공지, 규정 문서 5개 (검색 원본)
@@ -158,6 +172,8 @@ luna_chatbot/
 │   └── eval/
 │       ├── golden_set/cases.json   # 평가 문항 (정상, 경계)
 │       └── red_team/cases.json     # 평가 문항 (공격)
+├── baselines/baseline.json         # 사람이 승인한 기준선 (회귀 게이트가 비교)
+├── gate/test_rail_regression.py    # 평가 결과를 기준선과 비교하는 회귀 게이트 (uv run pytest -q gate)
 ├── rails/guard/
 │   ├── config.yml                  # 레일 층 순서 목록 (함께 따라하기 자리 있음)
 │   └── rails.co                    # 레일 흐름과 기준값 (함께 따라하기 자리 있음)
@@ -168,7 +184,8 @@ luna_chatbot/
 ├── tests/
 │   ├── conftest.py                 # 가짜 키, 모델, 레일, Jev, 검색기 준비
 │   ├── test_config.py              # 경로, 레일 설정, Settings 값 확인
-│   ├── test_evaluate_scorecard.py  # 성적표, 경로 정확도 계산 확인
+│   ├── test_evaluate_scorecard.py  # 성적표, 경로 정확도, 결과 파일 계산 확인
+│   ├── test_evaluate_mlflow.py     # MLflow 채점 함수, 판사 지표 설정과 채점 오류 처리 확인
 │   ├── test_graph_flow.py          # 여러 턴과 경로별 노드 확인
 │   ├── test_layers.py              # 아래 층이 위 층을 import 하지 않는지 확인
 │   ├── test_live.py                # 실제 API 호출 (RUN_LIVE=1 일 때만)
